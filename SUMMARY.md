@@ -15,5 +15,5 @@
 * [工具](tools.md)
 * 杂
     * [自我提升/职业生涯](misc/growth.md)
-    * [企业](misc/company.md)
+    * [团队/企业](misc/team-com.md)
 

@@ -2,7 +2,9 @@
 子目录:
 - [合集](#合集)
 - [Metasploit](#metasploit)
+- [DVWA](#dvwa)
 - [BeEF](#beef)
+- [nmap](#nmap)
 - [OSINT](#osint)
 - [Secure Headers](#secure-headers)
 - [隐写](#隐写)
@@ -103,6 +105,78 @@ Enable swap on boot:
 
 ---
 
+## DVWA
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
+
+
+__#姿势#__
+
+  DVWA 漏洞测试环境的搭建过程
+
+DVWA 有在我们的安全技能树里提到，以下是 Win10 下的搭建过程，来自@丹青  同学的分享，踏了一些坑，都解决了，感兴趣的同学可以参考。
+
+如果你也有什么经验可以分享到圈子内的可以私信我交流。
+
+
+1. 下载xampp,dvwa
+
+2. 解压dvwa-master,把解压后的文件夹名字改为dvwa
+
+3. 删除xampp文件夹里htdocs文件夹里的所有文件，然后把dvwa文件夹拷到htdocs文件夹里。
+
+4. 把dvwa文件夹里的config文件的扩展名(.dist)去掉，编辑config文件的内容，把p@ssw0rd去掉
+
+5. 用管理员权限打开xampp，点击start Apache,Mysql
+
+6. 在浏览器端输入
+`http://localhost/dvwa/setup.php`
+
+
+7. 点击creat database，然后出现登录界面，用户名是admin,密码是password
+
+8. 配置xampp控制台上的Apache,点击config中的PHP(php.ini),查找url_include,把它后面的Off改为On.
+
+9. restart apache
+
+10. 成功！！！
+
+ps:xampp的下载地址:
+[XAMPP Installers and Downloads for Apache Friends](https://www.apachefriends.org/zh_cn/index.html)
+
+
+
+dvwa的下载地址:
+[DVWA - Damn Vulnerable Web Application](http://www.dvwa.co.uk/)
+
+
+
+视频教程地址:
+[https://www.youtube.com/watch?v=cak2lQvBRAo&index=...](https://www.youtube.com/watch?v=cak2lQvBRAo&index=1&list=LLZ6KzzklgOHCRwQj8hNX89Q)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/c0/51/c0513f154d8fcf23c3ec6bb33344fc7bdfab86a329522922281e5290731ec0a0.jpg" width="25px"/> __沉着__: 可以直接搭个metasploitable2啊，自带很多这种环境
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/c0/51/c0513f154d8fcf23c3ec6bb33344fc7bdfab86a329522922281e5290731ec0a0.jpg" width="25px"/> __沉着__: 不是一样的东西，也不影响这个分享
+
+<img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__ replies to <img src="https://file.xiaomiquan.com/c0/51/c0513f154d8fcf23c3ec6bb33344fc7bdfab86a329522922281e5290731ec0a0.jpg" width="25px"/> __沉着__: 也可以，不过搭建过程好像对小白不是很友好😅
+
+<img src="https://file.xiaomiquan.com/c0/51/c0513f154d8fcf23c3ec6bb33344fc7bdfab86a329522922281e5290731ec0a0.jpg" width="25px"/> __沉着__ replies to <img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__: 那个下载下来就是个虚拟机啊，打开直接用，根本不用搭建吧。。。
+
+<img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__ replies to <img src="https://file.xiaomiquan.com/c0/51/c0513f154d8fcf23c3ec6bb33344fc7bdfab86a329522922281e5290731ec0a0.jpg" width="25px"/> __沉着__: 啊？不用配合其他虚拟平台吗？我刚刚去搜了一下这个东西，有一篇教程是在virtual box host 安装metasploitable2。。
+
+<img src="https://file.xiaomiquan.com/c0/51/c0513f154d8fcf23c3ec6bb33344fc7bdfab86a329522922281e5290731ec0a0.jpg" width="25px"/> __沉着__ replies to <img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__: 默认下载的是做好的vmware的虚拟机
+
+...
+
+---
 
 ## BeEF
 
@@ -156,6 +230,63 @@ BeEF 是基于 Ruby 编写的，数据库使用的是 SQLite。如果你正好�
 
 ---
 
+## nmap
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-14:
+
+
+__#工具#__
+
+  Nmap 7.50 正式发布：
+
+
+[Download the Free Nmap Security Scanner for Linux/...](https://nmap.org/download.html)
+
+ 
+
+新增 14 个 NSE 脚本，300 多个指纹规则。
+
+Nmap 是玩安全的人必备的工具，无论攻防都必备，基于 Nmap 写插件（NSE 脚本）很容易，只需掌握 lua 脚本语言即可。
+
+有同学问扫描器问题，其实能玩精 Nmap，这就是一款非常强大的扫描器，包括漏洞扫描！
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: nmap是不是不支持异步，英文是硬伤啊😖
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 你是怎么理解异步的
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 我理解的是它在扫描时发包后必须等到收包，只能通过设置较小的超时来缩短扫描时间。异步就是只管发包，不维护状态，收包另外一个线程负责。好像有个ma开头的软件就是这样的，比如要扫整个互联网的话速度会快些。
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 不过只适用于端口扫描和存活扫描
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: 最近用nmap搞内部分析，排除端口等信息收集很棒，感觉带脚本扫描并不比xscan之类有优势，比如带brute，时间上和结果上都不理想，不知道是不是用的不好。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 嗯 确实
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: 他们有些插件其他也写得不好
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 
+[NMAP 基础教程 | WooYun知识库](http://cb.drops.wiki/drops/tips-2002.html)
+
+
+这里有篇nmap入门的文章，没接触过nmap的同学可以看下，
+乌云知识库还有很多其他的好教程可以搜索 :)
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 感谢互动
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 😁，希望大家也能多互动多分享。
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 另外我也来说一下，在对外网一些目标做端口扫描的时候，目标如果有array等负载均衡设备(我猜测的),可能导致每个端口都会显示开放状态总之就是没法探测到到底真实开了什么端口，这个时候就用amap吧，不会有误报，可能nmap也有相关参数可以做到这种效果，但是我不知道。
+
+
+...
+
+---
 
 ## OSINT
 

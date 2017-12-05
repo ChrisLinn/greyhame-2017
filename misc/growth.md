@@ -201,27 +201,6 @@ CTF 经历过、爽过就行了，没经历过也没事，又不是必须的。�
 
 ---
 
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-07:
-
-> 慕风 提问：
-余弦大大，我们学校没有信息安全专业，之前也没有相关的社团或者兴趣小组，这一块的整体实力都很弱。
-我大一，上学期加入了一个由大二学长组成的新兴的网络安全小组，但差不多都是小白，我凭着一个小菜的实力就成了副组长。
-暑假要带着大家一起学习，但我清楚自己的水平，感觉压力很大，不过动力也十足。
-我想从这一届起能在学校把这一块儿做好，但没有经验，不知道后期该怎么安排，我现在只能想到带着大家一起学习，然后打打ctf，争取拿奖，有点名气，才好继续发展，然后呢，我就有些迷茫了。感觉ctf只能是暂时性的。
-而且大家都不积极，平时群里基本没动静，没有学习氛围。
-恳请大大指点一下方向，也传授一下关于带队的一些经验。
-
-
-关于 CTF，可以看我前面的回答。
-
-团队不积极，无所谓，不用试图去照顾一个不积极的人，以后毕业了，海阔天空，各有千秋。看远点，不要因为这个迷茫。
-
-至于带队经验，首先记住一句话：兵熊熊一个，将熊熊一窝。如果你自己不够强悍，怎么带队？
-
-
-
----
-
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-10:
 
 > 匿名用户 提问：
@@ -233,6 +212,68 @@ Java 很重要，不仅不少重大漏洞和这有关，还有安卓上也是 Ja
 建议把历史上所有 Struts 2 的漏洞及 Java 那些反序列化漏洞都复现一遍，自己安装漏洞环境，看那些公开的分析资料，自己复现，会有很大收获。
 
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
+
+> Evoker 提问：
+弦哥，网易云课堂出的web安全培训有必要报名嘛……能帮我参考一下吗
+
+
+这个吗？
+[Web安全工程师 - 网易云课堂](http://mooc.study.163.com/smartSpec/detail/1001227001.htm)
+
+
+
+看去不错呀，其他没法给更多建议。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e4/65/e465e874c8d9bef8b99fcf786f37aa0ba55202b26b7cf835e5c2e7965b36b621.jpg" width="25px"/> __Evoker__: 7个有实战经验的人做出的课程，我感觉靠谱度会高不少，这种宣传也让人放心。这是我的补充建议。
+
+<img src="https://file.xiaomiquan.com/e4/65/e465e874c8d9bef8b99fcf786f37aa0ba55202b26b7cf835e5c2e7965b36b621.jpg" width="25px"/> __Evoker__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 好的，谢谢弦哥，已报名😝
+
+<img src="https://file.xiaomiquan.com/e1/13/e11323b87fbd14d11c8ed453e58d5e203cff855222009760643443f997682362.jpg" width="25px"/> __你慢慢的我先走__: 很基础的培训，适合没基础新人
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
+
+> 匿名用户 提问：
+Cos哥，网络安全法出来了，不敢搞站了。有什么办法可以实战渗透吗？
+
+
+如果只是挖漏洞，可以去各大 SRC，还有 HsckerOne；否则不少乙方有安服需求，是授权的，但是一般情况下安服很难玩身真正的渗透。
+
+其他方式不说了。
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
+
+> 匿名用户 提问：
+现在是一名马上升大二的软件专业学生，在接受cisco CCIE(路由交换)的培训，请问cos大大cisco网络这方面的知识对于做安全有什么帮助吗?(｡•́︿•̀｡)
+
+
+有，但是这会是非常基础的培训，可能一时半会感受不到安全的刺激。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/6e/ba/6eba59357eced202d0206a737f71e28b83896b315432fd3a2014be0d3c2658ae.jpg" width="25px"/> __不随便__: 我本身是思科培训讲师，没感觉到刺激😓
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/6e/ba/6eba59357eced202d0206a737f71e28b83896b315432fd3a2014be0d3c2658ae.jpg" width="25px"/> __不随便__: 😆
+
+
+...
 
 ---
 
@@ -477,5 +518,26 @@ Java 很重要，不仅不少重大漏洞和这有关，还有安卓上也是 Ja
 得看你从事具体什么岗位，比如 Web 安全，是做漏洞研究，还是相关安全产品研发。如果是漏洞研究，那每天主要任务就是漏洞分析、挖掘、PoC/Exp 编写，漏洞爆发了赶紧第一时间应急出上诉内容。
 
 
+
+---
+
+<img src="https://file.xiaomiquan.com/f2/18/f2187aaef0629494fb3ab1ab45faea17ed9021d9408eb286db2694c418ae7acf.jpg" width="25px"/> __ENI__ on 2017-06-11:
+
+> ENegatiVY 提问：
+web安全和渗透测试的区别在哪里？感觉渗透测试包括了通过web进行渗透。暑假要去实习，但是不知道怎么在这两个里面选。个人更倾向于渗透，但是不知自己的理解对不对
+
+
+我们那份技能树里，你看看渗透测试，就知道Web安全只是它的一个子集。
+
+其实大多数公司的渗透测试都太浅，有的只能称为：扫描器工程师，因为这类人基本只会用扫描器。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e6/70/e670fb59afbe868055fa52141b08b901837c983d5b9123e6ac53b9cff331dd65.jpg" width="25px"/> __残风逝雪丶__: 个人理解web安全测试是发生在产品上线之前，渗透测试是上线之后。安全测试更倾向于找一些比较明显的漏洞，比如注入跨站等。而渗透测试则是“不择手段”的寻找系统的弱点目的比较明确。这也是为什么现在很多网站你直接丢到工具里面跑什么都跑不出来的原因(在上线之前不知道被多少工具跑过多少遍了)。
+
+
+...
 
 ---

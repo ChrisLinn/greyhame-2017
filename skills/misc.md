@@ -2,8 +2,9 @@
 子目录:
 - [技能树](#技能树)
 - [APT](#apt)
-- [Vim](#vim)
 - [git](#git)
+- [Vim](#vim)
+- [tmux](#tmux)
 - [端口转发](#端口转发)
 - [代理](#代理)
 - [crawler](#crawler)
@@ -197,6 +198,38 @@ __#科普#__
 
 ---
 
+## git
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-31:
+
+
+__#姿势#__
+
+ Git
+
+Git 是极其优秀且普遍的分布式版本控制系统，是我们当下团队编码协作方面、代码版本控制方面必备的神器与操作流程。
+
+刚刚发的神器 BeEF “详细安装过程” 里有个步骤就是 Git 的操作：
+
+`git clone git://github.com/beefproject/beef.git`
+
+如果我们只是去看别人的代码，git clone 这个克隆操作是最常用的，会这个就够了。
+
+入门可以看这个，非常有意思的入门引导过程：
+
+[Git Tutorial - Try Git](https://try.github.io/)
+
+
+
+Git 官网可以看到安装过程：
+
+[Git](https://git-scm.com/)
+
+
+
+---
+
 
 
 ## Vim
@@ -274,37 +307,76 @@ __#资源#__
 
 ---
 
-## git
+## tmux
 
 
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-31:
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
 
 
 __#姿势#__
 
- Git
+ Linux 多终端神器 tmux
 
-Git 是极其优秀且普遍的分布式版本控制系统，是我们当下团队编码协作方面、代码版本控制方面必备的神器与操作流程。
+只要遇到谁在皱着眉头玩 Linux，我肯定就会问：“怎么没在 tmux 下操作？哪怕 screen 也行呀，你这样跑任务，万一网络断了，终端退出，任务不就死了？”
 
-刚刚发的神器 BeEF “详细安装过程” 里有个步骤就是 Git 的操作：
+这句话往往会让不少人一头雾水，什么是 tmux？什么是 screen？这里不说 screen，说这个更强大的 tmux，玩会这个，你将拥有 Linux 下多终端快速操作技能，再也不用担心网络断了，导致当前任务死掉。
 
-`git clone git://github.com/beefproject/beef.git`
+如果你在 Ubuntu 下，可以这样安装：
 
-如果我们只是去看别人的代码，git clone 这个克隆操作是最常用的，会这个就够了。
+apt-get install tmux
 
-入门可以看这个，非常有意思的入门引导过程：
-
-[Git Tutorial - Try Git](https://try.github.io/)
+想快速入门可以看这篇文章：
 
 
-
-Git 官网可以看到安装过程：
-
-[Git](https://git-scm.com/)
+[http://blog.jobbole.com/87278/](http://blog.jobbole.com/87278/)
 
 
+
+对了，这个命令在安全技能树里有列出，你发现了没？
+
+<img src="https://images.xiaomiquan.com/FoF9HHeR_gXthlqlZLsj_QQxUSQ5?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:1-aYUGO5-lAGg43kIO2ZSoHin-Q=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: screen -S sqlmap
+ctrl+A D睡觉去……
+第二天：
+screen -r sqlmap
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 试试 tmux，刚开始你会不习惯，习惯后可以扔掉 screen 了
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: iterm2 好用
+
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__: 在用，以前总是开一堆终端，一个写脚本一个测试脚本，遇上两个脚本的时候简直是地狱，自从用了tmux世界都光明了
+
+
+<img src="https://file.xiaomiquan.com/06/80/0680db16c9c7b01e0339fde36284b22a6883bda247cdabb58ed9c92235fa2f3c.jpg" width="25px"/> __英雄马__: iterm2 好用
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/06/80/0680db16c9c7b01e0339fde36284b22a6883bda247cdabb58ed9c92235fa2f3c.jpg" width="25px"/> __英雄马__: 不是一个感觉
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 不是一个感觉
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 有空去感觉下
+
+<img src="https://file.xiaomiquan.com/8f/79/8f79b2f9cc50f9c3cc4599fa4a3c2881fe5d4b680ae03889196bcb10ca21b285.jpg" width="25px"/> __吴文尉__: 踩过坑的我也来说一句，tmux和spf1配合用，会有一个背景色冲突的问题，一直没有找到解决方法，知道上次看到官方文档，需要加一个参数 -2
+
+<img src="https://file.xiaomiquan.com/8f/79/8f79b2f9cc50f9c3cc4599fa4a3c2881fe5d4b680ae03889196bcb10ca21b285.jpg" width="25px"/> __吴文尉__: tmux和spf13结合，vim会出现背景色冲突的问题，解决方法就是加一个参数 －2，即可
+
+<img src="https://file.xiaomiquan.com/d7/28/d7289088de0995b81a7ecd6139812dc6d6b566d02c617a019a4f69b80438a435.jpg" width="25px"/> __掌柜的__: 最喜欢ctrl+b "  %无论如何分成4个再说，另外同一个session做操作分享真的太好用了，通常搞不定的bug让基友远程调测，用tmux我就可以同步看，非常方便。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/d7/28/d7289088de0995b81a7ecd6139812dc6d6b566d02c617a019a4f69b80438a435.jpg" width="25px"/> __掌柜的__: 嗯 是的
+
+<img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 突然发觉这篇文章校稿的是我朋友😂
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__: 巧呀
+
+
+...
 
 ---
+
 
 ## 端口转发
 
@@ -348,6 +420,17 @@ __#姿势#__
 余大 能否推荐一款windows上用的稳定的反向socks代理工具？开源的也行
 
 你可以先看看安全技能树里推荐的端口转发那些内容，看看是否有你需要的。
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
+
+> 北风飘然 提问：
+弦大 最近打算写个被动扫描的东西  大概是 浏览器=>python代理   然后做异步请求  不知道有什么推荐的第三方库做代理么
+
+
+有，mitmproxy 很不错。
 
 
 ---
@@ -538,6 +621,25 @@ Google AlphaBay
 我最近在写一个 XSS 漏洞 fuzzing 框架，就在琢磨如何融入 AI，就这么小的一个点，如果真融入好了，我会很兴奋。
 
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-12:
+
+> 匿名用户 提问：
+请问，现在的安全公司，应用机器学习的多吗，机器学习在安全领域有哪些方面的应用？
+
+
+其实算多，现在机器学习一般用于防御、流量分析、日志分析、威胁分析这方面。一般数据大了或样本多了后都会上机器学习相关算法。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 我觉得扫描器是不是应该也可以加进去，机器学习生成payload之类
+
+
+...
 
 ---
 

@@ -53,3 +53,30 @@ App 安全审计推荐个不错的自动化平台 Janus(appscan.io)，看看，�
 
 
 ---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-14:
+
+
+__#资源#__
+
+  Android 应用逆向入门
+
+圈子有不少同学有问安卓安全/调试/逆向方面的知识，这里推荐这篇：
+
+
+[https://www.evilsocket.net/2017/04/27/Android-Appl...](https://www.evilsocket.net/2017/04/27/Android-Applications-Reversing-101/)
+
+
+
+这篇文章很不错，可以学到：
+
+apk 基本知识，adb 基本命令，网络分析（用到了作者自己开发的 bettercap），静态分析，动态分析，动态注入等入门知识。
+
+除了文中这些，我还有用到的如：Inspeckage、MobFS。
+
+实战出真知。
+
+<img src="https://images.xiaomiquan.com/FnpxBcd8M5Z8YfmmTHV_tusHlkbn?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:lz2IwMYoeus_E09sqOHOl57X0Ys=" width="50%" height="50%" align="middle"/>
+
+
+---

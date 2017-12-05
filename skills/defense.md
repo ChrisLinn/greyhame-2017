@@ -72,3 +72,25 @@ __#姿势#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/f2/18/f2187aaef0629494fb3ab1ab45faea17ed9021d9408eb286db2694c418ae7acf.jpg" width="25px"/> __ENI__ on 2017-06-10:
+
+> 匿名用户 提问：
+iPhone保持不越狱，及时更新，同时不让其他人碰到，既然生活离不开手机，如何保护好自己手机上的隐私安全？
+
+
+已经很安全，如果还中招你就遇到百万价值的0day，或者无力抵抗的黑灰产业。
+
+在密码方面 1Password 值得用，云服务谨慎用，陌生 Wi-Fi 更需谨慎。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__: 
+[隐私大爆炸，你得学几招保护自己](http://mp.weixin.qq.com/s/Kxe8OzmxCTxYjvjq3rTtlw)
+
+
+...
+
+---
+
