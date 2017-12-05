@@ -7,7 +7,8 @@
 
 
 扫码加入"灰袍技能":
-![qr](qr.jpg)
+
+<img src="qr.jpg" width="30%"/>
 
 
 
