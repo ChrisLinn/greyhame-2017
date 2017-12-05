@@ -11,6 +11,7 @@
 - [AI ML](#ai-ml)
 - [IP](#ip)
 - [验证码](#验证码)
+- [CTF](#ctf)
 
 ## 技能树
 
@@ -580,6 +581,35 @@ traceroute 下，你的路由器外面说不定还有个真正的外网路由器
 <img src="https://file.xiaomiquan.com/ff/f2/fff2d2a9cf8d31dde8b21cde5a1c3c387080fc4711e6039d58a4b571c9811449.jpg" width="25px"/> __别说话吻我头像__: 大学狗一枚 暑假准备写的项目也是和验证码有关的 刚看了看极验验证的验证码 第一代的字符验证码我想拿下的方法应该都是比较成熟的 二值化 去噪 处理字符 匹配字符 第二代滑动验证的话我觉得是现在较为普遍的 看直播的时候经常看到 对于这个的拿下 我是这样子想得 细心观察你会发现滑块要拖动到的位置 形状与滑块相同 更重要的是颜色明显是比背景图片的颜色要深沉的 这样的话可以利用这个特点读取滑动验证码图片(这里的图片是模拟鼠标点击之后出现要拖动的图片) 分析里面的像素(玩过ctf隐写里面就有个LSB 这里的话也要用类似的手段分析像素) 找到像素颜色深度明显不一样的地方 而且这个滑动验证并不是要你百分百位置正确 有误差也是可以通过的 这点也可以利用 对于第三代的点击行为验证码 暂时没有思路 我看一下相关文档看看有没有什么好点子
 
 <img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/ff/f2/fff2d2a9cf8d31dde8b21cde5a1c3c387080fc4711e6039d58a4b571c9811449.jpg" width="25px"/> __别说话吻我头像__: 如果你动动手就好了，你就会卡在拖动轨迹上，拖动轨迹的解决方法大致是我问题里说的那样。你这也是传统思路～
+
+
+...
+
+---
+
+## CTF
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-09:
+
+
+__#资源#__
+
+  全球知名 CTF 历届 write-ups 
+[GitHub - ctfs/write-ups-2017: Wiki-like CTF write-...](https://github.com/ctfs/write-ups-2017)
+
+ 
+
+喜欢玩 CTF 的，可以看看。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 大家也可以关注一下ctftime，最新的writeup都会及时推送。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 嗯 这个也很好 权威
 
 
 ...
