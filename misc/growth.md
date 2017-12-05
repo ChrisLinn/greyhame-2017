@@ -88,6 +88,46 @@ CTF 经历过、爽过就行了，没经历过也没事，又不是必须的。�
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-29:
+
+> Oliver 提问：
+余大大，最近一个月从Web安全转到了App安全，感觉测重点还是业务和服务端，余大大怎么看待app安全测试呢
+
+
+挺好的，Web 安全的技能还能延续。
+
+App 安全分为几大块：
+
+1. 本地安全，如：权限控制、数据安全、第三方接口安全、恶意代码执行、代码保护等
+
+2. 通信安全，如：SSL 证书机制、一些加密算法等，主要对抗中间人劫持
+
+3. 云端安全，由于很多是走 HTTP 这种轻量级协议，所以 Web 安全的技能在这可以复用起来
+
+那么做 App 安全测试这些都需要覆盖。还有一般情况下除了网络安全外，企业还会考虑业务安全，比如风控有关的，对抗羊毛党。
+
+App 安全审计推荐个不错的自动化平台 Janus(appscan.io)，看看，可以开眼。另外我昨天发的那个“渗透技能树之利器”，里面有 Android 安全审计相关的平台或工具，可以也顺便了解看看。
+
+工欲善其事，必先利其器。
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-29:
+
+> 匿名用户 提问：
+余弦，你好，我一直有个疑问，困惑了很久，学web攻防需要了解一个请求响应过程在各个部分（浏览器各个层次，服务器的各个层次）的详细解析过程么？如果需要，那需要了解到什么层次？以及了解的途径，能否指明一个方向，自己虽然也挖过一些漏洞，但是觉得自己并没有踏踏实实的明白，望解答，谢谢。
+
+
+需要，非常详细。
+
+了解途径可以看看我以前的一个回答：
+
+[零基础如何学习 Web 安全？ - 知乎](https://www.zhihu.com/question/21606800/answer/22268855)
+
+
+---
+
 
 ## 职业生涯
 
@@ -156,5 +196,37 @@ CTF 经历过、爽过就行了，没经历过也没事，又不是必须的。�
 
 更多情况，我建议其他人可以评论说说，方便大家一同参考。
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-01:
+
+> 匿名用户 提问：
+能和余弦大牛交流的机会非常宝贵，感谢余弦提供这么一个圈子。
+我想请教一下，对于中高级的渗透测试人员，在面试时应该问什么问题，或者从什么方面来评价候选人员的能力，技术水平。
+
+
+1. 问内网渗透实战经验，比如如何持久化，回连、数据回传如何做，这类
+2. 问挖过什么重要 0day 及编写过什么不错的利用
+3. 问如何看待落马七步杀
+
+😏
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 什么是落马七步杀
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 
+[Cyber Kill Chain® · Lockheed Martin](http://www.lockheedmartin.com/us/what-we-do/aerospace-defense/cyber/cyber-kill-chain.html)
+
+
+<img src="https://file.xiaomiquan.com/1b/56/1b5688b7f998d36743d8be15316cbca7c8257f305fef2e7e01daa043d827db35.jpg" width="25px"/> __DarkEvil__: 我面试很简单，  把站日下来再说  其它不逼逼  当然给的站肯定是我们自己塔的也是有方法可以搞下的。 因为我在遇到的人里面嘴上功夫很强，结果连 sqlmap常用参数都不会
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__ replies to <img src="https://file.xiaomiquan.com/1b/56/1b5688b7f998d36743d8be15316cbca7c8257f305fef2e7e01daa043d827db35.jpg" width="25px"/> __DarkEvil__: 是啊。这个是一个好办法。
+
+
+...
 
 ---
