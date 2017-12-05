@@ -5,8 +5,12 @@
 - [Vim](#vim)
 - [git](#git)
 - [端口转发](#端口转发)
+- [代理](#代理)
 - [crawler](#crawler)
 - [Dark Web](#dark-web)
+- [AI ML](#ai-ml)
+- [IP](#ip)
+- [验证码](#验证码)
 
 ## 技能树
 
@@ -47,6 +51,113 @@
 本圈会长期存在并持续分享，节奏尽可能做到平均一天至少一分享，所以你的知识沉淀也应该养成长期沉淀的习惯。
 
 一起加油吧！
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-04:
+
+
+__#公告#__
+
+  照顾恐慌者，明天会发布“安全技能树极简版”，敬请关注。😎
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 要是像猪猪侠的ppt那样，公布技能学习的资源就更赞了！
+
+<img src="https://file.xiaomiquan.com/70/24/7024da54169114c4eb02cf2b02a240c57ec748c432139e0938190f463b5246fa.jpg" width="25px"/> __尘__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: ppt能否给个链接，或传一份？
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/70/24/7024da54169114c4eb02cf2b02a240c57ec748c432139e0938190f463b5246fa.jpg" width="25px"/> __尘__: 自己搜下吧，猪猪侠 我的白帽子之路，他微博上也有发
+
+<img src="https://file.xiaomiquan.com/ec/c2/ecc227ca054c7c4a655a2bbd1a676cf38a149b7ef75f7cf351194cbf24b13a27.jpg" width="25px"/> __Ivy__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 并不能找到唉，他的微博叫什么啊
+
+<img src="https://file.xiaomiquan.com/bc/3e/bc3e9334466421eb3f5da3a4f084783617f870995fd3677f152b20e9ce5b1348.jpg" width="25px"/> __远松__ replies to <img src="https://file.xiaomiquan.com/ec/c2/ecc227ca054c7c4a655a2bbd1a676cf38a149b7ef75f7cf351194cbf24b13a27.jpg" width="25px"/> __Ivy__: ringzero  文件是叫“我的白帽学习路线”
+
+<img src="https://file.xiaomiquan.com/bc/3e/bc3e9334466421eb3f5da3a4f084783617f870995fd3677f152b20e9ce5b1348.jpg" width="25px"/> __远松__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 刚看了猪猪侠的ppt，强调的是基础知识，刚好和cos的安全技能树互补👍
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-05:
+
+
+__#公告#__
+
+ 
+__#资源#__
+
+ 安全技能树简版 V1 正式发布
+
+本来是想只出极简版本，想着不过瘾，就出了个简版，不那么复杂，但是内容也比较丰富了。
+
+包括如下 10 大项内容：
+
+说明
+高效习惯
+正则表达式
+数据相关
+从脚本到大并发
+HTTP
+各种协议
+漏洞测试
+渗透测试
+防御
+
+本圈的同学可以先睹为快！😏
+
+线上版本：
+
++ [安全技能树简版](http://evilcos.me/security_skill_tree_basic/index.html)
+
+
+
+图片版本：
+
++ [security_skill_tree_basic.png](http://evilcos.me/security_skill_tree_basic/security_skill_tree_basic.png)
+
+
+
+源文件：
+
++ [security_skill_tree_basic.xmind](http://evilcos.me/security_skill_tree_basic/security_skill_tree_basic.xmind)
+
+
+
++ [security_skill_tree_basic.mm](http://evilcos.me/security_skill_tree_basic/security_skill_tree_basic.mm)
+
+
+
+后续本圈的分享会围绕这份安全技能树进行逐一解读，如果你都能掌握好，这个网络世界，还有什么是大问题？
+
+这份简版至少半年不会有大变化，快点跟上吧。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 赞！对比了一下技能树，发现自己过去一年没有白费！
+不过在安全方面，原来技能树上的例如XXS和SQLI的测试环境有没有必要补上？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 简版没必要，这里提供的几个漏洞环境其实已经很全面了
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 👌
+
+<img src="https://file.xiaomiquan.com/67/3d/673d53bb43c2bd967a9e6a5f48a7110c99d1e74bf35d7151cd263e7aeb01048d.jpg" width="25px"/> __Lever__: 各个分叉可以并行着折腾吧？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/67/3d/673d53bb43c2bd967a9e6a5f48a7110c99d1e74bf35d7151cd263e7aeb01048d.jpg" width="25px"/> __Lever__: 可以
+
+<img src="https://file.xiaomiquan.com/73/46/7346088fcbd428bef2055102b2eb708048b824a0e3a18a369d5c40ef3265e14c.jpg" width="25px"/> __TomW__: 请问，硬件方面的iphone +ipad+Mac，主要优势在哪方面
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/73/46/7346088fcbd428bef2055102b2eb708048b824a0e3a18a369d5c40ef3265e14c.jpg" width="25px"/> __TomW__: 效率高、安全、快
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: mac默认可省鼠标一枚。
+
+
+...
 
 ---
 
@@ -228,6 +339,19 @@ __#姿势#__
 
 ---
 
+## 代理
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+余大 能否推荐一款windows上用的稳定的反向socks代理工具？开源的也行
+
+你可以先看看安全技能树里推荐的端口转发那些内容，看看是否有你需要的。
+
+
+---
+
+
 ## Crawler
 
 
@@ -299,6 +423,73 @@ Python编程实战
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-07:
+
+> Coco413@ATToT 提问：
+请问cos一个好的爬虫除了具备分布式，去重，ajax ，登录扫描等，还应该具备哪些？还有个问题就是登录扫描的cookie 有效性改如何维持
+
+
+如：
+
++ 字符集编码
++ HTML/XML不规范
++ 链接伪协议及不规范
++ 各种文件类型
++ 网页跳转：服务端、客户端（Meta、JavaScript、Flash等）
++ Cookie/认证会话维护
++ 代理维护
++ GPC(Cookie/Post/Get)参数提取
++ HTTP多种请求
++ 超时：连接超时/读取超时
++ JavaScript动态出来的链接
++ AJAX请求
++ 链接爬取去重算法
++ 广度深度算法
++ 并发：进程/线程/协程
++ 调度：同步/异步
++ 各种内存优化
++ 各种异常维护
++ 灵活配置
++ 灵活扩展
++ 优秀的文档...
+
+Cookie 这个维护，本质原理：看浏览器怎么做的，尽量去模拟之。很多场景可以通过把过期时间设置为很久以后，但这个得看目标场景，差异不小。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 以上文字来自我以前的这篇文章：
+
+[写爬虫很简单但也很难(附某美女站爬虫源码)](http://mp.weixin.qq.com/s/yRsH0mgcWkqQwJcCL9VnmA)
+
+
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 感谢，我的场景是个漏扫，我现在做法是后台一直带这个cookie 访问并保存最新cookie 让他一直有效，我漏扫需要对应那个站时候再取对应的cookie ，但感觉不够高效。。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 在复杂业务场景下，Cookie 维护是很复杂的事，不一定最新 Cookie 就最有效，这个很头疼，不那么讲究的话，不一定非追求极致。
+
+你感觉不高效的点是什么？
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 不高效主要一是对系统资源调度要一直后台在访问，有时候可能触发对方网站反爬虫机制，还有即使维护了也有登陆失败等情况，所以请问cos对于扫描器相对环境不复杂的场景中会话改如何维护有什么建议吗？是直接不维护根据用户输入的headers判断失效时间，如果时间长就不维护，时间短就一直访问这样可以吗？感谢感谢！
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 不高效主要是我一直在访问维护，即使一直访问还会出现登录失败等情况，请问cos对于一款扫描器来说如果要实现登录扫描这种不太复杂的场景下，实现登录扫描会话维护有什么好的建议吗
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 你得说你用什么编程语言来实现这个。
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: Python..
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: Cookie维护你用的什么库
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: Requests
+
+<img src="https://file.xiaomiquan.com/bd/87/bd872d6bf8f2e37a8687398bc1bc0af07f9b896fc43c3663a77f830db1ac4c5c.jpg" width="25px"/> __ken🐜__: 小象学院有爬虫的课
+
+
+...
+
+---
+
 ## Dark Web
 
 
@@ -327,6 +518,69 @@ Google AlphaBay
 <img src="https://file.xiaomiquan.com/25/54/2554db8a586cc8faa9975308b54f5988af68e0b341cb88b77e90e4c05ebeab88.jpg" width="25px"/> __Immortals__: alphabay，就像淘宝般存在，eth.xmr.btc主要流通货币。
 
 <img src="https://file.xiaomiquan.com/94/84/948404f2db7578409ae23a5bfbec08002ed6714f9d48fd7301f0abf11b140d29.jpg" width="25px"/> __有水有生命__: 这个看的懂嘿嘿一下就上了，，发现你用tor不用代理直接就能上去
+
+...
+
+---
+
+## AI ML
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+余弦大大，请问下目前安全圈跟现在很火的人工智能有什么结合点比较有前景的吗？你作为行业里面的资深专家，关于两者的结合有比较看好的未来发展方向吗？目前在学习机器学习方面的东西，还希望能得到指点
+
+
+我也看重这个结合的未来，攻防领域很多应该都可以，尤其是涉及到需要大量运行、大量计算、大量样本的场景下。
+
+我最近在写一个 XSS 漏洞 fuzzing 框架，就在琢磨如何融入 AI，就这么小的一个点，如果真融入好了，我会很兴奋。
+
+
+
+---
+
+## IP
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-05:
+
+> 匿名用户 提问：
+为什么路由器里状态显示的外网IP和从网页查询的公网IP不一样
+
+
+traceroute 下，你的路由器外面说不定还有个真正的外网路由器
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b7/f5/b7f5c4ac2c8c032c26ba4fd222cebd77a07b4d0d3ee27ac28e2e3ae8907fc59f.jpg" width="25px"/> __兜兜有糖不给你吃__: Tracert的瘟逗死，traceroute的Linux
+
+
+...
+
+---
+
+## 验证码
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-08:
+
+> GeekaLeo 提问：
+极验验证有没有什么巧妙的思路拿下？（传统思路：搜集人拖动鼠标特征的大量数据，提炼特征，也可结合机器学习使其更为精准）
+
+
+大家一起来探讨吧🤕
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/ff/f2/fff2d2a9cf8d31dde8b21cde5a1c3c387080fc4711e6039d58a4b571c9811449.jpg" width="25px"/> __别说话吻我头像__: 大学狗一枚 暑假准备写的项目也是和验证码有关的 刚看了看极验验证的验证码 第一代的字符验证码我想拿下的方法应该都是比较成熟的 二值化 去噪 处理字符 匹配字符 第二代滑动验证的话我觉得是现在较为普遍的 看直播的时候经常看到 对于这个的拿下 我是这样子想得 细心观察你会发现滑块要拖动到的位置 形状与滑块相同 更重要的是颜色明显是比背景图片的颜色要深沉的 这样的话可以利用这个特点读取滑动验证码图片(这里的图片是模拟鼠标点击之后出现要拖动的图片) 分析里面的像素(玩过ctf隐写里面就有个LSB 这里的话也要用类似的手段分析像素) 找到像素颜色深度明显不一样的地方 而且这个滑动验证并不是要你百分百位置正确 有误差也是可以通过的 这点也可以利用 对于第三代的点击行为验证码 暂时没有思路 我看一下相关文档看看有没有什么好点子
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/ff/f2/fff2d2a9cf8d31dde8b21cde5a1c3c387080fc4711e6039d58a4b571c9811449.jpg" width="25px"/> __别说话吻我头像__: 如果你动动手就好了，你就会卡在拖动轨迹上，拖动轨迹的解决方法大致是我问题里说的那样。你这也是传统思路～
+
 
 ...
 

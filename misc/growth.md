@@ -1,10 +1,10 @@
 # 自我提升/职业生涯
 子目录:
-- [入门/提升](#入门/提升)
+- [入门 提升](#入门-提升)
 - [职业生涯](#职业生涯)
 
 
-## 入门/提升
+## 入门 提升
 
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-26:
@@ -90,31 +90,6 @@ CTF 经历过、爽过就行了，没经历过也没事，又不是必须的。�
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-29:
 
-> Oliver 提问：
-余大大，最近一个月从Web安全转到了App安全，感觉测重点还是业务和服务端，余大大怎么看待app安全测试呢
-
-
-挺好的，Web 安全的技能还能延续。
-
-App 安全分为几大块：
-
-1. 本地安全，如：权限控制、数据安全、第三方接口安全、恶意代码执行、代码保护等
-
-2. 通信安全，如：SSL 证书机制、一些加密算法等，主要对抗中间人劫持
-
-3. 云端安全，由于很多是走 HTTP 这种轻量级协议，所以 Web 安全的技能在这可以复用起来
-
-那么做 App 安全测试这些都需要覆盖。还有一般情况下除了网络安全外，企业还会考虑业务安全，比如风控有关的，对抗羊毛党。
-
-App 安全审计推荐个不错的自动化平台 Janus(appscan.io)，看看，可以开眼。另外我昨天发的那个“渗透技能树之利器”，里面有 Android 安全审计相关的平台或工具，可以也顺便了解看看。
-
-工欲善其事，必先利其器。
-
-
----
-
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-29:
-
 > 匿名用户 提问：
 余弦，你好，我一直有个疑问，困惑了很久，学web攻防需要了解一个请求响应过程在各个部分（浏览器各个层次，服务器的各个层次）的详细解析过程么？如果需要，那需要了解到什么层次？以及了解的途径，能否指明一个方向，自己虽然也挖过一些漏洞，但是觉得自己并没有踏踏实实的明白，望解答，谢谢。
 
@@ -124,6 +99,125 @@ App 安全审计推荐个不错的自动化平台 Janus(appscan.io)，看看，�
 了解途径可以看看我以前的一个回答：
 
 [零基础如何学习 Web 安全？ - 知乎](https://www.zhihu.com/question/21606800/answer/22268855)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+安全技能树简版里的“高效习惯”，其中最后一个是“情报跟进”，里面提到了 Twitter，这个有同学疑问如何操作。
+
+很简单啊，比如：你关注我的 Twitter: @evilcos，看看我关注了谁，都关注一遍不就是了？我关注的基本都是全球安全/黑客圈内挺牛的人。
+
+顺着这个社交关系不断丰富自己的关注列表，你每天最不缺的就是全球安全情报了...
+
+最后，建议英语一定要跟上，不懂的单词或短语，推荐“Google 翻译”，有 App，不被墙。
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+关于安全技能学习的一点建议：“情报跟进”比如 Twitter 方式，还有不少其他方式，每天都会发现信息量过大，不要过度消耗在这些碎片信息上，知道有这个事就好了，除非是大事，比如一个超级漏洞/事件爆发，那优先级自然会提升到最高。
+
+每天应该合理安排自己的时间，该认真工作就认真工作，业余时间该放松就合理放松，该熬夜就熬夜，年轻人可以多拼，也应该多拼，拼真正的技能沉淀，只有沉淀了这些技能才是你的。
+
+到头来，形成的自己的核心竞争力就是有那么一两项拿手绝活，而不是好像什么都知道，但没一门是真正精通的。
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__: 推荐下腾讯玄武实验室的每日安全动态推送
+
+
+[https://xuanwulab.github.io/cn/secnews/2017/06/06/index.html](https://xuanwulab.github.io/cn/secnews/2017/06/06/index.html)
+
+<img src="https://images.xiaomiquan.com/Fkevv-sgpARovKYidEaBaLWeo-VA?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:eAzZNj7uYNnvX3vwLMuCCGaFx3k=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+工具黑客，或者说脚本小子，怎样再进一步，感觉遇到了瓶颈
+
+
+编程提升。
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> zz小子 提问：
+请问如果要自己做一套黑客工具难吗？需要学什么知识。
+
+
+不难，比如学会 Python，找个顺眼的开源项目（安全技能树里列了很多），依葫芦画瓢，慢慢就会有感觉了。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b8/77/b8776f7d3ce9106e867038e9e861c0cfa2f0f3e72bf88a6964856e747de20088.jpg" width="25px"/> __zz小子__: 嗯嗯，最近在学js和python，想着先自己做个网站，慢慢摸透了再进一步去学xss什么的
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 罗卜卜卜卜卜卜 提问：
+弦哥，我现在基础也有点了，就是不是很牢固。每次测试都是用扫描器扫一下，发现没什么漏洞就无从下手了，该怎么提高啊？谢谢😭
+
+
+赶紧脱离“扫描器工程师”的身份，了解你有机会接触到的每个漏洞机制，并精通一门保值编程语言。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/42/2a/422a6ac40779c62128d0181af33000a7a7ce7cc022c8baeb3d1b58fa660ca4d5.jpg" width="25px"/> __罗卜卜卜卜卜卜__: 谢谢弦哥，我还以为翻不到我的牌了呢。😁
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+余弦哥好，为了切换职业方向我学了python。加上一直以来对信安方面都比较感兴趣，想问问弦哥基于python入门信安的话是不是一个好的选择？如果想要进一步深入需不需要学习C或C++？
+
+
+是个好选择，你能力足精力够，C类语言也可以吃透，很保值，精力再够的话，其他保值语言，如：Java、JavaScript、PowerShell、GO 都可以学...
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-07:
+
+> 慕风 提问：
+余弦大大，我们学校没有信息安全专业，之前也没有相关的社团或者兴趣小组，这一块的整体实力都很弱。
+我大一，上学期加入了一个由大二学长组成的新兴的网络安全小组，但差不多都是小白，我凭着一个小菜的实力就成了副组长。
+暑假要带着大家一起学习，但我清楚自己的水平，感觉压力很大，不过动力也十足。
+我想从这一届起能在学校把这一块儿做好，但没有经验，不知道后期该怎么安排，我现在只能想到带着大家一起学习，然后打打ctf，争取拿奖，有点名气，才好继续发展，然后呢，我就有些迷茫了。感觉ctf只能是暂时性的。
+而且大家都不积极，平时群里基本没动静，没有学习氛围。
+恳请大大指点一下方向，也传授一下关于带队的一些经验。
+
+
+关于 CTF，可以看我前面的回答。
+
+团队不积极，无所谓，不用试图去照顾一个不积极的人，以后毕业了，海阔天空，各有千秋。看远点，不要因为这个迷茫。
+
+至于带队经验，首先记住一句话：兵熊熊一个，将熊熊一窝。如果你自己不够强悍，怎么带队？
+
 
 
 ---
@@ -228,5 +322,146 @@ App 安全审计推荐个不错的自动化平台 Janus(appscan.io)，看看，�
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-05:
+
+> 匿名用户 提问：
+余弦大哥你好，我是一名PHP程序员，我对渗透和网络安全有浓厚的兴趣，平时也有关注安全领悟的文章和挖掘漏洞（基本挖不倒），打算以后从业网络安全的工作但我觉得目前的工作水平还尚未提高，高不成低不就的。我现在是否只专注网络安全的技术，还是一边提升现在的工作和网络安全技术？
+
+
+不要放弃自己的核心竞争力，PHP 强的话，做这方面漏洞审计会是你的优势。而且精通一门编程语言，对于挖其他语言的漏洞也是有好处的，很多思想的通的。
+
+你看我发布的那个安全技能树简版，这些技能我们都是并行掌握，互相补充。
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+一个被和谐又恢复了的回答：国内信息安全行业真的很有前途，职位空缺很大吗？
+
+<img src="https://images.xiaomiquan.com/Fi1ZH9PXJwP9WqOf7O-eVa6m0zTd?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:xSE9ebmq__L5_agWHjEeyNEleEQ=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 这几年信息安全从边缘化到主流，到浮躁。
+
+<img src="https://file.xiaomiquan.com/cd/f6/cdf616f3c3482ab88d82a504400e8de7f0beb76954a7ccdf4b2240ade40df4a8.jpg" width="25px"/> __Daxer__: 大大 你说了啥被和谐了😂
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/cd/f6/cdf616f3c3482ab88d82a504400e8de7f0beb76954a7ccdf4b2240ade40df4a8.jpg" width="25px"/> __Daxer__: 仅仅提了习大大...
+
+<img src="https://file.xiaomiquan.com/cd/f6/cdf616f3c3482ab88d82a504400e8de7f0beb76954a7ccdf4b2240ade40df4a8.jpg" width="25px"/> __Daxer__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 贼溜🤣
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: 武汉就由武大成立网络学院，直属网信办。
+
+<img src="https://file.xiaomiquan.com/ba/7a/ba7a84cec143b8357d49ee72562aefcb4181e33187fa4883a573360308dd254f.jpg" width="25px"/> __来先生__: 漏洞盒子需要人
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+余弦大大好，我是一名大四的学生马上就要毕业了，大四期间在一家安全公司做了差不多一年的实习，web安全方向，感觉技术上提升不是很大，感觉自己技术还是不行，但思想开拓了不少，对于像我这样的要进入社会的您有什么意见？顺便问一下，您的团队还招人吗？招人的话有什么要求？
+
+
+如果你能坚定未来5年想成为的角色，比如 Web 安全真的就是你最喜欢的？你会为了一个漏洞彻夜调试？你会为了一个漏洞牺牲整个周末十一长假过年长假，就为了吃透这个漏洞？
+
+先回答这些问题，再问，否则我又不是你，不知道你真正的内心是如何的，对吧？
+
+我团队暂无招人计划，如果有也是要符合我发布的那份安全技能树的至少50%感觉吧，不过也不一定，如果招非技术岗位，那就不用这样了...
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+大大，请问做安全是适合大四直接去实习还是适合考研呢？
+
+
+这个问题关键看你。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/0e/48/0e48d9ee4e4299ba09ac5217c23e38ceeb13e48357ee2261c6c03282b5807781.jpg" width="25px"/> __Chen__: 不知道我的见解对不对。高校对于网络安全方面的教育，大多数的重点都在理论上，而理论重点又在密码学。我某985网络安全专业，实战课几乎没有，反而有很多数论，密码学相关知识，我们攻不下一个网站，但是都可以手写RSA加解密算法。我想学习安全，更想挖掘一个漏洞攻下一个网站吧。所以我认为，安全实战的话，还是不要读研了，直接工作吧。这只是我目前阶段的一点拙见，也可能一叶障目不见泰山，因为毕竟还没经历过。
+
+<img src="https://file.xiaomiquan.com/ec/3a/ec3af602567da6c4e18c636d29f3f2079423710b48eb36caba3455ce97202dac.jpg" width="25px"/> __无__: 哈哈，没事，谢谢你了😂
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/0e/48/0e48d9ee4e4299ba09ac5217c23e38ceeb13e48357ee2261c6c03282b5807781.jpg" width="25px"/> __Chen__: 其实研究生也可以，实战机会完全可以在课堂外做
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+本科毕业后进入某大型互联网公司作为安全开发几年了。渐渐发现日常的工作已经完全没法提高自己。现在搞不清自己的职业规划，也感觉目前没法找到一个可以长期发展的安全方向。请问能否提供下一般安全研发的发展方向，以及是安全上未来有哪些靠谱的方向？谢谢哈
+
+
+安全技能树我感觉值得你参考下。至于未来靠谱方向：
+
+云安全、大数据安全、移动安全、AI 安全、物联网安全、网络空间安全、...
+
+其实我们可以先看哪个行业起来了，安全是附属品，也会跟着起来。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 还有多看看暗网，很多未来苗头会首先出现在暗网这种人性阴暗的地方。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 不过暗网也别过看，学坏了就不好了😶
+
+<img src="https://file.xiaomiquan.com/d2/18/d218f1e1f6265c71a5b8590ca5f47d80f81ca4d5998c8fc968e01ad974e43fb0.jpg" width="25px"/> __trav__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 暗网里有些网站好变态啊 儿童性……还有专业的贩毒网站……
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/d2/18/d218f1e1f6265c71a5b8590ca5f47d80f81ca4d5998c8fc968e01ad974e43fb0.jpg" width="25px"/> __trav__: 所以...
+
+<img src="https://file.xiaomiquan.com/da/f9/daf9bf31ff47982c17560484c5c64407d5a4248f08e5b2a7f35a4193c00d7beb.jpg" width="25px"/> __骛游__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 目前团队从事的大数据安全，大部分时候都在做多数据源的联合展示。我觉得大数据安全作为一个突破口，还需要更多安全开发算法通吃的人才
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 掉到鱼缸里的猫 提问：
+余弦大大，我想问一下您觉得ctf的练习，在整个学习过程中应该放在一个什么样的位置？
+我现在大二，身边好多同学都狂热于ctf，但是我看技能树和其他一些安全和渗透方面的资料和教程，感觉和ctf的差别很大，和同学一起也做过一些ctf的题，感觉很浮躁，机制只是浅尝辄止就要做下一道了，感觉收获的并不是很多。
+
+
+如果未来想把 CTF 当作职业，那就一直玩不断玩，毕竟是职业。
+
+如果不是把 CTF 当职业，玩几场还是有意义的，能拿个好名次更好了，几年前我带队伍去打了场，团队拿了个冠军，小伙们因为打这个突击沉淀了不少好技能。而更早年还没 CTF 概念，我们玩的是黑客过关挑战，也挺有意思。但毕竟不是职业，玩玩就够了，因为我们得把绝大部分精力放到能成为我们职业的东西上。
+
+所以这个问题的关键点是，你先把哪个细分领域作为职业。看看网上各大安全公司的招聘就知道，安全领域的职业还是好些的。
+
+顺便提一个，比如有人因为 CTF 拿了某比赛的世界冠军，不代表他就是第一黑客，因为细分领域实在太多，只能说他至少是 CTF 这个职业领域里的佼佼者。
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-08:
+
+> 匿名用户 提问：
+请问 在安全相关的公司工作平时都会干些什么呢，比如web安全，不会总是在挖漏洞吧？
+
+
+得看你从事具体什么岗位，比如 Web 安全，是做漏洞研究，还是相关安全产品研发。如果是漏洞研究，那每天主要任务就是漏洞分析、挖掘、PoC/Exp 编写，漏洞爆发了赶紧第一时间应急出上诉内容。
+
+
 
 ---

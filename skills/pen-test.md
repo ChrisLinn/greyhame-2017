@@ -1,6 +1,7 @@
 # Penetration Testing
 子目录:
 - [webshell扫描](#webshell扫描)
+- [域渗透](#域渗透)
 - [Exchange](#exchange)
 
 ## webshell扫描
@@ -16,6 +17,19 @@
 
 ---
 
+## 域渗透
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
+
+> 匿名用户 提问：
+想学习有关域渗透的一些资料，windows域 08/12/WIN10安全检测及bypass，挺说还有linux域，感觉在这方面很欠补，毕竟环境接触的少，网上说的都模棱两可，大多不可行，弄的晕头转向，想权威体质的学习一下
+
+
+安全技能树里推荐了不少，如果你真想感受，首先得“坏”。
+
+
+
+---
 
 ## Exchange
 
