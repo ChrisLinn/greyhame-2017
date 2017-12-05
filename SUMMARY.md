@@ -10,6 +10,7 @@
     * [IoT](skills/iot.md)
     * [社工](skills/social-eng.md)
     * [取证](skills/forensic.md)
+    * [CTF](skills/ctf.md)
     * [防御](skills/defense.md)
     * [杂](skills/misc.md)
 * [工具](tools.md)

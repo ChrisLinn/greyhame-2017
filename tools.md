@@ -1,14 +1,17 @@
 # Tools
 子目录:
 - [合集](#合集)
+- [getsploit](#getsploit)
 - [Metasploit](#metasploit)
 - [DVWA](#dvwa)
 - [BeEF](#beef)
 - [nmap](#nmap)
+- [Kali](#kali)
 - [OSINT](#osint)
 - [Secure Headers](#secure-headers)
 - [隐写](#隐写)
 - [Cracking](#cracking)
+- [zANTI](#zanti)
 
 ## 合集
 
@@ -32,7 +35,57 @@ Windows、Linux、Tunnel、JavaScript、Browser、OSINT、Domain、Dir、Social-
 
 
 __分享文件:__
-[渗透技能树之利器 v1.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/docs/%E6%B8%97%E9%80%8F%E6%8A%80%E8%83%BD%E6%A0%91%E4%B9%8B%E5%88%A9%E5%99%A8%20v1.pdf)
+[渗透技能树之利器 v1.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/%E6%B8%97%E9%80%8F%E6%8A%80%E8%83%BD%E6%A0%91%E4%B9%8B%E5%88%A9%E5%99%A8%20v1.pdf)
+
+---
+
+## getsploit
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-17:
+
+
+__#工具#__
+
+getsploit
+
+本圈嘉宾@Moriarty  的分享。
+
+getsploit
+
+这是我用过的，迄今为止最好用的exploit搜索工具。首先，它支持在线搜索，它的exploit来自于 Exploit-DB, Metasploit, Packetstorm等等，并保持同步更新。它另一个更贴心的功能是可以指定-m参数，将搜索到的exploit自动下载下来（很方便的说）。另外它也支持离线，你只需要指定-u参数（--update），就可以将完整的exploit库离线到本地(目前数量大概在2亿2千万左右）。
+
+项目地址：
+
+
+[GitHub - vulnersCom/getsploit: Command line utilit...](https://github.com/vulnersCom/getsploit)
+
+
+
+<img src="https://images.xiaomiquan.com/Fkbxi6FZacx-3UZORwxONU-uQ5Gg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ckq-otnhitV3uiFizc_geTk-EHE=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FsrNMbhyZwPf5xtBMWsZPkpo8mbW?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:4bUuRoqH28JiuV3VWJ2uSdjs8jI=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: Python2.7.*内置sqlite3 并不支持FTS4 得下sqlite和Python源码编译 离线查询还得再折腾一下
+
+<img src="https://file.xiaomiquan.com/48/65/48656b94e9e7832ed91ddb18cd8a7113a76b326cdbee625bccf6d77054dc1838.jpg" width="25px"/> __~~__: searchsploit也很好用啊，本身就是exploit-db的离线版，当然也支持查exploit的链接，也可以随时update
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/48/65/48656b94e9e7832ed91ddb18cd8a7113a76b326cdbee625bccf6d77054dc1838.jpg" width="25px"/> __~~__: 这个还包括其他db
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 居然有2亿多记录？？
+
+<img src="https://file.xiaomiquan.com/34/67/34670901cfe95bb707b2e89bf45d6b8f30fd46af445923331ac80a871991f14b.jpg" width="25px"/> __咯吱咯__: 我想问下载那么多会不会给电脑带来压力……
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 另一个类似的：
+[GitHub - 1N3/Findsploit: Find exploits in local an...](https://github.com/1N3/Findsploit)
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/34/67/34670901cfe95bb707b2e89bf45d6b8f30fd46af445923331ac80a871991f14b.jpg" width="25px"/> __咯吱咯__: 不会吧
+
+
+...
 
 ---
 
@@ -99,6 +152,54 @@ Enable swap on boot:
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/c7/0e/c70e7f2914679c3ee81fe480ffd43b50fba930b7a160aba09eadbd6c4713c7d7.jpg" width="25px"/> __自牧__: 没试过，至少一个G
 
 <img src="https://file.xiaomiquan.com/c7/0e/c70e7f2914679c3ee81fe480ffd43b50fba930b7a160aba09eadbd6c4713c7d7.jpg" width="25px"/> __自牧__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 好的，谢谢余哥
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-06-23:
+
+__#工具#__ __#预告#__
+
+Metasploit是一款开源的渗透测试框架，自从它问世，仿佛人人都可以成为一名黑客。当然Metasploit之所以能成为最优秀的黑客工具，不只因为它命令满屏幕飞的逼格，更因为其有着令人难以置信的安全检测和漏洞利用功能。尤其在内网渗透中，更是无往而不利。在接下来，我将以Metasploit为基础，向大家分享内网渗透相关的知识
+
+Metasploit
+
+项目地址：
+[GitHub - rapid7/metasploit-framework: Metasploit F...](https://github.com/rapid7/metasploit-framework)
+
+
+安装方法：
+[Setting Up a Metasploit Development Environment · ...](https://github.com/rapid7/metasploit-framework/wiki/Setting-Up-a-Metasploit-Development-Environment)
+
+
+
+个人在渗透测试的时候，一般选择在VPS上搭建MSF（推荐，本圈前面有提），系统喜欢Ubuntu
+如果嫌麻烦，也可以直接在本地用VMware安装kali2.0，自带msf。kali2.0安装方法：
+[虚拟机安装kali2.0_百度经验](http://jingyan.baidu.com/article/93f9803f04e292e0e46f5533.html)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 虚拟机的msf是不能外网渗透的吗？必须要外网环境才可以吗？（不是反弹shell那种，就单纯的像蓝屏攻击那种）
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 我好像没有理解到你的意思，这么说吧，无论你的msf搭在什么地方，只要可以让msf能访问到目标机器，直接访问也好，端口转发也好，socks代理也好，就能使用。你可以再具体描述一下情境
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 是不是不太会用虚拟机？
+
+<img src="https://file.xiaomiquan.com/e5/95/e595f513a41c7340aa524a0b47d1673c3a698ffa32fa176df0886938c915d91f.jpg" width="25px"/> __Lion💬💬💬__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 反弹shell需要外网IP我懂yy
+
+<img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 对呀 就是我msf攻击虚拟机可以成功 攻击外网的没有打布丁的服务器不行 提示什么连不上rdp服务 但是3389开了的   不知道是exp不行还是网络问题😤
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 有防火墙吧
+
+<img src="https://file.xiaomiquan.com/23/4f/234f71233cd7de9621f81fe36111b6a6cfe6a0292ea1aab5051ee0ae911c9e50.jpg" width="25px"/> __无意__: 我在centos7上装msf，装了一天都没装上，心都碎了
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ replies to <img src="https://file.xiaomiquan.com/23/4f/234f71233cd7de9621f81fe36111b6a6cfe6a0292ea1aab5051ee0ae911c9e50.jpg" width="25px"/> __无意__: 慢慢装(～o～)Y
 
 
 ...
@@ -288,6 +389,42 @@ Nmap 是玩安全的人必备的工具，无论攻防都必备，基于 Nmap 写
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-20:
+
+半夜问下：谁想成为本圈嘉宾的可以私信我。嘉宾义务：每周至少分享一条干货，促进本圈的发展。好处：成为我们这个虚拟团队成员，这个虚拟团队目前有 4 人，最终不会超过 10 人。😘
+
+...
+
+<img src="https://file.xiaomiquan.com/0a/77/0a779376ed0171ed1b0d4d32b04cfbd349dae7b0bd421f8194ceb0c753f0fcd1.jpg" width="25px"/> __测试测试__: 我来歪楼~~推荐一个书 nmap 6 network exploration and security auditing cookbook😄😄😄
+
+...
+
+---
+
+## Kali
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-18:
+
+
+__#工具#__
+
+推荐 katoolin 快速安装 Kali 任意工具
+
+
+[GitHub - LionSec/katoolin: Automatically install a...](https://github.com/LionSec/katoolin)
+
+ 
+
+Ubuntu 下体验还不错，看源码可以发现是添加了 Kali 的源，然后 apt-get install 安装。
+
+有时候我们的 VPS 是 Ubuntu，想快速安装一些 Kali 里的好工具，就用 katoolin 即可。
+
+BTW：很多开源工具都是 Python 写的，我们在用爽的同时不妨学习下其源码，如果发现 bug 还可以去对应的 GitHub 上提交修正。这种互动很值得鼓励。
+
+<img src="https://images.xiaomiquan.com/FtLBOd503NNTsOrwDZWvfpyYT-Tf?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7VBoWHu9g1ANgaguRGMOKa5Kyq4=" width="50%" height="50%" align="middle"/>
+
+---
+
 ## OSINT
 
 
@@ -447,6 +584,74 @@ sec_headers = {
 ...
 
 <img src="https://file.xiaomiquan.com/fd/52/fd52795f8c90530dd8d49e20cb3ddbccc3ce8bae8e54e99b936597ba4f6c3026.jpg" width="25px"/> __hi404__: hashcat很牛逼的
+
+
+...
+
+---
+
+## zANTI
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-18:
+
+
+__#工具#__
+
+内网渗透神器 App：zANTI 2.5.0 下载
+
+刚刚看到 zANTI 的这篇文章：
+
+
+[zANTI APK 2.5.0 Download For Android 2017 - Zanti ...](http://zantiapk.com/zanti-apk/)
+
+ 
+
+介绍了 2.5.0 的下载，特性如下：
+
++ Hijack HTTP session.
++ Audit passwords.
++ MIMT(Man in the middle attack)
++ Network scanning.
++ Capture downloads.
++ Exploit routers.
++ MAC address spoofing.
++ Create a fake wifi hotspot.
++ Modify HTTP request.
+
+我玩黑手（黑客手机）必定会安装 zANTI，这在做内网的渗透，尤其是自动主机及端口扫描，爆破，一些漏洞利用，路由器攻击，中间人劫持，Wi-Fi 伪造等方面，非常方便。
+
+如果你有安卓手机，可以安装一个体验体验，需要 root。
+
+<img src="https://images.xiaomiquan.com/Fi34-cbHoXhVOAxFlCxN--CjE5NN?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:OLaYLTc5o1l4q1AHyuJwhYB235c=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/17/1c/171c87fc22c8962abf10593ecbffe676b24ca95af8a9073951adb2fb18e4db9c.jpg" width="25px"/> __NashLing__: Fing也不错
+
+<img src="https://file.xiaomiquan.com/43/75/43758f94b2117e0c90d9296c788197e13dfbdc4697b0e9bf77554487bec2b3e7.jpg" width="25px"/> __。东__: 最近新换了一个手机，一加3t，之前听说这个可以刷kali官方推送的nethunter的rom包，然后就自己折腾了一下把它刷到手机上，这个app让我联想到了kali的这款rom，具体参考freebuf:
+
+[移动渗透测试平台搭建 – NetHunter 3.0 - FreeBuf.COM | 关注黑客与极客](http://www.freebuf.com/sectool/124074.html)
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/75/43758f94b2117e0c90d9296c788197e13dfbdc4697b0e9bf77554487bec2b3e7.jpg" width="25px"/> __。东__: Nethunter强大多了
+
+<img src="https://file.xiaomiquan.com/f4/8a/f48a9a75747df8c1d7007d92d14ce161cfb6c950627b0478a854a96b9ee104ff.jpg" width="25px"/> __PattyBug™__: 回去买一加3T😉
+
+<img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__: 昨天稍微玩了一下，把我们宿舍的wifi给黑了，把图片替换为我们宿舍一哥们只穿内裤时的图片。。只是一不小心把自己的手机给攻击了，某些应用连不上网，只能重新刷了一遍系统，真是折腾
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__: 怎么会需要重装？
+
+<img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 试过重启路由器没用，用4g网也没用，重启手机也没用，只能重新刷一下系统了哎~不过还好之前刷过机，一会儿就搞定了
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__: ...缓存估计
+
+<img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 嗯，这个我也想到了，只是手机没有清理缓存的软件，应用也装不了(T＿T)，就重刷了
+
+<img src="https://file.xiaomiquan.com/09/17/09173a8ddd903516f16515893f44703fd4de9ec901a54ac5deeccfe9db189fdd.jpg" width="25px"/> __BigBoy__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 去年想研究NetHunter，当时一加只出到2,买回来是刷上了，不过Type-C连接外置网卡研究了很久都没成功过，有倒过此坑的同学吱个声哈
+
+<img src="https://file.xiaomiquan.com/04/dd/04ddf1425dfc92d843c3e92ca271410f1cead17d4c375db2a4bc20d54753de00.jpg" width="25px"/> __丹青__ replies to <img src="https://file.xiaomiquan.com/09/17/09173a8ddd903516f16515893f44703fd4de9ec901a54ac5deeccfe9db189fdd.jpg" width="25px"/> __BigBoy__: 刷成功了，只是某些东西还不太会配置。。
 
 
 ...
