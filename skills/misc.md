@@ -1,6 +1,7 @@
 # Miscellaneous
 子目录:
 - [技能树](#技能树)
+- [APT](#apt)
 - [Vim](#vim)
 - [git](#git)
 - [端口转发](#端口转发)
@@ -48,6 +49,42 @@
 一起加油吧！
 
 ---
+
+## APT
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-01:
+
+
+__#科普#__
+
+  落马七步杀
+
+落马或洛马，全称“洛克希德马丁”，世界第一武器生产商，存活100多年了，在网络安全方面搞了个 APT 七步杀，指出 APT 攻击的七个经典步骤，细节见其官网：
+
+[Cyber Kill Chain® · Lockheed Martin](http://www.lockheedmartin.com/us/what-we-do/aerospace-defense/cyber/cyber-kill-chain.html)
+
+ 
+
+注：APT 全称高级持续性威胁，可以认为渗透测试最高级阶段就是 APT。
+
+国内很多搞安服（安全服务），接触不到完整的七步杀过程，我之前所说的渗透测试指的正是这个。
+
+所以，你觉得这条路难不难？
+
+我们在防御上，也必须很懂这七步杀，否则如何对抗？
+
+<img src="https://images.xiaomiquan.com/Fu7QRmclPRRTGwpFuH37Vm3P3z0X?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:QF9cNplS4ix0VbeSwVinS0UWFGc=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/bd/52/bd5240ef725ab07f77d1a8c67cdaa7f3ceac055d5eba1b2af0362c3e7fbc2a2f.jpg" width="25px"/> __Z.__: 就4和7能搞定。防御就只能这样子了。防御永远是在攻击之后的，如果想在主动攻击这方面还需要更多配合。“永恒之蓝”是最好的实验样本。
+
+
+...
+
+---
+
 
 
 ## Vim
