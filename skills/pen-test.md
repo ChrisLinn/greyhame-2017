@@ -234,14 +234,101 @@ __分享文件:__
 [SctGenerator.zip](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/SctGenerator.zip)
 
 
-...
+---
 
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: PowerShell 系列😏
+<img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ on 2017-06-24:
 
-<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 这个我喜欢
+Powershell Useful ToolSet by Moriarty@DMZLab
+这是我打算把一些小的有用的工具集成的小项目，目前还没完成，之所以放上来，就是想给大家介绍一些如何写类似这样的powershell程序。目前仅写了一个简单的小功能，其它的后面继续完善。
+把这未完成品放上来，是想给大家介绍一些powershell GUI程序如何去写。一种方法使用powershell studio自带的界面设计器来做，这种方法简单实用，但是也是有许多不如人意的地方（这里不再赘述）。另外一种方法是使用XAML，虽然稍微麻烦了一些，但是看上去更简洁，更通用，也是最常用的方法（尤其对那些没有powershell studio或者不喜欢用powershell studio的童鞋们）。
+
+今天我们重点介绍后一种，其实步骤也很简单：
+
+一、用visual studio进行界面设计（我这里用的visual studio 2017，没有这个的用express版也可以）。创建项目时选择 “WPF应用（.Net Framework）”即可。如附图一所示。
+
+二、画界面。这个就不用多说了，所见即所得，很简单。画完后如附图二所示。
+
+三、把图二中的XAML代码完整复制出来，然后粘贴到powershell代码中，如下所示：
+
+```
+[xml]$XAML = @'
+<Window 
+    x:Class="WpfApp1.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/prese...
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008...
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibi...
+    xmlns:local="clr-namespace:WpfApp1"
+    mc:Ignorable="d"
+        Title="Powershell Useful ToolSet V0.1 By Moriarty@DMZLab" Height="350" Width="566.77" WindowStyle="ToolWindow" Background="#FFF5F1F1" Topmost="True" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="280*"/>
+            <ColumnDefinition Width="279*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="tabctl_1" VerticalAlignment="Top" Height="322" Grid.ColumnSpan="2">
+            <TabItem x:Name="tabItem_obf" Header="Obfustcator">
+                <Grid Background="#FFE5E5E5" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="178*"/>
+                        <ColumnDefinition Width="371*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.ColumnSpan="2" Content="Randomly obfuscate powershell command (using enviroment variable):" HorizontalAlignment="Left" Height="23" Margin="10,10,0,0" VerticalAlignment="Top" Width="529" HorizontalContentAlignment="Center" Foreground="Red"/>
+                    <Button x:Name="btn_go" Content="GO" Grid.Column="1" HorizontalAlignment="Left" Height="19" Margin="31,126,0,0" VerticalAlignment="Top" Width="115"/>
+                    <TextBox x:Name="textbox_output" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="85" Margin="10,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="529"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="tabItem_gen" Header="Generator">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>
+
+'@
+```
+
+四、添加PresentationFramework程序集的引用：
+
+`Add-Type -Assembly PresentationFramework`
+
+或者：
+
+`[void][system.Reflection.Assembly]::LoadWithPartialName("PresentationFramework")`
+
+五、需要删除几行复制过来的XAML代码，不然会有错误（你事先手动删除然后再复制过来也行，不过我还是喜欢交给代码来完成）：
+
+```
+$XAML.Window.RemoveAttribute('x:Class')
+$XAML.Window.RemoveAttribute('mc:Ignorable')
+$XAML.Window.RemoveAttribute('xmlns:local')
+```
+
+六、然后就是解析XAML，让你的图形界面显示出来了（事件添加很简单，可以参考完整代码，我这里不多说了）：
+
+```
+$reader = New-Object System.Xml.XmlNodeReader $XAML
+try
+{
+  $Form = [Windows.Markup.XamlReader]::Load($reader)
+}
+catch
+{
+  Write-Host -ForegroundColor Red "Processing XAML Failed!"
+  exit
+}
+$Form.ShowDialog() | Out-Null
+```
+
+是不是很简单？程序运行截图如附图三所示。
+
+powerhsell图形界面开发很简单，而且可以跨平台，等程序最终完成我再放一个最终版。有兴趣的圈友，也可以在我这个代码基础上自己去完善一个出来，记得放出来共享哦
 
 
-...
+__分享文件:__
+[PUTTs.zip](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/PUTTs.zip)
+
 
 ---
 
