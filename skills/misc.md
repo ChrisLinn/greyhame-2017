@@ -278,6 +278,27 @@ Python编程实战
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-03:
+
+> 匿名用户 提问：
+您好，我之前写过一个爬虫，发现每次从服务器获取到的cookie值都不相同。每次发送上次response里的cookie值也不对。这个可能是什么原因？我是遇到反爬虫了吗？可能是他在JavaScript 里面每次都生成新的cookie值吗？谢谢！
+
+
+最简单的判断方式是，你用浏览器 F12 观察看看和你的爬虫请求响应之间的差异。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/5e/da5ee5ad48504d28b2c7a23ff742022057f192ad8861539fcf13daa0a37d1096.jpg" width="25px"/> __TBot__: 抓取酷*收费音乐也是这么干的
+
+<img src="https://file.xiaomiquan.com/a4/0e/a40eeddeb7bef4b0aed678372f9c672d8602ba537490f49fbfcdf17438bf2e18.jpg" width="25px"/> __一只野生的猴子__ replies to <img src="https://file.xiaomiquan.com/da/5e/da5ee5ad48504d28b2c7a23ff742022057f192ad8861539fcf13daa0a37d1096.jpg" width="25px"/> __TBot__: 是JavaScript每次更新cookie值么？
+
+
+...
+
+---
+
 ## Dark Web
 
 
