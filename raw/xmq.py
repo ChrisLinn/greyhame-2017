@@ -14,8 +14,7 @@ token = '' # Your access_token
 name = '' # Your name
 user_id = '' # Your user_id
 avatar_url = '' # Your avatar_url
-# ddd = 'D:\\test\\kkk\\ko\\'#your dir
-ddd = '.\\'#your dir
+ddd = 'D:\\test\\kkk\\ko\\'#your dir
 
 headers = {
     'Host': 'wapi.xiaomiquan.com',
@@ -50,11 +49,21 @@ def saveTopics(groupId):
         ty_1 = que_tak(o[i])
         comm = []
         reut = hv_comt(o[i],comm)
-        wrt_fie(reut,ty_1,ddd)
+        file_name = file(o[i])
+        wrt_fie(reut,ty_1,ddd,file_name)
     print 'down'
+	
+def file(p):
+    file_name = ''
+    try:
+        for i in range(len(p['talk']['files'])):
+            name = p['talk']['files'][i]['name']
+            file_name = file_name+name+'\n'
+        return '**file : **\n'+file_name
+    except:
+        return file_name
 
 def mkdir(path):
-    import os
     path=path.strip()
     path=path.rstrip("\\")
     isExists=os.path.exists(path)
@@ -180,24 +189,38 @@ def hv_comt(p,comm):
         re = ''
         return re
 #write file
-def wrt_fie(reut,ty_1,ddd):
+def wrt_fie(reut,ty_1,ddd,file_name):
     txt = 'txt.md'
     question = re.search('\sreply\s',ty_1)
     if question is not None:
         dir_q = urllib.unquote('%E6%8F%90%E9%97%AE').decode('utf-8', 'replace').encode('gbk', 'replace')
-        news = '***\n'+drop(ty_1)+'\n***\n'+reut+'***\n'
         dir3_q = ddd+dir_q+'\\'
         mkdir(dir3_q)
-        with open(ddd+dir_q+'\\'+txt,'a') as j:
-            j.write(news)
+        with open(ddd+dir_q+'\\'+txt,'a') as oo:
+            pass
+        with open(ddd+dir_q+'\\'+txt,'r') as check:
+            che = check.read()
+            if drop(ty_1) in che:
+                pass
+            else:
+                with open(ddd+dir_q+'\\'+txt,'a') as j:
+                    news = '***\n'+drop(ty_1)+'\n***\n'+reut+file_name+'***\n'
+                    j.write(news)
     else:
         dir = urllib.unquote(str(hash_tag(ty_1))).decode('utf-8', 'replace').encode('gbk', 'replace')
-        news = '***\n'+drop(ty_1)+'\n***\n'+reut+'***\n'
         dir3 = ddd+dir+'\\'
         mkdir(dir3)
-        with open(ddd+dir+'\\'+txt,'a') as j:
-            j.write(news)
-
+        with open(ddd+dir+'\\'+txt,'a') as oo:
+            pass
+        with open(ddd+dir+'\\'+txt,'r') as check:
+            che = check.read()
+            if drop(ty_1) in che:
+                pass
+            else:
+                with open(ddd+dir+'\\'+txt,'a') as j:
+                    news = '***\n'+drop(ty_1)+'\n***\n'+reut+file_name+'***\n'
+                    j.write(news)
+			
 def drop(ty_1):
     ll = re.sub('<e type="hashtag.+?/>','',ty_1)
     return ll
@@ -266,4 +289,4 @@ def getTopicsNums(groupId):
     kkk = json.loads(requests.get(api + 'groups/' + str(groupId) + '/details', headers=headers , cookies=cookies).content)['resp_data']['group']['statistics']['topics']['topics_count']
     return kkk
 
-saveTopics() # set bakup group id
+saveTopics(481818518558) # set bakup group id
