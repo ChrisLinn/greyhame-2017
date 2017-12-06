@@ -32,6 +32,82 @@
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-05:
+
+
+__#挑战#__
+
+既然刚刚有同学说想来些“挑战”，嗯，前段时间想练手 Google 的 CTF，后来发现这个 XSS Game，然后花了一个下午独立通关了 Google 的这个 XSS 挑战（这个应该是比较新的挑战了）。总共 8 关，不那么简单，如果谁独立通关前 3 关（前 3 关其实很简单），那么请评论留言，下周我会公布前 3 关的细节思路，我的思路绝对有亮点，如果你真的玩进去了...
+
+对了，其实攻略有人写过（虽然比较粗糙），如果你偷懒去看，而不是自己独立完成的，那还是别来评论了吧。
+
+挑战地址：
+
+[https://www.xssgame.com](https://www.xssgame.com)
+
+
+
+要翻墙。
+
+如果没什么人玩，以后还是别期待我分享前端黑漏洞挖掘相关的东西了...😏
+
+<img src="https://images.xiaomiquan.com/Fluq5ysg9P99-xMgpWwvLuKaYcDy?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:BZN9PM5f5iCcLRG0_qjPK8j1gpY=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 好家伙，马上玩起，以前玩过这个：
+[http://xss-quiz.int21h.jp/](http://xss-quiz.int21h.jp/)
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 这个我下次再来写攻略，很经典，18关。大家可以先玩 Google 这个。
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 
+
+<img src="https://images.xiaomiquan.com/FgJfCF8Zg1kR0gmlyQL4A83b03xk?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:UfJr0Kgahh1AO-a7-6875RhUis4=" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 
+
+<img src="https://images.xiaomiquan.com/FgddMI0uHCdwNJmjCO0Nr5A6X0lR?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:sft4roGlWzR3MnNl1PxVll3kj9I=" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 
+
+<img src="https://images.xiaomiquan.com/FvuVoquQw9ZhRMf0p1YyZxOEAjVR?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:VcUgR8lqT2WzVXsYN9gVxmcb6GY=" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 第一题，原封不动 `<script>alert()</script>`
+第二题就是双引号和单引号括号urlencode输入
+第三题 `\"`  可以变成  `"`
+
+<img src="https://file.xiaomiquan.com/c8/4d/c84d3b3fb2f71423e6a315e509f1918fe8d921e54c95e219cdb75c4083ed3acb.jpg" width="25px"/> __Loong__: `',alert(),'`
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 被自己蠢哭了，第三题就因为没在抓包工具里url解码，抓狂了好久。。。
+
+<img src="https://file.xiaomiquan.com/c6/19/c619f2f8272cce087de22a13bf084787e929efee10e32381acfb833c8b9a7b3e.jpg" width="25px"/> __乌鸦__: `0');alert('`
+
+
+<img src="https://images.xiaomiquan.com/FqBOss10t51xjQEn6KC6WNIGK_RN?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Wj7Y0JuWqsXq4gdG1jmDvkkxkdU=" width="50%" height="50%" align="middle"/>
+
+
+<img src="https://file.xiaomiquan.com/c6/19/c619f2f8272cce087de22a13bf084787e929efee10e32381acfb833c8b9a7b3e.jpg" width="25px"/> __乌鸦__: `'onerror='alert()'`
+
+
+<img src="https://images.xiaomiquan.com/Fkhh_Sx3PpFtfjImAY5ZyGuEGG0D?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Jf3LBKlJLtjrlXf-zWbnl37JSp0=" width="50%" height="50%" align="middle"/>
+
+
+<img src="https://file.xiaomiquan.com/02/c2/02c29c774c01e67904e2a54d7c47a07b32e73898a3e9863a47a26b93099e474e.jpg" width="25px"/> __桔多淇__: 想玩又不会的还不让看攻略😱
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/08/5f/085fb0537ae32a57afd19df88c738810e85c9250a3ec4bff1352a84fa871536e.jpg" width="25px"/> __samurai__: 什么意思，我在这被坑了好久，浏览器标签里的字符串都用的双引号，结果choosetab用的单引号😡
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 我也被自己蠢哭了，我把它当做document.write一样去试各种编码了😂
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__ replies to <img src="https://file.xiaomiquan.com/c8/4d/c84d3b3fb2f71423e6a315e509f1918fe8d921e54c95e219cdb75c4083ed3acb.jpg" width="25px"/> __Loong__: 这个方法聪明
+
+
+...
+
+---
+
 ## SSRF
 
 
