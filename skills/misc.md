@@ -2,6 +2,7 @@
 子目录:
 - [技能树](#技能树)
 - [平台](#平台)
+- [书籍报告](#书籍报告)
 - [APT](#apt)
 - [git](#git)
 - [Vim](#vim)
@@ -178,6 +179,55 @@ HTTP
 
 
 ---
+
+## 书籍报告
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-25:
+
+
+__#资源#__
+
+  好书推荐之《黑客秘笈——渗透测试实用指南（第2版）》
+
+第一版刚出我就过了一遍，然后做了推荐，第二版内容更多更新，同样很推荐。
+
+无论是玩渗透，组红队，打 CTF，都可以看这本书，方方面面作为渗透的入门还是不错的。
+
+包括：相关渗透环境的搭建、情报收集、漏扫、漏洞利用、Web 渗透、内网渗透、社会工程学、物理攻击、免杀、破解、绕过、相关资源。
+
+哈哈，这其实也像我的那个安全技能树（我的偏工程化），如果真的认真研读我分享的技能树，我想你应该会真的开窍。
+
+成为实战派吧！JUST DO IT!
+
+<img src="https://images.xiaomiquan.com/Fs_3rlL9MCZfd30lMh2oL3aXbmp5?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:0fnfUSVDLRtsgQYn6leiAgknHso=" width="50%" height="50%" align="middle"/>
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-27:
+
+
+__#资源#__
+
+ 重磅推荐，黑客报告 2017！
+
+这篇报告从茄牛的分享里看到的，这里也推荐给大家，这篇报告确实是一份难得的“非常规网络安全报告”，攻击者视角与防御者视角做得不错，很多数字与观点值得深入琢磨。
+
+无论你是攻还是防，这篇报告都值得你的仔细阅读。
+
+感谢输出报告的公司及译者公司。
+
+<img src="https://images.xiaomiquan.com/FgWUyrsgx_9Me4CYYslj2uRGgimF?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:fIObhRh0Ldvo2ozk3aWsOyTDZOw=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FnOoKbrDQwci7KLouKcprUjZVhzx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PUjWb19auwxE-ijNLmb8atqNK7w=" width="50%" height="50%" align="middle"/>
+
+__分享文件:__
+[黑客报告2017.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/黑客报告2017.pdf)
+
+
+---
+
+
 
 ## APT
 

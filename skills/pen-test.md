@@ -1,5 +1,6 @@
 # Penetration Testing
 子目录:
+- [防火墙](#防火墙)
 - [webshell扫描](#webshell扫描)
 - [域渗透](#域渗透)
 - [MSF](#msf)
@@ -9,6 +10,30 @@
 - [Windows COM](#windows-com)
 - [Exchange](#exchange)
 - [边界设备安全](#边界设备安全)
+
+
+## 防火墙
+
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-06-24:
+
+
+__#姿势#__
+
+  当服务器只开web服务并且防火墙不准服务器对外主动发起链接时，这样来突破！
+
+当我在渗透测试的时候，拿到了web shell可以执行命令时，总想反弹shell出来方便进一步渗透，但是我碰到的环境安全性都做的很好，防火墙策略直接禁止服务器对外发起链接。这样就没法反弹了。
+
+然后我自己有想过突破的方法，我当时想到的是重新封装http的数据包，到服务器后再拆包，转到22端口上去，这样做很复杂，一直没去实现。
+
+今天在freebuf看到这篇文章，就忍不住转过来分享一下，作者在服务器上直接对源端口进行检查，然后将特定的源端口数据通过iptables nat表中PREROUTING 链配合 REDIRECT 重定向到本机22端口去，当时怎么没想到。这个在一些防火墙策略做的很完善的环境下，很有用！
+
+[远程遥控IPTables进行端口复用](http://mp.weixin.qq.com/s/W5npN8YiqG-RBoq2mTv_2g)
+
+
+
+---
+
 
 ## webshell扫描
 

@@ -12,6 +12,7 @@
 - [隐写](#隐写)
 - [Cracking](#cracking)
 - [zANTI](#zanti)
+- [XSS'OR](#xssor)
 
 ## 合集
 
@@ -205,6 +206,27 @@ Metasploit
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-06-26:
+
+
+__#资源#__
+
+  MSF入门练习平台
+
+了解并使用VMware搭建Metasploitable2。 Metasploitable2 是Metasploit团队维护的一个集成了各种漏洞弱点的Linux主机(ubuntu)镜像,方便广大黑扩跟安全人员进行MSF漏洞测试跟学习,免去搭建各种测试环境。 VMware: 直接打开Metasploitable.vmdk即可使用 登陆账号密码：msfadmin msfadmin
+
+Metasploitable2下载地址:
+
+[Metasploitable - Browse /Metasploitable2 at Source...](https://sourceforge.net/projects/metasploitable/files/Metasploitable2/)
+
+
+
+注：目前Metasploitable3也早就发布了，而且环境更贴近实战，不过Metasploitable2更适合MSF入门学习。
+[Metasploitable 3正式发布，附赠全球CTF大赛 - FreeBuf.COM | 关注黑...](http://www.freebuf.com/news/122341.html)
+
+---
+
 
 ## DVWA
 
@@ -655,5 +677,38 @@ __#工具#__
 
 
 ...
+
+---
+
+
+## XSSOR
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-25:
+
+XSS'OR - Hack with JavaScript 开源！
+
+采用 BSD 开源协议，很宽松，不限制传播与商业化，留下作者版权就好。
+
+
+[GitHub - evilcos/xssor2: XSS'OR - Hack with JavaSc...](https://github.com/evilcos/xssor2)
+
+
+
+简单说明下：
+
+上线之后（xssor.io），使用频率还不错。源码是 Python 及 JavaScript，采用了 Django、Bootstrap、jQuery 三个优秀框架，可以完整覆盖前后端，基于这三个框架，开发速度非常的快，整个过程消耗我不到一周时间，其中一半耗时在软件设计上。感兴趣这个过程的，可以读这套源码，很简洁，在开发过程中我特意去掉数据库（因为我觉得我这个应用场景其实不需要数据库）。
+
+既然开源了，后续应该会和新组建的 ATToT 安全团队一起去完善它。
+
+有任何问题，欢迎联系我。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 这个是攻击平台吗
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: xssor.io 玩玩就知道
 
 ---
