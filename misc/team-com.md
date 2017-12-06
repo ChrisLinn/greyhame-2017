@@ -140,4 +140,42 @@
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-03:
+
+> 吕土金 提问：
+弦好，请安。请教一事不懂，看到某支付企业招人，岗位是安全系统开发，负责安全监控和安全风险评估。什么是安全系统开发？风险评估怎么做？没有接触过支付圈子，请您明示。也请各位懂行的给讲讲，谢谢！
+
+
+好吧，这个我不算了解，有了解的同学可以互动下。我的理解是因为支付是非常需要做风险控制的，因为和钱有关，那么一定需要一套完整成熟系统或体系来监控异常，评估风险级别，然后指导采取行动，比如阻止、警报等。这些至少包括：合法用户的账号安全、资金安全，还包括“撸羊毛”风险，比如会有大量“非法”的注册用户，来自大量黑号注册的，对这个支付平台相关业务进行大规模刷单。
+
+由于我没从事这个行业，但多少了解些，算是皮毛吧，更多的留给这个行业的人来互动。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__: 支付🐶路过，感觉岗位从文字看应该是找安全平台建设与监控响应，以及对一些安全事件的处置评估，因为支付机构受人行监管，有很多合规要求。当然也可能会涉及风控，不过支付机构有专门的风控部门，是偏业务的
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__: 嗯 很多合规要求。
+
+<img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 业务又要打插边球，又要快，常导致不安全，所以要评估有啥办法可以既合规又不影响人行技术检查还能保证一定的安全。啊呸，哪有这么好的是记得告诉我😂😂😂
+
+<img src="https://file.xiaomiquan.com/78/e9/78e9ff588e637881e951e6a67a256e8fae0f2bd3cbe34dda75f5839f21405851.jpg" width="25px"/> __吕土金__ replies to <img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__: 监控平台的响应包括什么？例如大量黑账号注册，或者支付频率不正常，或者支付地点可疑等等？请讲讲你在单位都做啥，好吗？给我们普及一下，谢了😍
+
+<img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__ replies to <img src="https://file.xiaomiquan.com/78/e9/78e9ff588e637881e951e6a67a256e8fae0f2bd3cbe34dda75f5839f21405851.jpg" width="25px"/> __吕土金__: 你说的这些大多都在风控规则里面由风控部门通过系统监控
+
+<img src="https://file.xiaomiquan.com/78/e9/78e9ff588e637881e951e6a67a256e8fae0f2bd3cbe34dda75f5839f21405851.jpg" width="25px"/> __吕土金__ replies to <img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__: 略懂。似乎这家单位招的是监控系统运维，最好懂点编程，可以修理系统的人。
+
+<img src="https://file.xiaomiquan.com/e0/68/e068be5010ad7a437c06f83586e6ccbdebe43df1419a8be656e2ff3c763bbc7b.jpg" width="25px"/> __酷陈__ replies to <img src="https://file.xiaomiquan.com/78/e9/78e9ff588e637881e951e6a67a256e8fae0f2bd3cbe34dda75f5839f21405851.jpg" width="25px"/> __吕土金__: 那估计是类似zabbix这类开源监控系统的二次开发？
+
+<img src="https://file.xiaomiquan.com/77/94/7794a6fa7fe3127b708f61d481fc168de96e9be8d2484ddd20ab6edb9153c405.jpg" width="25px"/> __快看这是一只野生的自然卷__: 曾经从事网银与手机银行系统的安全/风险评估，所以提供些参考，对支付系统进行安全评估，可以参考《网上银行系统信息安全通用规范》以及《电子银行安全评估指引》，根据里面的评估内容， 结合人行《非金融机构支付服务管理办法》 制定自己的评估标准，考虑到是安全系统开发，猜测应该是将相关的风险指标整合进安全监控系统，soc一类的，或者业务安全监控，反洗钱，异常交易等，两个领域差异较大，后者很少接触。
+（第一次回答好紧张，怎么表情这么少😨）
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/77/94/7794a6fa7fe3127b708f61d481fc168de96e9be8d2484ddd20ab6edb9153c405.jpg" width="25px"/> __快看这是一只野生的自然卷__: 哈哈 谢谢参与互动
+
+
+...
+
+---
+
 

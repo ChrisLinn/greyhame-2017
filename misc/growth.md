@@ -423,6 +423,32 @@ __#经验#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-30:
+
+转自 TK 的内部分享“个人成长”，已获授权。供安全新人们参考。
+
+<img src="https://images.xiaomiquan.com/FivVL0aN3w1B2e5j_3J54b_6E4xR?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Pn81rBC_64ORwfiEvHbbJgDM7QA=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/9b/52/9b52248b57c6eaf3639d2b39c7b7ee888af58e6ea5ab9045ca4b9dee4f510699.jpg" width="25px"/> __咸鱼__: 问问大佬，现在ss的安全性怎么样，与常规的vpn对比呢
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/9b/52/9b52248b57c6eaf3639d2b39c7b7ee888af58e6ea5ab9045ca4b9dee4f510699.jpg" width="25px"/> __咸鱼__: ss不是为安全而生，不过也挺安全
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/9b/52/9b52248b57c6eaf3639d2b39c7b7ee888af58e6ea5ab9045ca4b9dee4f510699.jpg" width="25px"/> __咸鱼__: 只要注意保证配置正确(预共享密钥别被爆破，算法用aes256），ss服务器可信就好。至于被gfw检测出来，我只知道ss在这方面也做过升级，应该是个博弈过程，不过它的流量特征比vpn要难检测得多
+
+<img src="https://file.xiaomiquan.com/9b/52/9b52248b57c6eaf3639d2b39c7b7ee888af58e6ea5ab9045ca4b9dee4f510699.jpg" width="25px"/> __咸鱼__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 谢谢大佬
+
+<img src="https://file.xiaomiquan.com/7d/22/7d22de0d89f5eee63f931b7ee84a3b8ea7fd48312453571b6e89a7b827d4e526.jpg" width="25px"/> __Langley__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 分支太多了而且安全并没加强很多，像后面加的OTA 也依然还是存在被探查的可能，看墙越不愿意了，ss 还算是活的比较久的了
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/7d/22/7d22de0d89f5eee63f931b7ee84a3b8ea7fd48312453571b6e89a7b827d4e526.jpg" width="25px"/> __Langley__: 不是ota，ota已弃用
+
+
+...
+
+---
+
 
 ## 职业生涯
 
@@ -701,6 +727,39 @@ web安全和渗透测试的区别在哪里？感觉渗透测试包括了通过we
 所以，这样看来想做好，没有什么职业是简单的，都是需要很多年的沉淀。
 
 最关键的是认清自己，多和身边的优秀人碰撞，也可以尝试尝试。35 岁其实正处于男人魅力大爆发年纪阶段。加油。
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-02:
+
+> 匿名用户 提问：
+请教余弦大牛，我毕业后一直在家上班，主要技能是Web渗透(某二线城市)。接一线公司外包的合法渗透项目，工作自由，没有工作压力，老板人好。拿固定月薪，项目完成有1~2K提成提成，毕业后开始五年前从3K慢慢做，到现在12K。没有甲乙方公司工作经验。请问这个收入在圈内如何，还有几年就到而立之年，自感学习能力竞争力已经落后新人，很困惑，不知还能否跳槽，在考虑是否要转安全开发或者安全运维岗位。希望不吝赐教。
+
+
+你可以这样参考下：一线（如北京），优秀的本科应届毕业生进入乙方（你也是在乙方），月薪 10K 起，这个不仅看是否优秀，还得看如下几个因素：
+
+1. 这个岗位带来的价值多大
+2. 公司的营收情况如何
+
+很难简单根据一个人是否优秀来判断他当下收入的，更不可能简单从工作年限来判断一个人的收入。说个很实际的情况，你拿多少收入得看你给企业带去多大的价值，这是上面说的第1点，而如果一个企业发展不好（对应上面说的第2点），也很难给你对等的报酬。对于第2点，如果你觉得这个企业长远来说有前途（或者钱途），那么短期几年不用太在意这些得失。因为一个人拿到的不仅是显现的钱，还有隐性的东西，比如发展。
+
+根据你描述的情况来看，你在家办公，无工作压力，工作5年，现在 12K 月薪。你可以这样算一下呀，如果你在一线城市，且要租房，工作压力很大，那如果是这种状况是拿多少工资？
+
++ 一线城市 + 25%
++ 租房与路费 + 15%
++ 工作压力 + 20%
+
+这里你得加个 60% 至少，那么如果你在北京这样的一线，此时月薪可以拿到差不多：20 K。工作5年，在北京这个高压的环境，拿到这个数谈不上出众，但也还可以。还不说你有提成拿，我觉得你的老板人确实良心。这个数，仅仅是通过这个简单公式来计算，还没考虑到上面说的那两点。
+
+现在工资来看，好像还行，那么关键问题来了，是否继续这样工作下去：没压力，一直待家里。
+
+没压力是很可怕的一件事，你也感受到了，现在越来越多新人冒出来，可能你的工作分分钟就能被替代掉。还有一直待在家里，远程办公，如果没一个好氛围，这个也很危险，未来几年你的职场能力会被弱化到最低。
+
+跳不跳槽看你自己，在自己还不够牛的时候，找个有压力的好平台当然是最好的，还没到而立之年，并不算迟，即使而立，也有机会。强烈建议你和你觉得不错的这个老板深入聊聊，没什么问题是一次坦然聊天解决不了的，如果有，那么再请吃一顿小龙虾。毕竟你拿 3K 工资开始，服务了5年，这很难得。
+
+希望你走出你的困惑。也希望你把我的这个回答认真看几遍，为了回答好这个问题，我琢磨了很久。
+
 
 
 ---

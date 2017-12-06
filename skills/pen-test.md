@@ -357,6 +357,70 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ on 2017-06-29:
+
+渗透技巧之隐藏自己的工具
+大家在做内网渗透的时候，经常要传一些工具到目标机器上执行。有的时候传一次，执行完了就删除了，后来发现还要再用，又要再次上传，很是麻烦而且也容易造成被发现的风险。有的圈友可能会把工具放到一个很深的目录里藏起来，但是这种工具长期放在目标机器上又不安全。今天我给大家介绍一个猥琐的小技巧，可以放心的把工具放在目标机器上，而又不会被发现。
+这里利用的就是VSS（Volume Shadow Copy），首先我们将工具上传到目标机器的某个目录里（比如c:\$Recycler.Bin),我这里方便测试，在c盘新建了一个目录test，并把工具传到了此目录里。然后我们创建C盘的VSS，这里我们可以利用微软的vssadmin工具（我的windows 2008里自带这个工具），如果没有这个工具我们可以利用wmi来操作：
+1.创建VSS：
+vssadmin create shadow /for=c:
+或者
+（Get-WmiObject Win32_ShadowCopy -List).Create("C:\","ClientAccessible")
+这里记住返回的ShadowID（类似{eeb50055-34c9-472b-81e6-ed111742e12e}）
+2.删除你上传的工具（我这里是直接把C:\test目录删除掉）
+3.查看一下我们创建的VSS的DeviceObject（如果使用vssadmin创建的，返回结果里就会有）：
+
+`gwmi Win32_ShadowCopy | select -Property DeviceObject`
+
+返回结果为：
+
+```
+DeviceObject                                   
+------------                                   
+\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy8
+```
+
+4.将`\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy8`中的“？”换成“.”，就可以执行你的程序了：
+
+```
+\\.\GLOBALROOT\Device\HarddiskVolumeShadowCopy8\test\hunter64.exe
+```
+
+是不是很简单？这样做，实际硬盘上已经看不到hunter64.exe里，但是我们做了一个shadow copy，在这里shadow copy里，我们的程序还在，通过这种方式我们就可以随时随地执行我们的“影子”程序，从而实现隐藏我们的工具了。
+等你不再需要这些工具的时候，直接删除你创建的VSS就可以了：
+vssadmin Delete Shadows /shadow={eeb50055-34c9-472b-81e6-ed111742e12e} /quiet
+或者
+
+`Get-WmiObject Win32_ShadowCopy | where {$_.ID -eq '{eeb50055-34c9-472b-81e6-ed111742e12e}'} | Remove-WmiObject`
+
+当然，使用WMI的方法我们不一定用powershell，也可以使用JScript或者VBScript，比如：
+
+```
+var Win32_ShadowCopy =GetObject("winmgmts:\\\\.\\root\\cimv2:Win32_ShadowCopy");
+Win32_ShadowCopy.Create(
+  "C:\\",
+  "ClientAccessible"
+);
+```
+
+举一反三的机会留给各位圈友了：-）
+
+<img src="https://images.xiaomiquan.com/Fr3g-bDh6ZEsWgeuedBGC3XRbq_l?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:jyHrhJEjosuVJuUmtjKlF2ifYJ8=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FmT7oZ79Jbh44M3auMEbhYRfsx-s?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:psLIgsGpbh9aywxarRAauuzLBrg=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FvuN5GgkqCVU3yGgpSi-sakrbYqM?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Cn4mcNhkPIcPKRk7lHitjUohHHQ=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FrColQQRXcJjgEsM9G6YkaFzogxe?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:nw9K-O-Y6Ga6UEfxIhipq9WYG7g=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fksg794N47n3RgzNFwYSbDDVA1jv?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PJ_hAwIodO4J7VvaUZcAL7gfZFA=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这里有份朋友写的指南也可以参考：
+[pentest-wiki/How-to-use-vssadmin.md at master · ni...](https://github.com/nixawk/pentest-wiki/blob/master/4.Post-Exploitation/Windows_ActiveDirectory/How-to-use-vssadmin.md)
+
+...
+
+---
+
 ## downloader
 
 

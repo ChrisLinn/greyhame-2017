@@ -16,6 +16,8 @@
 - [IP](#ip)
 - [CTF](#ctf)
 - [HTML](#html)
+- [Docker](#docker)
+- [Python](#Python)
 
 ## 技能树
 
@@ -821,3 +823,112 @@ __#基础#__
 
 ---
 
+## Docker
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-01:
+
+
+__#姿势#__
+
+有玩 Docker 的同学可以关注这份 Docker 安全部署指南：
+
+
+[GitHub - GDSSecurity/Docker-Secure-Deployment-Guid...](https://github.com/GDSSecurity/Docker-Secure-Deployment-Guidelines)
+
+
+
+这份指南罗列了 Docker 在部署上如果不注意可能会出现的严重安全问题。对这块攻击感兴趣的也可以了解下。
+
+Docker 是非常棒的轻量级虚拟化隔离解决方案，但还不是真正的虚拟机，所以安全上会有不少特别的学问。
+
+我们玩黑的，Docker 有两个研究出发点：
+
+1. 很多安全工具的部署，用 Docker 可以一键安装，非常方便，比如 Kali 可以这样去安装：
+
+`docker pull kalilinux/kali-linux-docker`
+
+Metasploit 可以这样去安装：
+
+`docker pull remnux/metasploit`
+
+是不是非常方便？随时随地，用后即删。
+
+2. Docker 本身在部署上如果没做好，是可以黑掉实体机的，还可以恶意操作 Docker 的一些部署行为。
+
+比如之前研究过 Docker 集群管理里的 2375/2376 端口，如果可以被外网访问到，就糟糕了，如列出所有 images：
+
+`docker -H 219.2.213.12:2375 images`
+
+然后之后还可以执行一系列 Docker 的操作指令，邪恶点可以写个 Docker 蠕虫传播起来。😏
+
+也许会有那么一天，Docker 蠕虫/勒索事件爆发。回到开头，Docker 的安全性得做好，从安全部署习惯开始！
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 已经改名叫moby了
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 参考这段：“Docker改名为Moby了吗？答案已经很明确了，Docker仍然还在，仍然还叫Docker。只是Moby项目已经问世，它是Docker的上游项目，是Docker之母。正因如此，Docker这个名字也已经不适合作为原来源码库的名字了。而对于普通的容器个人使用者或者企业，影响并不是太大。对于一些容器系统厂商和组件提供方，Moby提供了一种新形式的协作平台，可以定制化、增强、适配容器系统等等。”
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-01:
+
+
+__#资源#__
+
+一个使用 docker 部署 Web 漏洞测试环境的github项目，测试环境可随时创建随时删除，十分方便
+
+项目地址：
+[GitHub - MyKings/docker-vulnerability-environment:...](https://github.com/MyKings/docker-vulnerability-environment)
+
+
+
+环境列表：
+
++ bWAPP
++ xssed
++ DVWA
++ WebGoat
++ DVWA-WooYun-edition
++ DSVW
++ WAVSEP
++ OWASP Broken Web Applications Project(未完成)
+
+
+---
+
+
+## Python
+
+
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ on 2017-07-03:
+
+
+__#Python安全开发打怪升级之路#__
+
+
+前言:前几天看到@Aodongq1n的一个提问，主要表达意思是东西内容过多，节奏感跟不上。后来我就想是否知识过于零碎，然后会不会让人产生方向感模糊，从而望而却步呢。首先这个问题可能会存在的，也是正常的，因为学习觉得可以分为两种分支进行，一根是自己的主线进行系统化学习，还有一根是扩宽自己的知识面查漏补缺(在这个过程发现到自己感兴趣的就可以尝试，不感兴趣的作为普及)；零碎有零碎的好处可以快速掌握知识，快速解决问题，对于有基础的是很好的查漏补缺的方法，但是如果面对不太了解的，可能会出现方向感不稳；系统其实不是心里面想的那种多么系统多么系统，系统化是个路线，具体这个路线哪边重哪边轻这个需要自己把握，这样的缺点时间比较长，但是一步步跟下来不容易失去方向感。我自己是做安全方面的开发，所以根据工作的场景，我暂时分享的关联性路线是
+Python普通语法、Pythonic、Python安全开发常用模块、Poc等安全工具编写、Python爬虫。
+这4块主要分享个人Python打怪过程中的笔记，所以可能会存在一定口语化、格式化简陋或者理解的错误，希望大家帮忙指正。谢谢！
+PS:更多的是总结，所以可能有的地方不会很细，建议配合廖雪峰的教程，参考这份然后记录成自己的内容。
+
+
+__分享文件:__
+[Python基础笔记1-10章.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/Python基础笔记1-10章.pdf)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 附一个导航页，节约时间
+[安全导航](http://coco413.com/SecNavi/)
+
+...
+
+---

