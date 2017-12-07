@@ -1180,4 +1180,118 @@ P.S.
 
 ---
 
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ on 2017-09-06:
+
+
+__#基础#__
+
+被动信息收集之dns区域传输，dns爆破
+
+上一篇介绍了域名信息以及相关的记录和nslookup,接下来介绍另一种信息收集的方法   接上一次的介绍，我说到了一个东西，叫dns查询方式，但是没有展开说，dns查询采用的是递归查询，怎么个递归法呢，我找了一个链接比较详细
+
+ 
+[DNS递归查询新手入门了解 DNS,DNS递归查询 - 鸿网互联[68IDC.CN]](http://www.68idc.cn/help/opersys/windowsserver2003/2013041829024.html)
+
+
+
+可能看了不懂，没关系，我们接下来通过一个工具进行了解，下面介绍工具:
+ DIG
+
+ dig命令和nslookup有很多相似的地方，但是dig比nslookup功能强大许多
+
+一、
+
+基本使用：
+
+```
+dig www.sina.com any(查找所有记录，不用加-type) @8.8.8.8(指定dns服务器)
+```
+
+基本参数：
+
+```
++noall：不显示任何结果，一般配合其他参数使用。
++answer:只显示结果。
+-x:反向解析 dig -x 192.168.1.1（反向查询：查询ptr记录）
+```
+
+配合使用：`dig +noall +answer .......（除了结果什么都不显示）`
+
+二、利用dig查询并进行抓包
+
+通过执行基本命令 ：
+
+```                      
+dig sina.com +trace
+```
+
+进行域名追踪并通过wireshark进行抓包，可以了解到dns递归查询是怎样查询的，并且通过抓包，可以发现是否有人对dns服务器进行劫持，把域名解析到恶意网站，具体要自己抓过才能才知道。一定要自己抓，不能偷懒！
+    
+贴一个网址详细一点：
+[DNS信息收集-DIG - 含笑 - CSDN博客](http://blog.csdn.net/qq_33936481/article/details/51424577)
+
+但是呢，dig 不能查询一个域名下的所有记录，但是做渗透测试，我们想知道一个dns服务器下的所有记录，但是如何获得一个域名服务器下的所有记录呢？
+
+1、利用dig查询bind版本，通过查询bind版本信息（dns的bind版本）查看存在的漏洞，对dns服务器进行攻击，进而取得所有的记录，但是经过我努力，一般看不到bind版本信息
+
+基本命令：
+
+```
+dig +noall +answer txt chaos(类) VERSION.BIND @ns3.dnsv4.com
+```
+
+这个命令的意思是：查询txt记录，他是chaos类，一般查的ns,cname,a记录都是inter类，可以通过抓包看包内容查看记录是什么类，后面接的表示查询bind版本，@后接要查的dns服务器
+
+2、dns区域传输：（配合抓包）
+    
+利用dns之间的同步机制（一台dns服务器上的变更可以同步到其他的服务器，一般区域传输至存在于本地dns服务器上，如果管理员配置错误，就有可能让人访问到所有的记录），首先利用nslookup或者dig查询域名下的dns服务器，还是配合抓包，了解原理，而不是了解工具使用
+    
+常见命令：
+
+```    
+1、 dig @ns1.example.com example.com axfr(区域传输的方法：差异化传输) #一般不会成功，除非配置错误
+2、host -T (使用TCP）-l（采用axfr传输） sina.com ns3.sina.com（host命令没有深入了解，我一般只是配合使用）
+```
+         
+[host命令_Linux host 命令用法详解：常用的分析域名查询工具](http://man.linuxde.net/host)
+
+（这个网址大家可以看下参数配置，熟悉命令的使用）
+
+3、dns字典爆破：一般区域传输都不会成功，特别是大型网站，所以介绍几个常用的dns字典爆破工具，原理就是向dns服务器发送查询，如果有这个记录，就会返回结果，反之不返回，利用这个原理进行暴力破解。一般选一个顺手的就行，也可以每个都试试，不同的工具爆破的速度，字典的质量不同，也可以把每个工具下的字典组合起来，生成一个自己的专有字典，下面是几个常见的工具，太多，不详细介绍，大家使用-h看具体参数操作，一定要亲自尝试，实践才最牛
+
+```
+fierce -dnsserver 192.168.1.1 -dns sina.com.cn -wordlist a.txt 
+dnsdict6 -d4 -t 16(使用线程数) -x sina.com（这个比较好，速度也快）
+dnsenum -f dnsbig.txt  -dnsserver 8.8.8.8 sina.com -o sina.txt
+dnsmap sina.com -w dns.txt
+dnsrecon -d sina.com --lifetime 10 -t brt -D dnsbig.txt
+dnsrecon -t std -d sina.com
+```
+
+这次的介绍就到这里了，介绍了那么多，还是推荐大家一定要抓包，看这些包是怎么发送和接受的，里面有什么，不要局限于工具的使用，下次我将介绍被动信息收集的
+之利用搜索引擎进行信息收集部分
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 问一下 nslookup 有如下这种用法吗？
+nslookup 随机字符串 target-ip
+
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ replies to <img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 没试过这种用法，你的随机字符串是？
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 就是从一段字符串中随机选择其中的一段子字符串
+
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ replies to <img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 没有哇，我查过man手册没有这种用法
+
+<img src="https://file.xiaomiquan.com/ed/8e/ed8e264a6c1b3e6acd2f7423ad6ccc19dfd5810cd3b64c1a1c58cc6e04010c56.jpg" width="25px"/> __bit4__: 必须要安利一下小菜我弄的脚本了😆 
+[https://github.com/bit4woo/Teemo](https://github.com/bit4woo/Teemo)
+
+
+
+
+...
+
+---
+
 

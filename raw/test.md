@@ -3554,38 +3554,4 @@ nslookup 随机字符串 target-ip
 
 ---
 
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-06:
-
-
-__#漏洞#__
-
-  S2-052 这个漏洞影响面应该有限，目前来看限制条件两个：
-
-1.使用了rest 这个插件；
-2.使用xml数据来传输。
-
-可以优先排查自己是否如此，如果是如此，那影响会很严重。还有及时升级新版总不会错。
-
-
-[S2-052 - Apache Struts 2 Documentation - Apache So...](https://cwiki.apache.org/confluence/display/WW/S2-052)
-
-
-
-
-
-...
-
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 
-[GitHub - mbechler/marshalsec](https://github.com/mbechler/marshalsec)
-
-
-这个生成攻击Payload的项目不错
-
-<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: S2-053都出来了~
-
-
-...
-
----
-
 
