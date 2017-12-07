@@ -339,6 +339,42 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-09-01:
+
+
+__#姿势#__
+
+ 
+分享一个最新的Safari XSS供大家把玩把玩，权当抛砖引玉
+
+```
+<script>location.href;'javascript:alert%281%29'</script>
+```
+
+<img src="https://images.xiaomiquan.com/FvEIJiOesyg3CW4IHSS8gbuIxwQK?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PHR5k-Xs0LWwC3VBmRDJhOzVnxs=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 把;当成=
+
+这类trick都可以通过简单的fuzzing找到。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 大家可以拿起 Safari 浏览器，访问测试：
+
+[http://xssor.io/s/safari.html](http://xssor.io/s/safari.html)
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: iPhone上的Safari也可以哦
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 通过 cos 这个例子发现了 Safari 重定向以后接下来的代码都不执行，而 Chrome 和JavaScript 伪协议似乎有 py 交易，重定向以后还从下一行执行到结束。😅
+
+
+...
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
@@ -456,6 +492,37 @@ __分享文件:__
 
 
 ---
+
+## XXE
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-04:
+
+
+__#资源#__
+
+ XXE 及 XXE OOB 攻击清单
+
+XXE 全称：XML External Entity，XML 扩展实体。扩展了，攻击面就来了。
+
+OOB 全称：Out of Band，带外数据，就是把数据传出去的方式，应用场景主要在无回显的场景，也就是所谓的盲打场景。
+
+这里有一份清单，还不错，作为玩到这类攻击时的参考：
+
+
+[https://gist.github.com/staaldraad/01415b990939494879b4](https://gist.github.com/staaldraad/01415b990939494879b4)
+
+
+
+这里漏洞如何挖掘呢，自动化其实也不难，那些 Payloads 发出去，想办法接收判断就好。如果你在渗透时，发现有 XML 格式的数据传输（或 base64 等可逆加密后的），那么就可以顺手一试是否有 XXE 漏洞。
+
+总会存在惊喜的。
+
+
+
+---
+
 
 ## PHP
 

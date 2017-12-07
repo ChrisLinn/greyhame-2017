@@ -1171,3 +1171,13 @@ P.S.
 
 
 ---
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-09-05:
+
+这是一篇关于端口扫描的科普，对于原理讲的挺细了推荐新手同学好好读读，去实践一下
+[谈谈端口探测的经验与原理 - FreeBuf.COM | 关注黑客与极客](http://www.freebuf.com/articles/network/146087.html)
+
+
+---
+
+

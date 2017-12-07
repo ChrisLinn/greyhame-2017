@@ -327,3 +327,98 @@ cryptsetup close xxx
 
 ---
 
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-09-05:
+
+嗯，最近写了些脚本自动采开源情报，定时分享一些，大家可以添进各自的规则里
+
+
+__分享文件:__
+[IOC_20170904.txt](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 你应该顺便科普下😄
+
+<img src="https://file.xiaomiquan.com/37/43/374310d6c0d10abd44b2dbd539c133fde6ac46f958196b2b642747858dc0af82.jpg" width="25px"/> __大宇__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: +1
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 其实这个很简单呀，把情报爬下来处理一下字符串就可以输出了
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: 处理好说，关键是应用场景、应用背景什么的
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 我一般是添到回溯设备里，有相关报警就可以回溯流量，记录源IP、A地址，然后再挖源IP的流量找出出样本，A地址又可以扔进去回溯，挖所有通信过的客户端记录一下，上报处理
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-09-05:
+
+嗯。。。科普一下自动爬取开源情报
+比如
+[http://osint.bambenekconsulting.com/feeds/c2-domma...](http://osint.bambenekconsulting.com/feeds/c2-dommasterlist-high.txt)
+
+这个源经常更新很多c2域名，那我们只需要写个简单的小脚本每小时自动化爬下来然后每天整合一下
+以下是脚本示例
+
+```
+#!bin/bash
+#获取当前系统时间精确到时
+date=$(date +%Y%m%d%H)
+#文件名变量
+filename=baddomains_${date}.txt
+#用wget把情报爬下来
+wget http://osint.bambenekconsulting.com/feeds/c2-dommasterlist-high.txt
+```
+
+
+作个简单字符串处理后保存
+```
+cut c2-dommasterlist-high.txt -f 1,2 -d , | sed -e '/#/d' > $filename
+rm c2-dommasterlist-high.txt
+```
+
+脚本2,每天把拿到的情报去除重复项整合一下
+
+```
+#!/bin/bash
+#获取昨天的日期
+date=$(date -d yesterday +%Y%m%d)
+filename=IOC_${date}.txt
+#把昨天所有文件排序整合
+cat baddomains_${date}*|sort|uniq|sort -t , +1 -2 > $filename
+rm baddomains_${date}*
+```
+
+最后把以上脚本加入到crontab里面定时运行就OK了
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 好😄
+
+<img src="https://file.xiaomiquan.com/c1/72/c172abf7cb79b6e84958c7e46d643c1c4e9dd14a106f35b3bcf1dd251c753a00.jpg" width="25px"/> __ohblackmagic__: 清晰明了，赞
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 有兴趣也可以看看这个（推荐PC浏览器打开）😄
+
+[FireHOL IP Lists | IP Blacklists | IP Blocklists |...](http://iplists.firehol.org/)
+
+
+
+更新脚本比较复杂，不过看懂之后再写类似的脚本就不在话下了： 
+
+[firehol/update-ipsets at master · firehol/firehol ...](https://github.com/firehol/firehol/blob/master/sbin/update-ipsets)
+
+
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 脚本可以直接套脚本😂，不过这个IP列表没有对应威胁信息，无从归类😅
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__ replies to <img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: IP库来源有介绍，有一部分是有针对性威胁信息的，比如某个家族Malwr的C2
+
+
+...
+
+---
+
