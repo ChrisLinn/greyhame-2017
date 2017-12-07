@@ -195,6 +195,93 @@ __#资源#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-09:
+
+
+__#科普#__
+
+XSS 与 CSRF
+
+以下转自我之前在「XSS'OR技能」圈子里的分享，因为正好有同学遇到这个困惑，科普供参考。
+
+__XSS__
+
+XSS(Cross Site Script，缩写为了区分 CSS，把 C 改为 X，X 本就有 Cross 十字的含义），中文称为“跨站脚本”。我们只要能把我们可控的 JavaScript 脚本内容注入到目标页面，那这个页面就存在 XSS 漏洞。而 JavaScript 就是 XSS 这个过程的核心魔法。
+
+JavaScript 这个核心魔法能在哪里释放？你看看整个 DOM(Document Object Model) 树，能执行 JavaScript 的地方主要有：
+
+1. `<script>` 标签内；
+2. 任意 HTML 标签的 on 属性里；
+3. 一些标签的 src/href 属性里的 javascript: 伪协议
+4. ...
+
+那么，这些地方，就是我们核心魔法释放的地方。
+
+验证这个魔法是否释放成功，我们经常用 alert("XSS"); 来作为概念验证，效果就是：弹了个框，内容是“XSS”。我们把这种概念验证称为 PoC。
+
+而，在真实实战，我们的核心魔法不能这样简单，必须很直接很强大，那这个过程就是 Exploit 的过程。
+
+这种 Exploit 里往往冲刺着社会工程学，所以可以很猥琐，也正因为这个，玩这个玩的好的黑客，我们称之为猥琐流。这样看来，如果玩不好 JavaScript 这个核心魔法，且不够猥琐，那么是玩不好 XSS 的。😬
+
+根据上面的描述，我们可以把整个 XSS 过程区分为两大部分：
+
+1. XSS 漏洞挖掘；
+2. XSS 漏洞利用；
+
+这两大部分充满着艺术，入门不难，精通难。后面我们会逐渐让大家感受到这句话的深意。
+
+看完这个科普，如果你被这种魔法吸引了，那么，搞起！先吃掉 JavaScript 这个核心魔法！
+
+BE EVIL, DON'T BE BAD.
+
+__CSRF__
+
+CSRF(Cross Site Request Forgery)跨站请求伪造，这个核心点在于：
+
+从目标用户浏览器发出的 HTTP 请求不是用户预期内的，那么都可以认为这是一种跨站请求伪造，关键不在“跨站”，而在“请求伪造”。
+
+那么，通过怎样的机制可以去“请求伪造”，或者说简单点，“发出请求”？回答这个问题前，首先得区分下请求方式都有哪几种？
+
+1. GET 请求，就是一个 URL 形式
+2. POST 请求，需要提交表单
+3. 其实还可以独立提一种请求方式，就是 AJAX 这种异步请求
+4. 其实其实，如果涉及到跨域，就不是提 AJAX 了，而是提 CORS(Cross-Origin Resource Sharing)跨域资源共享。
+
+注：AJAX 与 CORS 共同点在于都是基于 XMLHttpRequest。
+
+区分这些请求方式后，我们就可以挖掘都有什么机制可以发出请求，比如：
+
+1. GET 请求，一堆的标签都可以发出这个请求，如：`<img src="[目标 URL]">`
+2. POST 请求，<form> 表单可以发出
+3. AJAX，既然不涉及跨域，那这个时候需要目标页面同时存在一个 XSS 漏洞，其实如果目标页面存在 XSS 漏洞，就不用去提 CSRF 这个事了
+4. CORS，涉及到跨域，这个机制其实有点复杂，后面再展开说
+
+上面介绍的都是基本情况，如果要展开，单如 GET 请求，还有个很重要的玩法分支是：JSON Hijacking，这个也会在以后展开说。
+
+另外，要不是现在 Flash 已死，基于 Flash 的玩法绝对是一个极其耀眼的分支，可惜了...
+
+但，自从我玩深入 CORS 之后，在 HTML5&ES6 时代下的前端黑，CSRF 耀眼持续。比如我上面发的那个 CORSBOT，你理解其中精华了吗？
+
+继续回到 CSRF 本身，有个关键点得特别提下，那就是 Cookies 的问题。
+
+如果是 XSS，先不考虑 HttpOnly（这个鬼可以自己查阅相关资料），通过 JavaScript 我们可以拿到 Cookies，这个基本就代表用户身份了，后续利用这些 Cookies 就可以做坏事。而做坏事，CSRF 也一样可以办到，但就不是拿到 Cookies 了，而是借用 Cookies，所谓的“借刀杀人”。
+
+之前科普 XSS 说到，XSS 的核心魔法是 JavaScript。而 CSRF 的核心魔法，相比之下，不是 JavaScript，而是 HTTP 请求。CSRF 的各种姿势及成败与否，全都在于这个 HTTP 请求是否发对。
+
+那么，最后，你真的了解 HTTP 请求吗？
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 一直有一个疑问，按照很多公司安全组对csrf的界定，似乎必须是可以被xss所利用的接口才被界定为csrf，通常大家更在乎写操作的接口。因此才有token+referrer的防御csrf，因为这可以有效降低xss与csrf的结合利用。因为如果单独对请求伪造来看，上了token refer限制的接口，一样可以python写一个刷接口的脚本，特别是不需要session的接口，如果只说一个接口有没有可能被刷，那csrf就必须用验证码来防御了
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: CSRF 完全可以和 XSS 无关，当然也可以组合。还有 CSRF 是浏览器的事，你用 Python 去刷，已经不是 CSRF 的范畴
+
+...
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:

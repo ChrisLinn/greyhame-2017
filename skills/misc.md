@@ -69,9 +69,7 @@
 
 __#公告#__
 
-  照顾恐慌者，明天会发布“安全技能树极简版”，敬请关注。😎
-
-
+照顾恐慌者，明天会发布“安全技能树极简版”，敬请关注。😎
 
 ...
 
@@ -100,22 +98,22 @@ __#公告#__
  
 __#资源#__
 
- 安全技能树简版 V1 正式发布
+安全技能树简版 V1 正式发布
 
 本来是想只出极简版本，想着不过瘾，就出了个简版，不那么复杂，但是内容也比较丰富了。
 
 包括如下 10 大项内容：
 
-说明
-高效习惯
-正则表达式
-数据相关
-从脚本到大并发
-HTTP
-各种协议
-漏洞测试
-渗透测试
-防御
++ 说明
++ 高效习惯
++ 正则表达式
++ 数据相关
++ 从脚本到大并发
++ HTTP
++ 各种协议
++ 漏洞测试
++ 渗透测试
++ 防御
 
 本圈的同学可以先睹为快！😏
 
@@ -171,6 +169,44 @@ HTTP
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-09:
+
+
+__#资源#__
+
+关于这份“黑客成长技术清单”
+
+之前我发布的“安全技能树”里，开头就引入了这个地址，但估计很多人并没认真看。
+
+这两天看到嘶吼的翻译，传播出来了：
+
+
+[GitHub 万星推荐：黑客成长技术清单 - 嘶吼 RoarTalk – 回归最本质的信息安全,互联网安全新媒体,4hou.com](http://www.4hou.com/info/news/7061.html)
+
+ 
+
+还是中文传播快...
+
+大家会发现，内容实在太多太多，多到恐惧，这么多优秀开源黑客项目及相关资料。
+
+之前我经常说：要相信，当你有一个想法想研发一款牛逼的黑客工具时，这世界一定有人已经在研发，并很可能开源出来了...
+
+这份清单正式如此的感觉，但我还是看到一些优秀的没在上面，这份清单也是在不断更新，包括清单的运营团队（@HackwithGithub）每天在推上都有动态，前段时间，我开源的 XSS'OR 他们也推过。
+
+推和 GitHub 里的黑客交流氛围真的很浓厚，国内这块也不用感慨路还很远，国内不必重新再造轮子，参与进国外这些氛围里是最直接的方式，英语和墙的门槛，对我们来说根本不是阻碍。
+
+还好，GitHub 还能如此顺畅。
+
+清单原地址：
+
+
+[GitHub - Hack-with-Github/Awesome-Hacking: A collection of various awesome lists for hackers, pentesters and security researchers](https://github.com/Hack-with-Github/Awesome-Hacking)
+
+
+---
+
+
+
 ## 平台
 
 
@@ -210,6 +246,24 @@ HTTP
 <img src="https://file.xiaomiquan.com/e5/95/e595f513a41c7340aa524a0b47d1673c3a698ffa32fa176df0886938c915d91f.jpg" width="25px"/> __Lion💬💬💬__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 有些帖子必须登陆有啥方法绕过么，是只能遍历那个数字？
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-10:
+
+> 签到啦 提问：
+我入圈几天，微博关注您有段时间了。您有条微博写道：“黑客的自由地：GitHub、Twitter、等、等等、等等等 ”，后面的“等”是指代那三个“地”？如果不是，请推荐几个好“地”。
+
+
+比如：Telegram 频道，如我之前创建的“灰袍推送”：
+
+[https://t.me/greyrobe](https://t.me/greyrobe)
+
+
+
+另外一个是：暗网世界，这个就不用公开提了。
+
+
 
 ---
 

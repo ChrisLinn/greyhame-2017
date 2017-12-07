@@ -366,6 +366,43 @@ __#姿势#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-08-06:
+
+> dusts 提问：
+root shell拿到了,然后msf里用 shell to meterpreter 模块，也总是执行成功，但是就是不能返回 meterpreter  sessions -l永远只是个shell  是什么原因？  有解吗？
+
+
+linux下root shell那么强大，还要meterpreter shell干嘛，有时候msf加载的模块是会不稳定，如果一定要meterpreter shell，可以手工生成后门执行一下
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__: 想拷贝文件，但是没有nc , 没有能做交互式shell的python，用什么传
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__: 只是传文件就太多方法了，scp ftp 这些比较简单，对方至少是有scp的，或者wget 你的其它后门进去
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这个问题也挺模糊的，该上调试了，看看相关日志
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 非交互式的ftp怎么连法
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 有没有非交互式shell下的操作指南，针对很多需要交互的命令的 非交互写法
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 嗯，msf调试模块没找到。。shell下会打印一堆乱码，可能是antivirus 的缘故
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: echo是可以。但是碰到ftp不支持-s 文件输入
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 非交互的scp怎么传密码进去，看了下参数没有，  要生成密钥对吗？如果密钥对的话简单的生成方法？
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: ssh keygen 生成密钥对后，公钥存放位置不明，不同版本密钥保存位置不一样，有点繁琐，有没有直接传密码的非交互方式
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__: echo 个ftp 的脚本，自动下载呢？
+
+
+...
+
+---
+
 
 ## Powershell
 

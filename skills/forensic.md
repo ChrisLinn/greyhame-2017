@@ -74,3 +74,15 @@ USB Rubber Ducky 这个 U 盘设备我玩了很久（不仅这个，我有全套
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-08-07:
+
+HID攻击是badusb攻击中成本最低，门槛最低的一类，通过模拟键盘向目标机器执行代码，本次分享以上手为主，带路三种从简易到实战的HID攻击姿势，每种都附有具体的how to链接。至于具体的payload大伙儿可以随自己喜欢，反正我是喜欢empire😂
+
+
+__分享文件:__
+[HID攻击简易上手.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+---
+
+

@@ -7,7 +7,7 @@
     * [二进制](skills/bin.md)
     * [移动安全](skills/mobile.md)
     * [无线安全](skills/wireless.md)
-    * [IoT](skills/iot.md)
+    * [IoT/工控](skills/iot.md)
     * [社工](skills/social-eng.md)
     * [取证](skills/forensic.md)
     * [CTF](skills/ctf.md)
