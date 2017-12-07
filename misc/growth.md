@@ -449,6 +449,39 @@ __#经验#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-24:
+
+
+__#经验#__
+
+R 厉害，Go 也给力，当然 Python 是世界上最好的语言已经不用再啰嗦了...看这篇文章有意思的统计：
+
+
+[Solidot | Python 是 2017 年第一编程语言](http://www.solidot.org/story?sid=53189)
+
+
+保值语言 C 家族的必须是，Java 是，JavaScript 也是，如果学了 Python 就没必要去学 Ruby 了，第一直觉是 Ruby 会被竞争下去，特别看好的是 Go 语言，可编译，为并发而生，简直太强悍。如果你非得坚持“PHP 是世界上最好的语言”，我反正笑笑，没什么意见，哪敢有意见呀。
+
+好了，这是我的那么点经验与看法，仅供参考。
+
+<img src="https://images.xiaomiquan.com/FuPfpNE32NGo02cWAfSKfMhGo0tB?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:G1oyODArJUzpjlHPVEt_mSqXjOQ=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/60/e4/60e47e828e20c259db7e6a604da3964fec6b1c5e5798187d47e63927ae9271a0.jpg" width="25px"/> __大芳的小明。💋__: 有学python的资源吗。
+
+<img src="https://file.xiaomiquan.com/7b/b5/7bb519709c8a6239e89d7af327b166b96364afdc2a92d1126f7138de7a031387.jpg" width="25px"/> __世界需要咸鱼__ replies to <img src="https://file.xiaomiquan.com/60/e4/60e47e828e20c259db7e6a604da3964fec6b1c5e5798187d47e63927ae9271a0.jpg" width="25px"/> __大芳的小明。💋__: 是基础入门么？网上很多资料啊，一搜都有，廖雪峰就挺好的
+
+<img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 补充一下。其实js现在也可以包含pc那个type，因为有了node.js，服务端可以扮演py php等语言的类似角色，桌面pc也可以借助electron或nw.js开发gui。
+
+<img src="https://file.xiaomiquan.com/29/43/294342d6718c366ceafc3063d66eeadf020823d4756ef44132a888ef711f7e29.jpg" width="25px"/> __签到啦__: 懂点swift，好肉的感觉
+
+
+...
+
+---
+
 
 ## 职业生涯
 

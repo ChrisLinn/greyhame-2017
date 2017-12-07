@@ -1,9 +1,12 @@
 # Web
 子目录:
 - [XSS](#xss)
+- [CSRF](#csrf)
 - [SSRF](#ssrf)
 - [后端](#后端)
+- [PHP](#php)
 - [Socket](#socket)
+- [杂](#杂)
 
 ## XSS
 
@@ -108,6 +111,123 @@ __#挑战#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-07-11:
+
+
+__#姿势#__
+
+ 
+__#漏洞复现#__
+
+ 
+__#代码审计#__
+
+ 
+IPB是一个集论坛展示与CMS的PHP平台。今年五月份爆出了一个漏洞，在4.1.19.2以下的版本，在convertutf8中存在xss，通过该xss可以构造csrf。这套系统本身是不开源的，但是我为了复现该漏洞，从网上下载了该平台的一个盗版。该文件我已经作为附件上传到小密圈中了，有兴趣的圈友可以看看。 
+
+
+[有道云笔记](http://note.youdao.com/share/?id=76cbf6017d4bdfe7544b56587283ce30&type=note#/)
+
+ 
+
+以后我会转为分享一些web代码审计的案例，有问题的欢迎评论区留言。
+
+
+__分享文件:__
+[IPB.zip](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/IPB.zip)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 调试的都快晕了，能请问一下是哪里对$controller进行了输出么
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: convertutf8/System/Output/Browser/Template.php
+
+<img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 能具体到行么。。。这个文件当然看过了
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 里面有个模板，输出了controller变量。这个变量直接从request获取没经过过滤。
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-17:
+
+
+__#资源#__
+
+推荐个 XSS 资源大全：XSS Payloads
+
+
+[http://www.xss-payloads.com/](http://www.xss-payloads.com/)
+
+
+
+推：@XssPayloads
+
+都需要翻~墙才能访问。更新还是很及时全面的，也算难得了。
+
+这个网站我第一次知道还是当时我的 XSS'OR 早期版本被收集在上面。这个网站做了我以前一直想做的事，收集各种优秀攻击、利用代码、Papers 等，并不断更新。
+
+对 XSS 感兴趣的同学可以好好浏览一遍。
+
+<img src="https://images.xiaomiquan.com/Fq6sz8YsupYroZ5vDkT-swfqISKX?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Q6Y18fDvptww_NOBWCYNbJAI8WM=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/00/a2/00a24f7de90da6f6d096ad5a3775a540ec571b34d87b6b31e5556345691cf912.jpg" width="25px"/> __Avir4er__: 访问不了，403..
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/00/a2/00a24f7de90da6f6d096ad5a3775a540ec571b34d87b6b31e5556345691cf912.jpg" width="25px"/> __Avir4er__: 都说了要翻_墙
+
+<img src="https://file.xiaomiquan.com/cc/8c/cc8cc0011e1e45d87b821aaf65f116d4635ef79dede9706c7a058c94d7b488fb.jpg" width="25px"/> __胡杭军__: 翻了，能访问twitter，却访问不了本链接。报403错误，没有权限。
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__ replies to <img src="https://file.xiaomiquan.com/cc/8c/cc8cc0011e1e45d87b821aaf65f116d4635ef79dede9706c7a058c94d7b488fb.jpg" width="25px"/> __胡杭军__: 不要使用gfwlist，全局翻
+
+<img src="https://file.xiaomiquan.com/67/6d/676dce5cc274939c3aff999a5a33001505c937dcf2325728952b4e67f9efb3e6.jpg" width="25px"/> __KevinShan__: 一般挖xss，怎么算有效的xss，怎么去判断xss的影响？
+
+<img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__ replies to <img src="https://file.xiaomiquan.com/67/6d/676dce5cc274939c3aff999a5a33001505c937dcf2325728952b4e67f9efb3e6.jpg" width="25px"/> __KevinShan__: 能做很多事情的那种呗，不然就是大网站危急用户的那种。就算危害大吧我觉得
+
+<img src="https://file.xiaomiquan.com/64/90/649032a29005a37e93906d26f68a0492d5247ecf4cbfea97aa6b0e74a7a6b1b0.jpg" width="25px"/> __一个头两个大大大大大大大大大大大__ replies to <img src="https://file.xiaomiquan.com/00/a2/00a24f7de90da6f6d096ad5a3775a540ec571b34d87b6b31e5556345691cf912.jpg" width="25px"/> __Avir4er__: Tor可以
+
+
+...
+
+---
+
+## CSRF
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
+
+
+__#姿势#__
+
+Kaspersky Anti-Virus File Server Multiple Vulnerabilities
+
+
+[Kaspersky Anti-Virus File Server Multiple Vulnerab...](https://www.coresecurity.com/advisories/Kaspersky-Anti-Virus-File-Server-Multiple-Vulnerabilities)
+
+
+
+最近很忙，这篇早想分享，忘记了。
+
+里面有个技巧：CSRF to RCE，很低级的漏洞，但威力很大，这种“跨”属于“跨应用”，这类漏洞其实不少。
+
+Payload 如下：
+
+```
+"notifier": {"Actions": [{"Command": "touch /tmp/pepperoni", "EventName": 22, "Enable": true,
+"__VersionInfo": "1 0"}]
+```
+
+攻击请求如图所示。攻击的是 9080 端口，利用时只需诱骗目标用户访问一个链接，触发这段攻击请求就可以成功。就是个典型的 CSRF 过程，只是这次“跨应用”了，搞掉了卡巴斯基的反病毒文件服务。
+
+<img src="https://images.xiaomiquan.com/FkXnlZX2teScz5pXL2wXLJ9sut3A?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:tUAmQS9aEnm90U_bQmFSqBc9-yg=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+
 ## SSRF
 
 
@@ -178,7 +298,7 @@ __#姿势#__
 
 __#资源#__
 
-  2017年，Web 后端出现了哪些新的思想和技术？推荐这篇回答：
+2017年，Web 后端出现了哪些新的思想和技术？推荐这篇回答：
 
 
 [2017年，Web 后端出现了哪些新的思想和技术？ - 知乎](https://www.zhihu.com/question/61085805/answer/186718190)
@@ -191,6 +311,62 @@ __#资源#__
 
 
 ---
+
+## PHP
+
+
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-07-19:
+
+
+__#姿势#__
+
+ 
+__#代码审计#__
+
+ 
+__#漏洞复现#__
+
+
+这是六月份的一个漏洞，当时漏洞作者直接在自己的blog公布细节了，但是对于初学者来说可能理解起来还是有点吃力，所以我对这个漏洞进行了跟踪复现，希望各位能有所收获。
+
+同样，5.08源码已经作为附件直接上传到小密圈中供各位圈友研究学习。
+
+
+[有道云笔记](http://note.youdao.com/share/?id=b23849077a8d13edde1838be16a443aa&type=note#/)
+
+
+
+如有任何问题，欢迎评论区留言指教。
+
+
+__分享文件:__
+[v5.zip](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: 不懂PHP的表示还是一脸懵逼……
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: php入门相比于java要简单，可以自己翻php手册学一学。下次分享我打算拿ctf的题目进行讲解，那样会更简单直接。
+
+<img src="https://file.xiaomiquan.com/b2/27/b2273c727cd42d41352bd2bb195a82e4d41270073f0e99e7e46ffb1a1566c21f.jpg" width="25px"/> __。__: 一开始不会php，多做ctf题😄php不会就百度 慢慢的就会了😂😂
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/b2/27/b2273c727cd42d41352bd2bb195a82e4d41270073f0e99e7e46ffb1a1566c21f.jpg" width="25px"/> __。__: 2333，我一开始也是这样的。不过建议还是能系统的把基础的php过一遍，让比赛是温故而知新。
+
+<img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 在用xdebug来调试的时候我碰到了这种情况：遇到代码做过混淆或者加密的php，xdebug直接崩溃了，大大遇到过这种情况么，有解决的办法么？另外，能不能分享一波审计大牛的博客~😜
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 加密的没法调试，尝试去一些在线解密去混淆的站点试试看能不能还原。至于代码审计牛的博客我倒是有好些，等我抽时间整理出来分享给你们。
+
+<img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 哦哦，好的好的
+
+<img src="https://file.xiaomiquan.com/bd/87/bd872d6bf8f2e37a8687398bc1bc0af07f9b896fc43c3663a77f830db1ac4c5c.jpg" width="25px"/> __ken🐜__ replies to <img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 法師的審計的好像開源了。可以去看下他的工具
+
+
+...
+
+---
+
 
 ## Socket
 
@@ -225,3 +401,31 @@ __#python#__
 
 ---
 
+## 杂
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-09:
+
+
+__#资源#__
+
+这篇漏洞及修复经验很有意思，其中第3个，居然也能重视，如果国内认这个，可以刷一波了：
+
+
+[Flexport今年在hackerone被报告的6个有趣的漏洞 - FreeBuf.COM | 关注黑客与极客](http://www.freebuf.com/vuls/139171.html)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 厂家居然认为第3点：这是最令我们感到惊讶的一个问题。
+
+<img src="https://file.xiaomiquan.com/64/90/649032a29005a37e93906d26f68a0492d5247ecf4cbfea97aa6b0e74a7a6b1b0.jpg" width="25px"/> __一个头两个大大大大大大大大大大大__: 早在去年，freebuf上就出现了关于target_blank的钓鱼分析
+
+[http://www.freebuf.com/vuls/113634.html](http://www.freebuf.com/vuls/113634.html)
+
+
+...
+
+---

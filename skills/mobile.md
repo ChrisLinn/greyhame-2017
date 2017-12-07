@@ -80,3 +80,29 @@ apk 基本知识，adb 基本命令，网络分析（用到了作者自己开发
 
 
 ---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-16:
+
+
+__#经验#__
+
+想刷黑手的同学，重点推荐一加1代（淘宝买二手就好），一加2、3、3T也行，如果你钱多的话。现在一加最新是5（没有4），但是5还不建议去刷，官方没出兼容方案，如果你不怕，可以自己折腾。
+
+黑手可刷机型完整清单可以看官方这个链接：
+
+
+[Home · offensive-security/kali-nethunter Wiki · Gi...](https://github.com/offensive-security/kali-nethunter/wiki)
+
+ 
+
+一旦有一加5可刷黑手的新消息，我会乘势好好跟进并分享黑手使用经验。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b2/3c/b23c795737adee8dc13ad0c866f32f05b6b4bdd374a2cd62d6fa8eee0396f1a4.jpg" width="25px"/> __K3vi__: ZUK Z1也可以刷
+
+...
+
+---

