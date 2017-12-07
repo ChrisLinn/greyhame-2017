@@ -6,6 +6,7 @@
 - [PHP](#php)
 - [Python](#python)
 - [Socket](#socket)
+- [协议](#协议)
 - [杂](#杂)
 
 ## XSS
@@ -512,6 +513,53 @@ __#python#__
 ...
 
 ---
+
+
+## 协议
+
+
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ on 2017-08-15:
+
+
+__#基础#__
+
+从零构建 TCP / IP 协议
+
+搞安全研究网络协议是基本功。
+
+大家可能听说过 DDoS，DDoS 就是利用网络协议实现的缺陷进行攻击的例子。
+
+我们所有的信息都通过网络协议在传输，了解网络协议有助于我们更深层次的思考问题。
+
+这里有一篇从零开始系列，帮助大家从无到有了解一个协议的诞生过程。
+
+
+[blog/2017_08_12-tcp_ip.md at master · jiajunhuang/blog · GitHub](https://github.com/jiajunhuang/blog/blob/master/articles/2017_08_12-tcp_ip.md?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
+
+ 
+
+文中提到的：
+《图解 TCP／IP 协议》
+《TCP／IP 协议详解卷一：协议》
+推荐大家读一读。
+
+至于对网络没有了解的朋友，推荐一本适合入门的网络书籍：
+《网络是怎样连接的》
+它能帮你快速建立起网络的概念。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/f7/9a/f79af1bde651a9dd2c989af5ff7daef5802563815d9456228954484c65760e60.jpg" width="25px"/> __岳锦文__: 配合wireshark一起食用，效果更佳😄
+
+<img src="https://file.xiaomiquan.com/e1/0d/e10dbdcd9c404ec785f7ddf3e5ddf7f5402ee81bf46fbc34e92923c6551eb768.jpg" width="25px"/> __尹少爷__: 我买了这本书，看了第一章感觉又清楚了很多～书不错，以前读tcp/ip1，感觉没有串起来，这次把我看的http详解的感觉也都串起来了，感谢一下
+
+...
+
+---
+
 
 ## 杂
 
