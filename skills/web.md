@@ -3,6 +3,7 @@
 - [XSS](#xss)
 - [CSRF](#csrf)
 - [SSRF](#ssrf)
+- [SQLi](#sqli)
 - [PHP](#php)
 - [Apache](#apache)
 - [Python](#python)
@@ -376,6 +377,126 @@ __#姿势#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ on 2017-09-14:
+
+
+__#基础#__
+
+XSS 编码基础
+
+在之前的分享中，圈子里的小伙伴问过我关于编码的问题。
+
+先感谢下小伙伴的反馈与提问，证明确实用心看了，没白写[呲牙]。
+
+这边也整理了一篇很基础的编码知识给刚入门的同学：
+
+[XSS 编码的一些基础知识 | 灰色地带](http://www.ev1l.cn/2017/09/08/xss_charset/)
+
+
+
+文中提及了：URI 百分号编码、HTML 实体编码、JS Unicode 编码、JS 8进制、16进制转义等内容。
+
+也希望大家在日常分享里多互动，形成一个良好的循环。
+
+
+---
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-09-15:
+
+> 白某某人 提问：
+xss理论上说只要能执行javascrap代码就能执行呀，什么您之前在精华中的一篇文章讲到一个xss是safari xss？意思是只有safari才能执行这个xss吗？
+
+
+你理解有偏差 xss跟浏览器平台无关 只是之前说的那个xss只能在Safari上执行成功，Chrome或者edge 对这类xss已经有防护了
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/fb/81/fb811caceb3cd53b46da8564fc045cb9cce3046ae4a13c3b7e7b17b18fd74d5c.jpg" width="25px"/> __白某某人__: 谢谢[爱心]
+
+<img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 有很多xss的构造方法仅限于一种浏览器，xss如果说和浏览器没有关系，有点片面吧。虽然就此例来说是其他浏览器做了防护，但有的xss只是由于某款浏览器的特性而存在的啊～
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ replies to <img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 确实有些会与浏览器机制有关
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ on 2017-10-09:
+
+__0x01 简介__
+
+主要根据乌云大约6000条xss中常见的xss触发点和平时测试存在xss可能性比较大的业务位置进行的一份小记，方便快速寻找xss，以及打开个思路。
+
+
+__0x02 触发点__
+- GET/POST以及header中可控参数
+- Wifi热点/设备编号构造payload(有些站点会记录历史登录的设备等你这方面信息传到服务器)
+- 电话本、短信(有的app会获取你电话本，通话记录等信息，反日)
+- 多平台验证构造的payload(一般开发进度不一致，导致可能苹果端的修复了，安卓的还没有)
+- 用户注册信息、用户名处
+- 构造好的payload存放在二维码、或者隐性的让用户触发(比如写一个类似antigravity模块)
+- 直播评论位置
+- 在线客服交流
+- 分享到第三方平台
+- 富文本相关的编辑器
+- 企业自己搭建的邮箱
+- 站内消息/私信
+- 各类搜索
+- 浏览器插件
+- 发红包xss
+- 记事本、Word、PDF等一些在线预览功能
+- Flash
+- 搜索框
+- 搜索过后的历史记录
+- API接口
+- 上传功能点相关位置
+- 报销发票处
+- 移动app用户反馈
+- MHTML协议
+- 站点的手机web端(一般waf薄弱)
+- ATM机
+- 论坛等伪协议
+- 回复短信触发接受平台
+- 在线音乐添加歌词、修改上传本地音乐等属性
+- 图片上传、属性等可控参数
+- 截图上传
+- 页面读取系统时间
+- OCR识别后触发xss
+- 微信公共号
+- 购物下单
+- 百度快照
+- 举报页面
+- 自动应答机器人、与智能设备对话输出
+- 收藏夹
+- Whois信息xss
+- 语音翻译
+- KTV点歌
+- 一句话一切可控输入、输出
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__: 还一些地理位置坐标等位置，想起来再加了233
+
+<img src="https://file.xiaomiquan.com/23/cb/23cbc502bad8ece30efc8aeb0f0d125d08a34c5845eff16d768e543a45acb9a7.jpg" width="25px"/> __liuz__: 如果能列出案例就更好了
+
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ replies to <img src="https://file.xiaomiquan.com/23/cb/23cbc502bad8ece30efc8aeb0f0d125d08a34c5845eff16d768e543a45acb9a7.jpg" width="25px"/> __liuz__: 有，案例还在归类
+
+<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 测试xss的。语句字符也发出来吧
+
+<img src="https://file.xiaomiquan.com/b8/77/b8776f7d3ce9106e867038e9e861c0cfa2f0f3e72bf88a6964856e747de20088.jpg" width="25px"/> __zz小子__: 下吧去ktv试试[坏笑][坏笑]绝对可以装一波
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 一句话总结:见框就插吧！！！
+
+
+...
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
@@ -523,6 +644,10 @@ OOB 全称：Out of Band，带外数据，就是把数据传出去的方式，�
 
 
 ---
+
+## SQLi
+
+
 
 
 ## PHP
@@ -705,6 +830,66 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-09-24:
+
+
+__#姿势#__
+
+ 
+__#代码审计#__
+
+ 好久没发了，最近多补几篇。这次来看看超全局变量的细节，下次分享咱们直接拿案例实战。
+
+
+__分享文件:__
+[代码审计基础之超全局变量.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-09-26:
+
+
+__#姿势#__
+
+ 
+__#代码审计#__
+
+ 有意思的点，php图片处理这一块大家近期可以多关注关注。
+
+
+__分享文件:__
+[DEDECMS5.7后台getshell.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 知道代码去构造绕过的方法，但是黑盒就很头疼，常规绕过方法都没用的时候或许只能换其他思路了。
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 是这样的。黑盒一般靠fuzz猜源码然后想思路。
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-10-07:
+
+
+__#姿势#__
+
+
+__#代码审计#__
+
+ 关于discuz任意文件删除的一点思考..
+
+
+__分享文件:__
+[discuz任意文件删除漏洞的一点思考.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
 ## Apache
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-06:
@@ -741,8 +926,26 @@ S2-052 这个漏洞影响面应该有限，目前来看限制条件两个：
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-26:
 
-## Pyhton
+
+__#资源#__
+
+从调试环境搭建到 Tomcat 漏洞分析
+
+来自@Shutdown-r  的分享推荐！
+
+Apache9月19日发布了CVE-2017-12616(信息泄露)和 CVE-2017-12615(远程代码执行漏洞)两个高危漏洞，在Apache Tomcat 7.0.81对这两个高危漏洞进行了修复。
+
+虽然大佬们都说两个漏洞比较鸡肋，利用价值不大，但是漏洞思路还是值得大家学习的，时隔快半个月，网上也有很多相关分析文章，这里分享一个知乎专栏，两个漏洞讲的比较详细，而且附带调试环境搭建的教程，对小白非常友好，跟着作者分析一遍，相信会收获良多~
+
+
+[Java安全 - 知乎专栏](https://zhuanlan.zhihu.com/javasecurity)
+
+---
+
+
+## Python
 
 
 
@@ -846,6 +1049,86 @@ __#基础#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-13:
+
+
+__#漏洞#__
+
+RTP Bleed 来了，RTP 协议的心脏出血
+
+这个 0day 前些天就看到，不过没重视，现在又看到，还是重视下吧，说不定对一些人有用。
+
+这里影响的实例是：
+
+Asterisk 14.4.0
+RTPproxy (tested 1.2.1-2ubuntu1 and RTPproxy 2.2.alpha.20160822 (git))
+
+简单解释下，这个 RTP 协议叫实时传输协议，流媒体应用场景经常会基于这个协议。这次出血和这个协议的设计缺陷有点关系，但并不是完全关系，主要还是和 RTP Proxy 的场景缺陷有关。
+
+带来的直接影响是，可以任意注入伪造音频，可以盗取音视频流，也就是做到所谓的语音通信劫持，只是这种劫持并不需要中间人场景，直接远程搞定！
+
+漏洞官网有更具体描述：
+
+[https://rtpbleed.com](https://rtpbleed.com)
+
+
+
+Asterisk 这家被影响的具体描述：
+
+[advisories/README.md at master · EnableSecurity/advisories · GitHub](https://github.com/EnableSecurity/advisories/blob/master/ES2017-04-asterisk-rtp-bleed/README.md)
+
+
+
+<img src="https://images.xiaomiquan.com/FlxHAgs09I4H1aVzDI9n3wKzqAh2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:2clOt3DhSmQ_UbS3ku6x81CQaj8=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 那些老协议，没认证与加密设计的，都会出大问题，多个 S 多关键。
+
+<img src="https://file.xiaomiquan.com/a0/3d/a03d634712148eba587564aee27dc9c307427740d140d4b4aee5cd13ff998fd9.jpg" width="25px"/> __石头劲__: 感觉风险没那么高，RTP PROXYDE侦听端口每会话随机分配，会话一结束就释放了。
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-21:
+
+
+__#漏洞#__
+
+Joomla 爆 LDAP 注入漏洞（CVE-2017-14596）
+
+版本在 1.5  到 3.7.5 范围且使用了 LDAP 作为登录认证的 Joomla，都可以被拿下。
+
+被拿下指：管理员账号密码可以通过 LDAP 被注射出来，导致后台沦陷，并可能通过后台自定义扩展来拿下整个网站权限。
+
+这是一个非常低级的 LDAP 注入问题：
+
+```
+XXX;(&(uid=Admin)(userPassword=A*))
+XXX;(&(uid=Admin)(userPassword=B*))
+XXX;(&(uid=Admin)(userPassword=C*))
+...
+XXX;(&(uid=Admin)(userPassword=s*))
+...
+XXX;(&(uid=Admin)(userPassword=se*))
+...
+XXX;(&(uid=Admin)(userPassword=sec*))
+...
+XXX;(&(uid=Admin)(userPassword=secretPassword))
+```
+
+升级到 3.8 可以修复这个问题。
+
+参考：
+
+[RIPS - Joomla! 3.7.5 - Takeover in 20 Seconds with...](https://blog.ripstech.com/2017/joomla-takeover-in-20-seconds-with-ldap-injection-cve-2017-14596/)
+
+
+---
+
 
 ## 杂
 
@@ -941,6 +1224,42 @@ __#经验#__
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-13:
+
+
+__#漏洞#__
+
+那些年的经典漏洞利用（一），都是带 Logo 炒过的，你能认出几个？
+
+<img src="https://images.xiaomiquan.com/FmVF6aclhyqBgo3944_v_iPsD-2n?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:rRqzvVOoQ2wZ_AhaUrlvNVYosQg=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FqT-Ub3cDyJvw-212QpNFsuKoOCm?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:GKFycxrjaEN9ysQoa9IDjW81liA=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FjMURKL9VGpF1M2yzgfVXHUS5Cbx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:sKUtswdHfxfiVoXijADz5Bfda20=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FvpjkQb7nx5ugyQq7mx3XW9FlEKg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:UYIheVRZZ3J2yY939X8465sOP7o=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FimWZxP2iDvf59yAnWdR4jgqN8Jg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:fCLOxKUEp0oJ4hmqp-DhjbDNcJE=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fg2r5PmUUR5SsbDk36qoDslfk5h5?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:4Eaos1eMLT6VsbnjpFl0REwafNI=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FhftMKEUfjbOqalRoctScoCf5g6w?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:NvsA09f9mg1oHFjSCC1NGSCSIK4=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FlSY8WPCU5qIUTiQDEnZoaC6aY0n?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Pq503Ag56nr6k2Rzzeu4S4kenjM=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fo-fJWEzlJdVHjfuBbmV1Hq1RVyq?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:gzV4-yIin4oe33RLtGctGmNRRXY=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-13:
+
+
+__#漏洞#__
+
+  那些年的经典漏洞利用（二），都是带 Logo 炒过的，你能认出几个？
+
+<img src="https://images.xiaomiquan.com/FnC2wiwk5ckI_pb4kzT31VatooTD?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:xgHPuWI8j9MqcI5QBp84YwV7ufE=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FgAdUWQ7giQ8tkrqqwrmtmphCTu2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:tex8-2Tv9UK75CQ_qHYbcJGCHo0=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FpdFFgZ18A2d9fvtdxJA7KTtvv17?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:mnbhllW5zX-f39cA3wv1AXHRBK8=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fr_sixCW1H_opVj1aJ1BH1qnQyVn?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:pmpP0DxY8_-cDFCikf-sBhCH7BU=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FjDzzZZT7vdc-4p6jCC2Mrzkxz_z?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:U8opE07Y6gwS0ORw7a5beMmioZc=" width="50%" height="50%" align="middle"/>
+
 
 ---
 

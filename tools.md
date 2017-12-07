@@ -1,7 +1,7 @@
 # Tools
 子目录:
 - [合集](#合集)
-- [getsploit](#getsploit)
+- [PoC/Exploit](#poc-exploit)
 - [Metasploit](#metasploit)
 - [DVWA](#dvwa)
 - [BeEF](#beef)
@@ -13,11 +13,15 @@
 - [nethunter](#nethunter)
 - [OSINT](#osint)
 - [Secure Headers](#secure-headers)
-- [隐写](#隐写)
 - [Cracking](#cracking)
 - [zANTI](#zanti)
 - [XSS'OR](#xssor)
 - [Proxy](#proxy)
+- [cSploit](#csploit)
+- [RAT](#rat)
+- [Scanner](#scanner)
+- [IDA](#ida)
+- [SQLi](#sqli)
 - [杂](#杂)
 
 
@@ -76,7 +80,7 @@ __#资源#__
 
 
 
-## getsploit
+## PoC Exploit
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-17:
 
@@ -123,6 +127,31 @@ getsploit
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-10-02:
+
+
+__#资源#__
+
+ 
+
+推荐个资源，国庆在家喝茶追剧也不忘关注威胁情报，这几天看到一个针对软件供应链攻击-Kingslayer的paper，无意中发现了一个“好玩”的资源。
+
+PocOrGTFO，GTFO指Get The Fuck Out，意指对一切Backdoor的情绪表达，有点极客的味道。PocOrGTFO包含了一系列牛人写的Paper，关键字就是Poc，可谓“干货”满满，量很多，得啃很久～
+
+链接：
+[GitHub - filcab/pocorgtfo: Mirror for the PoC || G...](https://github.com/filcab/pocorgtfo)
+
+
+当然，no starch press也出了纸质版（本人特别喜欢Paper里的一些插图），可谓是装B的利器。
+
+BTW，这个出版社大家也可以关注一下，你看它官网上卖的什么书就知道了
+
+官网地址：
+[https://www.nostarch.com/](https://www.nostarch.com/)
+
 
 ---
 
@@ -735,6 +764,170 @@ nmap -A 192.168.1.1
 
 ---
 
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ on 2017-09-22:
+
+
+__#基础#__
+
+nmap是渗透测试中一款必不可少的神器，它可以做包括端口扫描，主机发现，服务识别，系统探测等一系列的操作,圈中有过相关资料，不过没有把全部参数列出来，下面我把nmap全参数的作用列出来，仅供参考，因为有一些太过偏僻的参数我也不了解，仅凭我匮乏的六级直译。话不多说，直接上参数
+
+
+目标发现：
+
+```
+-iL：使用ip列表文件
+-iR:扫描随机ip,参数后面跟扫描的地址的数量
+--exclude:不扫描某一个地址，比如说扫一个ip地址段但是又不想扫描其中的某一个地址，就使用这个参数
+eg:nmap 192.168.1.0/24 --exclude 192.168.1.1-100:从100开始扫描
+--excludefile：不扫描文件中的所有地址
+```
+
+主机发现：
+
+```
+-sL:不做扫描，列出目标地址段，看看是不是你想扫描的额地址段，等于子网掩码计算
+-sn:不做端口扫描
+-Pn:默认主机是活的，因为有时候主机不回包，扫描防火墙很有用
+-PS/PA/PU/PY:使用SYN/ACK/UDP/SCTP（不是TCP/IP范畴，是VUIP范畴的协议，用来传语音）进行发现
+-PE:使用ICMP探测，时间戳和子网掩码，一般子网掩码不会成功
+-PO:使用ip协议扫描（ip protocol ping）
+-n/-R:不做DNS解析/做反向解析
+--dnsserver:在nmap做dns解析时，使用指定的dns服务器，不用默认指定的dns服务器
+--system-dns:使用系统的dns,加不加都差不多
+--traceroute：扫描的时候进行路由追踪
+```
+
+端口发现：
+
+```
+-sS/sT/sA/sW/sM TCP SYN/Connect()/ACK/Windows/Maimon scan:SYN扫描，建立完整的TCP三次握手/窗口扫描/使用Fin+ACK扫描
+-sU:使用UDP扫描
+-sN/sF/sX:TCP NULL,FIN,and Xmas scans:没有标签的包，FIN包，FIN+PSH+URG包
+--scanflags:自定义TCP的flags
+-sI:zombie scan：僵尸扫描
+-sY/sZ：SCTP协议扫描（不了解）
+-sO:IP扫描
+-b:FTP中继扫描
+```
+
+端口指定和端口识别
+
+```
+-p：指定端口
+--exclude-ports:指定不扫描的端口
+-F:使用快速模式，一般默认扫描1000个端口
+-r:使用顺序端口扫描，一般扫描的时候是使用随机端口扫描
+--top-ports:扫描前n个端口
+--port-ratio:扫描更常见的端口
+```
+
+服务扫描：
+
+```
+-sV：进行服务识别，并进行特征库的识别，一般不会对nmap的所有特征库进行匹配
+--version-intensity:进行深度匹配的程度，从0~9
+--version-light:进行轻量级的探测，等于version-intensity 2级别
+--version-all：进行重量级的探测，等于version-intensity 9级别
+--version-trace:显示所有的探测细节
+```
+
+脚本扫描：
+
+```
+-sC：等于 --script=default
+--script:后接lua脚本
+--script-args:指定脚本的参数
+--script-args-file:后接一个参数列表文件，使用文件里的参数
+--script-updatedb:更新脚本数据库
+--script-help:显示某个脚本的帮助信息
+```
+
+操作系统探测：
+
+```
+-O：系统检测，包括内核信息
+--osscan-limit: 限制要扫描的系统，比如只扫描win系统
+--osscan-guess:对操作系统进行更有攻击性的猜测
+```
+
+时间和性能：太快的扫描可能引起目标系统的警报系统报警，并且影响性能
+
+```
+-T<0-5>:设置时间模板（字面翻译），越高越快，越低越慢
+--min-hostgroup/max-hostgroup:最小/最大并行扫描的主机组，最多/最少一次扫多少个主机
+--min-paralleism/max-paralleism:最小/最大的并行数量
+--min-rtt-timeout/max-rtt-timeout/initial-rtt-time<time>:设置探测包的最大/最小/最初的来回时间, rtt:run trip time
+--max-retries <tries>:设置最大重试次数，预防网络质量不好，但是越多探测包越容易被发现
+--host-timeout <time>：设置最大超时时间，过了这个时间可以认为主机是down的或者端口不开放
+--scan-delay/--max-scan-delay <time>: 设置每次探测之间的延迟，基本/最大延迟
+--min-rate <number>:设置最小扫面级别，使扫描不少于<number>个包每秒
+--man-rate <number>:设置最大扫描几倍，使扫描不大于<bumber>个包每秒
+```
+
+防火墙/IDS躲避和欺骗
+
+```
+-f /--mtu：<val>:设置最大传输路径单元，最大的MTU单元是由最小的传输单元决定的，比如网络中某个路径mtu是123，你的是124，通过-f参数，可以设置mtu
+-D <decoy1 decoy2>[,ME],......>：通过噪声进行地址欺骗
+-S:欺骗源地址
+-E：指定网卡
+-g:指定源端口
+--proxies:指定代理，掩护自己
+--data <hex strings>:除了正常的探测，在数据包中加入自己的数据，这个数据必须是十六进制
+--data-string <string>:添加ASCII码
+--data-lentgh <nums>：限制数据长度
+--ip-option <option>：发送有特定ip选项的探测包
+--ttl <val>:设置ttl值
+--spoof-mac <mac address/prefix/vendor name>:欺骗源MAC地址
+--badsum:发送异常校验值的包，欺骗某些防火墙
+```
+
+输出：
+
+```
+-oN/-oX/-oS/-oG:指定输出的文件类型
+-oA： <basename>:输出三种主要格式
+-v:显示详细信息
+-d:增加debug程度
+--reason:显示某个异常或者特别的端口
+--open:只显示开放或者可能开放的端口
+--packet-trace:包追踪
+--iflist：打印主机的网卡接口和路由（用于debug）
+--append-output:没使用过，不清楚
+--resume <filename>:重新开始一个失败的扫描
+--stylesheet <path/URL>:将输出转换成XML格式并且以html输出
+--webxml:参考Nmap.org上的样式制作更加轻量级的xml
+--no-stylesheet:不解析成任何扩展性语言
+```
+
+杂项：
+
+```
+-6：允许ipv6的探测
+-A:组合系统探测、系统版本探测，脚本扫描和路由追踪
+--send-eth/--send ip:使用原始以太网和ip包进行发送
+--datadir <dirname>:查找nmap数据的执行目录
+--unprivileged:假定用户没有原始socket权限
+--privileged:假定用户是最高权限的
+-V:显示版本信息
+-hL:打印帮助菜单
+```
+
+用了一个下午翻译，如果有错误可以留言，大家互相交流
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: nmap网上的教程太多，建议分享一些自己常用参数组合，我自己觉得带脚本的扫描比较慢，而且效果一般
+
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ replies to <img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: 我觉得lua脚本的速度的话还是不错的，并且nmap使用场景实在太多，分享常用组合的话不知从何说起，不过我后面会介绍主动信息收集的内容，里面会有我对不同部分的nmap的用法的说明
+
+
+...
+
+---
+
 ## nc
 
 
@@ -1104,38 +1297,6 @@ sec_headers = {
 ---
 
 
-## 隐写
-
-
-
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-07:
-
-> [§] 提问：
-余大大，我想请教一下：我想用Python写一个可以批量检测图片是否隐藏了其他东西的工具，包括检测出使用的是何种隐写术，不知道这个想法能否实现，若可以实现，需要掌握哪些隐写术，可否提供一些参考资料学习学习。谢谢！
-
-
-这个好问题，可惜我们没实战过，思路倒是可以去看看都有哪些隐写技术，知己知彼，比如 Freebuf 搜下隐写，好些文章。
-
-
-
-...
-
-<img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: 
-[GitHub - Owlz/stegoVeritas: Yet another Stego Tool](https://github.com/Owlz/stegoVeritas)
-
-<img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: 
-[图片隐写术总结 – 850's Blog](http://850.world/2017/04/12/%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99%E6%9C%AF%E6%80%BB%E7%BB%93/#comment-4)
-
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: Great
-
-<img src="https://file.xiaomiquan.com/8b/f8/8bf8ed658903935055a1d9bc9b13cb9ff0ed77f145e07625f80765a1cc1da9c0.jpg" width="25px"/> __[§]__ replies to <img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: 谢谢！学习学习
-
-
-...
-
----
-
-
 ## Cracking
 
 
@@ -1304,6 +1465,143 @@ for some reason，少年，抽个SSR吧
 
 ---
 
+
+## cSploit
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-11:
+
+> 匿名用户 提问：
+cos大大新手求指导cSploit的大部分功能能够用kali自带的工具复现不？能不能举个栗子，实在不熟kali的工具哇
+
+
+可以，了解好 ethercap、arpspoof 等命令，你读读 cSploit 源码，就会发现它底层也是基于这些命令。还可以进一步了解 bettercap、responder 这些。
+
+至于每个命令工具怎么用，网上教程多，自己摸索也行。
+
+
+---
+
+
+## RAT
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-09-17:
+
+
+__#tools#__
+
+ThunderShell基于PowerShell的RAT,使用HTTP进行通信。网络流量使用RC4进行加密
+
+[https://github.com/Mr-Un1k0d3r/ThunderShell](https://github.com/Mr-Un1k0d3r/ThunderShell)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: RingZer0 Team 最近真活跃，已经开源了好几个项目了
+
+...
+
+---
+
+## Scanner
+
+
+
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-09-21:
+
+
+[CptJesus | SharpHound: Evolution of the BloodHound...](https://blog.cptjesus.com/posts/newbloodhoundingestor)
+
+
+
+[GitHub - BloodHoundAD/SharpHound: The BloodHound C...](https://github.com/BloodHoundAD/SharpHound)
+
+
+
+BloodHound团队这两天用c#重写了BloodHound的扫描端，解决不少线程性能问题，还加入了缓存机制，对大型域网络更容易进行扫描了。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 佩服，居然C#重写，而且还继续开源
+
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这个团队正好是specterops公司的，一个大牛云集的红队公司。
+
+<img src="https://file.xiaomiquan.com/14/0f/140fb95e9c03f1ea592d0b97e3860eebaa2d094c683a2412a5db396e7211c8be.jpg" width="25px"/> __cx__ replies to <img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__: 简称红牛
+
+
+...
+
+---
+
+
+## IDA
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-30:
+
+
+__#资源#__
+
+ Ida Pro 7.0 + All Decompilers Full Leak-Pass
+
+
+[Ida Pro 7.0   All Decompilers Full Leak-Pass - 『逆向...](https://www.52pojie.cn/thread-648089-1-1.html)
+
+
+
+[[Из привата] [LEAKED] IDA Pro 7.0   HexRays 2 (ARM...](https://forum.reverse4you.org/showthread.php?t=2627)
+
+
+
+应该都有了吧？应该不会在私人电脑里直接用吧？
+
+6.8 已经是逆向常用神器，7.0 继续。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/51/d2/51d2c4ce46028b8a20e73e80c24617572fdb4cdf8ee23494fd90f88dbedd9173.jpg" width="25px"/> __Time2AM__: 私人电脑用会怎样。😂
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/51/d2/51d2c4ce46028b8a20e73e80c24617572fdb4cdf8ee23494fd90f88dbedd9173.jpg" width="25px"/> __Time2AM__: 不保证没猫腻
+
+...
+
+---
+
+## SQLi
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-10:
+
+
+__#工具#__
+
+jSQL Injection 注入神器
+
+在 Kali Linux、Pentest Box,、Parrot Security OS、ArchStrike/BlackArch Linux 等都有集成。
+
+支持注入的数据库如下：
+
+Access, CockroachDB, CUBRID, DB2, Derby, Firebird, H2, Hana, HSQLDB, Informix, Ingres, MaxDB, Mckoi, MySQL, Neo4j, NuoDB, Oracle, PostgreSQL, SQLite, SQL Server, Sybase, Teradata and Vertica，居然有 Neo4j。
+
+还可以轻松对 SOAP、JSON 等数据格式进行注入。
+
+这个神器是免费开源且跨平台的，还自带中文显示！具体见：
+
+
+[GitHub - ron190/jsql-injection: jSQL Injection is ...](https://github.com/ron190/jsql-injection)
+
+
+
+<img src="https://file.xiaomiquan.com/c4/12/c412f4725816d6a7f88bea75a4e946897303438e2584c02bc32a17e9bd82831c.jpg" width="50%" height="50%" align="middle"/>
+<img src="https://file.xiaomiquan.com/8a/64/8a640b64dbb5fabff12fa87efea2176a6fffe6c4269d0c2a512177d7bda7c906.jpg" width="50%" height="50%" align="middle"/>
+<img src="https://file.xiaomiquan.com/d0/bb/d0bbf55c97e0bf153b9ea159257e58aef9bf8193f44e2576fa3cc5ee99d7197a.jpg" width="50%" height="50%" align="middle"/>
+<img src="https://file.xiaomiquan.com/28/eb/28ebb8e2c1481c6199cf698740f0196450e63d690b1e95e2fbbec92cc773da98.jpg" width="50%" height="50%" align="middle"/>
+
+
+---
 
 ## 杂
 

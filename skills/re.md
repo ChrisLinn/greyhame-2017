@@ -294,4 +294,44 @@ PS：难道这个跟xshell一样，被入侵后恶意添加的？😂
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-28:
+
+
+__#资源#__
+
+最近在学逆向，发现了一本适合新手入门的书籍《Reverse Engineering for Beginners》，里面讲的挺全的，x86/x64、ARM、MIPS体系架构都有涉及到。想学逆向的小伙伴，一起来撸。中文版译本《逆向工程权威指南》。
+
+英文版下载链接：
+
+
+[https://beginners.re/RE4B-EN.pdf](https://beginners.re/RE4B-EN.pdf)
+
+
+
+来自@s1eep  的分享
+
+
+
+...
+
+
+<img src="https://file.xiaomiquan.com/74/ab/74abebf3530d1f6750d72fe7669a6d76f77779d6c66552a6a545521b66fee4fc.jpg" width="25px"/> __I0ck_me__: 余大  也要向逆向发展了吗？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/74/ab/74abebf3530d1f6750d72fe7669a6d76f77779d6c66552a6a545521b66fee4fc.jpg" width="25px"/> __I0ck_me__: s1eep的分享，不过我一直在玩，玩得不深罢了
+
+<img src="https://file.xiaomiquan.com/e4/3b/e43b69239bcb4eee21677c7fd1c059deb8186ac73da342f2f3279a5bd66de70a.jpg" width="25px"/> __monkeyfly__: 适合新手入门吗？我看了英文版的，并不觉得如此。《深入理解计算机系统》更适合吧。
+
+<img src="https://file.xiaomiquan.com/88/74/8874c2e75dca87eba12d12a4c6f9a0b794ad3acffe3e26e4bb4bf3443a32db2e.jpg" width="25px"/> __GUO__: 小白表示终于等到感兴趣的干货了[得意]
+
+<img src="https://file.xiaomiquan.com/15/73/1573e3d1dbeb1675b2c1f5cb471cbf81849258d6513431bd4bccbb3b2d718b1d.jpg" width="25px"/> __s1eep__ replies to <img src="https://file.xiaomiquan.com/e4/3b/e43b69239bcb4eee21677c7fd1c059deb8186ac73da342f2f3279a5bd66de70a.jpg" width="25px"/> __monkeyfly__: 组原和操作系统原理，必不可少。我觉得这本书给出学逆向的一条路，欠缺相应的知识，再自己补吧
+
+<img src="https://file.xiaomiquan.com/e4/3b/e43b69239bcb4eee21677c7fd1c059deb8186ac73da342f2f3279a5bd66de70a.jpg" width="25px"/> __monkeyfly__ replies to <img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 还有卡梅隆大学，原书作者上课的公开视频可以看，效果更好。他们上课用的教材就是这个。
+
+<img src="https://file.xiaomiquan.com/df/85/df854653fd6365ed54b1803b56500b63858368f73a62726920b7566492b7e7f2.jpg" width="25px"/> __封停__: 这本书不错，我快看完了，适合新手
+
+
+...
+
+---
+
 

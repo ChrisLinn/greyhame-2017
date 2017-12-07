@@ -422,3 +422,123 @@ rm baddomains_${date}*
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-12:
+
+Google 的 Safe Browsing 保护了全球 30 亿设备，这真是一件了不起的事。除了 Google 众多产品（包括 Chrome），还不知不觉植入了 Safari、Firefox 等产品里...
+
+大体量做大事，但不是所有大体量的公司都能做到这种水平。
+
+
+[http://security.googleblog.com/2017/09/safe-browsing-protecting-more-than-3_11.html](http://security.googleblog.com/2017/09/safe-browsing-protecting-more-than-3_11.html)
+
+
+
+<img src="https://images.xiaomiquan.com/Fuqhpvyl8ezxgCI6AQzmCCYKSQCM?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:UADkvaAO9g9hwAqQTRPDeKMECQg=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FpZONfnuDB_ymBoodjVW-eZkN8Bc?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:caegFnhzXRGzW66OCf1YYH9EE8E=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-12:
+
+最近美国 Equifax 被黑导致 1.43 亿美国用户数据泄露，说是 Struts2 的锅（S2-052那个）。
+
+纽约时报问：未来你如何有能力保护自己的隐私？
+答案很简单：不能...
+
+不过还是给了些好建议。当然，这远远不够。
+
+在个人隐私保护方面，颠覆性的产品或服务在哪呢？其实上条分享已经让我意识到了点什么。
+
+<img src="https://images.xiaomiquan.com/FnPT_EIf0_JVc2a7O3LzwZTrCsQO?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:xnTNSz9AfzZ-HA2Dq5LR2NdOlMw=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-09-13:
+
+看来一篇文章，分析了face ID与传统密码在不同威胁场景下的安全性。提取简介如下：iPhone X带着face ID闪亮登场，这回不能用照片骗过人脸设别了。但是，face ID真的安全吗？这取决于你的身份，准确的说，取决于你面临的威胁模型。
+一个普通教师和机场工作人员或者政府机构雇员所面临的威胁模型是完全不同的。对大多数人来说，最大的威胁可能就是手机被盗，这种情况下face ID基本上是安全的。对于一些特殊人群来说，存在着连人带手机被某些势力捕获(或误捕)的可能，这时候，face ID或指纹识别会让搜查你手机里的机密资料变得轻而易举，此时传统密码似乎安全性要好的多。
+
+[Does Face ID make the iPhone X more secure? Depends who's asking | ZDNet](http://www.zdnet.com/article/is-face-id-secure-it-depends/#ftag=RSSbaffb68)
+
+
+
+<img src="https://images.xiaomiquan.com/FtB63HhIDuMK-xo-NxNSe5bNk3oJ?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-2hlQku_svH6p412PcBLBuyCumE=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 没事多背几条强密码还是有用的
+
+<img src="https://file.xiaomiquan.com/d2/18/d218f1e1f6265c71a5b8590ca5f47d80f81ca4d5998c8fc968e01ad974e43fb0.jpg" width="25px"/> __trav__: 没太懂，其中有一点讲的是美国法律不能强制从人脑中的想法取证，却可以从人身体取证吗，在这一点上密码比face ID要有用，这也是ios11从开始就强制性的让每个使用者设置自己的强密码的原因
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 其实只要被绑架，如果来得及，立马关机，此时再被开机的话就需要输入密码了
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 还是脑电波解码靠谱
+
+<img src="https://file.xiaomiquan.com/88/ba/88baf27d18a55ca81cb25b0279ab02127bac65f1d2a9cdfbc724c0cf7512f7e9.jpg" width="25px"/> __In&eRes7ing__: 一般特殊人群不会用iphone吧。。
+其次用密码，人家对你严刑拷打，也保不准一打什么都说了。
+
+<img src="https://file.xiaomiquan.com/df/db/dfdb475f56fe4b4b719dce753a972e44dde472d02173b528a841c3d4c41bcf1c.jpg" width="25px"/> __静候佳音__: 如果能够偷偷报警
+ 还是诺基亚按键手机更方便
+想象一下
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-18:
+
+> 匿名用户 提问：
+余弦你好，我发现我的手机莫名其妙发短信给我妈，而且是诸如“我需要帮助”“SOS”这种，还附带高德导航的紧急定位链接，我这算是被黑客入侵了吗？现在我该怎么办？
+
+
+应该算，不过如果是蠕虫应该会批量发给你通讯录里更多的用户。有没有可能是被恶搞，也注意下。以后这种问题强烈建议带上手机型号系统版本等详细场景信息，否则不好判断。
+
+如果真被黑，对新手来说最好的方式，备份关键文件后，重置。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/d6/d5/d6d579950069a1651dcc88167d48c568484f44b64ac4204081d8ea1a5ac58dd4.jpg" width="25px"/> __锐__: 提问者有没有向手机售后和高德客服求助过呢？
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__: 要带着着给骗子他妈发短信的信念，好好学技术。干他丫的[奸笑]
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__ replies to <img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__: 。。。。。😂
+
+<img src="https://file.xiaomiquan.com/b1/f1/b1f1fabc7117b73bf83d5b60f1020dd2a009218032f7be33ce2f4f46924619a4.jpg" width="25px"/> __kxlzx__: 回答错误。
+有些手机会让用户设置紧急联系号码，你设置成了你妈妈的，结果放兜里不小心连续按了几下特殊键，就发了。我blog有个文章，通过此功能加威胁恐吓找回手机，自己百度。
+
+<img src="https://file.xiaomiquan.com/b1/f1/b1f1fabc7117b73bf83d5b60f1020dd2a009218032f7be33ce2f4f46924619a4.jpg" width="25px"/> __kxlzx__: 
+[找回丢失半年的手机 | 空虚浪子心的灵魂](http://www.inbreak.net/archives/297)
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/b1/f1/b1f1fabc7117b73bf83d5b60f1020dd2a009218032f7be33ce2f4f46924619a4.jpg" width="25px"/> __kxlzx__: 赞呀，哈哈哈
+
+<img src="https://file.xiaomiquan.com/94/18/9418682f2a382978615d0f976974426e60139af668ece32adef54e76b2260726.jpeg" width="25px"/> __Island Air__ replies to <img src="https://file.xiaomiquan.com/b1/f1/b1f1fabc7117b73bf83d5b60f1020dd2a009218032f7be33ce2f4f46924619a4.jpg" width="25px"/> __kxlzx__: 嗯嗯，我后来发现确实只是发送了紧急救助信息。
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-09-30:
+
+分享点安全分析的经验
+
+首先，要了解你的客户
+例如客户的IT资产列表，主要业务，重要服务器，网络拓扑，薄弱点，历史安全事件等等
+
+其次，要了解你的敌人
+通过掌握的情报和客户报告的事件，去分析有哪些攻击者对客户感兴趣，甚至一些敏感客户的攻击者会是一些国家、组织。平时要搜集它们的情报，了解敌人的惯用手法。
+
+有以上这些了解，在分析的时候才能有的放矢
+
+
+
+---
+

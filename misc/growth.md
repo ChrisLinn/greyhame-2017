@@ -562,6 +562,41 @@ hack相比解几何题，需要的知识点更多，并且需要一定深度，�
 
 ---
 
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-09-26:
+
+> 白某某人 提问：
+之前做过一点ios开发，python会一些，php基础看了一些没有项目经验，想学php代码审计应该从何下手？
+
+
+建议先实际动手做项目，只有做过项目，审计的时候对很多东西才了然于心。至于哪里有做项目的机会，github上太多开源项目了，有一些其实非常基础，比如搭建个人博客平台。最重要的是，坚持下去，不要半途而废。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/fb/81/fb811caceb3cd53b46da8564fc045cb9cce3046ae4a13c3b7e7b17b18fd74d5c.jpg" width="25px"/> __白某某人__: 好的谢谢[发呆]
+
+<img src="https://file.xiaomiquan.com/b8/ec/b8ec6e559aed74ba3044cb5579e1edbf4c2122028d5ffeb55e3cb49baf2f04b6.jpg" width="25px"/> __喵(^･ｪ･^)呜__: 请问您值得做项目是指做什么，搭建好博客后，对搭建的项目进行拓展还是审计搭建的项目
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/b8/ec/b8ec6e559aed74ba3044cb5579e1edbf4c2122028d5ffeb55e3cb49baf2f04b6.jpg" width="25px"/> __喵(^･ｪ･^)呜__: 就是单纯的做项目，各种类型的都做一做。做完你代码审计就不吃力了。
+
+<img src="https://file.xiaomiquan.com/b8/ec/b8ec6e559aed74ba3044cb5579e1edbf4c2122028d5ffeb55e3cb49baf2f04b6.jpg" width="25px"/> __喵(^･ｪ･^)呜__: 感谢您的回复，还是不是很明白您说的做项目是指什么？是指搭建一个系统后进行审计，还是根据搭建的系统指仿写一个系统？
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/b8/ec/b8ec6e559aed74ba3044cb5579e1edbf4c2122028d5ffeb55e3cb49baf2f04b6.jpg" width="25px"/> __喵(^･ｪ･^)呜__: 就是先不要想着审计，先把开发做好。至于把开发做好的方法有很多，我认为其中比较好的方法是学习开源项目。个人博客只是举个例子，做别的也可以，电商网站，视频网站，等等。
+
+<img src="https://file.xiaomiquan.com/b8/ec/b8ec6e559aed74ba3044cb5579e1edbf4c2122028d5ffeb55e3cb49baf2f04b6.jpg" width="25px"/> __喵(^･ｪ･^)呜__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 明白了，十分感谢您的耐心指导
+
+<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: github上的项目别人不都是做好的吗，您的意思是照着学吗
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 是的。其实如果时间允许的话，自己先实现类似功能，再去参考开源代码是怎么写的，看看有哪些不足，再改善。
+
+<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 谢谢！
+
+
+...
+
+---
+
 
 ## 职业生涯
 
@@ -912,6 +947,42 @@ web安全和渗透测试的区别在哪里？感觉渗透测试包括了通过we
 <img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 讲讲我个人经历吧，可供参考。我没专门做安全类岗位，业余爱好渗透和逆向，做的是web及app开发，毕业后去的360，待了两年，现在百度主要做服务端开发。身边前后认识了很多搞安全的好朋友，可能因为兴趣相投吧。说说安全工作的负面，不是给你泼冷水，想让你看的更客观些：乙方公司我没待过不敢说，甲方公司的安全类岗位最大的难处是收益量化问题，特别像BAT这种地方，一个团队如果无法量化自己的收益产出，那就很难拥有足够的空间去发挥。为什么难量化呢，因为安全这个工作，你做的好 没漏洞了，老板会把你忘了，你做的不好漏洞多了也不行。个人觉得还是攻比较有意思，也是我念大学时会选择去360实习的原因，那边的二进制做的很牛。
 
 <img src="https://file.xiaomiquan.com/d8/d1/d8d1c9ff6197408b89a2410bed5f88db4aac1428fdd8bae99c9d0d28511b7767.jpg" width="25px"/> __PI31__: 具体自己怎么规划这个得看自己的具体想法，余弦大大的也只能作为参考，有助于我们学习。
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-26:
+
+> Canng 提问：
+安全人员的职业发展怎么样比较好呢？在甲方的话不产生收益，地位发展可能不如开发人员。不知道路该怎么走呀！求大大解惑
+
+
+怎么发展，这个每个人可不一定，当你开始思考这个问题后，会慢慢知道的...
+
+不过话说回来，地位这个问题天时地利人和三因素都有，最关键还是个人能力提升，如果地利不满足，跳槽到满足的就好，个人能力不足，别说地位，就连跳槽合适的目的地都不一定能找到。
+
+聚焦到个人身上的话，建议安全人员不要只沉迷在所谓的黑客技术上，太窄。我们一直提倡黑客工程化，是觉得我们认为的黑客应该具备工程化全方面能力，可以自由创造价值。创造力是黑客必备基础能力。黑客工程化要求黑客不仅会黑，还会编程开发，还会懂商业之道，运作出价值。如果打通这个，地位如何提升不了？
+
+这也是为什么之前我会不断公布我的安全技能树（技能表）的原因，估计很多人已经不知道里面在讲些什么了...
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 黑客工程化，产品化
+
+<img src="https://file.xiaomiquan.com/74/5e/745edea4e49022b74099ca16e653b7177e9ea16ff8e52cc8b1a950dfb835406c.jpg" width="25px"/> __Tsinghua&MIT__: 在从事运维工作，虽时常涉及安全设备，但总感觉平时所做距离“安全”二字还太远
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 先做开发再转安全感觉比较好的！
+
+<img src="https://file.xiaomiquan.com/d8/d1/d8d1c9ff6197408b89a2410bed5f88db4aac1428fdd8bae99c9d0d28511b7767.jpg" width="25px"/> __PI31__: 工程师+科学家+艺术家=牛逼黑客（或者再加个企业家）
+
+<img src="https://file.xiaomiquan.com/d2/51/d251481e66c6144e32be00ceeedbd707a2bbe024ac5d9b150ce826c26a0b6be6.jpg" width="25px"/> __desword__: 安全还能商业化？就是搞安全培训么
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/d2/51/d251481e66c6144e32be00ceeedbd707a2bbe024ac5d9b150ce826c26a0b6be6.jpg" width="25px"/> __desword__: 那些安全产品难道都免费啊？
+
+<img src="https://file.xiaomiquan.com/d2/51/d251481e66c6144e32be00ceeedbd707a2bbe024ac5d9b150ce826c26a0b6be6.jpg" width="25px"/> __desword__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 6666
 
 ...
 

