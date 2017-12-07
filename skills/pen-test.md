@@ -292,6 +292,29 @@ sessions一下看看我们shell的信息：如下
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-12:
+
+
+__#姿势#__
+
+免杀 MSF Windows Payload 的方法与实践
+
+原创@Moriarty  
+
+MSF 已经是广为人知的非常流行的渗透平台，没有之一。而作为专注于后渗透的我，最常用的也是 MSF 强大的后渗透功能。在实战当中，经常需要在目标环境中获取一个 Meterpreter 的 shell。那么我面临的第一个问题，就是如何安安稳稳地、神不知鬼不觉地在目标环境中执行 Meterpreter 的 Payload。目前网上流行的免杀和隐蔽执行的思路有很多，今天我给大家介绍一下我屡试不爽的猥琐流方法。
+
+继续阅读：
+
+
+[免杀 MSF Windows Payload 的方法与实践](http://mp.weixin.qq.com/s/OxgJIIPaXMXqrY5lPdukdA)
+
+
+
+<img src="https://images.xiaomiquan.com/FuAF4GxXRaqAg4xPxw8Ia9qPfJL2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:o4C2jrRosZz9Ju69zxh2K9pp7q4=" width="50%" height="50%" align="middle"/>
+
+
+---
+
 ## Linux Shell
 
 
@@ -400,6 +423,43 @@ linux下root shell那么强大，还要meterpreter shell干嘛，有时候msf加
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-08-12:
+
+内网渗透系列番外篇——winexe
+
+在渗透测试时，如何直接通过一台linux主机去控制一台windows主机。在这里给大家推荐一个工具：winexe,KALI下自带。
+
+winexe可以从Linux上远程执行windows命令（SMB）。用法也很简单,如下：
+
+```
+./winexe --system -U 'Administrator%123123' //192.168.31.165 'cmd.exe /c whoami'
+```
+
+成功执行即可返回whoami的结果。
+
+-U参数用来指定凭据： `-U=[DOMAIN/]USERNAME[%PASSWORD]`
+
+--system参数，使用system权限来执行命令
+
+条件允许的话：可以直接`./winexe -U 'Administrator%123123' //192.168.31.165 'cmd.exe'` 返回一个交互式CMD,如图。
+
+工具介绍：
+[https://tools.kali.org/maintaining-access/winexe](https://tools.kali.org/maintaining-access/winexe)
+
+
+
+下载地址：
+[Winexe / current / [b787d2]](https://sourceforge.net/p/winexe/winexe-waf/ci/master/tree/)
+
+
+
+kali上的winexe（/usr/bin/winexe）采用的是动态编译，在运行的时候需要同时提供用到的dll/so文件。我们需要静态编译让它独立运行。不管linux主机的权限大小，都可以进行利用。
+
+<img src="https://images.xiaomiquan.com/FgNlxTgx-Cb5t0PQOO66yoDQannq?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:dmASdZsa2Mvdj38P6y19JANVbGk=" width="50%" height="50%" align="middle"/>
+
 
 ---
 
@@ -934,5 +994,4 @@ __#姿势#__
 
 
 ---
-
 

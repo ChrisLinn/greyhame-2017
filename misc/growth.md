@@ -482,6 +482,43 @@ R 厉害，Go 也给力，当然 Python 是世界上最好的语言已经不用�
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-13:
+
+> Canng 提问：
+余大大，好奇问哈。您创业细分领域是做哪块啊？圈子里也没见你怎么分享，其实可以打打广告啥的大伙也可以对接下资源
+
+
+月底或下月初 Joinsec 品牌上线，其中一个重要业务之前也提过“安全培训”，当时也是因为准备做这个才尝试开这个圈子的。
+
+还有一个更重要的计划估计要明年才对外提，沉淀准备工作比较多，到时候应该会让大家惊讶（希望顺利）。
+
+感谢惦记。😊
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/c0/2f/c02f902dc8a3e47aca0835543c7d643ae0f26dd086da142f7e6c8fd8fc05d053.jpg" width="25px"/> __coder__: 😆😆线上培训啊
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/c0/2f/c02f902dc8a3e47aca0835543c7d643ae0f26dd086da142f7e6c8fd8fc05d053.jpg" width="25px"/> __coder__: 这不，尝试下知乎 Live
+
+<img src="https://file.xiaomiquan.com/92/3e/923e5a4fcb40feee5c599097f875a70a2864c539f1e4fabfc126ea5cb03d1a63.jpg" width="25px"/> __gump__: 安全培训有面向小白的吗，还是进阶
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/92/3e/923e5a4fcb40feee5c599097f875a70a2864c539f1e4fabfc126ea5cb03d1a63.jpg" width="25px"/> __gump__: 都会有
+
+<img src="https://file.xiaomiquan.com/92/3e/923e5a4fcb40feee5c599097f875a70a2864c539f1e4fabfc126ea5cb03d1a63.jpg" width="25px"/> __gump__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 也就是品牌一上线我们就可以学了吗😍，余大大会不会在知乎live提一提这个事？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/92/3e/923e5a4fcb40feee5c599097f875a70a2864c539f1e4fabfc126ea5cb03d1a63.jpg" width="25px"/> __gump__: 不会，不相关哦
+
+<img src="https://file.xiaomiquan.com/d8/d1/d8d1c9ff6197408b89a2410bed5f88db4aac1428fdd8bae99c9d0d28511b7767.jpg" width="25px"/> __PI31__: 我们的福利来了。哈哈哈
+
+<img src="https://file.xiaomiquan.com/b7/dd/b7dd95c269d7a4019c442489289928c3fbfaf56ff2ed021e60eaa645e00026d9.jpg" width="25px"/> __丁丁__: 坐标上海求留坑位
+
+
+...
+
+---
+
 
 ## 职业生涯
 

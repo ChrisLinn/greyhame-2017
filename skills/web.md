@@ -3,8 +3,8 @@
 - [XSS](#xss)
 - [CSRF](#csrf)
 - [SSRF](#ssrf)
-- [后端](#后端)
 - [PHP](#php)
+- [Python](#python)
 - [Socket](#socket)
 - [杂](#杂)
 
@@ -282,6 +282,29 @@ CSRF(Cross Site Request Forgery)跨站请求伪造，这个核心点在于：
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-10:
+
+
+__#挑战#__
+
+Google XSS Game 解读公布
+
+好吧，放鸽子有点久，懒得要死，差点忘了，哪怕圈友提醒了好几次。有一个圈友@  自己通关并且写了篇非常清晰的面向新人的教程：
+
+
+[「从入门到入狱系列」 - xssgame 通关经验 | 灰色地带](http://ev1l.cn/2017/08/03/Google_xssgame/)
+
+ 
+
+供玩这个挑战的同学参考学习。
+
+感谢@  的分享。
+
+顺便贴上我之前的通关记录，非常杂乱，将就看看，懒，见评论。
+
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
@@ -376,29 +399,6 @@ __#姿势#__
 
 ---
 
-
-## 后端
-
-
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
-
-
-__#资源#__
-
-2017年，Web 后端出现了哪些新的思想和技术？推荐这篇回答：
-
-
-[2017年，Web 后端出现了哪些新的思想和技术？ - 知乎](https://www.zhihu.com/question/61085805/answer/186718190)
-
- 
-
-一位我一直觉得功力深厚的工程师好友。他这种底子如果想搞安全，那简直不敢想象的黑。😄
-
-大家看他的回答，不懂的词汇可以自己搜索，算是了解下在优秀工程师眼里，Web 后端的门门道道吧，对我们搞安全的人来说，知己知彼，你懂得。
-
-
----
-
 ## PHP
 
 
@@ -453,6 +453,31 @@ __分享文件:__
 ...
 
 ---
+
+
+## Pyhton
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-10:
+
+> 老七 提问：
+django写的网站开启了debug，有没有漏洞啥可利用的，django版本是1.10.3
+
+
+除了知道目标系统一些基本情况之外，我这没有，其他同学有好的利用思路可以说下。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/77/94/7794a6fa7fe3127b708f61d481fc168de96e9be8d2484ddd20ab6edb9153c405.jpg" width="25px"/> __快看这是一只野生的自然卷__: 开启debug，如果是sql存储或查询出错会暴露models的字段信息（表名，列名），还有出错部分的源码，可以尝试利用，因为本身django提供了很多参数传递的功能，如进行sql查询时tb.objects.filter（id=1），很多常规的测试方法都会失效，只能指望开发人员比较喜欢用语句拼接什么的😰。现在各种cms做的越来越安全，而码农门槛越来越低，还是从逻辑上挖掘漏洞容易些。
+
+
+...
+
+---
+
 
 
 ## Socket

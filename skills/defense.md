@@ -135,3 +135,63 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-08-12:
+
+
+__#工具#__
+
+基础工具之 防火墙管理软件iptables
+
+很多人知道iptables却不知道netfilter,实际上iptables只是linux防火墙的管理工具，真正实现防火墙功能的是netfilter，它集成在linux内核中。
+
+我以前也和大多数人一样，对iptables只会一些简单的操作，编写简单的规则进行网络安全防护，最近几天由于工作需求，对它系统性的研究了一下，才发现原来对它的认识是那么的浅薄。据我所知有一些小型企业，是直接架起一台pc将iptables当成硬件防火墙来用的。
+
+iptables 不仅可以进行常规的规则限制，还可以用来做端口转发、关键字过滤、时间段控制、连接数控制、速率控制，可以通过对recent模块的各个参数进行组合来匹配各种各样的特征包，然后根据匹配规则来执行各种动作，自由度非常大。
+一个有趣的例子是当你的ssh不准许外部任何IP进行连接，但是自己有时候又有管理需求，可以定制一个暗号，来使你的ip可以接入ssh。
+实例：
+
+```
+(1):iptables -P INPUT DROP
+(2):iptables -A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+(3):iptables -A INPUT -p icmp --icmp-type 8 -m length --length 128 -m recent --set --name SSHOPEN --rsource -j ACCEPT
+(4):iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT
+(5):iptables -A INPUT -p tcp --dport 22 -m state --state NEW -m recent --rcheck --seconds 15 --name SSHOPEN --rsource -j ACCEPT
+```
+
+解释：
+
+```
+(1):先将INPUT 默认所有流量全部DROP
+(2):-m --state 意思为引用状态匹配扩展，将其中RELATED，ESTABLISHED状态的数据包设置为准许
+(3):--icmp-type 8 为ping的请求数据包类型，-m length --length 128，引用length匹配扩展，并且匹配长度为128，icmp包本身包头大小为28，这里填写大小128，实际ping 大小为100的包就可以匹配到，-m recent 为引用recent模块，并设置一个记录的名字为 SSHOPEN，设置完成后，触发一下这个规则，可以在 /proc/net/xt_revent/SSHOPEN 看到相关的记录。--rsource 为记录源IP
+(4):这条意思为准许ping的请求包。
+(5):增加一条准许连接到22端口，并且状态为新建立，在SSHOPEN 
+```
+
+列表有记录源IP，在15秒内，匹配通过这些条件后就准许放行ssh连接了。
+配置完后，你再去连ssh是连不通的
+你用windows，ping -l 100 IP ，之后再用ssh就可以连接了，相当于一个暗号。
+
+这个例子只是想表达iptables非常自由，脑洞够大的话可以想到各种条件搭配去执行各种动作，有兴趣的话也可以看看我发的第二篇中的，利用iptables进行端口复用的例子，那个作者真是个高手。值得学习！
+
+最后贴一张我做的比较粗糙的关于iptables的思维导图，就是推荐大家在学习一个东西的时候，最好边做笔记并且能把核心的要点都整理出来，这样对学习的效率会是一个很大的提升，并且日后自己回头看，也很容易回忆起来。
+
+
+[http://www.zsythink.net/archives/1199](http://www.zsythink.net/archives/1199)
+
+iptables快速入门系列，超爱这种把一个技术工具写的浅显易懂连载十几篇，我真的是非常敬佩这种分享精神的人！
+
+<img src="https://images.xiaomiquan.com/FiJUyuJtGJhraCliPwgk-IzorA6a?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:nCPig9yhFVK-Cs6skNsWE9vNEGQ=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/37/fd/37fd91e45e859e3ab99f01095032c9835770aa37886f6e0cb1bbe400f8f8424f.jpg" width="25px"/> __91__: 通过思维导图能更好地把知识内化为自己的东西，顺便问一下这种图是用什么软件做的？
+
+<img src="https://file.xiaomiquan.com/d8/d1/d8d1c9ff6197408b89a2410bed5f88db4aac1428fdd8bae99c9d0d28511b7767.jpg" width="25px"/> __PI31__ replies to <img src="https://file.xiaomiquan.com/37/fd/37fd91e45e859e3ab99f01095032c9835770aa37886f6e0cb1bbe400f8f8424f.jpg" width="25px"/> __91__: XMind8
+
+
+...
+
+---
+

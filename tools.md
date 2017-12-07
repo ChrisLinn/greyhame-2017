@@ -46,6 +46,35 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-12:
+
+
+__#资源#__
+
+  推荐 BlackHat Arsenal 兵工厂
+
+兵工厂是全球黑帽大会（BlackHat）的一个重要环节，来自全球有能力的黑客在上面分享自己或团队独创的黑兵器。
+
+这届，我看到官方开始号召大家共同维护这个 GitHub：
+
+
+[GitHub - toolswatch/blackhat-arsenal-tools: Official Black Hat Arsenal Security Tools Repository](https://github.com/toolswatch/blackhat-arsenal-tools)
+
+去年我带团队分享了三个黑兵器（ZoomEye、Seebug、Pocsuite），得到了官方的友谊和好评。
+
+这里准备响应官方号召，把我们的东西更新上去。
+
+这上面好兵器真不少，推荐大家收藏学习研究。顺便在此号召下，好东西如果不是非得私有化，可以考虑开源，并在一些国际大会上分享出来，这样的交流氛围多好，对吧？
+
+<img src="https://images.xiaomiquan.com/FmCi7JzgmNxBNLAoPmFzD_7UESAS?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-i5WP9J3HfjqYd6H7J2-7k5tu8g=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FgeMTRDBMhGl6b7HRnzvXc68QnWV?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PW_uM3bGEGqjn-I7SW56aMzNfdE=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fm8BLmQCC3QrngLBiCvGLIXmypdo?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:L025lT7sCaAKehX0elGQnvaKfi0=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+
+
 ## getsploit
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-17:
@@ -1163,6 +1192,30 @@ XSS'OR - Hack with JavaScript 开源！
 <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: 这个是攻击平台吗
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/43/a9/43a9ca3b8048a6ac3b68c56a106eba321d9a13e2c5c61b440f7c7add0b668567.jpg" width="25px"/> __yiy__: xssor.io 玩玩就知道
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-13:
+
+
+__#工具#__
+
+  XSS'OR 今天更新了，很强大，如果会玩的话。
+
+更新了两个小地方：
+
+Probe 探针支持 file:// 协议了；
+Probe 探针的状态做了优化；
+
+在线体验：xssor.io
+开源地址：
+
+[GitHub - evilcos/xssor2: XSS'OR - Hack with JavaScript.](https://github.com/evilcos/xssor2)
+
+
+
+<img src="https://images.xiaomiquan.com/FjFXjgxTAku6ZUw885v0lOQmQY3P?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:mBhlxLgPMFq6twDtZX0TKjEawEY=" width="50%" height="50%" align="middle"/>
+
 
 ---
 

@@ -271,6 +271,27 @@ __#资源#__
 
 ## 书籍报告
 
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
+
+
+__#资源#__
+
+2017年，Web 后端出现了哪些新的思想和技术？推荐这篇回答：
+
+
+[2017年，Web 后端出现了哪些新的思想和技术？ - 知乎](https://www.zhihu.com/question/61085805/answer/186718190)
+
+ 
+
+一位我一直觉得功力深厚的工程师好友。他这种底子如果想搞安全，那简直不敢想象的黑。😄
+
+大家看他的回答，不懂的词汇可以自己搜索，算是了解下在优秀工程师眼里，Web 后端的门门道道吧，对我们搞安全的人来说，知己知彼，你懂得。
+
+
+---
+
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-25:
 
 
@@ -394,7 +415,27 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-12:
 
+> 匿名用户 提问：
+基因的那篇paper值得在这里分享么
+[http://dnasec.cs.washington.edu/dnasec.pdf](http://dnasec.cs.washington.edu/dnasec.pdf)
+
+
+
+
+如果有翻译那就好了。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 国内现在翻译的都是资讯，还不是 Paper
+
+
+...
+
+---
 
 
 ## APT
