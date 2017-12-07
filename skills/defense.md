@@ -195,3 +195,135 @@ iptables快速入门系列，超爱这种把一个技术工具写的浅显易懂
 
 ---
 
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-08-21:
+
+今天分享文件加密
+
+出于各种各样的原因，我们都有一些文件需要加密，万一文件被盗对方也无法恢复，加密工具多如牛毛，我尽量推荐可信的工具
+
+
+__Truecrypt__
+    
+平台：windows/Linux/MacOS
+
+斯诺登曾推荐过这款加密工具，图形化界面，由于其加密严格，难以破解，作者一直保持神秘，但在其官网遭到入侵后据传其作者被NSA请去喝茶，在2014年停止更新，官网请大伙移驾微软的BitLocker，公开的理由是truecrypt被曝光存在提权漏洞，不过这个比较牵强，毕竟truecrypt源码经过两次代码审计，并没有发现明显的后门。目前不建议使用最后一版7.2（喝茶后的版本），建议使用7.1.a或更早的版本。
+
+官网已死，下载请去
+[TCnext - Site dedicated to the development of the ...](https://truecrypt.ch/)
+
+
+使用上的howto请google，很多
+
+__dm-crypt__
+
+平台：Linux
+    
+Linux内核提供的磁盘加密工具，“dm-crypt”是 Linux 内核提供的一个磁盘加密功能，而“cryptsetup”是一个命令行的前端，通过它来操作“dm-crypt”。
+
+使用dm-crypt首先你要先安装cryptsetup，在ubuntu中：apt-get install cryptsetup
+
+dm-crypt既可以加密整块物理磁盘也可以加密一个虚拟磁盘，这里我给出一个方便简易的使用方法，需要深入的可以看官方文档
+[cryptsetup / cryptsetup · GitLab](https://gitlab.com/cryptsetup/cryptsetup)
+
+
+
+首先要创建一个容器文件，通过 fallocate 创建一个 10GB 容器文件。
+
+`fallocate -l 10G /root/luks.vol`
+
+接下来使用cryptsetup加密这个文件容器得到一个虚拟加密盘
+
+```
+cryptsetup --cipher aes-xts-plain64 --key-size 512 --hash sha512 --iter-time 10000 luksFormat /root/luks.vol
+```
+
+参数含义：
+
+```
+--cipher    加密方式
+--key-size  密钥长度
+--hash  散列算法
+--iter-time 迭代时间
+```
+
+使用如下命令打开上述的文件容器，使用的映射名是 xxx（你也可以改用其它单词）。
+
+```
+cryptsetup luksOpen /root/luks.vol xxx
+```
+　
+打开之后，该虚拟盘会被映射到 /dev/mapper/xxx
+
+你可以用如下命令看到：
+
+```
+ls /dev/mapper/
+```
+
+由于加密盘已经打开并映射到 /dev/mapper/xxx 你可以在 /dev/mapper/xxx 之上创建文件系统。命令如下（文件系统类型以 ext4 为例）
+
+```
+mkfs.ext4 /dev/mapper/xxx
+```
+
+创建完文件系统之后，你还需要挂载该文件系统，才能使用它。挂载的步骤如下。
+　　
+
+首先，你要先创建一个目录，作为【挂载点】。俺把“挂载点”的目录设定为 /mnt/xxx（当然，你可以用其它目录作为挂载点）。
+
+```
+mkdir /mnt/xxx
+```
+
+创建好“挂载点”对应的目录，下面就可以进行文件系统的挂载。
+
+```
+mount /dev/mapper/xxx /mnt/xxx
+```
+
+挂载好文件系统，用如下命令查看，就可以看到你刚才挂载的文件系统。
+
+```
+df -hT
+```
+
+接下来，你就可以通过 /mnt/xxx 目录去访问该文件系统。当你往 /mnt/xxx 下面创建下级目录或下级文件，这些东东将被存储到该虚拟加密盘上。
+
+当你使用完，要记得退出。包括下面两步：
+
++　卸载文件系统 `umount /mnt/xxx` 
++ 关闭加密盘 `cryptsetup close xxx` 
+
+之后你需要再次使用这个加密盘的时候只需要
+
+```
+cryptsetup luksOpen /root/luks.vol xxx
+mount /dev/mapper/xxx /mnt/xxx
+```
+
+
+使用完后
+
+```
+umount /mnt/xxx
+cryptsetup close xxx
+```
+
+(附图，两种加密工具的对比)
+
+<img src="https://images.xiaomiquan.com/FtUcF_H1D7ntUc5xgSt1DtU6uGd6?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:__vxJ0s3BpiVd-U5wVIlLWsMSfQ=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 还可以考虑用 TrueCrypt 后的一个分支版本 VeraCrypt
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 是的 Truecrypt官网已经用醒目红色字体警告:Using TrueCrypt is not secure，而且Truecrypt幕后的捐赠者也是很敏感😷
+
+<img src="https://file.xiaomiquan.com/bf/f8/bff8ac74efe0ea61b12ec062defb01cf36b89beb446bf4cfec4a5a9a3130820d.jpg" width="25px"/> __Charles__: 想起当年大学时电脑里的岛国姐姐都是用truecrypt来守护的，舍友曾翻遍我电脑都找不到😂
+
+
+...
+
+---
+

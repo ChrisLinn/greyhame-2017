@@ -889,6 +889,47 @@ Web 黑必备神器，有钱就买吧，没钱就等破解版。
 
 ---
 
+## Empire
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-31:
+
+
+__#工具#__
+
+Empire 更新了 v2.1
+
+Empire is a PowerShell and Python post-exploitation agent.
+
+这款 PowerShell 与 Python 攻击利用神器，想必越来越多渗透师在用。时隔3个多月，更新了不少内容。具体的可以看这：
+
+
+[Empire/changelog at master · EmpireProject/Empire ...](https://github.com/EmpireProject/Empire/blob/master/changelog)
+
+
+
+我最感兴趣的更新内容是下面这条：
+
+-Add Obfuscated Empire #597 @cobbr
+
+增加了混淆 Empire，这个我们第一时间就跟进研究并运用了，Empire 也真的整合了，不过我还没测试整合得如何。
+
+基于 Python 构建的 Empire 开源生态非常有前途（远不仅是 Empire 本身），由于这种生态在 GitHub 这种高浓度黑客氛围下发展着，渗透师的距离也越来越小了。和我交流过的人会明白此时的竞争壁垒在哪，加油吧。
+
+如果你听都没听说过这个，或没实战运用过，自己查资料吧。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e4/ca/e4ca0340ac566f302dcda0afe835affed902e62dda2344fce0b7f9ac7cde2f21.jpg" width="25px"/> __safecat__: 第一次生成加密脚本的时候非常吃cpu。
+
+
+...
+
+---
+
 
 ---
 
@@ -964,6 +1005,29 @@ What you can do on Linux, you can do the same on your PHONE
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-24:
+
+
+__#HITB#__
+
+早上最期待的议题来了，红队！
+
+刚刚看到公布的一个调研工具：
+
+LinkedInt
+
+[GitHub - mdsecactivebreach/LinkedInt: LinkedInt: A...](https://github.com/mdsecactivebreach/LinkedInt)
+
+
+A LinkedIn scraper for reconnaissance during adversary simulation.
+
+专门针对 LinkedIn 做调研的小工具。
+
+<img src="https://images.xiaomiquan.com/Fmn1t20J7ksEIixJrByTU-Z3ghS2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:3TQMyMsGsS_2OUTMigAi6nD7kHQ=" width="50%" height="50%" align="middle"/>
+
 
 ---
 
@@ -1239,8 +1303,6 @@ for some reason，少年，抽个SSR吧
 
 ---
 
-
----
 
 ## 杂
 

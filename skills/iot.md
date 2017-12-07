@@ -50,3 +50,31 @@ CVE-2017-8464 的漏洞，本地用户或远程攻击者可以利用该漏洞生
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-29:
+
+> 匿名用户 提问：
+弦哥，请教啊，对工业控制系统感觉还是有很多区别于其他系统的内容，比如工控系统漏洞挖掘更多基于协议和设备通信组态的，而且感觉工控系统比较封闭，怎么能够突破边界，边界都有单向设备隔离。
+
+
+看看 plcscan.org，以前作者在乌云分享了不少案例，如果想入门了解下工控安全，可以看我曾经公布的一篇演讲《网络空间工控设备的发现与入侵》，下面这可以找到：
+
+
+[GitHub - evilcos/papers: my open papers](https://github.com/evilcos/papers)
+
+
+
+很多时候不一定要直接去面对这个单向设备。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/41/b3/41b36482e50df589c1aab96bf02cc26f84715aecfb4ab94cff73436a248938a7.jpg" width="25px"/> __剑思庭__: 你说的是Z0ne吧
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/41/b3/41b36482e50df589c1aab96bf02cc26f84715aecfb4ab94cff73436a248938a7.jpg" width="25px"/> __剑思庭__: 嗯
+
+
+...
+
+---
+

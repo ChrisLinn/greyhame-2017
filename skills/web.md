@@ -306,6 +306,39 @@ Google XSS Game 解读公布
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-21:
+
+
+__#资源#__
+
+XSS 能做什么
+
+这篇 Paper 作为入门了解不错，英文也简单。作者的 PPT 做得也挺有趣的。推荐。
+
+昨天我在知乎 Live 里做的“如何保护自己的隐私与安全”线上分享里提到了 iPhone 端的 App XSS 威力，这个在实际攻击里脑洞不小，算是开启了 XSS 的一扇新门。
+
+未来都会逐步公布。
+
+
+__分享文件:__
+[XSS FTW.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+[XSS FTW.pptx](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-26:
+
+> Vesper 提问：
+碰到一个伪静态站。XSS提交留言需审核，登录页点不出来，看了源码无奈学艺不精，有点焦灼，无头苍蝇。希望余弦大大能科普一下这方面的渗透技巧，给我指一下路。
+
+
+可以用 XSS 盲打呀，可以拿 XSS'OR 去做盲打测试，如果不仅是测试，自己可以 fork XSS'OR，修改代码很容易，就可以打造一个自己的盲打平台。
+
+
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
@@ -400,6 +433,30 @@ __#姿势#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-24:
+
+
+__#HITB#__
+
+今天最后的一个议题，和 SSRF 有关的，也是很期待的一个，来自台湾的 Orange。
+
+大家可以看之前他的这篇，一个很棒的 exploit 过程：
+
+[【BlackHat 2017 议题剖析】连接的力量：GitHub 企业版漏洞攻击链构造之旅](http://paper.seebug.org/363/)
+
+
+
+之前说了，SSRF 是新 Web 安全里非常重要的一项，之前在本圈也发过相关资料，大家可以自行搜索。
+
+会后我们交流了一个多小时，很 nice。大家对 Red Team 有发自内心的激情。几个来自不同国家与区域的安全人员，交流甚欢。
+
+
+__分享文件:__
+[D1 - Orange Tsai - A New Era of SSRF – Exploiting URL Parsers in Trending Programming Languages.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
 ## PHP
 
 
@@ -452,6 +509,131 @@ __分享文件:__
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-08-16:
+
+
+__#代码审计#__
+
+  
+__#姿势#__
+
+  
+之前发了两篇代码审计的文章，但是感觉大家没什么反应，可能是因为有很多圈友缺乏相应的基础，看起来很费力。因此我决定从零开始讲代码审计，还是那句话，希望各位能有所收获。
+
+今天先来讲环境搭建。首先，你要有一台靶机和攻击机，靶机的操作系统随意，win或者Linux都可以。如果只想放在本地，那么服务器的ip地址不能是127.0.0.1，需要绑定其他ip地址，如192.168.1.100,这样才能使用burpsuite抓包。下面是搭建资料链接。(这一段经 @大宇 同学提醒，已更正)
+
+__Linux:__
+
+- [LAMP环境搭建 - Linux 入门教程 - 极客学院Wiki](http://wiki.jikexueyuan.com/project/linux/lamp.html)
+
+
+- [ApacheMySQLPHP - Community Help Wiki](https://help.ubuntu.com/community/ApacheMySQLPHP)
+
+（这个更简单，一键安装）
+
+__Win:__
+
+- [http://www.phpstudy.net/](http://www.phpstudy.net/)
+
+
+一个集成环境的软件，非常方便，可以选择版本。
+
+我自己是用Mac的本机当靶机的，然后拿kali虚拟机当攻击机的，环境搭建使用的是MAMP PRO，因为这个集成相当方便，可以快速切换服务器或者php版本。
+
+接下来就是按照phpstorm以及对于代码审计最重要的功能Xdebug。phpstorm各个操作系统都有对应版本，网上都可以找的到。我就不说了。
+
+xdebug的安装资料则如下：
+
+- [Xdebug: Documentation](https://xdebug.org/docs/install)
+
+
+
+安装之后的配置：
+
+- [PhpStorm Xdebug远程调试环境搭建原理分析及问题排查](http://paper.seebug.org/308/)
+
+
+- [PHP调试利器XDebug Mac下安装与使用 | funbox's Blog](https://ifunbox.top/mac_php_xdebug_phpstorm_install)
+
+
+
+概括来说就是先安装xdebug，然后修改php配置文件让它找到xdebug并且设置相关的配置信息，最后再在phpstorm里对应起来。最后，浏览器(chrome)记得安装插件jetbrains ide support，配置的地址跟端口也和之前一样。
+
+如果无法顺利配置环境，仔细阅读paper当中的xdebug的原理，思考是哪个环节出了问题，然后再排查。
+
+有人提到seay审计工具。其实也是可以的，但是只有win版本，相比于phpstorm的不同是加入了自动审计功能。不想麻烦配置xdebug的同学可以用seay。
+
+
+如果做完了这些，你已经迈出了代码审计的第一步，接下来我会由浅入深的讲解php代码审计，从下期分享开始我会尝试用视频录制的形式去做，这样连贯性比较好，也更容易听的懂。
+
+最后，之前有人问我拿代码审计牛的博客。其实大家无非想要的就是干货，下面是几个我觉得代码审计这块干货比较多的。
+
+- 先知安全社区: 
+[https://xianzhi.aliyun.com/forum/](https://xianzhi.aliyun.com/forum/)
+
+
+- i春秋安全社区: 
+[https://bbs.ichunqiu.com/forum-59-1.html](https://bbs.ichunqiu.com/forum-59-1.html)
+
+
+- 知道创宇paper: 
+[Paper](http://paper.seebug.org/)
+
+
+- 勾陈安全实验室: 
+[勾陈安全实验室](http://www.polaris-lab.com/)
+
+
+- 离别歌： 
+[首页 | 离别歌](https://www.leavesongs.com/)
+
+
+- Orange: 
+[http://blog.orange.tw/](http://blog.orange.tw/)
+
+
+- lorexxar: 
+[LoRexxar's Blog](https://lorexxar.cn/)
+
+
+
+如果有人要补充的，欢迎评论区留言。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/50/15/50154c902d647320df2ca5062d97714537e014cedca871845319cb445a4fc409.jpg" width="25px"/> __GoodLuck__: 很友好 支持。。。
+
+<img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__: 请问一下有没有关于sublime做代码审计的配置？
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__: 像sublime或者atom这种编辑器确实可以武装的很像ide一样，但是太麻烦了，ide更方便而且功能强大。
+
+<img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 好的，谢谢了
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-08-28:
+
+
+__#姿势#__
+
+ 
+__#代码审计#__
+
+  
+php的配置文件很重要，咱们先从搞懂配置文件开始吧。:)
+
+
+__分享文件:__
+[代码审计之php配置文件.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
 
 ---
 
@@ -590,107 +772,68 @@ __#资源#__
 
 ---
 
-<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-08-16:
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-18:
+
+> 熟人不宜 提问：
+余弦大大，能否安排一下你们团队的哪个大神分享一下流媒体平台（直播）这方面的安全性问题呢？我最近有个直播平台需要做安全测试，感觉除了常规的web安全（身份验证，鉴权，注入，重放，劫持），没有针对RTMP协议的安全用例。谢谢了！
 
 
-__#代码审计#__
+把你问题放出来，大家可以一起讨论。
 
-  
-__#姿势#__
+我的理解是 HTTP 上的那些安全问题（也就是 Web 安全）该测的都需要覆盖，还有网络系统相关的安全问题。而针对 RTMP 协议，这个协议的应用场景来看，就是做流媒体实时传输有关，他们估计关注：
 
-  
-之前发了两篇代码审计的文章，但是感觉大家没什么反应，可能是因为有很多圈友缺乏相应的基础，看起来很费力。因此我决定从零开始讲代码审计，还是那句话，希望各位能有所收获。
-
-今天先来讲环境搭建。首先，你要有一台靶机和攻击机，靶机的操作系统随意，win或者Linux都可以。如果只想放在本地，那么服务器的ip地址不能是127.0.0.1，需要绑定其他ip地址，如192.168.1.100,这样才能使用burpsuite抓包。下面是搭建资料链接。(这一段经 @大宇 同学提醒，已更正)
-
-__Linux:__
-
-- [LAMP环境搭建 - Linux 入门教程 - 极客学院Wiki](http://wiki.jikexueyuan.com/project/linux/lamp.html)
-
-
-- [ApacheMySQLPHP - Community Help Wiki](https://help.ubuntu.com/community/ApacheMySQLPHP)
-
-（这个更简单，一键安装）
-
-__Win:__
-
-- [http://www.phpstudy.net/](http://www.phpstudy.net/)
-
-
-一个集成环境的软件，非常方便，可以选择版本。
-
-我自己是用Mac的本机当靶机的，然后拿kali虚拟机当攻击机的，环境搭建使用的是MAMP PRO，因为这个集成相当方便，可以快速切换服务器或者php版本。
-
-接下来就是按照phpstorm以及对于代码审计最重要的功能Xdebug。phpstorm各个操作系统都有对应版本，网上都可以找的到。我就不说了。
-
-xdebug的安装资料则如下：
-
-- [Xdebug: Documentation](https://xdebug.org/docs/install)
-
-
-
-安装之后的配置：
-
-- [PhpStorm Xdebug远程调试环境搭建原理分析及问题排查](http://paper.seebug.org/308/)
-
-
-- [PHP调试利器XDebug Mac下安装与使用 | funbox's Blog](https://ifunbox.top/mac_php_xdebug_phpstorm_install)
-
-
-
-概括来说就是先安装xdebug，然后修改php配置文件让它找到xdebug并且设置相关的配置信息，最后再在phpstorm里对应起来。最后，浏览器(chrome)记得安装插件jetbrains ide support，配置的地址跟端口也和之前一样。
-
-如果无法顺利配置环境，仔细阅读paper当中的xdebug的原理，思考是哪个环节出了问题，然后再排查。
-
-有人提到seay审计工具。其实也是可以的，但是只有win版本，相比于phpstorm的不同是加入了自动审计功能。不想麻烦配置xdebug的同学可以用seay。
-
-
-如果做完了这些，你已经迈出了代码审计的第一步，接下来我会由浅入深的讲解php代码审计，从下期分享开始我会尝试用视频录制的形式去做，这样连贯性比较好，也更容易听的懂。
-
-最后，之前有人问我拿代码审计牛的博客。其实大家无非想要的就是干货，下面是几个我觉得代码审计这块干货比较多的。
-
-- 先知安全社区: 
-[https://xianzhi.aliyun.com/forum/](https://xianzhi.aliyun.com/forum/)
-
-
-- i春秋安全社区: 
-[https://bbs.ichunqiu.com/forum-59-1.html](https://bbs.ichunqiu.com/forum-59-1.html)
-
-
-- 知道创宇paper: 
-[Paper](http://paper.seebug.org/)
-
-
-- 勾陈安全实验室: 
-[勾陈安全实验室](http://www.polaris-lab.com/)
-
-
-- 离别歌： 
-[首页 | 离别歌](https://www.leavesongs.com/)
-
-
-- Orange: 
-[http://blog.orange.tw/](http://blog.orange.tw/)
-
-
-- lorexxar: 
-[LoRexxar's Blog](https://lorexxar.cn/)
-
-
-
-如果有人要补充的，欢迎评论区留言。
+1. 顺畅性，不要被拒绝服务
+2. 不清楚是否有需要解决认证授权的事
 
 
 
 ...
 
-<img src="https://file.xiaomiquan.com/50/15/50154c902d647320df2ca5062d97714537e014cedca871845319cb445a4fc409.jpg" width="25px"/> __GoodLuck__: 很友好 支持。。。
+<img src="https://file.xiaomiquan.com/64/90/649032a29005a37e93906d26f68a0492d5247ecf4cbfea97aa6b0e74a7a6b1b0.jpg" width="25px"/> __一个头两个大大大大大大大大大大大__: RTSP的倒是了解一些，海康威视是典型案例
 
-<img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__: 请问一下有没有关于sublime做代码审计的配置？
+<img src="https://file.xiaomiquan.com/e8/99/e8995cbaaa741fb20779eff34a1bf93dc54d0ff5113db867b2c2be54e8d5cc07.jpg" width="25px"/> __Null0__: rtsp, rtmp 都是流媒体协议，在摄像头这一块rtsp 认证比较多，直播上用的还没见什么认证
 
-<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ replies to <img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__: 像sublime或者atom这种编辑器确实可以武装的很像ide一样，但是太麻烦了，ide更方便而且功能强大。
+<img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__: RTMP协议主要是推流和抓流的时候用，我理解的也是推流的时候会不会被拒绝服务，抓流的时候因为涉及到CDN估计会有一定分流效果。大家集思广益啊！
 
-<img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__ replies to <img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 好的，谢谢了
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-21:
+
+
+__#经验#__
+
+新 Web 安全主要就这些关键点：前端（XSS、CSRF），后端（SSRF、XXE、反序列化、模版注入、逻辑漏洞），那些老方式不是没用，而是不要总当重点来提，时代变了...
+
+这句话之前对外发过，不过这里完善了点。对 Web 安全感兴趣并在玩这个的，多投入上面说的这些点。
+
+另外一个大的 Web 安全分支纬度不得不提 Java Web 安全，重要性是被 Struts2 这个漏洞马蜂窝搞起来的。而很多企业级应用，基于 J2EE 构建的应用服务器（如：WebLogic、WebSphere、GlassFish、Resin，还有 JBoss，国内的 TongWeb、Apusic 等），历史上也出过不少安全问题，尤其是前两年的反序列化漏洞。由于这些经常用在企业里，影响会更大，那么漏洞价值也会大很多。
+
+这些都是当下 Web 安全值得重点投入的点。要挖掘其 0day，思路只有一个：把历史所有漏洞能复现的都复现一遍，多总结多琢磨，勤奋出 0day，自古不变的真理！
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 您提到的那些老方式是指哪些方式？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 见国内各乙方扫描报告，还可以见“Web安全大曝光”里的内容
+
+<img src="https://file.xiaomiquan.com/4f/27/4f27e33a4b6e51d552dce8ca94028094fe37aa502aaa6e8e9fa1f3fecafffb8c.jpg" width="25px"/> __st0n3__: 这算是大佬回答我的提问吗👀
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/4f/27/4f27e33a4b6e51d552dce8ca94028094fe37aa502aaa6e8e9fa1f3fecafffb8c.jpg" width="25px"/> __st0n3__: 是的 不好意思收那么多钱😄
+
+<img src="https://file.xiaomiquan.com/4f/27/4f27e33a4b6e51d552dce8ca94028094fe37aa502aaa6e8e9fa1f3fecafffb8c.jpg" width="25px"/> __st0n3__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 对您更加钦佩了
+
+<img src="https://file.xiaomiquan.com/60/31/6031f548058576081a414d88b5a371be0c6c838043fb0520e64fa8797fb8c618.jpg" width="25px"/> __莫_努力增肥25斤__: 没搜到 Web安全大曝光 相关内容，请问这是文章还是？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/60/31/6031f548058576081a414d88b5a371be0c6c838043fb0520e64fa8797fb8c618.jpg" width="25px"/> __莫_努力增肥25斤__: 是书
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/60/31/6031f548058576081a414d88b5a371be0c6c838043fb0520e64fa8797fb8c618.jpg" width="25px"/> __莫_努力增肥25斤__: 可以搜 黑客大曝光 Web
+
+<img src="https://file.xiaomiquan.com/60/31/6031f548058576081a414d88b5a371be0c6c838043fb0520e64fa8797fb8c618.jpg" width="25px"/> __莫_努力增肥25斤__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 谢谢 找到了😄
 
 
 ...

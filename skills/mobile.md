@@ -106,3 +106,38 @@ __#经验#__
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__ on 2017-08-29:
+
+有一天我一个做程序员的朋友收到一条短信，内容是“看看我们之前的回忆影集
+[http://118.184.51.172](http://118.184.51.172)”，看到这个内容，顿时感觉是一条诱惑短信，一打开网站，为一个 apk 文件下载地址。文件引起了我的兴趣，下载后进行了编译分析，发现主要是获取用户短信、电话簿等信息，通过短信或邮箱的方式发送给控制者，同时启动了多个服务，用于长期监听用户的短信，并可以通过指定手机号码下发指令到受害者手机上进行长期的远程遥控。
+
+从 apk 用来接收邮件的邮箱来看，2017-08月份查到有 2 万多人已安装了，而这些大部份是发生在 2017-08-18号。
+
+感觉可以做的事情就很多了，现在的银行等好多互联网服务依赖于短信通知，如快捷支持、验证码、注册、找回密码等等，从这个 apk 用于接收邮件的邮箱可以看出，有多条敏感短信信息。
+
+源码分析过程中，主要涉及了 android 的反编译、android 开发基础知识已及 java 基础知识。
+
+
+__分享文件:__
+[一款 android 木马分析.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 可以对指定受害者进行长期控制 这个有意思。
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 是的，通过短信发送命令给手机，手机负责执行。
+
+<img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 想问下如何查到的接收邮箱用户安装量？
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__ replies to <img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 反编译后，密码就在代码里面
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 这不就是Android源码吗？入门水平
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: android 基础知识
+
+
+...
+
+---

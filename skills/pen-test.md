@@ -11,6 +11,7 @@
 - [Windows COM](#windows-com)
 - [Exchange](#exchange)
 - [边界设备安全](#边界设备安全)
+- [信息收集](#信息收集)
 
 
 ## 防火墙
@@ -312,6 +313,99 @@ MSF 已经是广为人知的非常流行的渗透平台，没有之一。而作�
 
 <img src="https://images.xiaomiquan.com/FuAF4GxXRaqAg4xPxw8Ia9qPfJL2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:o4C2jrRosZz9Ju69zxh2K9pp7q4=" width="50%" height="50%" align="middle"/>
 
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-08-27:
+
+MSF内网渗透系列——端口渗透
+
+不多说了，端口检测备忘录，整理常用端口对应MSF的相关模块。欢迎补充
+
+port：21 （FTP）
+```
+auxiliary/scanner/ftp/ftp_login     //FTP登陆爆破
+其它：search FTP。FTP常见利用方式，除了直接获取文件，还要注意目录跨越漏洞，成功利用，可以直接反弹shell内网常见
+```
+
+port:22  (SSH)
+```
+auxiliary/scanner/ssh/ssh_login    //SSH登陆爆破
+其它：search SSH
+```
+
+port:23  (telnet)
+```
+auxiliary/scanner/telnet/telnet_login    //主要目标是内网中的路由器，交换机等网络设备
+```
+
+port:80，8080，443 (附：web服务常见端口整理，见图)
+```
+http服务，内网开放的web服务安全性往往比较差，注入，弱口令...web渗透在内网依然重要
+```
+
+port:445 (简直无需多说的端口）
+```
+exploit/windows/smb/ms08_067_netapi         //上古漏洞，依然有惊喜
+exploit/windows/smb/ms17_010_eternalblue    //永恒之蓝
+auxiliary/scanner/smb/smb_login             //SMB登陆爆破
+其它：search smb | Samba。linux下的CVE-2017-7494， 445 端口的远程利用
+```
+
+port:3389   (远程桌面RDP)
+```
+auxiliary/scanner/rdp/ms12_020_check 
+```
+
+5900  (VNC)
+```
+auxiliary/scanner/vnc/vnc_none_auth
+auxiliary/scanner/vnc/vnc_login
+exploit/multi/vnc/vnc_keyboard_exec
+```
+
+数据库：
+
+port:1433  （Sqlserver）
+```
+use auxiliary/scanner/mssql/mssql_login   //sa爆破
+```
+
+port:3306   (Mysql)
+```
+auxiliary/scanner/mysql/mysql_login
+```
+
+port: 27017、27018 (Mongodb)
+```
+auxiliary/scanner/mongodb/mongodb_login
+```
+
+port:6379  （Redis）
+```
+auxiliary/scanner/redis/redis_login
+auxiliary/scanner/redis/file_upload
+```
+
+port:1521   (Oracle)
+```
+search Oracle
+```
+
+port:5432   (PostgreSQL)
+```
+search PostgreSQL
+```
+
+<img src="https://images.xiaomiquan.com/FmgaMfoaZoU0EwdMgVnjSM93Sdeo?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:vQF74cjllAa2OqTa3lpWOz4oFS8=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e4/b4/e4b46552510c6ae0660244095fca260401a18af22f2746c0aeeae86e99b6abb8.jpg" width="25px"/> __罗钦__: 21,80,443,873,2601,2604,3128,4440,6082,6379,8000,8008,8080,8081,8090,8099,8088,8888,9000,9090,9200,11211,27017,28017,50070,19004440,5082,7001,6082,50000,8888,2222,2082,2083,3312,3311,7778,8083,10000,8089,8649,27017,27018,5900,5631,4899
+
+
+...
 
 ---
 
@@ -995,3 +1089,85 @@ __#姿势#__
 
 ---
 
+
+
+## 信息收集
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-28:
+
+
+__#基础#__
+
+面向基础篇之信息收集
+
+分享来自@yudan  
+
+概要：渗透测试的第一步为信息收集。信息收集分为两个方面，主动信息收集和被动信息收集，这次我们先讲被动信息收集
+
+被动信息收集要注意一下几点：
+
+1. 信息是公开渠道可获得的信息，例如网络上的信息，街边的小广告
+
+2. 收集信息时不与系统产生直接交互（例如不对主机进行大量探测，不进行端口扫描）
+
+3. 尽量避免留下一切痕迹
+
+可收集的信息内容有：
+
++ ip地址段
++ 域名信息
++ 邮件地址
++ 文档图片
++ 公司地址
++ 公司组织架构
++ 联系电话
++ 人员姓名/职务
++ 目标系统的技术架构
++ 公开的商业信息
+
+用途有：
+
++ 信息描述目标
++ 社会工程学等
+
+接下来介绍一款获得ip地址的工具：nslookup(域名查询工具)。
+
+在用nslookup之前，我们首先需要知道域名有哪些:
+
+域名记录:
+
++ A（Adress）用来指定主机名（或域名）的对应的ip地址记录
++ C name：通常称别名指向，可以将注册的不同域名统统转到一个主域名上，CNAME别名记录与A记录不同的是可以是一个域名的描述而不一定是ip地址    
++ NS：（Name Server）是域名服务器记录，用来指定域名应该由哪个DNS服务器来进行解析
++ MX：邮件交换记录，他指向一个邮件服务器，用于电子邮件系统发邮件时根据收信人的地址后缀来定位邮件服务器
++ ptr（ip地址反向解析）：邮件交换记录
++ TXT记录：一般为某个主机名或域名设置的说明
++ URL:网址转发
++ FQDN：完全限定域名，与域名不同（eg:www.sina.com就是一个完全限定域名，只是域名的其中一种）
+
+dns查询方式：递归查询（相关资料可以自己查，太啰嗦不赘述）
+
+接下来是nslookup的使用方法：
+
+1. 我们可以直接在命令行上输入nslookup，进入命令行提示符进行操作
+    + 通过 server +ip地址（中间一定要有一个空格）选择你要的本地dns服务器
+    + 通过 set type=a/ns/ptr/any(代表所有记录)
+    + 接下来看图，图中是百度的示例。
+2. 同样的，我们可以将第一种方法上的所有参数用一条命令写出来
+```
+nslookup -type=a baidu.com 114.114.114.114(指定你想用的本地dns服务器)
+```
+
+P.S.
+
+一个域名可以解析成多个主机记录和多个cname，对应多个ip地址，对一个ip地址进行ptr查询的时候不一定返回一个相同的域名
+    
+使用不同的服务器解析相同的域名会有不同的ip地址，因为智能dns服务器会尽量将流量限定在本地网络，当进行域名查询的时候会返回最近的域名服务器的地址
+
+<img src="https://images.xiaomiquan.com/FoXOKm9XO81g-qTG-L7YB3R4juZi?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:VdpLft4Myzk6c2JKw6hUfBYmvak=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/Fkn83Kq9msBwJrn804arEKfpaYQN?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-I0LRfQgpTajMTtXydf-mD0kxnQ=" width="50%" height="50%" align="middle"/>
+
+
+---

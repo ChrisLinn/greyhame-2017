@@ -4,7 +4,7 @@
 * 姿势
     * [Web](skills/web.md)
     * [渗透](skills/pen-test.md)
-    * [二进制](skills/bin.md)
+    * [逆向](skills/re.md)
     * [移动安全](skills/mobile.md)
     * [无线安全](skills/wireless.md)
     * [IoT/工控](skills/iot.md)

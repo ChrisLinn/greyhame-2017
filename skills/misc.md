@@ -17,6 +17,7 @@
 - [IP](#ip)
 - [CTF](#ctf)
 - [HTML](#html)
+- [JS](#js)
 - [Docker](#docker)
 - [Python](#python)
 - [Openwrt](#openwrt)
@@ -202,6 +203,42 @@ __#资源#__
 
 [GitHub - Hack-with-Github/Awesome-Hacking: A collection of various awesome lists for hackers, pentesters and security researchers](https://github.com/Hack-with-Github/Awesome-Hacking)
 
+
+---
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-08-30:
+
+
+__#资源#__
+
+web安全学习中文资料
+
+在微博，"蚁工厂"工厂上，看到一个不错的web安全学习中文资料，看了下，收集的挺不错的。搞web安全的同学遍历一下吧。
+
+Web-Security-Learning，关于web安全的资料收集。中文资料。
+
+包括SQL注入、前端安全XSS、CSRF、SSRF、XXE、JSONP注入，还有各种序列化漏洞、资料收集、渗透测试等等等等。
+
+[GitHub - CHYbeta/Web-Security-Learning: Web-Securi...](https://github.com/CHYbeta/Web-Security-Learning)
+
+
+
+<img src="https://images.xiaomiquan.com/Fu2m7AzyLbHKx8cw72815O-JRwQv?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:zNWisirBB1u1vm6pXQaEeMk8b1g=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FiFhtu0qZ6MRaakyWGrVi5BnZJyI?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:qPh_ZE_ce9kcjA2Zt5GGQ3W0SGs=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FhnmTcjzQTbiRXWcz5CRKr8YLL_0?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:DtM3j_vNEsVSDzlEjBeEr-rqEqM=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FiiztpuGB-SRmMdFFa_SYzJgYx9o?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:5PqPDRedj3XMiK1-NJuSXnoVp84=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 从来不评论，但是这个太好了，感谢，希望多发类似的
+
+<img src="https://file.xiaomiquan.com/91/f8/91f81e70221f48b37d1cb3e0b292055cc67cf73ab42f9412d9f773911efdcc9f.jpg" width="25px"/> __AAAACD__: 打不开
+
+<img src="https://file.xiaomiquan.com/9e/a0/9ea0c3d113079d89e8aa7eb1636f1866f9e7fb4430d1bfd503116db4f11f2a7e.jpg" width="25px"/> __吴奇__: 感谢分享
+
+
+...
 
 ---
 
@@ -437,6 +474,38 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-24:
+
+
+__#HITB#__
+
+HITB 新加坡这两天相关演讲议题都会在这公布：
+
+
+[Index of /materials/sg2017](https://gsec.hitb.org/materials/sg2017/)
+
+ 
+
+每个议题一结束就会公开 PPT，随时关注就好，
+
+今天是演讲日第一天。
+
+<img src="https://images.xiaomiquan.com/FvIrCzm9b5uy59nh7x_T6qqjaRAt?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:SnDVTuYEVMqM8iPYwqWW9e6D-Zc=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这两天的所有议题安排在这：
+
+[Training   Conference Agenda « HITB GSEC – Singapo...](https://gsec.hitb.org/sg2017/agenda/)
+
+
+
+
+...
+
+---
+
 
 ## APT
 
@@ -470,6 +539,36 @@ __#科普#__
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-25:
+
+
+__#HITB#__
+
+推荐《Threat Hunting 101: Become The Hunter》，如何成为威胁猎人。
+
+顾名思义，就是能很好发现威胁的安全人员。
+
+需要掌握攻击技巧、网络分析、恶意分析、内存分析、主机分析等能力。需要整合 Red Team 与 Blue Team 的双重身份与能力。
+
+这篇 Paper 也提到了 Kill Chain（攻击链），不过和之前提的“洛马七步杀”有些不一样，他们（Contercept，这个团队最近在永恒之蓝的对抗上出了些名气）里面提的步骤包括：
+
+1. Recon
+2. Delivery
+3. Exploit
+4. C2
+5. Privilege Escalation
+6. Lateral Movement
+7. Objective
+
+展开提了红蓝对抗的这些点，作为参考很不错。
+
+
+__分享文件:__
+[COMMSEC D1 - Hamza Beghal - Threat Hunting 101 -  Become the Hunter.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
 
 ---
 
@@ -815,6 +914,213 @@ $ stty rows <num> columns <cols>
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-24:
+
+
+__#HITB#__
+
+  
+__#福利#__
+
+刚刚逛厂商，看到一家摆出了这个，打开一看，惊喜了。
+
+正是我们感兴趣的，哈哈。Python、PowerShell、CMD、Bash 的黑技巧。
+
+原图给大家收藏。
+
+<img src="https://images.xiaomiquan.com/FtHgBobVyPc7Qt8Qy8tXI7cgQc6H?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:3WRynGY_hgXSpOEFMFLWXfIUBIc=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FkY65wMZm0J9Dm9MUbyqxjADkXRz?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:mvBVVsH2y-h0DzWlTty38GWzTW8=" width="50%" height="50%" align="middle"/>
+<img src="https://images.xiaomiquan.com/FrHRUsP5y403NBAzNULmRLK-09CI?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:RuwFdc4wmXaeE9LnYU7SVJhAqPU=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/fc/6a/fc6a8b97a0702c8ca06abad9cb5ca9e275d54577b4c41b70fcd9d314db5b680d.jpg" width="25px"/> __三思之旅__: 翻译过该网站两篇关于Powershell的技巧😄：
+[【技术分享】手把手教你使用PowerShell内置的端口扫描器 - 安全客 - 有思想的安全新媒体](http://bobao.360.cn/learning/detail/3961.html)
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/fc/6a/fc6a8b97a0702c8ca06abad9cb5ca9e275d54577b4c41b70fcd9d314db5b680d.jpg" width="25px"/> __三思之旅__: 赞
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-28:
+
+
+__#基础#__
+
+Linux下的“三剑客”
+
+分享来自@嘀嗒的钟  
+
+前段时间，因为工作需求，需要对大量的脏数据以及日志数据搭建数据库进行统计分析，在数据清洗入库阶段，发现“三剑客”在处理文本内容上的极大优势和效率，故对这个三个命令进行了整理， 分享给大家。
+
+在Linux系统当中，处理文本有三个常用的模式匹配命令 grep sed awk ，这三个命令十分灵活，熟练掌握对你在Linux下文本处理效率有极大的提高。
+
+grep的全称为： Global search Regular Expression and Print out the line，是的，你英文理解对了，grep命令主要用来查找字符串，具体命令可以像下面那样
+
+匹配含有root字符串的行，并打印行号
+
+```
+cat /etc/passwd | grep -n 'root'
+```
+
+或这样
+
+获取本机的IP地址和子网掩码
+
+```
+ifconfig | grep -E -o --color "\<([1-9]|[1-9][0-9]|1[1-9][1-9]|2[1-5][0-5])\>.\<([1-9]|[1-9][0-9]|1[1-9][1-9]|2[1-5][0-5])\>.\<([1-9]|[1-9][0-9]|1[1-9][1-9]|2[1-5][0-5])\>.\<([1-9]|[1-9][0-9]|1[1-9][1-9]|2[1-5][0-5])\>"
+```
+
+grep 常用的参数
+
+```
+-i 表示搜索字符串的时候不区分大小写
+-n 显示行号
+-c 只显示匹配到的行数，不显示具体的内容
+-o 只显示符合条件的字符串，但不显示整行
+-v 显示不含关键字的行
+-q 静默匹配模式，不输出任何信息，所以若要查看匹配的结果，需要使用echo $?来查看
+-e 实现多个表达式的匹配
+-w 精确匹配，及只匹配整个字符串
+-Ax 显示匹配表达式之前的x行
+-Bx 显示匹配表达式之后的x行
+-Cx 显示匹配表达式前后各x行
+-p 兼容perl的正则引擎
+-E 使用扩展正则表达式
+--color 对匹配关键字进行高亮显示
+```
+
+此外，grep还有一些不常用的参数，有兴趣的可以输入如下命令来细细把玩， 像这样
+
+```
+man grep
+```
+
+grep还有两个兄弟命令，分别为egrep， fgerp。
+
+egrep命令，支持扩展正则表达式，相当于grep -E
+
+fgrep命令，不支持正则表达式，只能匹配固定的字符串，相当于grep -w，但是fgrep的搜索速度要比grep -w快很多。
+
+sed命令，sed的全称为stream editor，sed在处理时一次只读取文件的一行并对这一行进行处理，并且sed将处理后的数据只会显示在屏幕上，并不会对原文件进行修改，所以说sed是一个行编辑器。具体命令可以像下面那样
+
+删除/etc/passwd文件中的空白行
+
+```
+sed "/^$/d" /etc/passwd
+```
+
+或这样
+
+替换/etc/inittab文件中”id:3:initdefault:"一行中的数字为5
+```
+sed 's@\(id:\)[0-9]\(:initdefault\)@\15\2' /etc/inittab
+```
+
+sed常用参数
+
+```
+ -n：静默模式，不输出模式空间内的内容，默认打印空间模式内的内容
+ -r：扩展的正则表达式
+ -f 文件：指定sed脚本文件
+ -i：直接编辑源文件
+ #编辑命令
+ d：删除
+ p：打印
+ i \:在被指定到的行前面插入文本
+ a \:在被指定到的行下面插入文本
+ r 文件路径：在指定的位置插入另外一个文件的内容
+ w 文件路径：将符合条件的所有行保存至指定的文件中
+ = 显示符合条件的所在行的行号
+```
+
+同样，有兴趣的可以输入如下命令来细细把玩，像这样
+
+```
+man sed
+```
+
+awk命令，awk是由Alfred Aho 、Peter Weinberger 和 Brian Kernighan这三个人创造的，awk由这个三个人的姓氏的首个字母组成。awk早期是在unix上实现的，所以，我们现在在linux的所使用的awk其实是gawk，也就是GNU awk，简称为gawk，awk还有一个版本，New awk，简称为nawk，但是linux中最常用的还是gawk。
+
+awk基本语法
+
+```
+awk [option] 'Pattern{Action}' file
+```
+
+awk常用参数
+
+```
+-v 设置变量的值
+-F 指定分隔符, awk内部变量FS也可以实现分隔符的效果，像这样： -v FS=":"
+awk常用内置变量
+FS：输入字段分隔符， 默认为空白字符
+OFS：输出字段分隔符， 默认为空白字符
+RS：输入记录分隔符(输入换行符)， 指定输入时的换行符
+ORS：输出记录分隔符（输出换行符），输出时用指定符号代替换行符
+NF：number of Field，当前行的字段的个数(即当前行被分割成了几列)，字段数量
+NR：行号，当前处理的文本行的行号。
+FNR：各文件分别计数的行号
+FILENAME：当前文件名
+ARGC：命令行参数的个数
+ARGV：数组，保存的是命令行所给定的各参数
+
+Action就是动作，awk中最常用的两个动作print， printf。
+Pattern就是模式，通俗的讲就是条件，awk常用的模式有 BEGIN模式，END模式，关系表达式模式，正则表达式模式。
+```
+
+具体命令可以像下面那样
+
+```
+df | awk 'BEGIN{print "begining"} {print $0} END{print "ending"}'
+```
+
+或像这样
+
+利用awk分割和格式化能力，可以直接对数据清洗入库
+
+```
+cat file | awk -F: '{ if(NF == 5) { printf "INSERT INTO table_name (col1, col2,...) VALUES (%s, %s,....)\n", $1, $2, $3, $4, $5 } }' file
+```
+
+同样，有兴趣的可以输入如下命令来细细把玩，像这样
+
+```
+man awk
+```
+
+__总结__
+
+grep适合单纯的查找字符或者匹配文本，当然可以结合bash or python脚本， 实现对某个目录下字符串的查找；sed则更适合于编辑文本；awk 更适合文本格式化，这个在大数据清洗的时候，很好用。本文只是介绍了这三个命令的低阶用法，高阶用法需要大家在熟练掌握三个命令后结合实际的工作场景
+
+另外， 推荐一张linux下常用命令的基础技能表（如图）。
+
+__参考资料__
+
+之前记得@余弦  曾经推荐过一系列书，其中有一本讲软件设计的书《Software Design 中文版 03》，这本书其实是日本的计算机杂志，每个月都有一期（目前还在出），但是国内的出版社貌似也就翻译了这一期，没有后续可惜了。这本杂志用了不少篇幅在讲sed和awk编程， 非常不错，我当初就是冲着awk买的，没有找到电子版，放个链接《Software Design 中文版 03》：
+
+
+[《Software Design 中文版 03》【摘要 书评 试读】- 京东图书](https://item.jd.com/11688328.html)
+
+ 
+
+另外，这里推荐一个国人写的awk的教程：
+
+
+[awk | 朱双印博客](http://www.zsythink.net/archives/tag/awk/)
+
+ 
+
+之前ke@ATToT分享iptables的时候，已经推荐了这个作者，确实很棒，写得非常详细。
+
+<img src="https://images.xiaomiquan.com/FnlEIcOrNLL_S3yPQhQQ2EyPAwWg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:jK4vljZeFyVCAvpVwQJWiXwN3Iw=" width="50%" height="50%" align="middle"/>
+
+
+---
+
 
 ## 端口转发
 
@@ -850,6 +1156,21 @@ __#姿势#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-08-20:
+
+> 匿名用户 提问：
+问表哥一个内网渗透中端口转发的问题。
+目标主机是Windows 7。内网ip为172.26.14.15。
+NetSH 缺省listenaddress参数 的情况下，是监听127.0.0.1 loopback 还是监听本地IP？
+也就是说缺少listenaddress的情况下，是listenaddress=127.0.0.1还是listenaddress=172.26.14.15。
+
+
+没有listenaddress 参数的话就直接是本地ip地址，你可以用netstat -an 看监听的端口，是0.0.0.0
+
+
+
+---
+
 ## 代理
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-06:
@@ -870,6 +1191,70 @@ __#姿势#__
 
 有，mitmproxy 很不错。
 
+
+---
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ on 2017-08-28:
+
+
+__#基础#__
+
+「FanQiang」 - 年轻人的第一把梯子
+
+这次我们「试着」说说徒手「翻x墙」这个技能。关于这次分享的主题，涉及敏感话题，大家懂得。
+
+本着「让年轻人打造第一把属于自己的梯子」的信念，担着被和谐的风险，有了这次的分享。
+
+「翻x墙」可以说是一个必备技能了，但是新手入坑一般都是从「免费」开始的。
+
+其实只要你想找，正确的姿势你能很容易找到。当然，不是说那些「free v.p.n」。
+
+这次我们说说自己动手「0 成本使用 AWS 搭建 SS 服务器」这个标准姿势。
+
+链接：
+[「从入门到入狱系列」 - AWS SS 0成本徒手翻墙 | 灰色地带](http://ev1l.cn/2017/08/26/AWS_SS_Hello_World/)
+
+
+文章比较偏向「有灵性的小白」。
+
+最后搬运一下 COS 分享过的一组符号表情
+┓┏┓┏┓┃
+┛┗┛┗┛┃＼○／
+┓┏┓┏┓┃   /     STOP
+┛┗┛┗┛┃ノ)
+┓┏┓┏┓┃         USE
+┛┗┛┗┛┃ 
+┓┏┓┏┓┃         FREE
+┛┗┛┗┛┃ 
+┓┏┓┏┓┃         V.P.N
+┃┃┃┃┃┃
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 文章里竟然开车。。。🙊
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 🐒
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 赞！写的很详细，aws很易用，上手之后可以去买个性价比高的vps.
+
+<img src="https://file.xiaomiquan.com/25/54/2554db8a586cc8faa9975308b54f5988af68e0b341cb88b77e90e4c05ebeab88.jpg" width="25px"/> __Immortals__: 可以尝试kcptun加速ss，1080p不是问题
+
+<img src="https://file.xiaomiquan.com/59/51/5951d4e58f300c77c694d102186da5cca79e17dc6ba43fc529c330cd75005c2c.jpg" width="25px"/> __请添加备注__: 阿里云貌似也可以，就是有些小贵
+
+<img src="https://file.xiaomiquan.com/fc/6a/fc6a8b97a0702c8ca06abad9cb5ca9e275d54577b4c41b70fcd9d314db5b680d.jpg" width="25px"/> __三思之旅__: Google Cloud免费一年，油管4K轻松飞起😏
+
+<img src="https://file.xiaomiquan.com/73/46/7346088fcbd428bef2055102b2eb708048b824a0e3a18a369d5c40ef3265e14c.jpg" width="25px"/> __TomW__: aws免费的现在好像不是每月15G了，是450小时。昨天帮朋友搭梯子发现的
+
+<img src="https://file.xiaomiquan.com/73/4f/734f2c7364f4ef86e936145ef88229d700ac299eb89414ded45da3c1923caa9e.jpg" width="25px"/> __苏少‮蛋脸小的你下一了亲并‭__: 其实我觉得搬瓦工更简单一点
+
+<img src="https://file.xiaomiquan.com/f0/bf/f0bfbda89e3585e2553dc9f03f3bdab2b563215c2cfdbb66931262abb622cf61.jpeg" width="25px"/> __黑色的眼睛__: 没看到亚马逊哪里有写：每月15G流量的限制啊？
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/f0/bf/f0bfbda89e3585e2553dc9f03f3bdab2b563215c2cfdbb66931262abb622cf61.jpeg" width="25px"/> __黑色的眼睛__: 
+[https://aws.amazon.com/cn/free/faqs/](https://aws.amazon.com/cn/free/faqs/)
+
+...
 
 ---
 
@@ -1106,6 +1491,38 @@ Google AlphaBay
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-22:
+
+> 匿名用户 提问：
+余弦大大求教，机器学习在安全领域应用多吗？我知道可以用在waf，ddos防御上，但不知道效果咋样。
+
+
+多呀，未来这个会是竞争壁垒，无论是对个人来说，还是对相关产品。这个未来很快就会到。
+
+机器学习效果还是很明显的，对于大数据场景来说，可惜我还是半吊子，不敢乱说，等有些突破了再来说吧。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 点赞，个人想往这个领域发展，一方面有所壁垒，一方面又是网络安全行业。生存不易，想去做黑产了都。。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 都不容易，黑产可以了解却不能踏进去。
+
+<img src="https://file.xiaomiquan.com/79/68/7968b751ccc4269af04247db62808573076a3fce2db099058271513bbfb42d2c.jpg" width="25px"/> __王同学__: 道哥的黑板报，
+[弹性安全网络 -- 构建下一代安全的互联网](http://mp.weixin.qq.com/s/epFSC88J7LF3BGwQdoZ-Rg)
+
+
+
+<img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__ replies to <img src="https://file.xiaomiquan.com/79/68/7968b751ccc4269af04247db62808573076a3fce2db099058271513bbfb42d2c.jpg" width="25px"/> __王同学__: 懂技术，懂运营，懂管理。最重要的是道哥很会做影响力！技术其实并不是最重要的
+
+<img src="https://file.xiaomiquan.com/79/68/7968b751ccc4269af04247db62808573076a3fce2db099058271513bbfb42d2c.jpg" width="25px"/> __王同学__ replies to <img src="https://file.xiaomiquan.com/b4/60/b460e6ec9b8123ffccbe6825deec13b1b9f636a3925194d65240bb559366a436.jpg" width="25px"/> __Canng__: 很赞同！
+
+
+...
+
+---
+
 ## IP
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-05:
@@ -1154,6 +1571,47 @@ __#基础#__
 
 
 ---
+
+## JS
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-28:
+
+
+__#基础#__
+
+JavaScript 入门经典读书笔记
+
+分享来自@Hi  
+
+分享得很认真，30来页笔记，不容易，如果你需要发展前端黑，那么 JavaScript 是必备黑魔法，如果你想成为全栈黑客，JavaScript 也必须掌握。
+
+脚踏实地，一步一步，成长才能稳！
+
+
+__分享文件:__
+[JavaScript 入门经典5th_Ch01-10.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 学习前端，有个好方式，找着百度ife前端学院的教程来，新手的话去看他们开设的第一期，是在github上的，比较初级
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 学jquery还用学js吗？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 当然啊，jQuery只是方便的js框架罢了，你不熟悉js怎么行
+
+<img src="https://file.xiaomiquan.com/88/ba/88baf27d18a55ca81cb25b0279ab02127bac65f1d2a9cdfbc724c0cf7512f7e9.jpg" width="25px"/> __In&eRes7ing__: 目前正在看，很基础，但是也很考验人。基础不牢地动山摇啊
+
+<img src="https://file.xiaomiquan.com/e1/13/e11323b87fbd14d11c8ed453e58d5e203cff855222009760643443f997682362.jpg" width="25px"/> __你慢慢的我先走__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: ife的报名不是已经截止了吗？怎么弄呢？
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/e1/13/e11323b87fbd14d11c8ed453e58d5e203cff855222009760643443f997682362.jpg" width="25px"/> __你慢慢的我先走__: 不用报名，跟着它们的节奏来学，看第一期和第二期
+
+
+...
+
+---
+
 
 ## Docker
 
@@ -1485,6 +1943,28 @@ __#姿势#__
 
 __分享文件:__
 [DEFCON25_Koadic C3_COM Command Control.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-24:
+
+
+__#HITB#__
+
+A Year In The Red，这个 PPT 含金量挺高的，不过很多细节还是得自己去玩。
+
+里面介绍了他们及别人研发的好工具，这都还好，里面的 Domain Fronting 技巧来做 C&C 隐蔽的可以关注看看，虽然之前我也研究过...
+
+在听这个的时候，一位新西兰老外问我们 Red Team 在中国怎么叫，我们说：红队。
+
+Red Team 的叫法流行了，我们就是以 Red Team（攻击）的出发点去做 Blue Team（防御）的事。
+
+下午有事，不直播了，不过遇到什么好玩的会随时发。
+
+
+__分享文件:__
+[D1 - Dominic Chell and Vincent Yiu - A Year In The Red.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
 
 
 ---
