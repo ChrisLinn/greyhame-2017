@@ -20,6 +20,7 @@
 - [Docker](#docker)
 - [Python](#python)
 - [Openwrt](#openwrt)
+- [Command and Control](#command-and-control)
 
 ## 技能树
 
@@ -320,6 +321,25 @@ C# 灰帽，非常期待此书！嗯，中文版不知道国内何时译出。
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-05:
+
+
+__#资源#__
+
+之前提到过这本书《灰帽 C#》，玩 C# 及 Win 渗透的同学，这本书很值得实践，也很值得入门，前提是：英文不是障碍。
+
+由浅入深，一步步打造自己的利用工具，并和那些知名的黑客/安全工具联动。无论是攻还是防，这本书都很合适。
+
+我好像在写书评...🤣
+
+
+__分享文件:__
+[No Starch Press Gray Hat Csharp B0721RCGMX.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
 
 
 
@@ -1290,6 +1310,87 @@ __#姿势#__
 <img src="https://file.xiaomiquan.com/01/90/01903e0646f6df0fa017076ab2935b1104ade470b8eb8d28e3f2c3bb5b44e3d9.jpg" width="25px"/> __熟人不宜__ replies to <img src="https://file.xiaomiquan.com/66/01/660104bd6b28762521f973581f028cc6e49e98159b6d3614aa96a4d64ee52a33.jpg" width="25px"/> __(月半)Al3x~__: 嗯！成都电信的家用200M光纤可以支持4次同账号拔号，我家猫现在接出来的三条线都是独立拨号，独享带宽的，哇咔咔！😏
 
 ...
+
+---
+
+
+## Command and Control
+
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-07-25:
+
+介绍几种cc的设计
+1.直接用单一IP地址
+好处：简单易用
+坏处：容易封禁
+
+2.单一域名
+好处：也很简单，被封了再申请一个
+坏处：要经常换，免费域名一看就很可疑
+例如3322.org
+
+3.多域名+按时更换IP
+好处：组合多不大容易被封
+坏处：费钱
+
+4.DGA算法
+好处：高级CC的主流技术，便宜实用
+坏处：随机性字符串域名无法抵御语义分析
+
+5.变形DGA算法
+好处：老子再也不怕语义分析啦
+坏处：费脑子想个迷惑性强的字典
+
+6.boss+杂兵双层CC
+好处：杂兵要多少有多少，每一段时间boss就给派新一批杂兵，找不到boss就很难封锁
+坏处：如果boss被抓。。。另外DNS查询量太异常
+
+7.利用论坛发帖，爬取CC指令
+好处：隐蔽性好，容易蒙过安全检测人员，尤其是你的指令又很迷惑的情况下
+坏处：当论坛版主是个黑客。。。
+
+8.平常无外联，需要时才分配CC
+好处：这个厉害了，基本不会被发现
+坏处：技术要求高。怎么分配呢？这个见仁见智😝
+
+9.评论区补充
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: dropbox telegram 等都是常用的“中转”
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 还见过新浪博客和QQ空间的
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 第8种没看太懂，求分享细节😆
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ replies to <img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 举个例子，你的马平时不主动外连，而是监听某一特定端口，当你要激活它时往这个端口发一个特定内容的包来激活，然后再给它分配一个临时的cc，完事以后解除绑定的cc，继续潜伏😘
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__ replies to <img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: 学习了👍
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-05:
+
+
+__#姿势#__
+
+强烈推荐看看这篇 Paper，Koadic (C3) 这个新远控设计思路与功能，这是一款高级 JScript/VBScript 远控，对比了经典的 Meterpreter 和 Empire。最重要的是这个远控是开源的：
+
+[GitHub - zerosum0x0/koadic: Koadic C3 COM Command & Control - JScript RAT](https://github.com/zerosum0x0/koadic)
+
+
+
+玩 Win 渗透的同学可以好好看看，其实 Paper 本身简单，工具用起来也简单。
+
+
+__分享文件:__
+[DEFCON25_Koadic C3_COM Command Control.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
 
 ---
 
