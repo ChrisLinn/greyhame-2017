@@ -623,3 +623,64 @@ ProtonMail，之前推荐过呀，不过前段时间他家 V-P~N 出了点丑闻
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-18:
+
+
+__#资源#__
+
+  新 DNS 服务 9.9.9.9
+
+
+[IBM推出新 DNS 服务(9.9.9.9)，谷歌(8.8.8.8)要哭了。。。](http://mp.weixin.qq.com/s/3Zsv1o5FzqxZA0JUYpQ5Aw)
+
+
+
+“IBM 、Global Cyber Alliance 和 Packet Clearing House 合作推出了免费的 Quad9 公共 DNS 服务（9.9.9.9），它将会屏蔽与僵尸网络、钓鱼攻击和其它恶意主机相关联的域名。Quad9 的工作与其它免费的公共 DNS 相似，但不会返回已识别为恶意的域名解析。”
+
+“Quad9还可以从18个额外的威胁情报合作伙伴那里获取信息，以阻止面临最终用户和企业风险的大部分威胁。”
+
+“系统不收集个人身份信息。最终用户的IP地址不会被存储到磁盘上，也不会被分发到应答本地数据中心查询的设备之外。”
+
+
+<img src="https://file.xiaomiquan.com/106/aa/06aa7c523fbb83bd31d7d99e1ca2f055008c71aa15189af148b5e711df0527a3.jpg" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: 前面几条都信，唯独最后一条😒
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: [呲牙]将就信了
+
+<img src="https://file.xiaomiquan.com/1e/d7/1ed734782bb9bf72fd5e0a97f51aafcc36cb575fe8f4b12197a5a0bdd8eced7f.jpg" width="25px"/> __毛毛爸__: 试了一下响应速度，感觉有点慢
+
+<img src="https://file.xiaomiquan.com/a5/c5/a5c55f12eac59f3fad216a0b8016e5acaa88e86bc8477f0203f8402337a82f65.jpg" width="25px"/> __掉到鱼缸里的猫__: 最后一条不说还好，说了反倒有点不安
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-21:
+
+
+__#资源#__
+
+  GitHub 代码安全检查机制终于来了
+
+
+[GitHub：可以帮助你检查代码安全了！](http://mp.weixin.qq.com/s/_zI980VAz3inwCbE0H1FKQ)
+
+
+
+“依赖图和安全警报目前支持 JavaScript 和 Ruby，Python 支持将在 2018 年到来。”
+
+期待更多的支持。👏
+
+其实这个思路是可以很好实现 SDL 安全开发过程里的代码安全审计辅助的。
+
+
+<img src="https://file.xiaomiquan.com/104/57/0457cdde715939fb995a59a12e5271d2e51e34da877b075b6657a507149fda43.png" width="50%" height="50%" align="middle"/>
+
+
+---
+

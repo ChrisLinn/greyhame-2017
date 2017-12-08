@@ -153,3 +153,28 @@ __分享文件:__
 
 
 ---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-13:
+
+
+__#资源#__
+
+对 Android 安全感兴趣的实际上也可以看看这个，懂开发是做好安全研究的必备一步：
+
+
+[重磅登场！中文版 Android 开发教学视频终于来啦！](http://mp.weixin.qq.com/s/pbnzmoI1h_Bc8qSebp-xZQ)
+
+
+
+Google 为中国开发者特别创立的视频频道，真是福利。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/1b4/12/b412a4b8821a304f3f60e636b08f26953e27f32c187cb1281f487fe9efd52c14.jpg" width="25px"/> __Not__: 懂开发是做好安全研究的必备一步，懂这句话的人应该都已经过了入门坑了吧[捂脸]
+
+
+...
+
+---

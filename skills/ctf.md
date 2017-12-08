@@ -101,3 +101,44 @@ __#资源#__
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ on 2017-11-21:
+
+
+__#基础#__
+
+  「WarGame - bandit」
+游戏链接：
+[OverTheWire: Bandit](http://overthewire.org/wargames/bandit/)
+
+
+
+这是一个找密码的游戏，需要 ssh 到服务器上按照提示不断的找到下一关的密码。
+如果你是个初学者，不必担心，这是一个专门为初学者打造的游戏，官方介绍的第一句就是：「The Bandit wargame is aimed at absolute beginners」。
+
+用来练习 Linux 基本操作很适合，而且不得不说，某些关卡的设计很骚～
+
+这里有我的经验：
+[「WarGame 系列」 Bandit | 灰色地带](http://or7.me/2017/11/17/WarGame_Bandit/)
+
+
+有需要的新手同学可以参考。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 很适合我
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 很有趣
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 我记得wechall里也有这种类型的
+
+<img src="https://file.xiaomiquan.com/a5/c5/a5c55f12eac59f3fad216a0b8016e5acaa88e86bc8477f0203f8402337a82f65.jpg" width="25px"/> __掉到鱼缸里的猫__: 冒昧的问一下，大大做这个的时候是直接通过判断出用什么指令的？还是从一般查看文件的方法里式验出来的？
+
+<img src="https://file.xiaomiquan.com/05/26/052606bee1b5e45844ab8e982107696c26c933506b311222774cbe70dda755c6.jpg" width="25px"/> __GeekaLeo__ replies to <img src="https://file.xiaomiquan.com/a5/c5/a5c55f12eac59f3fad216a0b8016e5acaa88e86bc8477f0203f8402337a82f65.jpg" width="25px"/> __掉到鱼缸里的猫__: 大部分命令日常就会使用到，即使遇到没用过的也没关系，Google 你要做的事就能找到合适的命令了。另外，这个游戏每关的介绍页面会有提示几个可能会用到的命令，可以说很贴心了。
+
+
+...
+
+---

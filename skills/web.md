@@ -562,6 +562,32 @@ while read -r line;do python redirect.py.1 uber.list $line;done < payloads.list
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-10:
+
+
+__#姿势#__
+
+  XSS 读取服务器任意文件
+
+小技巧，这个案例可以参考参考，其实这种已经不算是传统的 XSS，看起来像罢了，这个叫服务端 JavaScript 命令执行更合适:)
+
+
+__分享文件:__
+
+[Local File Read via XSS in Dynamically Generated PDF.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/Local File Read via XSS in Dynamically Generated PDF.pdf)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 服务端是 node 吧
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/60/64/60640ca1fb2dfb0131ee8573a60ad8d86961495d76e4d6f025927ab4ce652fcb.jpg" width="25px"/> __国勇@ATToT__: 说不定哦
+
+
+...
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
@@ -784,6 +810,7 @@ mysql官方文档中，rand这个函数是不能和order by 、group by 语句�
 总之，还是得了解mysql。QAQ！
 
 <img src="https://file.xiaomiquan.com/3f/3d/3f3d229e47736d41e18be6db0840a9ac07771d4c59609d81dae3157b5ac5a19a.png" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/01/35/013566d7eb9a4665a7cb7843b1af2fedc7c3cf202000fcac0a649d3312d56fb5.png" width="50%" height="50%" align="middle"/>
 
 
@@ -813,6 +840,31 @@ __#代码审计#__
 再补上一篇之前讲解格式化字符串的文章。
 
 [从WordPress SQLi谈PHP格式化字符串问题](https://paper.seebug.org/386/)
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-21:
+
+__#现代CMS框架审计系列#__
+
+海洋CMS 6.55 版本系列，第一篇关于SQL注入的，希望对大家有所帮助。[害羞]
+
+[代码审计之海洋cms 初级（SQL注入篇）](http://www.webhack.me/2017/11/15/seacms-step1/)
+
+
+
+来自@荣  的分享。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 之前还有谁给我私信过要分享的，消息多，还有知识星球丢过一次消息，导致我忘记了，可以再次私信我，谢谢。
+
+<img src="https://file.xiaomiquan.com/45/79/4579de34e8ec11021f8b7bdfe0a39c2cd2548b177fe81fb27cc6b3ad1fb10d84.jpg" width="25px"/> __荣__: [害羞]
+
+
+...
 
 ---
 
@@ -1106,6 +1158,28 @@ __分享文件:__
 [php基础学习笔记下_25e07.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记下_25e07.doc)
 
 [php基础学习笔记上_f8059.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记上_f8059.doc)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ on 2017-11-28:
+
+
+__#工具#__
+
+php  webui调试工具
+
+Ytrace是一个PHP代码调试跟踪工具，通过将PHP代码执行过程记录到文件中，再通过webui界面展示出来，并且支持单步调试的方式去查看执行过程。
+
+特性：
+
++ 可以可视化的看到源码文件哪些行被执行了
++ 通过点击行号，直接将执行跳转到对应的地方
++ 根据单步历史，往回执行
++ 设置断点。
+
+[ytrace_gui/README_zh.md at master · yangxikun/ytra...](https://github.com/yangxikun/ytrace_gui/blob/master/README_zh.md)
+
 
 
 ---
@@ -1423,6 +1497,33 @@ yy.txt 内容
 
 ---
 
+## DB
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-21:
+
+> Numb 提问：
+老大，数据库协议解析或者转发有没有什么开源的方案，如果想自己设计一款数据库审计系统，有没有什么好思路或者开源的框架？
+
+
+没特别去关注这个，看看圈友有谁了解。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e4/ca/e4ca0340ac566f302dcda0afe835affed902e62dda2344fce0b7f9ac7cde2f21.jpg" width="25px"/> __safecat__: 
+[GitHub - nim4/DBShield: Database firewall written ...](https://github.com/nim4/DBShield)
+
+
+golang写的database firewall
+
+<img src="https://file.xiaomiquan.com/e0/44/e044846320eefb66b10aab815c8b68a10603e1e9bc32fcc9446f4ec33e2f66d7.jpg" width="25px"/> __Numb__ replies to <img src="https://file.xiaomiquan.com/e4/ca/e4ca0340ac566f302dcda0afe835affed902e62dda2344fce0b7f9ac7cde2f21.jpg" width="25px"/> __safecat__: 万分感谢！看了下很有启发！
+
+
+...
+
+---
+
 
 ## 杂
 
@@ -1529,13 +1630,21 @@ __#漏洞#__
 那些年的经典漏洞利用（一），都是带 Logo 炒过的，你能认出几个？
 
 <img src="https://images.xiaomiquan.com/FmVF6aclhyqBgo3944_v_iPsD-2n?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:rRqzvVOoQ2wZ_AhaUrlvNVYosQg=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FqT-Ub3cDyJvw-212QpNFsuKoOCm?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:GKFycxrjaEN9ysQoa9IDjW81liA=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FjMURKL9VGpF1M2yzgfVXHUS5Cbx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:sKUtswdHfxfiVoXijADz5Bfda20=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FvpjkQb7nx5ugyQq7mx3XW9FlEKg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:UYIheVRZZ3J2yY939X8465sOP7o=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FimWZxP2iDvf59yAnWdR4jgqN8Jg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:fCLOxKUEp0oJ4hmqp-DhjbDNcJE=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fg2r5PmUUR5SsbDk36qoDslfk5h5?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:4Eaos1eMLT6VsbnjpFl0REwafNI=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FhftMKEUfjbOqalRoctScoCf5g6w?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:NvsA09f9mg1oHFjSCC1NGSCSIK4=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FlSY8WPCU5qIUTiQDEnZoaC6aY0n?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Pq503Ag56nr6k2Rzzeu4S4kenjM=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fo-fJWEzlJdVHjfuBbmV1Hq1RVyq?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:gzV4-yIin4oe33RLtGctGmNRRXY=" width="50%" height="50%" align="middle"/>
 
 
@@ -1549,9 +1658,13 @@ __#漏洞#__
   那些年的经典漏洞利用（二），都是带 Logo 炒过的，你能认出几个？
 
 <img src="https://images.xiaomiquan.com/FnC2wiwk5ckI_pb4kzT31VatooTD?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:xgHPuWI8j9MqcI5QBp84YwV7ufE=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FgAdUWQ7giQ8tkrqqwrmtmphCTu2?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:tex8-2Tv9UK75CQ_qHYbcJGCHo0=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FpdFFgZ18A2d9fvtdxJA7KTtvv17?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:mnbhllW5zX-f39cA3wv1AXHRBK8=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fr_sixCW1H_opVj1aJ1BH1qnQyVn?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:pmpP0DxY8_-cDFCikf-sBhCH7BU=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FjDzzZZT7vdc-4p6jCC2Mrzkxz_z?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:U8opE07Y6gwS0ORw7a5beMmioZc=" width="50%" height="50%" align="middle"/>
 
 
@@ -1585,4 +1698,17 @@ ss的C语言版server端本地命令执行漏洞
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-11-14:
+
+URL parser漏洞的发散，作者非常有灵气，肯深入研究。
+
+
+[https://www.blackhat.com/docs/us-17/thursday/us-17...](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
+
+
+
+---
+
+
 

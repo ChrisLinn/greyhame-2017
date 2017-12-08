@@ -331,10 +331,15 @@ __#经验#__
 其实，环境搭建可以参考别人的，但最终还是要根据自己的实际情况、个人喜好去打造属于自己的环境，原样照搬我觉得不可取😁
 
 <img src="https://images.xiaomiquan.com/FsGqMQu7abZ35kugBeMNs0bGLujj?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:zr_a5AE79eCys5ZH18YnzYoL44g=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fm-c5uhzat4fYTqmOTQMv2Jp6K0W?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-ua6sUU8pZYbN7xWAdUG1O0ONuI=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FjavIxky9hMp1AdEWWl3kWlOMs6q?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:s7qgEKeSnt3Ofea93A8HZcJSQvc=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FmVfQXQIJ7FYT43NbTLhHTjAP2xx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7JnWYfsnAxjlnNppkHfJydGxabk=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fh6-tHvHOsI6R-g98VjmlDtqQAZO?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Sokpf3tp4hkyIO36Y0YdPt_ghhE=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FrzShsYa2Tl_yd7bqBlhml5qbovK?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:zs7SVIw_8IXYMZQAecO8ajOw_00=" width="50%" height="50%" align="middle"/>
 
 
@@ -627,6 +632,129 @@ hack相比解几何题，需要的知识点更多，并且需要一定深度，�
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-14:
+
+> yann.y 提问：
+余大，请问怎样才是提高渗透实战水平的正确方向？参加了不少 CTF 感觉没有可见的提升。正在准备渗透学校的内网。
+
+
+如果不是未来准备把 CTF 当职业，玩玩就好，可能遇到的实战场景会很不一样。
+
+渗透水平提升有个关键点：那些基础技能的提升，比如如果你对 Windows 那些安全机制不了解，如何愉快渗透？谁真正了解这些？其实很多不是玩安全的，而是那些在做深度运维的人。
+
+举个非常简单的例子，NTLM Hash 拿到后如何进入下一步？大多数所谓的渗透师其实是不知道的，或只知道个常规套路。基本功不牢，真遇到问题了，别说不知道怎么解决，是连“这是个问题”都不知道。
+
+别说 Windows，渗透要面对的场景太多了，如何快速掌握新知识？没不断的积累的基础功，没不断发散的视野，还谈什么渗透？不是日个站，拿个已知漏洞，架个扫描器什么的就是搞渗透了。
+
+你说我丢你一个 XSS 算不算渗透，XSS 在你那你顶多拿个 Cookies，在我这，我能持久控你主机，这就是差距，什么的差距，基础功呀。
+
+其实本圈历史上发过不少基础功的东西，有没有真的认真去跟进、深入？
+
+不多说了，你渗透学校内网这事还是悠着点，急了，学校报警抓人哦。
+
+其实，很多东西吧，也没那么难，门道而已。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__: 谢谢余大！
+
+果然还是基本功的问题，的确经常就是拿到一个入口的洞之后就没什么思路了，尤其是涉及到持久化。
+
+刚好最近也在补协议和运维的基础。运维只知道个大概，没有机会实战，不知道自己搭环境来实操运维可不可行？（感觉不太现实）
+
+<img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__: 关于运维和系统维护的资料，博客等等都没少看。一直用不上，总是要重复拿起来。
+
+<img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__: 做安服的我感觉离渗透越来越远了，就是验证个已知漏洞的存在。。。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__: 当然可行了，见@ke  的一些分享
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__: 大多数用不起来很正常，但是在关键时刻至少你能有灵感之前遇见过就行:)
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__: 所以那远不是渗透，职位招聘上的话术罢了
+
+<img src="https://file.xiaomiquan.com/87/4a/874a9d7bc90aec06621571157ebc051fbde8f37747aa5c2d5a8ebb11163cbe88.jpg" width="25px"/> __风__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 感觉要做成服务员了，💊💊
+
+<img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 嗯。捣鼓去了 :)
+
+<img src="https://file.xiaomiquan.com/38/9c/389c2cf556f50cb75c0a5ec3a988e7841dfec3eb2a19634628a74b60eaeaf870.jpg" width="25px"/> __Crushmyr__: 又是内网渗透，又是web安全方面，，
+真是路漫漫其修远兮啊，还好自己一直都保持着浓厚的兴趣，继续求索
+
+<img src="https://file.xiaomiquan.com/1b4/12/b412a4b8821a304f3f60e636b08f26953e27f32c187cb1281f487fe9efd52c14.jpg" width="25px"/> __Not__: 个人谈一下基本功吧，在学渗透之前，我学了python 语法接触了linux，同时接触了js语法php.html等等……只是语法不能完全编程，然后又把web黑客攻防宝典啃完……对web流程有了个熟悉吧，那时候掌握的还不是很深，搞个信息搜集都觉得累的一b，就这搞完了，我想把xss，sql的书给啃了，想想当初挺傻的，啃不动了，啃的难受，但是之前算是看了web攻防宝典收获很多，是因为很多人推荐吧，自己观察的，听说能入门，不啃了怎么办？各种观察吧，觉得编程技能不能落下，我又重新捡起python 了之前是按python 3视频学的，一直顾及学python 核心编程第二版这本书是否冲突……没来的及啃，看了web攻防宝典后，我觉自己的顾及完全是多余的，思想衍生吧，有人推荐，书厚虽然老，但是好……静下心来书后面的课后题都尽量完成，能自己编程了，虽然不算太好，然后了解了web只是渗透的一个子集，又找了些书了解渗透包括哪些，之前一直很迷的东西都清楚了点，比如端口方面……而不是总是web……那样会很迷茫，后来了解了kali操作系统的工具……这是我缺少的……接触的工具少，之前一直在接触编程，和渗透流程……在接触工具后才觉得自己有点武器可用了……省时省力高效……而不是手动翻页面[捂脸]，在这段期间默认系统linux保持高效……在把所有命令了解后……用到哪个学哪个，然后再了解一些比较有用的，比如grep sed awk 等等吧……vim，工具接触后，找了本关于python 工具编写的书……看了后感觉超强大……[捂脸]以前的一些工具或者攻击在自己跟着敲一遍后……理解了更深了点，能理解了为什么说玩好xss需要玩好js这句话了……没体验过的人不会懂……然后了……这段时间也就是会编程后想法不一样了……看一些东西不是啃了……大部分都可以理解性的进行学习……不像之前只能理解一小部分，由于之前实战每次收集完信息除了暴力破解，貌似就没啥思路了，现在开始看sql攻击与防御，搭建各种数据库进行sql练习。这本书是在深入编程之前买的……也就是今年夏天……躺在凉席上像看天书一样，但是现在不同了，理解很深，比之前深很多然后又把以前买的书随便翻了翻理解感觉又不一样了[捂脸]，现在感叹会编程和不会编程的差别太大了，
+
+<img src="https://file.xiaomiquan.com/1b4/12/b412a4b8821a304f3f60e636b08f26953e27f32c187cb1281f487fe9efd52c14.jpg" width="25px"/> __Not__: 上面那个回复有点潦草，总之，扩展渗透知识面，不能扩展了，扩展不下去了，深入一门语言，能编程的那种，了解这门语言能给你的渗透带来什么，起什么作用这样才会经常用到，而不会生疏，或者觉得是个鸡肋，在上面这样学的差不多了，再次深入，协议，c语言，各种渗透方向……手机，无线……逆向……等等……依次往下推，了解然后就是编程语言……底层……最后了解操作系统。一般都是从下往上的，学的比较好点，没办法新手，自学踩的坑多，或者说有点兴趣才能继续，虽然自己技术不是很厉害，聊下自己的想法，作为一个黑客无论是否自学，掌握一种自己的学习方法很重要，但是大部分学习方法万变不离其宗，也就是基本差不多，了解其更本，才能很好的继续下去吧，根据人这个物种来设定学习方法规律，也就是生物方面的想法，非计算机，在每个理解的层次上面再进行下一步理解，从而积累，然后才能一步一步的进步，我今晚才发现……作为一个黑客要学的东西太多了，哪怕我之前很努力的学，但是没用，需要很多时间大量的时间，才能掌握各个层面上面的黑吧，我也理解了……为啥余弦说需要花5年甚至10年来学了……作为一个黑客掌握学习方法很重要，要有自己的学习方法，这些方法可以从你任何成功过学习某个东西的地方移植过来，这些方法别人说你不理解，老师教不会你，需要你自己去经历，学习的方法，其实说了那么多，我觉的我的回答很烂……不像写代码那样流利……大家见谅……突然话就多了起来，其实真正想学某个东西或者做某件事，虽然有很多坑，但是也有很多会帮助你的东西，需要真正想做事的人去观察吧……
+
+<img src="https://file.xiaomiquan.com/10c/4e/0c4eaadb5bc2ab2c23e5f7c6e58de92a514ba09f77c306c68f82cdc8bd649fc1.jpg" width="25px"/> __脖子__: 个人感觉，要重视编程，学过的知识实际搭环境实操一遍，做好笔记，注意协议、机制这些基础细节。
+
+<img src="https://file.xiaomiquan.com/a5/c5/a5c55f12eac59f3fad216a0b8016e5acaa88e86bc8477f0203f8402337a82f65.jpg" width="25px"/> __掉到鱼缸里的猫__ replies to <img src="https://file.xiaomiquan.com/1b4/12/b412a4b8821a304f3f60e636b08f26953e27f32c187cb1281f487fe9efd52c14.jpg" width="25px"/> __Not__: 我学的专业是从下往上讲的，但是总觉得老师只是讲理论，少了点激情，觉得很乏，看了过来人的话，觉得更有动力了[抱拳]
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-11-21:
+
+
+__#经验#__
+
+ 最近发现很多小伙伴都在问我想要学习渗透测试，但是不知道怎么开始，也不知道要学习什么？所以在这里我打算分享一下我的渗透学习之路以及给初学者的一些建议。首先做个自我介绍：
+
+常用ID： myh0st
+
+个人博客： 
+[信安之路](http://www.myh0st.cn)
+
+
+
+学习工作经历： 90sec论坛元老（曾经的管理员）、微信公众号【信安之路】创始人、CISP-PTE（注册渗透测试工程师认证）考试命题专家组成员
+
+我能回答的问题： 渗透测试相关问题（当然回答的不一定好，肯定比不上弦哥）、关于CISP-PTE认证的相关问题等
+
+兴趣爱好： 热爱技术学习、分享、交流，喜欢交朋友，感谢弦哥的新人邀请我做嘉宾，我会尽我所能帮助圈子里的小伙伴提升自己的技术实力，在信安之路上前行不在孤单。
+
+
+__分享文件:__
+
+[我的渗透学习之路.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/我的渗透学习之路.pdf)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 很支持这种经验分享
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 有关注你公众号[强]
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 是吗？果然圈子还是比较小呀，哈哈
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 谢谢弦哥的信任
+
+<img src="https://file.xiaomiquan.com/59/51/5951d4e58f300c77c694d102186da5cca79e17dc6ba43fc529c330cd75005c2c.jpg" width="25px"/> __请添加备注__: 也关注了大佬的公众号
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/59/51/5951d4e58f300c77c694d102186da5cca79e17dc6ba43fc529c330cd75005c2c.jpg" width="25px"/> __请添加备注__: 不错，看来这个圈子有不少小伙伴知道我的公众号呢
+
+<img src="https://file.xiaomiquan.com/be/28/be28e097e4426d5bbccd2babaef685141be988f0a59f737cee8cc8900a29a2f7.jpg" width="25px"/> __。。__ replies to <img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__: 一直在关注，哈哈
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-11-22:
+
+
+__#经验#__
+
+ 在双十一大家都在购物的时候，我们在圈子里做了一个分享活动，这是几位小伙伴的学习经验分享，希望能对圈子里的同学有所帮助。
+
+
+__分享文件:__
+
+[几位小伙伴的学习经验分享.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/几位小伙伴的学习经验分享.pdf)
+
 
 ---
 
@@ -1018,5 +1146,18 @@ web安全和渗透测试的区别在哪里？感觉渗透测试包括了通过we
 <img src="https://file.xiaomiquan.com/d2/51/d251481e66c6144e32be00ceeedbd707a2bbe024ac5d9b150ce826c26a0b6be6.jpg" width="25px"/> __desword__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 6666
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-11-23:
+
+
+__#基础#__
+
+学习安全的最终目的是为了有一份工作，找工作最关键的是技术面试，从面试题目中获取技术学习的重点知识，用面试题目指导学习是一个非常不错的出发点，分享一篇文章，是一个小伙伴收集整理github上公开的面试题目，然后总结的一个学习指导文章，供大家参考，
+
+[从面试题中学安全 - 信安之路](http://www.myh0st.cn/index.php/archives/306/)
+
+
 
 ---

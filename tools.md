@@ -1666,6 +1666,54 @@ __#资源#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-13:
+
+
+__#姿势#__
+
+Ubuntu 上安装 IDA Pro 7.0
+
+注：破解版可以搜本圈关键词：IDA，先下载好。
+
+最近更新了常用 Ubuntu 到 16.04 64 位，桌面版的，之前的逆向环境也顺便做了个升级，这里把安装 IDA Pro 7.0 的经验给大家简单分享下。
+
+Ubuntu 初始化的源可以使用 aliyun 的，国内更新快。
+
+第一个坑是 Wine 的版本问题。
+
+默认情况下，apt-get 里安装的是 1.6 系列的，这个系列实测对 IDA Pro 7.0 兼容性不行，那么只能乖乖按照官方指南走：
+
+
+[Ubuntu - WineHQ Wiki](https://wiki.winehq.org/Ubuntu)
+
+
+
+安装后，右键 IDA Pro 的 exe 文件，选择 Wine 打开安装。
+
+第二个坑是 Python 2.7 64 位安装不上。
+
+可以先忽略完成 IDA Pro 的安装后，再单独安装：
+
+下载 Python 2.7 的 MSI 文件，命令行下执行：
+
+`wine64 msiexec /i python-2.7.14.amd64.msi`
+
+即可顺利完成安装，注意这里执行的是 wine64 命令，就这点小差异:)
+
+当然，如果第一步用 wine64 去安装 IDA Pro，那应该可以很顺利，懒得试。
+
+总结下解决问题的思路：
+
+1. 遇到莫名其妙的问题，可以开调试大法，比如 strace/ltrace/pdb 这些命令
+2. 还可以看命令输出及相关日志
+3. Google 之
+4. 官方文档是最保险的一招
+5. 一些基本知识是需要有的，如 32/64 位的区别
+
+
+
+---
+
 ## SQLi
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-10:
@@ -1721,6 +1769,40 @@ github: [GitHub - soimort/you-get: Dumb downloader that scr...](https://github.c
 支持以下网站的视频/音频下载:
 
 [SUPPORTED SITES](https://you-get.org/#supported-sites)
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-20:
+
+
+__#资源#__
+
+  Windows 10 开发环境虚拟机
+
+
+[Download a Windows 10 virtual machine - Windows ap...](https://developer.microsoft.com/en-us/windows/downloads/virtual-machines)
+
+ 
+
+包括：
+
+Windows 10 Fall Creators Update Enterprise Evaluation
+
+Visual Studio 2017 (Build 15.4) with the UWP, desktop C++, and Azure workflows enabled
+
+Windows developer SDK and tools (Build 16299.15, installed as part of VS UWP workflow)
+
+Windows UWP samples (Latest)
+
+Windows Subsystem for Linux enabled
+
+Developer mode, Bash on Ubuntu on Windows, and containers enabled
+
+官方提供的，有钱的懒人必备。
+
+
+<img src="https://file.xiaomiquan.com/114/59/14595ba609dfe860d1f3581235515f24d53ec03b7dbc202afd7f61010ff1cb99.png" width="50%" height="50%" align="middle"/>
+
 
 ---
 

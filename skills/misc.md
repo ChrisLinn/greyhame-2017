@@ -389,6 +389,28 @@ RC2 的 A10“不足的日志记录和监控”和 RC1 的 A7 有点类似，不
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-18:
+
+
+__#姿势#__
+
+  适合新手的 Hacking 入门系列文章
+
+
+[Null Byte — The aspiring white-hat hacker/security...](https://null-byte.wonderhowto.com)
+
+
+
+WANDER HOW TO 的 NULL BYTE 是一系列入门文章教你各种 Hacking 技巧的，很多其实都赶上了时代。我早期就订阅了其 RSS，看了不少，有时对我来说也是个阅读享受。
+
+全英文，但很简单很简单。
+
+
+<img src="https://file.xiaomiquan.com/12b/3f/2b3f6056bb4d6b67039a42716395525fdda8458477615158178200bb53571774.jpg" width="50%" height="50%" align="middle"/>
+
+
+---
+
 
 
 ## 平台
@@ -737,6 +759,44 @@ __分享文件:__
 [RTFM Red Team Field Manual - 其它资料 - 道客巴巴](http://www.doc88.com/p-4109036491534.html)
 
 
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-22:
+
+
+__#经验#__
+
+  我知道大多数人很懒，但是这本书确实是真经典。
+
+《UNIX 编程艺术》
+
+我不止一次传播过它的思想，这本书对我的黑客工程化之路影响巨大。
+
+拍几页供细细品味其中哲学。
+
+
+<img src="https://file.xiaomiquan.com/120/48/2048831f241fcdb26fa8207f1c598cc20b06b6b5e50c708c6667cc966e60e90b_big.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/16f/99/6f99cbbebdebd0e2ed10522d9496c003c52bdb8ec9f05deee096a65578d240d1_big.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1e1/61/e161ce9fdeee38038c00c27a17a1c851143e7421e5ce619747f671747c3f0afc_big.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1b3/c4/b3c484020ec240ebd9d2d69c1073587e8133a0aab4ca51dc2a5d9a173f78bd2b_big.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1b6/c4/b6c4c422d23f10d5b0fa3fa99ace30794f4d0ae8b0d3406d2ef6738c0f7f5f41_big.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1bc/cf/bccff0b4917c2cec538d21085b92b9145c03f70f40a097d51567132c6aa73f92_big.jpg" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/09/17/09173a8ddd903516f16515893f44703fd4de9ec901a54ac5deeccfe9db189fdd.jpg" width="25px"/> __BigBoy__: 最后一页没看明白[憨笑]
+
+<img src="https://file.xiaomiquan.com/23/09/23091c17d1fee9990569279ef5daed0ec260736405e8e9a9619dcb084a4d09d8.jpg" width="25px"/> __小后__: 读书那会，以前有本中文的，直接被师傅扔掉，然后买了本英文的，师傅终于满意了
 
 
 ...
@@ -2125,6 +2185,61 @@ Cookie 这个维护，本质原理：看浏览器怎么做的，尽量去模拟�
 
 ---
 
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-11-20:
+
+
+__#工具#__
+
+ 小密圈爬虫，只能爬下来自己保存哦[发呆]
+可以爬取你账户下所有小密圈的内容。
+
+用法：
+
+扫码登录后
+
+1.输入你的浏览器Agent信息。
+
+2.输入你登陆后的token，也就是请求头里面的authorization
+
+默认在当前目录下生成一个db.html页面。暂时不支持下载附件，这两天有空就加上去。
+这作者明显代码水平拙劣，将就着用吧，有bug自己改[发呆]
+
+[GitHub - xxxxxyyyy/craw: craw xiaomiquan](https://github.com/xxxxxyyyy/craw)
+
+
+
+
+<img src="https://file.xiaomiquan.com/16e/85/6e85dbf77a8d14261c10def4d27871827bc23f17fdc84016d3aac038ef8c08ce.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1b7/f0/b7f049406c8b22b4e8a9db7939371ca9bfd88f9f922e8977051c4067f43c2c4d.png" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 补充：请在Linux下跑。
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 哈哈哈，希望大家传播之前和我们打好招呼，没授权的传播，我们不会饶恕的[愉快]
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 哦，真巧，吐司也有人发了一个爬虫，那个不是我，我这个爬虫比他的智能，不需要手工输入圈子id
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 还有这种操作。哈哈。
+
+<img src="https://file.xiaomiquan.com/6e/35/6e3503eedbcb357adc1deb9fa5a66b95c7189a86464fa1c62a0180cb32b7400f.jpg" width="25px"/> __Roll__: 之前用scrapy写了一个比较完整的，欢迎交流。当然，仅用于备份请勿传播。
+[GitHub - Lodour/XMQ-BackUp: 小密圈备份](https://github.com/Lodour/XMQ-BackUp)
+
+
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/6e/35/6e3503eedbcb357adc1deb9fa5a66b95c7189a86464fa1c62a0180cb32b7400f.jpg" width="25px"/> __Roll__: 原来已经有了[强]
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ replies to <img src="https://file.xiaomiquan.com/6e/35/6e3503eedbcb357adc1deb9fa5a66b95c7189a86464fa1c62a0180cb32b7400f.jpg" width="25px"/> __Roll__: 比我的写的好多了，我就一个requests[撇嘴]
+
+<img src="https://file.xiaomiquan.com/6e/35/6e3503eedbcb357adc1deb9fa5a66b95c7189a86464fa1c62a0180cb32b7400f.jpg" width="25px"/> __Roll__ replies to <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: [呲牙]响应余弦大大的scrapy推广
+
+
+...
+
+---
+
 ## 验证码
 
 
@@ -2927,6 +3042,54 @@ Not surprisingly, the client can also be directed to local resources as well.
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-19:
+
+关于最新 Firefox 扩展不兼容，我的一些看法，同步过来给大家也看看：
+
+
+[为什么最新版 Firefox 浏览器禁止了 Hackbar 渗透测试插件的使用？ - 知乎](https://www.zhihu.com/question/68338297/answer/262162461)
+
+
+
+话说，新版 Firefox 确实帅，见：
+
+
+[适用于 Mac、PC 以及 Linux 的全新、快速浏览器 | Firefox](https://www.mozilla.org/zh-CN/firefox/)
+
+ 
+
+宣传页有句话是：“快而极简，与 Firefox Quantum 相比 Chrome 显得过时。”
+
+期待那些优秀安全扩展的作者可以更新，跟上 Firefox 的大变化，至少 NoScript 新扩展很快会发布。
+
+浏览器安全研究者们又有新生态可以去突破;-)
+
+
+<img src="https://file.xiaomiquan.com/1be/dd/bedd8e48aaede7e6fc807ec5fc4f8c30a30a12f642ad61e2cabd25dc507c1b3b.jpg" width="50%" height="50%" align="middle"/>
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-22:
+
+
+__#工具#__
+
+  NoScript 10 发布...
+
+确实是纯 Web 扩展了，这是向 Chrome 看齐，但是可惜了，NoScript 已经不是当年的 NoScript。毕竟 Firefox 57 版本也不是当年的 Firefox 了。
+
+具体差异技术细节回头再说。
+
+
+<img src="https://file.xiaomiquan.com/178/9e/789e1e06d23a13d303987a0f8b1be48b4692cde0a9aed22021147632469ca109.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/19b/82/9b821f71d1ee238c87ccb4a277ad465431d08e9573ecc23e6b1b78be85da6c32.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/141/00/41004557a8e04b32c9c1f54bd012afe339cb60d6dc09099be1d01b5e2323d63b.jpg" width="50%" height="50%" align="middle"/>
+
 
 ---
 

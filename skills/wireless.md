@@ -189,3 +189,16 @@ scapy加了个Krack AP module ：）
 
 ---
 
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-11-15:
+
+BlueBorne RCE(CVE-2017-0781)在Android 6.0.1上的复现过程。
+
+
+[BlueBorne RCE on Android 6.0.1 (CVE-2017-0781) [En...](https://jesux.es/exploiting/blueborne-android-6.0.1-english/)
+
+
+
+
+
+---
+

@@ -140,7 +140,9 @@ __#Petya#__
 过程用到 Mimikatz 相关技巧提取明文密码、PSEXEC、WMIC 的利用技巧。
 
 <img src="https://images.xiaomiquan.com/FvzOxvclLhFGKnwV0gHYHeLnlghd?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-h-9hpdseGHrO-NmDh5_r_hpMHs=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FuIfKWz7Va5GoxVQUjgvUEIJOeFT?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:QeJ9BGGZWKplOesfI8UJHkhu81Q=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FjtVwUNx_h_1u60Ud5jhptFADTcR?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:SgGQ_l6h9l2W4uX7rkUSbZbot7Q=" width="50%" height="50%" align="middle"/>
 
 
@@ -349,6 +351,35 @@ endgame团队画的BadRabbit恶意软件的执行流程图，还是挺炫酷呢�
 ...
 
 <img src="https://file.xiaomiquan.com/41/b3/41b36482e50df589c1aab96bf02cc26f84715aecfb4ab94cff73436a248938a7.jpg" width="25px"/> __剑思庭__: 如果需要坏兔子的种子，我可以提供
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-20:
+
+
+__#姿势#__
+
+  推荐 Java 反序列化研究的这篇文章
+
+
+[深度 - Java 反序列化 Payload 之 JRE8u20](http://mp.weixin.qq.com/s/Daipik5qK6cIuYl49G-n4Q)
+
+ 
+
+能沉下心来深度研究 Java 安全的人太少了。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 之前我推荐过这个公众号，他主要研究的就是 Java 安全，历史的文章也推荐看看。
+
+<img src="https://file.xiaomiquan.com/1e9/a2/e9a21fdf533f935225ea9b9c5dab4cbc1aa20f4d72adc1d855fb3c73eaa270b1.jpeg" width="25px"/> __Madclear__: 感觉看雪峰会之后反序列化很火啊
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/1e9/a2/e9a21fdf533f935225ea9b9c5dab4cbc1aa20f4d72adc1d855fb3c73eaa270b1.jpeg" width="25px"/> __Madclear__: 那是你孤陋寡闻了...
 
 
 ...

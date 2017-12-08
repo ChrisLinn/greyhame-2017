@@ -240,4 +240,52 @@ GoCrack是FireEye的ICE团队发布的一款工具，是基于Web的高效地管
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-14:
+
+
+__#姿势#__
+
+ 用一点对抗技巧来优雅地激活 Windows 10
+
+上一篇分享的是 IDA Pro 7.0 在 Ubuntu 上的安装 hack 过程，这里给大家分享激活 Windows 10 的取巧过程。
+
+我分享的这些更多是“渔”，请仔细吸收。
+
+过程是这样的，我拿到个万能激活工具（MicroKMS 15.08.29.exe），不仅 Windows，Office 的也可以激活，但是对我来说谨慎很必要，万一这个小工具有个什么猫腻，那就不好了。
+
+所以在激活之前，我安装了微软自家的 Sysmon 来做完整的日志记录，在管理员权限的 cmd 里安装如下：
+
+```
+sysmon -accepteula –i –h md5,sha256 –n
+```
+
+然后就可以在系统日志里找到 Sysmon 的所有记录。
+
+这个小技巧是我们拿来做日志完备审计时用到的，当时的对抗出发点是恶意 PowerShell 的行为发现，用在这，其实一样:)
+
+准备好后，双击 MicroKMS 15.08.29.exe 进行激活操作，很快就完成。然后我们就可以去 Sysmon 的日志里寻找痕迹了，发现两行命令：
+
+```
+cscript C:\Windows\System32\slmgr.vbs /skms kms-win.msdn123.com
+cscript C:\Windows\System32\slmgr.vbs /ipk 7BNRX-D7ABG-3D4RQ-4WPJ4-YADFV
+```
+
+激活的本质就这两行，这两行什么意思自己试就知道了:)
+
+提取出这两行后，准备干净的 Windows 10，直接在管理员权限下的 cmd 里执行就可以优雅地完成激活操作了。
+
+这是个小技巧，在我们面对未知程序时多了份放心。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 网上搜激活工具，一下出来好多乱七八糟的，肯定不放心，有时候直接拿 IDA 看一下，甚至 strings 一下也能发现好玩的
+
+<img src="https://file.xiaomiquan.com/93/c0/93c0afcee1823a8215ad5307e444fe8d8eb054e940fd1f4a94b6d99df4d2b9c2.jpg" width="25px"/> __心态决定人生__: 从日志提取命令，学习了
+
+...
+
+---
+
 
