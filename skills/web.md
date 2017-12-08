@@ -1238,6 +1238,45 @@ Apache9月19日发布了CVE-2017-12616(信息泄露)和 CVE-2017-12615(远程代
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-01:
+
+
+__#漏洞#__
+
+Struts2 连爆两个洞：S2-054 与 S2-055
+
+我们的 Vulpush 监控第一时间推送了这两个漏洞爆发，从细节来看挺有意思的。
+
+前者是个 DoS 漏洞，当使用 REST 插件时，针对内置的 JSON-lib，除了升级 Struts 外，官方还建议用 Jackson handler 来取代默认的 JSON-lib handler。
+
+后者是个反序列化漏洞，却和 Jackson 有关的，官方建议是升级到最新版本。[捂脸]
+
+
+[S2-054 - Apache Struts 2 Documentation - Apache So...](https://cwiki.apache.org/confluence/display/WW/S2-054)
+
+
+
+[S2-055 - Apache Struts 2 Documentation - Apache So...](https://cwiki.apache.org/confluence/display/WW/S2-055)
+
+
+
+
+<img src="https://file.xiaomiquan.com/1a0/41/a0419e40b88580d24510b20cd9b56e2d9e4afd2a66f89ae85c5285bec6c2537a.jpg" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/51/15/511582e017ef814614fcda97b6d3776dfd2762a5b977564cb93132044243fc64.jpg" width="25px"/> __～～～__: 想知道大大的vulpush监控怎么做的
+
+<img src="https://file.xiaomiquan.com/7b/49/7b49d1995c98d0044d36e89b044c8451c3c620a4772af68ef547d715bbb1dff3.jpg" width="25px"/> __鹏飞__: Vulpush会公开使用么？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/7b/49/7b49d1995c98d0044d36e89b044c8451c3c620a4772af68ef547d715bbb1dff3.jpg" width="25px"/> __鹏飞__: 嗯 会的 要公开的话还有待完善，我们一直愿意开放许多能力
+
+
+...
+
+---
+
 
 ## Python
 

@@ -202,3 +202,35 @@ BlueBorne RCE(CVE-2017-0781)在Android 6.0.1上的复现过程。
 
 ---
 
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-05:
+
+
+__#tools#__
+
+Hijacker 一款android下Wifi破解工具
+
+基于Aircrack-ng，AirDump-ng，MDK3和Reaver。
+
+要求：需网卡支持监听模式
+
+[Releases · chrisk44/Hijacker · GitHub](https://github.com/chrisk44/Hijacker/releases)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: 哪些手机或者网卡支持手机监听模式？
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: EMUI4.0系统闪退
+
+<img src="https://file.xiaomiquan.com/2e/d6/2ed601f524a093a2ef25692413f618bd2d947cde8075dc813b98205b2daef33d.jpg" width="25px"/> __据说好的名字很容易被别人记住__: you are on Android 5+ ，you are rooted[捂脸]
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__ replies to <img src="https://file.xiaomiquan.com/2e/d6/2ed601f524a093a2ef25692413f618bd2d947cde8075dc813b98205b2daef33d.jpg" width="25px"/> __据说好的名字很容易被别人记住__: 谢谢
+
+
+...
+
+---
+

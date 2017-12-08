@@ -288,4 +288,45 @@ cscript C:\Windows\System32\slmgr.vbs /ipk 7BNRX-D7ABG-3D4RQ-4WPJ4-YADFV
 
 ---
 
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-07:
+
+
+__#tools#__
+
+ LogViewer:用于查看和搜索大型文本文件
+
+[GitHub - woanware/LogViewer: LogViewer for viewing...](https://github.com/woanware/LogViewer)
+
+
+glogg:快速浏览，搜索日志(优点：1.可以读取正在写入的日志 2. 支持Mac os、Linux、window)，正常情况下，如果日志正处于时时写入状态，会提示日志文件已被占用。
+
+[GitHub - nickbnf/glogg: A fast, advanced log explo...](https://github.com/nickbnf/glogg)
+
+
+
+
+<img src="https://file.xiaomiquan.com/160/50/6050c9b2e9289fb151b5836b1944acb17581e577fc57b8cd8137533e970e62a6.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1a5/b9/a5b9376faf81e8d026d06c3efe32e8ff85f7372c72aa8267a2884b76581b64fe.png" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__: 大文件一般也只会用ue，涨姿势了
+
+<img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__: 试了LogViewer，个人还是喜欢ue、notepad++这种，打开大文件也没多大问题，搜索支持结果汇总列表的，体验更方便些。[呲牙]
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__ replies to <img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__: 不知道大佬说的“大文件”一般是多大？平时我都用 Gvim for Windows 发现也够用[尴尬]
+
+<img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__ replies to <img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 小弟使用一般也就是几十近百兆居多。顶多小几百兆而已。没到那么“大”其实。😂
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__ replies to <img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__: 不算小了[呲牙]
+
+<img src="https://file.xiaomiquan.com/db/46/db463944dcee6d691b616604fe9fd3f08d518d7ae3ffd289fb5cd79f682e7b7b.jpg" width="25px"/> __sharecast__: 一般还是用Linux文本处理命令居多，一般的日志都是几十G，过滤出来用这个看还是比较方便的，感谢分享！
+
+
+...
+
+---
+
 

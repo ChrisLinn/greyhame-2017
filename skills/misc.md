@@ -15,7 +15,6 @@
 - [Dark Web](#dark-web)
 - [AI ML](#ai-ml)
 - [IP](#ip)
-- [CTF](#ctf)
 - [HTML](#html)
 - [JS](#js)
 - [Docker](#docker)
@@ -26,6 +25,9 @@
 - [Browser](#browser)
 - [跳转漏洞](#跳转漏洞)
 - [证书](#证书)
+- [CPU](#cpu)
+- [DLL 注入](#dll-注入)
+- [Mail](#mail)
 
 ## 技能树 Cheat Sheets
 
@@ -407,6 +409,32 @@ WANDER HOW TO 的 NULL BYTE 是一系列入门文章教你各种 Hacking 技巧�
 
 
 <img src="https://file.xiaomiquan.com/12b/3f/2b3f6056bb4d6b67039a42716395525fdda8458477615158178200bb53571774.jpg" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-30:
+
+
+__#资源#__
+
+ 漏洞挖掘的高级手法
+
+推荐下面这篇。对于漏洞挖掘初学者来说，看这篇会觉得很爽:) 知识面+漏洞认知+工具+耐心 -> 一个个好洞。
+
+
+[High-Level Approaches for Finding Vulnerabilities ...](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
+
+
+
+
+<img src="https://file.xiaomiquan.com/1cb/6e/cb6ed20e5f8e3431d978ae2b2e71fdc176000f5c4340f0f3019c4344bf217305.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/185/67/8567536525baf23df67b8495561f5ac7b1d8c1afbba896b199b379f2aedefc2c.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/138/bf/38bf710867aebf1f8f04fc87a61677b0a00cb0732e4b09c064220fb30893ed78.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/164/c9/64c922676a00d4f010b2495964ae87b1e9a413c9abe1a53cc1fb5b00cbcfb07a.png" width="50%" height="50%" align="middle"/>
 
 
 ---
@@ -2240,6 +2268,24 @@ __#工具#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-04:
+
+
+__#姿势#__
+
+  在web爬虫抓取技术领域，存在着很多着抓取与反抓取攻防对抗，本文结合web crawler技术的发展，探讨了很多web爬虫攻防技术的黑魔法，并且文末发布了一个基于headless chrome crawler的web抓取框架：webster，支持docker一键部署。
+
+来自@朱英达-Sugar  的给力分享。
+
+
+[如果有人问你爬虫抓取技术的门道，请叫他来看这篇文章 - 掘金](https://juejin.im/post/5a22af716fb9a045132a825c)
+
+
+
+
+
+---
+
 ## 验证码
 
 
@@ -3072,6 +3118,34 @@ Not surprisingly, the client can also be directed to local resources as well.
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-01:
+
+
+__#工具#__
+
+  Hackbar 的新版本来了！
+
+
+[Hackbar for Firefox 57  – Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/addon/hackbar-for-firefox-57/)
+
+
+
+前些天还说 Firefox 57 发布，导致很多扩展不兼容，那，Hackbar 新版来了。
+
+可惜这种新型扩展（Web Extension）比起老的（XUL）来说，体验确实普遍差了不少。
+
+
+<img src="https://file.xiaomiquan.com/131/3d/313d3493b7ad637015db04bf6c0bc184e901f29774853027c2c67e3c6691b326.png" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 融入到 F12 里了，这个好
+
+...
+
+---
+
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-22:
 
 
@@ -3128,3 +3202,80 @@ __#工具#__
 
 ---
 
+## CPU
+
+
+
+<img src="https://file.xiaomiquan.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__ on 2017-11-28:
+
+预告：Intel CPU ME 引擎漏洞利用演示
+blackhat欧洲专场 
+
+
+[How to Hack a Turned-Off Computer, or Running Unsi...](https://www.blackhat.com/eu-17/briefings/schedule/#how-to-hack-a-turned-off-computer-or-running-unsigned-code-in-intel-management-engine-8668)
+
+
+
+
+<img src="https://file.xiaomiquan.com/157/38/57385f0e4502a3827c566affd98373912f6eaf6b7eeaaa2755eb319146f8221c.jpg" width="50%" height="50%" align="middle"/>
+
+
+---
+
+## DLL 注入
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-30:
+
+
+__#姿势#__
+
+ DLL 注入的各种姿势
+
+这篇文章介绍了 DLL 注入的各种姿势，还开源了相关工具（C++源码）。
+
++ DLL injection via CreateRemoteThread()
++ DLL injection via NtCreateThreadEx()
++ DLL injection via QueueUserAPC()
++ DLL injection via SetWindowsHookEx()
++ DLL injection via RtlCreateUserThread()
++ DLL injection via Code Cave SetThreadContext()
++ Reflective DLL injection
+
+
+[Inject All the Things - Shut Up and Hack](http://blog.deniable.org/blog/2017/07/16/inject-all-the-things/)
+
+
+
+[GitHub - fdiskyou/injectAllTheThings: Seven differ...](https://github.com/fdiskyou/injectAllTheThings/)
+
+
+
+对于懂渗透且玩 C++ 的，这篇文章和这份代码非常值得参考。
+
+
+<img src="https://file.xiaomiquan.com/1ef/29/ef29b3ab6b408adaf3a45e87b30b00f08b77136b2bf4dfce5f96e1c5b8520219.png" width="50%" height="50%" align="middle"/>
+
+
+---
+
+
+
+## Mail
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-06:
+
+
+__#威胁情报#__
+
+ 最新的邮件欺骗漏洞，漏洞命名为Mailsploit，
+   
+可以绕过DMARC（DKIM / SPF）或垃圾邮件过滤器
+   
+影响超过30个电子邮件应用程序容易受到攻击，包括流行的客户端，如Microsoft Outlook 2016，Apple Mail，Yahoo!
+
+[Mailsploit](https://www.mailsploit.com/index)
+
+
+---

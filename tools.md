@@ -107,6 +107,53 @@ vault8 正确的打开方式
 
 ---
 
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-11-28:
+
+
+__#基础#__
+
+ bWAPP（buggy web Application）是一个集成了了常见漏洞的 web 应用程序，目的是作为漏洞测试的演练场（靶机），为 web 安全爱好者和开发人员提供一个测试平台，与 webgoat、dvwa 类似，小伙伴翻译的文章：
+
+[BWAPP 玩法总结 - 信安之路](http://www.myh0st.cn/index.php/archives/420/)
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-30:
+
+
+__#工具#__
+
+ Parrot 渗透操作系统
+
+渗透操作系统，远不止 Kali，只是 Kali 确实做得不错，但是这类操作系统可做性其实很大很大。Parrot 包括安全测试、软件开发、隐私保护许多专业的工具，这个操作系统也是基于
+ Debian 深度定制的。
+
+感兴趣的可以体验体验，不多说。
+
+
+[https://www.parrotsec.org/](https://www.parrotsec.org/)
+
+
+
+
+<img src="https://file.xiaomiquan.com/1fd/00/fd003c8da38c3c4d3c2de4a4f2286fc4cc258c70991a297508fe56574527708d.jpg" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/db/46/db463944dcee6d691b616604fe9fd3f08d518d7ae3ffd289fb5cd79f682e7b7b.jpg" width="25px"/> __sharecast__: 用过，比较酷炫，但还是kali比较稳定
+
+<img src="https://file.xiaomiquan.com/67/bb/67bbb5369ba451685a372e01afdd96683e1151fa32304f23b6b7750d1ee5496a.jpg" width="25px"/> __荆轲__: 去年用了一段时间，bug多，不稳定。
+
+
+...
+
+---
+
+
+
 
 
 ## PoC Exploit
@@ -1138,6 +1185,23 @@ Web 黑必备神器，有钱就买吧，没钱就等破解版。
 
 
 <img src="https://images.xiaomiquan.com/Fp11Wh8SEBk47NN32yFfqOQCjiKZ?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:j0zRyAqkqR8_latcqru_yIR-0UA=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-04:
+
+
+__#姿势#__
+
+自己动手丰衣足食 ：一个bat解决burp过期问题
+
+来自@h4ck0ne  的分享，很赞这种分享！
+
+
+__分享文件:__
+
+[解决全版本burp时间过期问题 -h4ck0ne.docx](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/解决全版本burp时间过期问题 -h4ck0ne.docx)
 
 
 ---

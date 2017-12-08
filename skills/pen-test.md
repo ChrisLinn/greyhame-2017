@@ -5,7 +5,7 @@
 - [webshell扫描](#webshell扫描)
 - [域渗透](#域渗透)
 - [MSF](#msf)
-- [Linux Shell](#linux-shell)
+- [UNIX Shell](#unix-shell)
 - [PowerShell](#powershell)
 - [WSH Injection](#wsh-injection)
 - [Downloader](#downloader)
@@ -62,6 +62,35 @@
 <img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ replies to <img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 附件是一个各种端口的总结嘛，百度有很多啊
 
 <img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ replies to <img src="https://file.xiaomiquan.com/0e/e1/0ee1c96d098d832f4c5b549d0174dc399280cfa71a743cd4397dd48e12b2e60a.jpg" width="25px"/> __灵活的胖子__: 然后实际乌云漏洞库一搜就有。
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-03:
+
+一份端口对应表
+
+
+<img src="https://file.xiaomiquan.com/1ba/77/ba7700623c2249250a651d271eee30db554a9f5a9ede1037cfc3193a35bfe866.png" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 一眼没看到 Redis 的 6379，Memcached 的 11211😅
+
+<img src="https://file.xiaomiquan.com/ec/79/ec79f1ae40a87bdefb4cfcea54a627dc1c28043bc62b1e0cb1ccc57f6fbcba40.jpg" width="25px"/> __test2504__: 挺可惜的，还是少了一些常见的端口
+
+<img src="https://file.xiaomiquan.com/b7/f5/b7f5c4ac2c8c032c26ba4fd222cebd77a07b4d0d3ee27ac28e2e3ae8907fc59f.jpg" width="25px"/> __兜兜有糖不给你吃__: 常用的不是系统自带有个记事本里全有么，不过你这个醒目，赞一个
+
+<img src="https://file.xiaomiquan.com/be/28/be28e097e4426d5bbccd2babaef685141be988f0a59f737cee8cc8900a29a2f7.jpg" width="25px"/> __。。__ replies to <img src="https://file.xiaomiquan.com/b7/f5/b7f5c4ac2c8c032c26ba4fd222cebd77a07b4d0d3ee27ac28e2e3ae8907fc59f.jpg" width="25px"/> __兜兜有糖不给你吃__: 请问一下大佬这个记事本放在那的[微笑]
+
+<img src="https://file.xiaomiquan.com/b7/f5/b7f5c4ac2c8c032c26ba4fd222cebd77a07b4d0d3ee27ac28e2e3ae8907fc59f.jpg" width="25px"/> __兜兜有糖不给你吃__ replies to <img src="https://file.xiaomiquan.com/be/28/be28e097e4426d5bbccd2babaef685141be988f0a59f737cee8cc8900a29a2f7.jpg" width="25px"/> __。。__: windows\system32\drivers\etc\services
+
+<img src="https://file.xiaomiquan.com/be/28/be28e097e4426d5bbccd2babaef685141be988f0a59f737cee8cc8900a29a2f7.jpg" width="25px"/> __。。__ replies to <img src="https://file.xiaomiquan.com/b7/f5/b7f5c4ac2c8c032c26ba4fd222cebd77a07b4d0d3ee27ac28e2e3ae8907fc59f.jpg" width="25px"/> __兜兜有糖不给你吃__: 找到了，谢谢[微笑]
+
+<img src="https://file.xiaomiquan.com/8d/f6/8df6a4c90a9ec9e3b7d237bdd5b1798141a4dd962c04c0534de4fbe048cd1bc4.jpg" width="25px"/> __Y叔也叫段子手__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 也没看到Mongodb 27017[呲牙]
 
 
 ...
@@ -211,6 +240,33 @@ __#基础#__
 <img src="https://file.xiaomiquan.com/107/17/0717b38c146bd2105fe2ce031a1b395cc1a2717e57b6efa3689339f7df5311e8.png" width="50%" height="50%" align="middle"/>
 
 <img src="https://file.xiaomiquan.com/1d4/37/d4379b2a5377b798074e0304d7b069bf200fb11dbed8b16c541bc98d3d594ae2.png" width="50%" height="50%" align="middle"/>
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-04:
+
+
+__#tools#__
+
+在Active Directory环境下渗透测试时没，我们获取了一个window的凭据，准备横向移动，登录更多的机器，来获取信息，此时我们需要使用多个"用户帐户"一个或常见的几个密码来蛮力攻击，使用这种方法可避免账户锁定，
+
+Spray工具可用于三种Windows域身份验证服务：SMB用于内部测试，OWA和Lync用于外部测试
+  
+Example: `spray.sh -smb 192.168.0.1 users.txt passwords.txt 1 35 SPIDERLABS`
+  
+Example: `spray.sh -owa 192.168.0.1 users.txt passwords.txt 1 35 post-request.txt`
+  
+Example: `spray.sh -lync https://lyncdiscover.spiderlabs.com/ users.txt passwords.txt 1 35`
+
+[Simplifying Password Spraying](https://www.trustwave.com/Resources/SpiderLabs-Blog/Simplifying-Password-Spraying/)
+
+
+
+[GitHub - SpiderLabs/Spray: A Password Spraying too...](https://github.com/SpiderLabs/Spray)
+
+
 
 
 
@@ -582,7 +638,7 @@ __#科普#__
 
 ---
 
-## Linux Shell
+## UNIX Shell
 
 
 <img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-06-22:
@@ -742,6 +798,48 @@ kali上的winexe（/usr/bin/winexe）采用的是动态编译，在运行的时�
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-30:
+
+
+__#姿势#__
+
+ Bash 后门欺骗隐藏技巧一例
+
+
+[oss-security - s/party/hack like it's 1999](http://www.openwall.com/lists/oss-security/2015/09/17/5)
+
+
+
+老技巧了：
+
+```
+$ printf '#!/bin/bash\necho doing something evil!\nexit\n\033[2Aecho  
+doing something very nice!\n' > backdoor.sh
+$ chmod +x backdoor.sh
+$ cat backdoor.sh
+#!/bin/bash
+echo doing something very nice!
+$ ./backdoor.sh
+doing something evil!
+```
+
+本质是：\033[nA 这种控制符会使光标上移n行，所以 cat 后看到的内容和直接执行的不一样。
+
+另外补充说下，\033 这样的控制符，我们经常在终端下拿来做带颜色的输出，更多请自行查阅相关资料。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 弦哥三连[嘴唇]
+
+<img src="https://file.xiaomiquan.com/54/c4/54c4ddff75c97f188d8b9d71eb9968df550924e72726285bee403e9060c9b9db.jpg" width="25px"/> __十八子__: 用vi和less都不能实现隐藏，cat可以
+
+
+...
+
+---
+
 
 ## Powershell
 
@@ -800,14 +898,21 @@ __分享文件:__
 <img src="https://file.xiaomiquan.com/49/38/493819414cee64e85bb9339ad2d5f28a809a1f8d45dba90f290aec07ec882a72.jpg" width="25px"/> __Moriarty@ATToT__ on 2017-06-24:
 
 .sct generator by Moriarty@DMZLab
+
 这是我闲着蛋疼用powershell 写的一个GUI小程序，功能主要是用来生成.sct文件。发这DD的目的主要是给大家介绍一下另一种方式来写GUI程序———Form（窗体）。用这种方式可以仅仅只需要powershell studio一个IDE就可以完成，在写一些简单的GUI的程序尤其适合。
+
 那么程序本身的功能很简单，就是用来生成.sct文件，这个类型的文件想必好多朋友都已经了解，subtee牛已经详细阐述过了。我一般用它下载执行exe文件的时候居多，用法如下：
+
 1.用certutil.exe(win7以上系统自带）将exe转成shellcode，格式如下：
 certutil.exe -encode setup.exe setup.b64
+
 2.将setup.b64的内容复制黏贴到中间输入框中，然后点击Generate即可生成一个随机命名的.sct文件。
+
 3.将这个文件放到一个web server上，然后用程序中给出的一句话在目标机器上执行，即可完成exe的下载并执行。
 程序中的refresh可以重新初始化所有参数（主要是重新生成一些随机的命名），clear会清空中间输入框中的内容。
+
 如果你想生成其它功能的.sct文件，可以双击第一个文本框和第三个文本框使之变为可修改状态，就可以定制自己的sct文件了。
+
 工具虽小，但我里面用了一些小技巧，你在阅读源码的时候应该就会注意到了。另外，写得仓促，可能有错误或者需要改进的地方，圈友们可自行修改。
 
 <img src="https://images.xiaomiquan.com/Fvb1uk0UNtTW4QO5ztFWnIhekvWg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:WCbccaAneV-SSm2aQD_ttO-v1IM=" width="50%" height="50%" align="middle"/>
@@ -1856,4 +1961,75 @@ IP-Biter 邮件追踪系统 也就是说所谓的像素追踪
 
 ---
 
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-04:
 
+
+__#tools#__
+
+ 密码重用检测工具
+
+比如你通过邮件或者社工库拿到一个账户密码，可批量登录指定网站，看下密码是否通用。
+
+shard(需自行指定账户密码)之后对Facebook、LinkedIn、Reddit、Twitter、Instagram、GitHub、BitBucket、Kijiji、DigitalOcean、Vimeo、Laposte、DailyMotion这些网站登录
+   
+[GitHub - philwantsfish/shard: A command line tool ...](https://github.com/philwantsfish/shard)
+
+
+Cr3dOv3r 从泄漏库(hacked-emails)中搜索泄漏邮箱的信息(简单的理解就是去社工库搜到了密码，之后批量登录)，然后对16个网站进行登录，之后返回结果。
+   
+[GitHub - D4Vinci/Cr3dOv3r: Know the dangers of cre...](https://github.com/D4Vinci/Cr3dOv3r)
+
+---
+
+
+## Mac
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-29:
+
+
+__#漏洞#__
+
+   Mac root 无密码直接登录
+
+测试：系统偏好设置，用户与群组，点按锁按钮以进行更改，root（空密码），回车（可能需要多试几次）
+
+实测成功，还看到如果 Mac 开启相关共享，直接 VNC 远程可以 root 控制，这就有点可怕了。而且有人开始全球扫描了……
+
+这个缺陷太低级了，之前也提过：苹果安全生态令人堪忧。
+
+太骄傲了？
+
+
+<img src="https://file.xiaomiquan.com/153/51/535123bfd469d7c88059070d6bdd2809a34b78873984dc3b4eebf7d98a4ef251.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1b7/97/b797e74a3facdcb379573943d5a9622b81c2383181092a915672245361c4422d.png" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/146/94/46944f337016cdbd1bbc24d7a611571be4033f39294f1c24c742f0c906cf867d.jpg" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 有同事亲测复现，网上还有人说 SSH 远程也测试成功
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/d7/70/d770925d03a48166661a8101018a4f33a3ee1cf3922d704d4330cbdc5b28b58a.jpg" width="25px"/> __jiayu__: 可怕 谁继续试试
+
+<img src="https://file.xiaomiquan.com/e7/c9/e7c94d7a3222c301465410c48a6d579ecbf028f83e63b94f471111d407eb293c.jpg" width="25px"/> __啊春__: Sierra 没问题，10.12.6
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e7/c9/e7c94d7a3222c301465410c48a6d579ecbf028f83e63b94f471111d407eb293c.jpg" width="25px"/> __啊春__: 嗯，得是 High，新版
+
+<img src="https://file.xiaomiquan.com/eb/4a/eb4a999b549d3d086b2661b1f64ed47690bdf522eb96e4aee545f79d2d11983a.jpg" width="25px"/> __耶路撒不冷__: 测试了一下，如果直接用root登录是不行的。但是在用户和群组用root试一次之后，奇迹就发生了。。。 之后直接退出当前用户，用root用户就可以无密码登录了。
+
+<img src="https://file.xiaomiquan.com/9a/06/9a060c31e7556da8418e4c6d9de5229328b198d85984bd279ceb76bc98108db9.jpg" width="25px"/> __Tr＠cer_0x06lA__: 我自己的也测试成功了，怪我前天手贱升级到High
+
+<img src="https://file.xiaomiquan.com/00/b4/00b4853b1c1ae26914034643d698dcfbdc4785248a7815636f0afb49695c5a76.jpeg" width="25px"/> __abcd__: 我试了一下，13.1的版本，改了root的密码就不行了，不知道有人试过吗
+
+<img src="https://file.xiaomiquan.com/31/8a/318a89d2d7b512ffc66e279053ce2a341071e65bfcb86e9111f8affda7fb68c3.jpg" width="25px"/> __.o.__: 成功了...10.13.1
+
+<img src="https://file.xiaomiquan.com/31/8a/318a89d2d7b512ffc66e279053ce2a341071e65bfcb86e9111f8affda7fb68c3.jpg" width="25px"/> __.o.__: 用root 空密码解锁后..
+在注销当前用户。就能看到两个用户...一个你自己。一个其他..也就是root
+
+...
+
+---

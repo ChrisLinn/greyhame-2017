@@ -1161,3 +1161,63 @@ __#基础#__
 
 
 ---
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-12-05:
+
+
+__#经验#__
+
+最近有个想法，在我们这个信息安全的圈子里，渗透测试仅仅是安全中的一个很小的分支，虽说这个圈子的缺口很大，但是为什么一直补不上这个缺口呢？
+
+原因可能有两点，一个是高校每年培养的安全人才很少不到一万，其中走渗透测试的更少了，还有一点就是大家对这个圈子不熟悉，想了解没有门路，想学习无从下手。
+
+我在想，我们怎么样扩大我们这个圈子，让更多的人加入我们这个圈子，促使我们这个圈子处于一个良性循环的道路。
+
+想要解决这个问题，我们应该从入行开始说起，所以我就在我们的交流群发起了一个活动，谈谈你进入信息安全这个圈子的原因是什么？
+
+圈子里有想要分享你的入坑经历的可以联系我，或者直接加我微信 myh0st，随后会在公众号分享。
+
+
+[入坑安全你后悔吗](http://mp.weixin.qq.com/s/Spy0nS_3O5H49PpBGyUEhA)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e5/ac/e5ac353e011612d3907fb2bc6176b334fe920b12ed89917b52407e85afc7ddbc.jpg" width="25px"/> __喵大人__: 都去挖洞赚钱了。。完全两个方向
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/e5/ac/e5ac353e011612d3907fb2bc6176b334fe920b12ed89917b52407e85afc7ddbc.jpg" width="25px"/> __喵大人__: 是呀，留下的都是为了信仰，为了保家卫国
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 渗透是一条很有挑战性的路线，也是最能有黑客感觉的路线。比如面对不同场景，如何把调研、漏洞、利用、后渗透等一系列步骤熟练执行，多有挑战，多有意思，如果再深度掌握对抗技巧，就会更有快感了。
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 下一次活动的主题就是渗透学习工作中让你最印象深刻的是什么？
+
+<img src="https://file.xiaomiquan.com/85/7e/857e7074cd57069c52c64361162a16153347497cda25cad85d234445a06ef8b2.jpg" width="25px"/> __愤怒CPU__: 各位大神，干了几年网站运营，熟悉php，html，css等，自学完c++，qt，python，linux。该走怎样的安全路线啊。
+
+<img src="https://file.xiaomiquan.com/1e2/f8/e2f8fbf7a2d49641def6aeec50cfb9b96d225ed5c69f038b13d6ac049d2859fa.jpeg" width="25px"/> __ltt__: 学网络安全的动力就是想玩电脑也比别人牛逼。[微笑]
+
+<img src="https://file.xiaomiquan.com/06/46/0646011e14388ebb51139541ffdf6733565e28e04af921cad664584b810238b9.jpg" width="25px"/> __M_A_R_K__: 安全领域不同的分支都够深挖，不说了，我得跟着老司机们上车[愉快]
+
+<img src="https://file.xiaomiquan.com/1e2/f8/e2f8fbf7a2d49641def6aeec50cfb9b96d225ed5c69f038b13d6ac049d2859fa.jpeg" width="25px"/> __ltt__: 了解了语言，发现解决生活问题有这么简单的方法，第一件事是写了个小程序，在学校机房重做系统一件配置了ip。
+
+了解了源代码，发现了移动注释掉的宽带业务，现在套餐也能自己改了。
+
+了解了社工，一个网站一个密码，密码很长时间没被盗过了。
+
+了解了抓包，知道了机房有个叫行为管理系统任子行的东西，上班再也没乱看小电影，到现在还没被开除。
+
+学了后门，没在乱下过软件，当初电脑鼠标自己动把我吓坏了。
+
+这是我学习的动力吧。
+
+[机智]一直很佩服余大，记得从14年就在网站上看到余大渗透360摄像头的新闻，现在想想还ip定位了记者，偷笑。当时真的觉得真的帅爆了。
+
+唉 一个刚毕业的小网工，希望能走上安全的路。
+
+<img src="https://file.xiaomiquan.com/cf/7f/cf7f43f7239631b851f38b8930349bafd8287ac9930c0996b2316197f5245971.jpg" width="25px"/> __breadjun__: 现在单位有工作上的具体要求，挖掘漏洞和参加ctf,awd等竞赛。作为一个十多年前的不努力的软件专业，表示亚历山大[撇嘴]
+
+...
+
+---

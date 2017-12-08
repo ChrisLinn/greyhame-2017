@@ -142,3 +142,25 @@ __#基础#__
 ...
 
 ---
+
+<img src="https://file.xiaomiquan.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st__ on 2017-12-03:
+
+
+__#渗透测试#__
+
+   一个小伙伴在一次线下赛对一个靶机的渗透测试中遇到的坑以及如何解决，还是比较完整的，希望大家能学到点有用的东西。
+
+[记一次线下赛靶机攻击过程](http://mp.weixin.qq.com/s/11pj2vIDISYJHvXdGMS_VQ)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e6/70/e670fb59afbe868055fa52141b08b901837c983d5b9123e6ac53b9cff331dd65.jpg" width="25px"/> __残风逝雪丶__: 赞
+
+
+...
+
+---

@@ -684,3 +684,89 @@ __#资源#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-03:
+
+
+__#经验#__
+
+ 一份威胁追踪（hunting）的手册
+利用Sysmon和Windows事件日志进行威胁追踪（hunting），遵循MITRE ATT＆CK框架。
+
+
+[GitHub - Cyb3rWard0g/ThreatHunter-Playbook: A Thre...](https://github.com/Cyb3rWard0g/ThreatHunter-Playbook)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: sysmon收集的日志太多，如何找到自己想要的日志？
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ replies to <img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__: Sysmon不是收集日志的，是从日志检测攻击的。
+
+<img src="https://file.xiaomiquan.com/48/eb/48eb0904e0d74da054d18a11105fe81d59c5a36c2056be97fe9cdd6b532af72a.jpg" width="25px"/> __战狼__ replies to <img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__: 恩，是我表达有误，我的意思是如何从那么多日志中找到攻击日志。
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-05:
+
+
+__#tools#__
+
+ nsjail是Google开发的一款轻量级进程隔离工具
+
+如ImageMagick去年出了几次漏洞，虽然有替代品，但现有的项目对ImageMagick有很大的依赖性，不能每次等着出了漏洞再去升级，这时我们可以用nsjail
+    
+[GitHub - google/nsjail: A light-weight process iso...](https://github.com/google/nsjail/)
+
+
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-05:
+
+
+__#经验#__
+
+   使用Microsoft Advanced Threat Analytics(ATA)检测远程代码执行（Psexec Wmi）
+  1.8版本新增检测WMI
+
+[Detecting remote code execution with Microsoft Adv...](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/27/detecting-remote-code-execution-via-wmi-with-microsoft-advanced-threat-analytics/)
+
+
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-05:
+
+
+__#经验#__
+
+ 使用Windows Defender ATP和AMSI检测脚本(JavaScript，VBScript、PowerShell之类的脚本)攻击。
+  
+AMSI可检测内存加载的混淆脚本，并且AMSI提供接口，可供其他杀软使用，但是AMSI只有在WIN10上才有。
+
+其实在17年Kcon演讲时本准备在PPT提AMSI，但当时本地做测试AMSI接口没有调用成功，就把PPT中这页给删除了。
+
+[Detecting remote code execution with Microsoft Adv...](https://cloudblogs.microsoft.com/enterprisemobility/2017/11/27/detecting-remote-code-execution-via-wmi-with-microsoft-advanced-threat-analytics/)
+
+
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 这些防御及分析对抗很赞！
+
+
+...
+
+---
+
