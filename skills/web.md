@@ -306,6 +306,10 @@ Google XSS Game 解读公布
 
 顺便贴上我之前的通关记录，非常杂乱，将就看看，懒，见评论。
 
+__分享文件:__
+
+[余弦的通关笔记(原味).pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/余弦的通关笔记(原味).pdf)
+
 
 ---
 
