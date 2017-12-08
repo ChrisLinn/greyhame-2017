@@ -293,6 +293,35 @@ Metasploitable2下载地址:
 ---
 
 
+## Empire
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-13:
+
+
+__#工具#__
+
+渗透利用神器 Empire 2.2 发布及一点看法
+
+
+[Empire 2.2 – Maintaining an Empire – rvrsh3ll’s Bl...](http://www.rvrsh3ll.net/blog/empire/empire-2-2-maintaining-an-empire/)
+
+ 
+
+优化了一些问题及增加了一些特性，英文很简单自己看吧。还可以搜搜本圈，之前也发过历史相关。这些 Red Team 牛人在加速 Empire 发展，下一版本说是直接跳到 3.0。
+
+特别说下，Empire 估计不会特别去发展混淆 Empire 技术，他们觉得和杀软们玩打地鼠游戏没意思。其实这个我赞同，文件静态免杀应该自己来，脚本混淆多简单的事。Empire 在渗透其他方面如绕过、伪装、隐藏一直在提升，不过对抗是动态的，不断进化是必然的。
+
+Empire 确实是很优秀的渗透利用框架（其实就是个远控）。Empire 生态能发展还有个重要特性：
+
+REST API。
+
+
+
+---
+
+
 ## DVWA
 
 
@@ -1083,50 +1112,6 @@ Web 黑必备神器，有钱就买吧，没钱就等破解版。
 
 ---
 
-## Empire
-
-
-
-<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-31:
-
-
-__#工具#__
-
-Empire 更新了 v2.1
-
-Empire is a PowerShell and Python post-exploitation agent.
-
-这款 PowerShell 与 Python 攻击利用神器，想必越来越多渗透师在用。时隔3个多月，更新了不少内容。具体的可以看这：
-
-
-[Empire/changelog at master · EmpireProject/Empire ...](https://github.com/EmpireProject/Empire/blob/master/changelog)
-
-
-
-我最感兴趣的更新内容是下面这条：
-
--Add Obfuscated Empire #597 @cobbr
-
-增加了混淆 Empire，这个我们第一时间就跟进研究并运用了，Empire 也真的整合了，不过我还没测试整合得如何。
-
-基于 Python 构建的 Empire 开源生态非常有前途（远不仅是 Empire 本身），由于这种生态在 GitHub 这种高浓度黑客氛围下发展着，渗透师的距离也越来越小了。和我交流过的人会明白此时的竞争壁垒在哪，加油吧。
-
-如果你听都没听说过这个，或没实战运用过，自己查资料吧。
-
-
-
-...
-
-<img src="https://file.xiaomiquan.com/e4/ca/e4ca0340ac566f302dcda0afe835affed902e62dda2344fce0b7f9ac7cde2f21.jpg" width="25px"/> __safecat__: 第一次生成加密脚本的时候非常吃cpu。
-
-
-...
-
----
-
-
----
-
 ## nethunter
 
 
@@ -1501,6 +1486,67 @@ ThunderShell基于PowerShell的RAT,使用HTTP进行通信。网络流量使用RC
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: RingZer0 Team 最近真活跃，已经开源了好几个项目了
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-08-31:
+
+
+__#工具#__
+
+Empire 更新了 v2.1
+
+Empire is a PowerShell and Python post-exploitation agent.
+
+这款 PowerShell 与 Python 攻击利用神器，想必越来越多渗透师在用。时隔3个多月，更新了不少内容。具体的可以看这：
+
+
+[Empire/changelog at master · EmpireProject/Empire ...](https://github.com/EmpireProject/Empire/blob/master/changelog)
+
+
+
+我最感兴趣的更新内容是下面这条：
+
+-Add Obfuscated Empire #597 @cobbr
+
+增加了混淆 Empire，这个我们第一时间就跟进研究并运用了，Empire 也真的整合了，不过我还没测试整合得如何。
+
+基于 Python 构建的 Empire 开源生态非常有前途（远不仅是 Empire 本身），由于这种生态在 GitHub 这种高浓度黑客氛围下发展着，渗透师的距离也越来越小了。和我交流过的人会明白此时的竞争壁垒在哪，加油吧。
+
+如果你听都没听说过这个，或没实战运用过，自己查资料吧。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/e4/ca/e4ca0340ac566f302dcda0afe835affed902e62dda2344fce0b7f9ac7cde2f21.jpg" width="25px"/> __safecat__: 第一次生成加密脚本的时候非常吃cpu。
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-13:
+
+
+__#工具#__
+
+  渗透利用神器 Empire 2.2 发布及一点看法
+
+
+[Empire 2.2 – Maintaining an Empire – rvrsh3ll’s Bl...](http://www.rvrsh3ll.net/blog/empire/empire-2-2-maintaining-an-empire/)
+
+ 
+
+优化了一些问题及增加了一些特性，英文很简单自己看吧。还可以搜搜本圈，之前也发过历史相关。这些 Red Team 牛人在加速 Empire 发展，下一版本说是直接跳到 3.0。
+
+特别说下，Empire 估计不会特别去发展混淆 Empire 技术，他们觉得和杀软们玩打地鼠游戏没意思。其实这个我赞同，文件静态免杀应该自己来，脚本混淆多简单的事。Empire 在渗透其他方面如绕过、伪装、隐藏一直在提升，不过对抗是动态的，不断进化是必然的。
+
+Empire 确实是很优秀的渗透利用框架（其实就是个远控）。Empire 生态能发展还有个重要特性：
+
+REST API。
+
+
 
 ---
 

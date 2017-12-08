@@ -60,3 +60,44 @@ __#资源#__
 
 
 ---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-22:
+
+> yann.y 提问：
+[Challenge 求助] Root-me 上一道 LFI+审计 (CMSimple 3.0) 的题 ，要拿到管理员的密码。两天了实在做不出来，请余大和大家帮帮忙！
+
+>密码应该在 `/cmsimple/config.php` 里。
+
+> LFI 在 GET 的 `sl` 参数上，但参数强制加了 `.php` 后缀且无法截断。
+
+> 题目:
+> http://challenge01.root-me.org/realiste/ch6/
+
+
+> CMSimple 3.0源码:
+> https://www.cmsimple.org/archives/cmsimple_old/?download=cmsimple3_0.zip
+
+
+
+
+感兴趣的一起交流进来。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 弱弱问一句，LFI是本地文件包含？
+
+<img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__ replies to <img src="https://file.xiaomiquan.com/8d/e2/8de2de5d6a1eb3d448658bdd79d07593b0268ecf828399fd6d6a3a2912077290.jpg" width="25px"/> __Shutdown-r__: 是
+
+<img src="https://file.xiaomiquan.com/72/36/72361a71a8bb41c3cfe905a413fa9fd58103146921ab496b17987b507247e6c4.jpg" width="25px"/> __Ruler__: 确实打不开，一片空白
+
+<img src="https://file.xiaomiquan.com/31/80/318029acf30b3d4586096db28e750f29673a5f7b2b5c12b15a110e6b4721975b.jpg" width="25px"/> __yann.y__ replies to <img src="https://file.xiaomiquan.com/72/36/72361a71a8bb41c3cfe905a413fa9fd58103146921ab496b17987b507247e6c4.jpg" width="25px"/> __Ruler__: 试下从主站 (
+[Welcome [Root Me : Hacking and Information Securit...](https://www.root-me.org/?lang=en))
+
+ 登录再跳过去试试。账号@密码: yann_y@anosiugUVY67s7
+
+
+...
+
+---
