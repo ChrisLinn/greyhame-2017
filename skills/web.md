@@ -138,6 +138,7 @@ IPB是一个集论坛展示与CMS的PHP平台。今年五月份爆出了一个�
 
 
 __分享文件:__
+
 [IPB.zip](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/IPB.zip)
 
 
@@ -308,7 +309,7 @@ Google XSS Game 解读公布
 
 __分享文件:__
 
-[余弦的通关笔记-原味.pdf](余弦的通关笔记-原味.pdf)
+[余弦的通关笔记-原味.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E4%BD%99%E5%BC%A6%E7%9A%84%E9%80%9A%E5%85%B3%E7%AC%94%E8%AE%B0-%E5%8E%9F%E5%91%B3.pdf)
 
 
 ---
@@ -741,6 +742,7 @@ __#HITB#__
 
 
 __分享文件:__
+
 [D1 - Orange Tsai - A New Era of SSRF – Exploiting URL Parsers in Trending Programming Languages.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/D1%20-%20Orange%20Tsai%20-%20A%20New%20Era%20of%20SSRF%20%E2%80%93%20Exploiting%20URL%20Parsers%20in%20Trending%20Programming%20Languages.pdf)
 
 
