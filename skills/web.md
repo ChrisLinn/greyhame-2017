@@ -308,7 +308,7 @@ Google XSS Game 解读公布
 
 __分享文件:__
 
-[余弦的通关笔记(原味).pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/余弦的通关笔记(原味).pdf)
+[余弦的通关笔记-原味.pdf](余弦的通关笔记-原味.pdf)
 
 
 ---
@@ -328,8 +328,10 @@ XSS 能做什么
 
 
 __分享文件:__
-[XSS FTW.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
-[XSS FTW.pptx](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[XSS FTW.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/XSS%20FTW.pdf)
+
+[XSS FTW.pptx](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/XSS%20FTW.pptx)
 
 
 ---
@@ -739,7 +741,7 @@ __#HITB#__
 
 
 __分享文件:__
-[D1 - Orange Tsai - A New Era of SSRF – Exploiting URL Parsers in Trending Programming Languages.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+[D1 - Orange Tsai - A New Era of SSRF – Exploiting URL Parsers in Trending Programming Languages.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/D1%20-%20Orange%20Tsai%20-%20A%20New%20Era%20of%20SSRF%20%E2%80%93%20Exploiting%20URL%20Parsers%20in%20Trending%20Programming%20Languages.pdf)
 
 
 ---
@@ -902,7 +904,8 @@ __#漏洞复现#__
 
 
 __分享文件:__
-[v5.zip](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[v5.zip](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/v5.zip)
 
 
 ...
@@ -1048,7 +1051,8 @@ php的配置文件很重要，咱们先从搞懂配置文件开始吧。:)
 
 
 __分享文件:__
-[代码审计之php配置文件.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[代码审计之php配置文件.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E4%B9%8Bphp%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6.pdf)
 
 
 ---
@@ -1065,7 +1069,8 @@ __#代码审计#__
 
 
 __分享文件:__
-[代码审计基础之超全局变量.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[代码审计基础之超全局变量.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E5%9F%BA%E7%A1%80%E4%B9%8B%E8%B6%85%E5%85%A8%E5%B1%80%E5%8F%98%E9%87%8F.pdf)
 
 
 ---
@@ -1082,7 +1087,8 @@ __#代码审计#__
 
 
 __分享文件:__
-[DEDECMS5.7后台getshell.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[DEDECMS5.7后台getshell.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/DEDECMS5.7%E5%90%8E%E5%8F%B0getshell.pdf)
 
 
 ...
@@ -1108,7 +1114,8 @@ __#代码审计#__
 
 
 __分享文件:__
-[discuz任意文件删除漏洞的一点思考.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[discuz任意文件删除漏洞的一点思考.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/discuz%E4%BB%BB%E6%84%8F%E6%96%87%E4%BB%B6%E5%88%A0%E9%99%A4%E6%BC%8F%E6%B4%9E%E7%9A%84%E4%B8%80%E7%82%B9%E6%80%9D%E8%80%83.pdf)
 
 
 ---
@@ -1140,7 +1147,8 @@ tyecho getshell 这个漏洞不知道各位有没有关注，最近几天刷的�
 <img src="https://file.xiaomiquan.com/1a6/30/a630ce206694d69b4b620fe648854769733492d350e2b525f62daa4d22eee999.png" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
-[typecho.mindnode.zip](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[typecho.mindnode.zip](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/typecho.mindnode.zip)
 
 
 ---
@@ -1157,6 +1165,7 @@ __#资源#__
 
 
 __分享文件:__
+
 [php基础学习笔记中_5cbf5.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记中_5cbf5.doc)
 
 [php基础学习笔记下_25e07.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记下_25e07.doc)
