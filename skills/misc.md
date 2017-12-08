@@ -25,6 +25,7 @@
 - [隐写](#隐写)
 - [Browser](#browser)
 - [跳转漏洞](#跳转漏洞)
+- [证书](#证书)
 
 ## 技能树 Cheat Sheets
 
@@ -227,8 +228,11 @@ Web-Security-Learning，关于web安全的资料收集。中文资料。
 
 
 <img src="https://images.xiaomiquan.com/Fu2m7AzyLbHKx8cw72815O-JRwQv?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:zNWisirBB1u1vm6pXQaEeMk8b1g=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FiFhtu0qZ6MRaakyWGrVi5BnZJyI?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:qPh_ZE_ce9kcjA2Zt5GGQ3W0SGs=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FhnmTcjzQTbiRXWcz5CRKr8YLL_0?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:DtM3j_vNEsVSDzlEjBeEr-rqEqM=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FiiztpuGB-SRmMdFFa_SYzJgYx9o?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:5PqPDRedj3XMiK1-NJuSXnoVp84=" width="50%" height="50%" align="middle"/>
 
 
@@ -333,8 +337,55 @@ __#在线技能树#__
 
 
 <img src="https://file.xiaomiquan.com/99/16/99162d649073e7859d8dd38f48c4a12d1d692b1f4bacd7853ccc5f34c47e649e.png" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/44/3b/443b7f67fe65375a441d097c8af38fc34f4c994a9b0ef7453481d8c6b6af536a_big.jpg" width="50%" height="50%" align="middle"/>
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-05:
+
+
+__#讨论#__
+
+  OWASP TOP 10 2017 都应该有什么
+
+我还以为之前我有在本圈有发过 OWASP 今年的新标准草案，原来只发了朋友圈...
+
+4月份出的是 RC1，最近出的是 RC2，都还不是正式版。单从 RC1 与 RC2 两版本就可以看出：争议不小，但官方会修正。
+
+来看看 RC1 和 RC2 都有什么（图1与2），其中 RC1 的 A7 当时被抨击是“买个防火墙了事”，在 RC2 已经去掉，RC2 变化还是挺大的，新增的也比较吻合我的说法（之前本圈发过新 Web 安全都有哪些内容的观点），不过既然 XXE 和反序列化都单独列出来了，SSRF 放哪呢？
+
+RC2 的 A10“不足的日志记录和监控”和 RC1 的 A7 有点类似，不过好多了，也对味我朝的等保和网络安全法要求。
+
+关于 RC1 RC2 的中文翻译细节可以见：
+
+[2017 OWASP TOP 10 — OWASP-CHINA](http://www.owasp.org.cn/owasp-project/2017-owasp-top-10)
+
+
+
+你有什么看法，欢迎讨论。
+
+
+<img src="https://file.xiaomiquan.com/18d/f8/8df80a39ed0b95be1e4b8f63634453f0eb15f6fb3a123481f66da87d9b1908e0.jpg" width="50%" height="50%" align="middle"/>
+
+<img src="https://file.xiaomiquan.com/1e3/bb/e3bb37021c6352cabd83fa54f0ca25d361e82d39d7f45d94fa51ad0da4bd0dfc.jpg" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 我靠，CSRF没了我都没注意到！这 RC2 绝不会成为正式版！
+
+<img src="https://file.xiaomiquan.com/0b/d5/0bd53bc4b18227b7562165b12e018c1c9694de48899eab882ff4b81c475e6b73.jpg" width="25px"/> __souleater__: 我也觉得😂当初我看没了都吓一跳，难道已经有彻底解决了CSRF
+
+<img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 2003版中A10-未验证的重定向 指的就是前面分享的那个uber dom   xss吗
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.xiaomiquan.com/e0/1d/e01d033928215404410d8a95fcd0868cc1cde3f31609eb54f6048cc674ef5baa.jpg" width="25px"/> __一休__: 有关系
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: RC2 已经是正式版了...
+
+
+...
 
 ---
 
@@ -462,10 +513,12 @@ __#资源#__
 感谢输出报告的公司及译者公司。
 
 <img src="https://images.xiaomiquan.com/FgWUyrsgx_9Me4CYYslj2uRGgimF?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:fIObhRh0Ldvo2ozk3aWsOyTDZOw=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FnOoKbrDQwci7KLouKcprUjZVhzx?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PUjWb19auwxE-ijNLmb8atqNK7w=" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
-[黑客报告2017.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E9%BB%91%E5%AE%A2%E6%8A%A5%E5%91%8A2017.pdf)
+
+[黑客报告2017.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/黑客报告2017.pdf)
 
 
 ---
@@ -543,7 +596,8 @@ __#资源#__
 
 
 __分享文件:__
-[No Starch Press Gray Hat Csharp B0721RCGMX.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[No Starch Press Gray Hat Csharp B0721RCGMX.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/No%20Starch%20Press%20Gray%20Hat%20Csharp%20B0721RCGMX.pdf)
 
 
 ---
@@ -640,7 +694,9 @@ ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，�
 
 
 <img src="https://file.xiaomiquan.com/d1/7b/d17ba0300f0fff865bcbfe8c94d1ad96ae9463fd7d80c1c38cc43dc670f83b4b.png" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/95/63/9563c9001173aff07340c06c833c1d20bf851f042f88d6522ef554d8cca69d76.png" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/31/0d/310da90b6e49ee958430a501391bf2b36c4afd88dded3e7aca6b1425013b7f1f.png" width="50%" height="50%" align="middle"/>
 
 ---
@@ -658,7 +714,8 @@ __#资源#__
 
 
 __分享文件:__
-[security-geek-2017-q3.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[security-geek-2017-q3.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/security-geek-2017-q3.pdf)
 
 
 ---
@@ -669,7 +726,8 @@ __分享文件:__
 
 
 __分享文件:__
-[rtfm-red-team-field-manual.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[rtfm-red-team-field-manual.pdf](https://github.com/ChrisLinn/greyhame-2017/tree/master/shared-files/rtfm-red-team-field-manual.pdf)
 
 
 ...
@@ -746,7 +804,8 @@ __#HITB#__
 
 
 __分享文件:__
-[COMMSEC D1 - Hamza Beghal - Threat Hunting 101 -  Become the Hunter.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[COMMSEC D1 - Hamza Beghal - Threat Hunting 101 -  Become the Hunter.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/COMMSEC%20D1%20-%20Hamza%20Beghal%20-%20Threat%20Hunting%20101%20-%20%20Become%20the%20Hunter.pdf)
 
 
 ---
@@ -940,6 +999,7 @@ SpaceVim is a community-driven vim distribution that seeks to provide layer feat
 记住：无论搞安全还是编程，首先你得有自己的一款高效率编辑器环境。这个是玩出来的，多玩多折腾不会错！
 
 <img src="https://images.xiaomiquan.com/FkoyCRgP9BeCL3uIw5qoSJNE6JIl?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PhK0usi3xbyYBfTZbtOqsNASMWw=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FrcZwuYGx9kABFnN6FVAuKs-iBG6?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7eyi2EK37A1GsCP7zn_BGfyqbLk=" width="50%" height="50%" align="middle"/>
 
 
@@ -1131,7 +1191,9 @@ $ stty rows <num> columns <cols>
 我想精于 Linux 的同学应该还会有其他更好的技巧吧？😏
 
 <img src="https://images.xiaomiquan.com/Fj_Ou8qWblsD8PQbMkbsiFOsbVNk?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:m9ZuUhEYmVExE9s4WOF_-76vOkQ=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FvH1DFbKMjFYlnJOg75OJTcHz1YO?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:HXPfrhY8yBHQnFbwYRbCWl2s7hE=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fig865CAfX1G7zfSlHpk6qHQwWgE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Q7-DgFAG9jPiRq6mRqmY5BwXZFU=" width="50%" height="50%" align="middle"/>
 
 
@@ -1163,7 +1225,9 @@ __#福利#__
 原图给大家收藏。
 
 <img src="https://images.xiaomiquan.com/FtHgBobVyPc7Qt8Qy8tXI7cgQc6H?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:3WRynGY_hgXSpOEFMFLWXfIUBIc=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FkY65wMZm0J9Dm9MUbyqxjADkXRz?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:mvBVVsH2y-h0DzWlTty38GWzTW8=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FrHRUsP5y403NBAzNULmRLK-09CI?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:RuwFdc4wmXaeE9LnYU7SVJhAqPU=" width="50%" height="50%" align="middle"/>
 
 
@@ -1581,7 +1645,8 @@ stdin=subprocess.PIPE);s.send(proc.stdout.read()+proc.stderr.read())\")"
 
 
 __分享文件:__
-[黑魔法命令.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[黑魔法命令.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/黑魔法命令.pdf)
 
 
 ...
@@ -1841,6 +1906,41 @@ proxychains ss-server -c config.json -f pid 2
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-04:
+
+> 。东 提问：
+昨晚上有个思路。sqlmap检测一些有防火墙的站点的时候，很多时候检测不了一会儿就会被防火墙封了ip。sqlmap上面有一些绕过的规则，但是我并不想用这个。考虑到一些爬虫会动态调用代理ip，从而绕过防火墙，那么，我们是不是可以这样子，给sqlmap写一个动态调用的脚本？
+
+
+可以，这又不难。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/35/85/3585c8ae9ba10ae77e5e5a96d40d31ccc47e373cbcaceead666389734257bec2.jpg" width="25px"/> __C4r3Fr33__: 最简单的实现就是结合TOR了
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 这种换代理适合fuzzing waf规则，实际拿来利用，内置的每个payload都会被干掉的
+
+<img src="https://file.xiaomiquan.com/43/75/43758f94b2117e0c90d9296c788197e13dfbdc4697b0e9bf77554487bec2b3e7.jpg" width="25px"/> __。东__ replies to <img src="https://file.xiaomiquan.com/35/85/3585c8ae9ba10ae77e5e5a96d40d31ccc47e373cbcaceead666389734257bec2.jpg" width="25px"/> __C4r3Fr33__: 接入tor的话，目前部分网站防火墙会自动检测你的网络是不是tor，是的话会不让你访问的
+
+<img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__ replies to <img src="https://file.xiaomiquan.com/35/85/3585c8ae9ba10ae77e5e5a96d40d31ccc47e373cbcaceead666389734257bec2.jpg" width="25px"/> __C4r3Fr33__: TOR速度太慢了，而且有时候connect establish都要花好久
+
+<img src="https://file.xiaomiquan.com/35/85/3585c8ae9ba10ae77e5e5a96d40d31ccc47e373cbcaceead666389734257bec2.jpg" width="25px"/> __C4r3Fr33__ replies to <img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 链路聚合试过吗
+
+<img src="https://file.xiaomiquan.com/43/75/43758f94b2117e0c90d9296c788197e13dfbdc4697b0e9bf77554487bec2b3e7.jpg" width="25px"/> __。东__ replies to <img src="https://file.xiaomiquan.com/35/85/3585c8ae9ba10ae77e5e5a96d40d31ccc47e373cbcaceead666389734257bec2.jpg" width="25px"/> __C4r3Fr33__: [呲牙][呲牙][呲牙]思路有了慢慢折腾下，如果不接入tor，并且不修改sqlmap源码的话，可以做一个爬虫，爬取一些免费代理网站，当然，爬取了之后自动检测代理是否可用的一些代码肯定是要写的，其实用requests也可以实现，然后保存为txt文档。
+
+之后，再在本地创建一个服务端，用sqlmap代理服务端，在服务端切换代理池里面的ip。
+
+总体的思路是，sqlmap代理本地服务端，本地服务端切换代理池ip，爬虫爬取可用代理ip存入代理池并检测。
+
+<img src="https://file.xiaomiquan.com/35/85/3585c8ae9ba10ae77e5e5a96d40d31ccc47e373cbcaceead666389734257bec2.jpg" width="25px"/> __C4r3Fr33__ replies to <img src="https://file.xiaomiquan.com/43/75/43758f94b2117e0c90d9296c788197e13dfbdc4697b0e9bf77554487bec2b3e7.jpg" width="25px"/> __。东__: 对的，网上都有现成的工具，做个代理池
+
+
+...
+
+---
+
 
 ## Crawler
 
@@ -2092,8 +2192,11 @@ Google AlphaBay
 
 
 <img src="https://file.xiaomiquan.com/51/c6/51c6eee1c7adb3e5d91c5c6b80466f3043b7236c27a734fc97ff7e5a73852821.jpg" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/b1/56/b156dd5922a0993bd78f5d2404738b9944e81129e5276fcd59a045192247509c.jpg" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/c5/cf/c5cf53d012e4270479ea8b3c10283f33d2fd27f0567f860006f1c622f806e15a.jpg" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/74/3f/743f78265bfd6981b27d8fc6ee4a7fced0cf6478fcaa48667f1ab24f8a60d7f1.jpg" width="50%" height="50%" align="middle"/>
 
 
@@ -2174,6 +2277,24 @@ Google AlphaBay
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-02:
+
+
+__#资源#__
+
+  推荐了解了解 AI 领域得掌握的 TensorFlow：
+
+
+[独家 | 一文读懂TensorFlow（附代码、学习资料）](https://mp.weixin.qq.com/s/SlitM8JToD7dN5E5Ue9wjA)
+
+
+
+
+<img src="https://file.xiaomiquan.com/14e/db/4edbeb2147e80b86f44c60eddf09b5a129961df7e48d102f4654a31e3bc38190.jpg" width="50%" height="50%" align="middle"/>
+
+
+---
+
 ## IP
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-05:
@@ -2241,7 +2362,8 @@ JavaScript 入门经典读书笔记
 
 
 __分享文件:__
-[JavaScript 入门经典5th_Ch01-10.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[JavaScript 入门经典5th_Ch01-10.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/JavaScript%20%E5%85%A5%E9%97%A8%E7%BB%8F%E5%85%B85th_Ch01-10.pdf)
 
 
 ...
@@ -2362,7 +2484,8 @@ PS:更多的是总结，所以可能有的地方不会很细，建议配合廖�
 
 
 __分享文件:__
-[Python基础笔记1-10章.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/Python%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B01-10%E7%AB%A0.pdf)
+
+[Python基础笔记1-10章.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/Python基础笔记1-10章.pdf)
 
 
 ...
@@ -2426,7 +2549,9 @@ t.py 是目标进程，back.py 是反弹脚本，都在 test.zip 里。
 3. 工欲善其事必先利其器，这也是为什么本圈会介绍些优秀工具的用法或剖析。
 
 <img src="https://images.xiaomiquan.com/FhjYwyDP9bQ70k62Z865kgNT5sEy?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:qJwkqNZR070Utu72QpvX61CM3YM=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fre61g-QQP25C6LpeNViNu8rco9i?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:dI__gGgAbp-dh0laadkojccPZYI=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fsq67FFptePGDtB_Qxe5cNwiAYgj?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:jYtsyELcJrPuCMd2wEuWbg14Ak8=" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
@@ -2721,6 +2846,7 @@ __#经验#__
 玩进去的，欢迎交流。
 
 <img src="https://images.xiaomiquan.com/FikpJYlbDmOLoYuCT6f432ejN6Yp?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:o5OqM2gGj4WByaaxNq5FhrTA6Co=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fjjd5-5HgUBmutFJUuy4MkZn9axE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:7ZVNRvAMSnNfcM9VeL0EJjBH7l4=" width="50%" height="50%" align="middle"/>
 
 
@@ -2745,6 +2871,7 @@ __#后门#__
 又是 Chrome 扩展的安全问题，Chrome 对扩展的安全审计得更严格了。
 
 <img src="https://images.xiaomiquan.com/FmGrpCoWrNkErotTtUbOGhh8yCrI?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:RN7nkeZfNDTQTTF2jHRpnfus5uU=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fq7UDlAIpRlaLrD0GvbewRGxqa3h?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Mjk-sIGWJ17fnIjDKjYoNLEDi60=" width="50%" height="50%" align="middle"/>
 
 
@@ -2817,6 +2944,23 @@ Not surprisingly, the client can also be directed to local resources as well.
 
 
 [GitHub - ak1t4/open-redirect-scanner: open redirec...](https://github.com/ak1t4/open-redirect-scanner)
+
+
+---
+
+## 证书
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-11-03:
+
+某些Savitech驱动程序软件包会将根CA证书安装到Windows信任的根证书存储库中。
+但幸运的目前私钥还未泄漏，
+危害：如果私钥泄漏，攻击者都可以使用这个根证书来生成对任意网站都有效的证书，还可以篡改用户的流量，嗅探所有TLS加密的流量了，
+
+[Vulnerability Note VU#446847 - Savitech USB audio ...](https://www.kb.cert.org/vuls/id/446847)
+
+
+比较出名的安装CA证书事件有：戴尔eDellRoot，联想superfish！
+
 
 
 ---

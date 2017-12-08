@@ -47,7 +47,9 @@ USB Rubber Ducky 这个 U 盘设备我玩了很久（不仅这个，我有全套
 再顺便说一句，黑手里的 HID 攻击也可以达到这类效果，我们玩安全得多脑洞、多扩展、多发散...😏
 
 <img src="https://images.xiaomiquan.com/Fo6hCZWyBjpnyV4CAmyUPI0HS54n?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:Yn0sOlDk2uxqDL1J77jkWH-uiy8=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FqflhBrfnOgsZ7O3EQh3PGMcbORG?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:uf2-OgIemafMszYssoSeZbM3MOg=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fi0yA_3vqbpX3QPLPPpY1RxD_NU1?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ImTrBI7ZjXJTD7P07RbdAzQjRfA=" width="50%" height="50%" align="middle"/>
 
 
@@ -81,7 +83,7 @@ HID攻击是badusb攻击中成本最低，门槛最低的一类，通过模拟�
 
 
 __分享文件:__
-[HID攻击简易上手.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+[HID攻击简易上手.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/HID攻击简易上手.pdf)
 
 ---
 
@@ -212,6 +214,29 @@ GoCrack是FireEye的ICE团队发布的一款工具，是基于Web的高效地管
 
 
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-04:
+
+> sungrass 提问：
+求问，忘了加密密钥，有办法逆向求出来么？已知DES加密，有大量明文和密文可以匹配。
+
+
+非职业选手，看看圈里有谁可以搞定喽。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: DES在密码学上已经属于高强度加密了，它的加强版就是大名鼎鼎的AES对称加密。除了穷举暴破之外，有几种数学的方式，但我只在paper看到过没试过。建议你google下 微分密码分析技术
+
+<img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 但可能需要你的明密文对达到一定的数量。
+
+<img src="https://file.xiaomiquan.com/39/24/3924e2a2664c8432b9924d965a04e82190b7db97c2bfcc1e2e36f47bb275d6b0.jpg" width="25px"/> __sungrass__ replies to <img src="https://file.xiaomiquan.com/58/e0/58e0e911c15f99cfb8994d9f484be21c5966b3c50e4241e5e2617599f157c67c.jpg" width="25px"/> __5u9ar__: 以前用kali试过破解wifi密码，感觉原理也是用密码字典暴力破解。能用相同的方法么？明文密文对数量没问题，估计能有三千个吧。
+
+
+...
 
 ---
 

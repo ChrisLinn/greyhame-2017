@@ -72,8 +72,37 @@ __#资源#__
 这上面好兵器真不少，推荐大家收藏学习研究。顺便在此号召下，好东西如果不是非得私有化，可以考虑开源，并在一些国际大会上分享出来，这样的交流氛围多好，对吧？
 
 <img src="https://images.xiaomiquan.com/FmCi7JzgmNxBNLAoPmFzD_7UESAS?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:-i5WP9J3HfjqYd6H7J2-7k5tu8g=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FgeMTRDBMhGl6b7HRnzvXc68QnWV?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PW_uM3bGEGqjn-I7SW56aMzNfdE=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/Fm8BLmQCC3QrngLBiCvGLIXmypdo?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:L025lT7sCaAKehX0elGQnvaKfi0=" width="50%" height="50%" align="middle"/>
+
+
+---
+
+<img src="https://file.xiaomiquan.com/f2/18/f2187aaef0629494fb3ab1ab45faea17ed9021d9408eb286db2694c418ae7acf.jpg" width="25px"/> __ENI__ on 2017-11-04:
+
+> 匿名用户 提问：
+你好群主，有没有自动化渗透的东东，能够节省渗透工作中的精力时间的经验或工具，希望能够分享下。
+
+
+余弦之前推荐过：DeathStar、BloodHound，你GitHub上可以找到，不用谢。
+
+
+
+---
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-11-10:
+
+
+__#资讯#__
+
+vault8 正确的打开方式
+
+1. Download zip archive
+2. make new directory, copy .git folder to there
+3. cd to new directory
+4. git reset --hard master
 
 
 ---
@@ -103,6 +132,7 @@ getsploit
 
 
 <img src="https://images.xiaomiquan.com/Fkbxi6FZacx-3UZORwxONU-uQ5Gg?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ckq-otnhitV3uiFizc_geTk-EHE=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FsrNMbhyZwPf5xtBMWsZPkpo8mbW?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:4bUuRoqH28JiuV3VWJ2uSdjs8jI=" width="50%" height="50%" align="middle"/>
 
 
@@ -1143,6 +1173,7 @@ Play商店下载地址
 What you can do on Linux, you can do the same on your PHONE
 
 <img src="https://images.xiaomiquan.com/FmquZZWgZvzfY2fLJ_thKf6q6ViE?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ef1vBeGiGMuP6yZL7GL_xOsWYK4=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FiIojwNo0_ehijjifjOMjddpRrLi?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:gFWPK2hQHtn_DnSZemaTZ6_hvtM=" width="50%" height="50%" align="middle"/>
 
 
@@ -1660,8 +1691,11 @@ Access, CockroachDB, CUBRID, DB2, Derby, Firebird, H2, Hana, HSQLDB, Informix, I
 
 
 <img src="https://file.xiaomiquan.com/c4/12/c412f4725816d6a7f88bea75a4e946897303438e2584c02bc32a17e9bd82831c.jpg" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/8a/64/8a640b64dbb5fabff12fa87efea2176a6fffe6c4269d0c2a512177d7bda7c906.jpg" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/d0/bb/d0bbf55c97e0bf153b9ea159257e58aef9bf8193f44e2576fa3cc5ee99d7197a.jpg" width="50%" height="50%" align="middle"/>
+
 <img src="https://file.xiaomiquan.com/28/eb/28ebb8e2c1481c6199cf698740f0196450e63d690b1e95e2fbbec92cc773da98.jpg" width="50%" height="50%" align="middle"/>
 
 

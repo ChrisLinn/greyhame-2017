@@ -797,6 +797,25 @@ mysql官方文档中，rand这个函数是不能和order by 、group by 语句�
 
 ---
 
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-11-02:
+
+
+__#姿势#__
+
+
+__#代码审计#__
+
+ 
+其实昨天就想发了，但是没来得及，wordpress wpdb sql注入这个预警。格式化字符串的问题之前就有人发过，我觉得这个问题可能是当前情况sql注入死灰复燃的一个突破口。 
+[【漏洞预警】WordPress全版本WPDB SQL注入预警及简要分析 - 安全客 - 有思想的安全...](http://bobao.360.cn/news/detail/4358.html)
+
+
+再补上一篇之前讲解格式化字符串的文章。
+
+[从WordPress SQLi谈PHP格式化字符串问题](https://paper.seebug.org/386/)
+
+---
+
 
 ## PHP
 
@@ -1066,6 +1085,27 @@ tyecho getshell 这个漏洞不知道各位有没有关注，最近几天刷的�
 
 __分享文件:__
 [typecho.mindnode.zip](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ on 2017-11-06:
+
+
+__#资源#__
+
+ 
+我不知道世界上最好的语言是什么，但是web狗php还是要学，虽然我摄影技术一般。滑稽:）
+一份个人觉得友好的p(pai)h(huang)p(pian)学习笔记，大佬们有干货赶紧发出来给我们菜鸡学习啊。
+私藏着发霉咋整，我觉得OK.
+
+
+__分享文件:__
+[php基础学习笔记中_5cbf5.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记中_5cbf5.doc)
+
+[php基础学习笔记下_25e07.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记下_25e07.doc)
+
+[php基础学习笔记上_f8059.doc](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/php基础学习笔记上_f8059.doc)
 
 
 ---

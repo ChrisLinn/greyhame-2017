@@ -108,6 +108,7 @@ iPhone保持不越狱，及时更新，同时不让其他人碰到，既然生�
 一个国内厂商做的，数据包的分类和展示都要比Wireshark直观，可以实时抓包分析也可以导入数据包回放分析，大伙儿先下来玩玩熟悉一下功能，官网也有非常详细的模块说明和几个案例，后续我会分享用如何通过网络流量分析发现常见的攻击行为
 
 <img src="https://images.xiaomiquan.com/Fg38m8_XtJpyVgWEpgmp9lAoRWLV?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:TCJ9nLtevA2WLDs3PzWZ3_YWHI8=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FrI_KHfmNXcTZOFR9_2az9eU1zHA?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:pvVUPPjEyMwGK4RdgiLktUUnf3E=" width="50%" height="50%" align="middle"/>
 
 
@@ -131,7 +132,8 @@ iPhone保持不越狱，及时更新，同时不让其他人碰到，既然生�
 
 
 __分享文件:__
-[网络流量分析发现端口扫描-ATTOT.豆.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[网络流量分析发现端口扫描-ATTOT.豆.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/网络流量分析发现端口扫描-ATTOT.豆.pdf)
 
 ---
 
@@ -333,7 +335,8 @@ cryptsetup close xxx
 
 
 __分享文件:__
-[IOC_20170904.txt](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[IOC_20170904.txt](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/IOC_20170904.txt)
 
 
 ...
@@ -434,6 +437,7 @@ Google 的 Safe Browsing 保护了全球 30 亿设备，这真是一件了不起
 
 
 <img src="https://images.xiaomiquan.com/Fuqhpvyl8ezxgCI6AQzmCCYKSQCM?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:UADkvaAO9g9hwAqQTRPDeKMECQg=" width="50%" height="50%" align="middle"/>
+
 <img src="https://images.xiaomiquan.com/FpZONfnuDB_ymBoodjVW-eZkN8Bc?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:caegFnhzXRGzW66OCf1YYH9EE8E=" width="50%" height="50%" align="middle"/>
 
 
@@ -594,6 +598,25 @@ Mac 本身的安全起跑线挺高的，但是其安全生态也可以很脆弱�
 
 <img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__: 保护默认安装的Mac  比如Gatekeeper  XProtect FileVaultSandboxing   
 [Securing a default installation of MacOS – n00py B...](https://www.n00py.io/2017/06/securing-a-default-installation-of-macos/)
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-11-04:
+
+> 匿名用户 提问：
+弦哥  求几个保密性强的邮件系统 就是那种不被发现使用者身份的  有什么好的建议么  (不是做黑产  嘿嘿)
+
+
+ProtonMail，之前推荐过呀，不过前段时间他家 V-P~N 出了点丑闻。要想完全匿名，还得不少步骤，这里就不说了。
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/41/b3/41b36482e50df589c1aab96bf02cc26f84715aecfb4ab94cff73436a248938a7.jpg" width="25px"/> __剑思庭__: 现在可以用，但一直都是手机端，pc端好像没有
 
 
 ...
