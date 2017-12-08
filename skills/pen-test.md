@@ -875,6 +875,7 @@ PowerShell 已经成为玩渗透必备技能，如果你还没掌握，赶快入
 
 
 __分享文件:__
+
 [increased-use-of-powershell-in-attacks-16-en.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/increased-use-of-powershell-in-attacks-16-en.pdf)
 
 
@@ -920,6 +921,7 @@ certutil.exe -encode setup.exe setup.b64
 <img src="https://images.xiaomiquan.com/Fkr-fsE9IHqeL1mLm1clvDYlA_uF?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:BmcsH54WipZgXlwsaGngF9B6qh0=" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
+
 [SctGenerator.zip](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/SctGenerator.zip)
 
 
@@ -1016,6 +1018,7 @@ powerhsell图形界面开发很简单，而且可以跨平台，等程序最终�
 
 
 __分享文件:__
+
 [PUTTs.zip](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/PUTTs.zip)
 
 
@@ -1194,7 +1197,8 @@ powershell攻击方式的学习
 
 
 __分享文件:__
-[powershell 攻击中的应用.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[powershell 攻击中的应用.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/powershell%20%E6%94%BB%E5%87%BB%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8.pdf)
 
 
 ...
@@ -1424,7 +1428,8 @@ McAfee Labs分析最新的Office漏洞 CVE-2017-11826
 
 
 __分享文件:__
-[Ms office DDE攻击与防御.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[Ms office DDE攻击与防御.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/Ms%20office%20DDE%E6%94%BB%E5%87%BB%E4%B8%8E%E9%98%B2%E5%BE%A1.pdf)
 
 
 ...

@@ -120,7 +120,8 @@ __#经验#__
 
 
 __分享文件:__
-[一款 android 木马分析.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[一款 android 木马分析.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/%E4%B8%80%E6%AC%BE%20android%20%E6%9C%A8%E9%A9%AC%E5%88%86%E6%9E%90.pdf)
 
 
 ...

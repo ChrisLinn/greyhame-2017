@@ -2716,6 +2716,7 @@ t.py 是目标进程，back.py 是反弹脚本，都在 test.zip 里。
 <img src="https://images.xiaomiquan.com/Fsq67FFptePGDtB_Qxe5cNwiAYgj?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:jYtsyELcJrPuCMd2wEuWbg14Ak8=" width="50%" height="50%" align="middle"/>
 
 __分享文件:__
+
 [test.zip](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/test.zip)
 
 
@@ -2746,7 +2747,8 @@ __#Python安全开发打怪升级之路#__
 
 
 __分享文件:__
-[Python基础(二).pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[Python基础(二).pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/Python基础(二).pdf)
 
 
 ...
@@ -2900,7 +2902,8 @@ __#姿势#__
 
 
 __分享文件:__
-[DEFCON25_Koadic C3_COM Command Control.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[DEFCON25_Koadic C3_COM Command Control.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/DEFCON25_Koadic%20C3_COM%20Command%20Control.pdf)
 
 
 ---
@@ -2922,7 +2925,8 @@ Red Team 的叫法流行了，我们就是以 Red Team（攻击）的出发点�
 
 
 __分享文件:__
-[D1 - Dominic Chell and Vincent Yiu - A Year In The Red.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+[D1 - Dominic Chell and Vincent Yiu - A Year In The Red.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/D1%20-%20Dominic%20Chell%20and%20Vincent%20Yiu%20-%20A%20Year%20In%20The%20Red.pdf)
 
 
 ---
