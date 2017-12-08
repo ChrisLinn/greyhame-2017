@@ -1550,6 +1550,24 @@ REST API。
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-31:
+
+
+__#工具#__
+
+  Empire 2.3 发布
+
+
+[Empire/changelog at master · EmpireProject/Empire ...](https://github.com/EmpireProject/Empire/blob/master/changelog)
+
+ 
+
+就是做了不少 fix，主要功能变化还是要等 3.0 这个大版本。嗯，之前说过。
+
+
+
+---
+
 ## Scanner
 
 

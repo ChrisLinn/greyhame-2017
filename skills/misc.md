@@ -24,6 +24,7 @@
 - [Command and Control](#command-and-control)
 - [隐写](#隐写)
 - [Browser](#browser)
+- [跳转漏洞](#跳转漏洞)
 
 ## 技能树 Cheat Sheets
 
@@ -641,6 +642,46 @@ ECMAScript 6.0（以下简称 ES6）是 JavaScript 语言的下一代标准，�
 <img src="https://file.xiaomiquan.com/d1/7b/d17ba0300f0fff865bcbfe8c94d1ad96ae9463fd7d80c1c38cc43dc670f83b4b.png" width="50%" height="50%" align="middle"/>
 <img src="https://file.xiaomiquan.com/95/63/9563c9001173aff07340c06c833c1d20bf851f042f88d6522ef554d8cca69d76.png" width="50%" height="50%" align="middle"/>
 <img src="https://file.xiaomiquan.com/31/0d/310da90b6e49ee958430a501391bf2b36c4afd88dded3e7aca6b1425013b7f1f.png" width="50%" height="50%" align="middle"/>
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-24:
+
+
+__#资源#__
+
+推荐安全客季刊第三期
+
+内容包含：软件安全、BlackHat、漏洞分析、木马分析、安全研究、安全运营。
+
+511 页不是件简单的事。
+
+
+__分享文件:__
+[security-geek-2017-q3.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+---
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-10-28:
+
+周末来一发 红队手册~
+
+
+__分享文件:__
+[rtfm-red-team-field-manual.pdf](fileulrxxxxxxxxxxxxxxxxxxxfileulr)
+
+
+...
+
+<img src="https://file.xiaomiquan.com/31/b6/31b6586a32515d09f2da0a1509c60c36213c8568619e11232e37c85ad4fb675b.jpg" width="25px"/> __天行者__: 道客巴巴上有在线版（134页）
+
+[RTFM Red Team Field Manual - 其它资料 - 道客巴巴](http://www.doc88.com/p-4109036491534.html)
+
+
+
+
+...
 
 ---
 
@@ -2719,6 +2760,64 @@ __#后门#__
 
 
 ...
+
+---
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-10-27:
+
+
+__#漏洞#__
+
+  Linux TBB SFTP URI 会导致 Tor 浏览器泄露真实 IP
+
+这个漏洞技巧挺有趣的，值得参考，虽然应该修复了。
+
+
+[#253429 Linux TBB SFTP URI allows local IP disclos...](https://hackerone.com/reports/253429)
+
+ 
+
+过程：
+
+Browsing to a simple URL to an sftp URI allows bypasses socks proxy for DNS and browsing.
+Tested on a clean install of Ubuntu 16.04 with TBB 7.0.2 (4097d43aa0be86ae3fe43ec8f3ac5394) download from https://www.torproject.org/dist/torbrowser/7.0.2/tor-browser-linux64-7.0.2_en-US.tar.xz
+
+POC:
+Navigate to sftp://104.131.180.179:80/index.php
+
+After ~1 minute check http://104.131.180.179/ip,txt for your IP address
+
+It appears that ubuntu's default SSH client is associated with this URI which causes the client to attempt the connection on behalf of the user. The windows TBB does not appear to be affected.
+
+Excerpt from apache logs:
+apache2: [core:error] [pid 10671] [client x.x.x.x:40063] AH00126: Invalid URI in request SSH-2.0-OpenSSH_7.2p2 Ubuntu-4ubuntu2.1
+
+Not surprisingly, the client can also be directed to local resources as well.
+
+...
+
+<img src="https://file.xiaomiquan.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: ga专用。哈哈
+
+
+...
+
+---
+
+## 跳转漏洞
+
+
+
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-10-27:
+
+跳转漏洞测试，payload不错和测试方法不错，来一批域名群测一下，刷爆Src ：）
+
+
+[GitHub - cujanovic/Open-Redirect-Payloads: Open Re...](https://github.com/cujanovic/Open-Redirect-Payloads)
+
+
+
+[GitHub - ak1t4/open-redirect-scanner: open redirec...](https://github.com/ak1t4/open-redirect-scanner)
+
 
 ---
 

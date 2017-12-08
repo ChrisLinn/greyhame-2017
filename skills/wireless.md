@@ -174,3 +174,16 @@ WPA2密码重装攻击的POC，python脚本写的附带原理论文PDF，www.git
 
 ---
 
+<img src="https://file.xiaomiquan.com/53/93/5393f85d981fdca80d89f411c1db56b464ad0512f3e49b0e88bfc2ce40916a62.jpg" width="25px"/> __RAY__ on 2017-10-31:
+
+scapy加了个Krack AP module ：）
+
+
+[Krack AP module by commial · Pull Request #928 · s...](https://github.com/secdev/scapy/pull/928)
+
+
+
+
+
+---
+
