@@ -14,6 +14,7 @@
 - [验证码](#验证码)
 - [Dark Web](#dark-web)
 - [AI ML](#ai-ml)
+- [Blockchain](#blockchain)
 - [IP](#ip)
 - [HTML](#html)
 - [JS](#js)
@@ -25,6 +26,7 @@
 - [Browser](#browser)
 - [跳转漏洞](#跳转漏洞)
 - [证书](#证书)
+- [键盘/触摸板](#键盘-触摸板)
 - [CPU](#cpu)
 - [DLL 注入](#dll-注入)
 - [Mail](#mail)
@@ -983,6 +985,30 @@ __#资讯#__
 <img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__: 也是下血本 光远控成本就得几十W
 
 <img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__: 看到Flox，立马对本机检测了一下  果断卸载
+
+
+...
+
+---
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-12-14:
+
+
+__#讨论#__ 
+
+发个有意思的 不知道是不是路由劫持
+
+[Popular Destinations rerouted to Russia | BGPmon](https://bgpmon.net/popular-destinations-rerouted-to-russia/)
+
+BTW，群里貌似聊BGP的比较少 下次有机会专门聊一聊
+
+
+
+...
+
+<img src="https://file.zsxq.com/0a/bd/0abddfca718a9f30c1e29e53617f76be9cc86b9fe12b387e9899e75a3427aeec.jpg" width="25px"/> __豆@ATToT__: BGP的安全问题是某些国家获取情报的一大渠道
+
+<img src="https://file.xiaomiquan.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ replies to <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __豆@ATToT__:   嗯 可惜国内研究BGP的并不多
 
 
 ...
@@ -2492,6 +2518,39 @@ __#资源#__
 
 ---
 
+## Blockchain
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-14:
+
+
+__#经验#__
+
+建议大家开始关注“区块链”技术，在自己的技能树上多一个这个是好事，至少可以很好避免成为投机者中的韭菜。玩安全的，可以探索这个领域的安全问题。
+
+本圈就多说几句吧：
+
+超简单来说，区块链之上有匿名货币，最知名的如比特币。各匿名货币有其特性，如：市场应用、开发团队、技术社区、背后财团等等。底层的区块链也不尽相同，由匿名货币的应用场景决定，技术细节都比较复杂，入门门槛不小，精通会更难。
+
+最近我们研究了这个领域的安全，还是很有意思的，和钱直接挂钩。他们又非常欠缺整体安全经验，也许他们核心技术团队的密码学安全很强，但根本挡不住我们这些职业选手的测试。
+
+年底有那么些忙，先这样。 [微笑]
+
+
+
+<img src="https://images.zsxq.com/Fo-J66sSIo5Up8sdOkfHJ4omDdRw?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:ZjEwTZHJ1V-DVkmo3TWr2xLcfc0=" width="50%" height="50%" align="middle"/>
+
+
+...
+
+<img src="https://file.zsxq.com/d7/29/d729d2a416b5bcf16cff75467c015e15e69a065d9cc27391432191617f349caa.jpg" width="25px"/> __jin__:   wulujia也在本圈 [发呆]
+
+
+...
+
+---
+
+
 ## IP
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-06-05:
@@ -3242,6 +3301,8 @@ __#工具#__
 
 ---
 
+## 键盘-触摸板
+
 <img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-09:
 
 __#威胁情报#__
@@ -3265,6 +3326,16 @@ HP键盘驱动被曝存在键盘纪录，其实今年5月的时HP音频驱动就
 <img src="https://file.zsxq.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__:   买了个edup网卡，原装的驱动u盘里还有后门dll……
 
 ...
+
+---
+
+<img src="https://file.zsxq.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-12-11:
+
+联想电脑 触摸板服务模块代码执行 这也很通杀啊（后门？）
+
+思考一下 类似的 说不定能通杀一个品牌 甚至多个品牌
+
+[Code Execution via Insecure Synaptics Section Obje...](http://riscy.business/2017/12/lenovos-unsecured-objects/)
 
 ---
 
