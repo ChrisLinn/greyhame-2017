@@ -119,3 +119,15 @@ CVE-2017-8464 的漏洞，本地用户或远程攻击者可以利用该漏洞生
 
 ---
 
+
+<img src="https://file.zsxq.com/41/b3/41b36482e50df589c1aab96bf02cc26f84715aecfb4ab94cff73436a248938a7.jpg" width="25px"/> __剑思庭__ on 2017-12-20:
+
+#工控安全#
+
+Rockwell Automation的PLC协议抓包，涵盖针对PLC全部操作的抓包记录。
+
+[GitHub - jiansiting/EIP-protocol: AB PLC CLX Proto...](https://github.com/jiansiting/eip-protocol)
+
+
+---
+

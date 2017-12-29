@@ -11,6 +11,7 @@
 - [Downloader](#downloader)
 - [MS Office](#ms-office)
 - [Windows COM](#windows-com)
+- [Windows Applocker](#windows-applocker)
 - [Exchange](#exchange)
 - [边界设备安全](#边界设备安全)
 - [信息收集](#信息收集)
@@ -1246,6 +1247,19 @@ __分享文件:__
 
 ---
 
+<img src="https://file.zsxq.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ on 2017-12-20:
+
+
+__#基础#__
+
+Emmm,渗透中常用的比较多，只是粗略的总结下，写东西太累，主要是还没啥明显的作用。555
+
+[windows常用hacker-command | wing|专注网络空间安全](http://secwing.github.io/2017/12/20/windows%E5%B8%B8%E7%94%A8hacker-command/)
+
+
+
+---
+
 
 ## WSH Injection
 
@@ -1571,6 +1585,25 @@ CVE-2017-0213 Windows COM 特权提升漏洞组件，实战测试 WIN10 1703 �
 
 
 ...
+
+---
+
+## Windows Applocker
+
+<img src="https://file.zsxq.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Scanr__ on 2017-12-19:
+
+
+__#tools#__ 
+
+ByPass AppLocker的方法集合 一共39种
+
+
+[GitHub - api0cradle/UltimateAppLockerByPassList: T...](https://github.com/api0cradle/UltimateAppLockerByPassList)
+
+
+
+<img src="https://images.zsxq.com/Fl21Jju6nXODlVfxV1ljnrsqOvZT?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:pi7gW63rXbPLIM5DUW-67sNtkdA=" width="50%" height="50%" align="middle"/>
+
 
 ---
 

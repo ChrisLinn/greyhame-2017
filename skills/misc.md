@@ -3058,6 +3058,27 @@ __分享文件:__
 
 ---
 
+<img src="https://file.zsxq.com/1e4/ba/e4ba90534396ff4031351efdb6ac2330c6b3712d7791622660b49164a9c677e3.jpeg" width="25px"/> __Moriarty@ATToT__ on 2017-12-19:
+
+__#LanT34m原创#__ 
+
+由“Invoke-PSImage.ps1”谈谈powershell脚本的免杀 By Moriarty@LanT34m
+
+今天看到了github上的一个新的项目“Invoke-PSImage”，一个可以将powershell脚本写入到一个PNG格式的图片文件里，并调用执行的工具。由于其使用了类似图片隐写的技术(但是图片大小是会有变化），因此可以很好的隐藏脚本代码同时又能起到免杀效果。那么今天我们就从这个工具说起，来谈谈powershell脚本的免杀技术。
+
+文章完整地址： [From WizNote](http://18a9052c.wiz03.com/share/s/0oGgkI1xz4W62cA5dw0Iju0p1EsZBw3A3h7D2FR3kN13qpwM)
+
+阅读密码： 5112
+
+
+...
+
+<img src="https://file.zsxq.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Scanr__: 利用其颜色的RGB代码隐藏payload  躲避ids/ips/av查杀   [通过BMP图像像素传输后门payload - 安全客，有思想的安全新媒体](https://www.anquanke.com/post/id/86058)
+
+...
+
+---
+
 
 ## Browser
 

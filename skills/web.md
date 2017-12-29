@@ -7,6 +7,7 @@
 - [PHP](#php)
 - [Apache](#apache)
 - [Python](#python)
+- [Ruby](#ruby)
 - [Socket](#socket)
 - [协议](#协议)
 - [上传攻击](#上传攻击)
@@ -748,6 +749,23 @@ __分享文件:__
 
 ---
 
+<img src="https://file.zsxq.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-19:
+
+__#科普#__  
+
+HackerTarget网站ssrf漏洞的利用
+
+第一次：绕过对127.0.0.1限制，利用0.0.0.0:22访问本地22端口，得到回应。，之后官方觉得无所谓，没有服务受到影响。
+
+第二次：写了一bash脚本进行fuzz，发现25端口的SMTP得到了回应，并且测试了gopher协议是否可用。
+
+第三次：写了一个邮件发送的PHP脚本放在了自己服务器，之后利用HackerTarget ssrf漏洞加gopher协议重定向到SMTP服务给自己发送了一份邮件。
+
+[Hacking the Hackers: Leveraging an SSRF in HackerT...](http://www.sxcurity.pro/2017/12/17/hackertarget/)
+
+
+---
+
 ## XXE
 
 
@@ -1329,6 +1347,21 @@ django写的网站开启了debug，有没有漏洞啥可利用的，django版本
 
 
 ...
+
+---
+
+
+## Ruby
+
+
+<img src="https://file.zsxq.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Scanr__ on 2017-12-20:
+
+__#威胁情报#__  
+
+Ruby中Net::FTP类的命令注入漏洞
+
+[#294462 NET::Ftp allows command injection in filen...](https://hackerone.com/reports/294462)
+
 
 ---
 
