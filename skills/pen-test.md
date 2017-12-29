@@ -639,6 +639,29 @@ __#科普#__
 
 ---
 
+<img src="https://file.zsxq.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__ on 2017-11-21:
+
+
+__#资源#__ 
+
+metasploit 学习资源
+
+原来都是看的零零散散的中文教程，都是单纯的讲怎么用哪个模块，哪个payload，遇到些问题就很难靠自己能力去解决，并且不知道为什么会发生这些问题。
+
+最近把metasploit官方推荐的教程 [Metasploit Unleashed - Free Online Ethical Hacking...](https://www.offensive-security.com/metasploit-unleashed/) 还有官方的wiki [Home · rapid7/metasploit-framework Wiki · GitHub](https://github.com/rapid7/metasploit-framework/wiki) ，全部过了一遍。对metasploit有了一个全面的了解，比如我原来都不知道有个irb的交互模式.
+可以开启日志记录 setg LogLevel 3,设置日志记录等级3。有助于出现问题时排错。
+
+都是英文，虽然我水平差，但是一点都不畏惧，反而看着很享受，建议对技术感兴趣的都硬啃英文文档吧，有趣很多！我再也不想看国内那些翻译过后的文档了。学都是学的似懂非懂的。
+
+
+<img src="https://images.zsxq.com/FhiAC0gUwsIzZrSH62Jjo9sMeMls?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:DMeBqT26KR1_NiKk35UcKYpdnvY=" width="50%" height="50%" align="middle"/>
+
+
+<img src="https://images.zsxq.com/Fm1Bku8Qd4gZeQn_GIzlzwwIS3S4?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PHv-1tbFoETHfYV3II0rdQMiQUc=" width="50%" height="50%" align="middle"/>
+
+
+---
+
 ## UNIX Shell
 
 
