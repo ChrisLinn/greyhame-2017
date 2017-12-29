@@ -386,4 +386,14 @@ __#姿势#__
 
 ---
 
+<img src="https://file.zsxq.com/31/56/3156e285d9e9e4cc076ba99da0f33a9a0a1571a7ab9aba0050dbcbf5dae54503.jpg" width="25px"/> __嘀嗒的钟__ on 2017-11-20:
+
+联想电脑 触摸板服务模块代码执行 这也很通杀啊（后门？）
+
+思考一下 类似的 说不定能通杀一个品牌 甚至多个品牌
+
+[Code Execution via Insecure Synaptics Section Obje...](http://riscy.business/2017/12/lenovos-unsecured-objects/)
+
+---
+
 

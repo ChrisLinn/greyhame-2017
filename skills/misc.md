@@ -439,6 +439,41 @@ __#资源#__
 
 ---
 
+<img src="https://file.zsxq.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st@信安之路__ on 2017-12-09:
+
+
+__#经验#__  
+
+什么是渗透测试？
+
+
+[The Penetration Testing Execution Standard](http://www.pentest-standard.org/)
+
+
+这个网站描述的是最为详细的了(这个网站我还没看完 只看了部分 看完了会好好介绍一下的) 概括起来就是七部分
+
+但这七个部分的作用却有点类似于 OSI 模型一样,只是一个标准,就国内而言,我看到的很多,是简之又简的
+
+看到的算是比较全面的知道创宇的算一个
+
+
+[渗透测试_漏洞检测_网站安全检测_网站漏洞修复 - 知道创宇安全服务](http://scanv.com/stcs/)
+
+
+我记得之前还看到过其他的也是做的挺好的，但是忘记 mark 下网站了，有空我看看历史纪录，补充一下。
+
+
+[这是一篇技术文](http://mp.weixin.qq.com/s/bJtlUhkbodRfQ46GgM6wPQ)
+
+
+...
+
+<img src="https://file.zsxq.com/a5/c5/a5c55f12eac59f3fad216a0b8016e5acaa88e86bc8477f0203f8402337a82f65.jpg" width="25px"/> __掉到鱼缸里的猫__: 这个在余大推荐的《黑客秘笈》里有～很棒的入门书
+
+...
+
+---
+
 
 
 ## 平台
@@ -3204,6 +3239,32 @@ __#工具#__
 比较出名的安装CA证书事件有：戴尔eDellRoot，联想superfish！
 
 
+
+---
+
+<img src="https://file.xiaomiquan.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-09:
+
+__#威胁情报#__
+
+HP键盘驱动被曝存在键盘纪录，其实今年5月的时HP音频驱动就被曝过存在键盘纪录
+
+用带有合法签名的软件来进行攻击，简直爽歪歪。
+
+[HP keylogger – Bytes – ZwClose on bytes](https://zwclose.github.io/HP-keylogger/)
+
+[Keylogger Found In HP Audio Driver](http://www.tomshardware.com/news/hp-keylogger-audio-driver-modzero,34403.html)
+
+
+<img src="https://images.zsxq.com/FjaPdGbEoBZaF-9I7ndp4w44Rbin?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:PapAXST13DNoiaOph6kFc0ro84I=" width="50%" height="50%" align="middle"/>
+
+
+
+
+...
+
+<img src="https://file.zsxq.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__:   买了个edup网卡，原装的驱动u盘里还有后门dll……
+
+...
 
 ---
 

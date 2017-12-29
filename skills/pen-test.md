@@ -14,6 +14,7 @@
 - [Exchange](#exchange)
 - [边界设备安全](#边界设备安全)
 - [信息收集](#信息收集)
+- [Mac](#mac)
 
 
 ## 端口渗透
@@ -1985,6 +1986,51 @@ Cr3dOv3r 从泄漏库(hacked-emails)中搜索泄漏邮箱的信息(简单的理�
 [GitHub - D4Vinci/Cr3dOv3r: Know the dangers of cre...](https://github.com/D4Vinci/Cr3dOv3r)
 
 ---
+
+
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-11:
+
+> 红薯 提问：
+cos你好，最近在做批量的的ip端口及banner扫描，masscan扫描端口很迅速，nmap获取banner很精确。问题就是nmap扫描的速度很慢，获取详细信息的话往往需要几十秒到上百秒，masscan获取详细信息的话和nmap速度差别不大。请问像zoomeye这种大批量探测互联网的系统是如何提高探测详细信息的速度呢？
+
+重写了引擎，C+Go，这就是为什么我在本圈一直很推崇 Go 语言。
+
+具体细节不方便说了。
+
+...
+
+<img src="https://file.zsxq.com/3e/27/3e2747b9844774cb9968d19a5ba578c05901ef258cbd258ee662b1740b908462.jpg" width="25px"/> __浊酒__: 冒昧问下zoomeye在探测这块投入了多少硬件资源？
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ replies to <img src="https://file.zsxq.com/3e/27/3e2747b9844774cb9968d19a5ba578c05901ef258cbd258ee662b1740b908462.jpg" width="25px"/> __浊酒__: 不少人都问过我，但是这些真不方便说，而且我还离开了，目前仅作为社区核心成员存在。可以说：如果不是土豪投入，是玩不起这种全球性的大工程，而且很多服务器不一定是探测节点，还有背后海量的关系分析，都需要不少硬件基础。
+
+...
+
+---
+
+
+
+
+<img src="https://file.zsxq.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ on 2017-12-11:
+
+__#科普#__
+
+没用过dnslog的朋友可以看看，有错误的务必指出。科普文而已
+
+[DNSLOG在渗透测试中的使用技巧 | wing|专注网络空间安全](http://hackerwing.com/2017/12/11/DNSLOG%E5%9C%A8%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/)
+
+别问我颜色为啥用绿色，因为护眼，这么简单的问题。
+
+...
+
+<img src="https://file.zsxq.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__:   linux下还有ping
+
+
+...
+
+---
+
 
 
 ## Mac

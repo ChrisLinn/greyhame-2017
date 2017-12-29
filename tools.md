@@ -152,6 +152,41 @@ __#工具#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-09:
+
+
+__#经验#__ 
+
+最近我们在给一支开发团队培训 Java 开发安全相关的知识，其中有一个资源给大家分享下：
+
+
+[Bug Patterns - Find Security Bugs](http://find-sec-bugs.github.io/bugs.htm)
+
+
+这个是“Find Security Bugs”，官方描述是：
+
+The FindBugs plugin for security audits of Java web applications.
+
+这个插件可以集成进 Java 主流的 IDE 里，非常方便进行基本的代码安全审计工作。
+
+目前 125 个漏洞规则，整体过下来就可以对 Java 安全生态有个比较全面的了解。
+
+最近 Struts2 爆的 S2-055（我前几天有发圈里），Jackson 反序列化的问题，Find Security Bugs 第一时间就超前集成了，这点很赞！
+
+
+
+
+<img src="https://images.zsxq.com/FuQX963Wp0ECIo0pFC4h64AKQz4y?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:M5ojCcYFvt1mxb3Ozln_j8rS61M=" width="50%" height="50%" align="middle"/>
+
+<img src="https://images.zsxq.com/FjmKorDt-NywSMTSHUaxB7V7hsNJ?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:l_-V9BSABl5wf6SsDMPXslmRda0=" width="50%" height="50%" align="middle"/>
+
+<img src="https://images.zsxq.com/FoYVXM8frVbgREAf4zfRklU-0gS4?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:6m0CzHgCyZwvDTRFiJ40EJAD-Wg=" width="50%" height="50%" align="middle"/>
+
+<img src="https://images.zsxq.com/Fmna3vA5ZbNNOjLJDI6UdDvWc_b-?e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:b6rpEAR7x0TGw3Ho1JkJgD0JnyY=" width="50%" height="50%" align="middle"/>
+
+
+---
+
 
 
 
