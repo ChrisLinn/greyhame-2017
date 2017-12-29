@@ -1199,6 +1199,22 @@ Ytrace是一个PHP代码调试跟踪工具，通过将PHP代码执行过程记�
 
 ---
 
+<img src="https://file.zsxq.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st@信安之路__ on 2017-12-16:
+
+
+__#代码审计#__
+
+一个小伙伴翻阅了之前wooyun上泄露的所有漏洞，总结了一篇关于php代码审计的文章，还是比较全面的，算一个学习的脑图，里面涉及的漏洞以编号的形式写出来，没有加特定的平台的域名，请大家自行寻找提供服务的网站，或者自己下载备份查看对应漏洞号的细节。
+
+
+__分享文件:__
+
+[PHP代码审计小结.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/PHP代码审计小结.pdf)
+
+
+
+---
+
 ## Apache
 
 <img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-09-06:
