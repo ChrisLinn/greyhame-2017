@@ -16,6 +16,7 @@
 - [边界设备安全](#边界设备安全)
 - [信息收集](#信息收集)
 - [Mac](#mac)
+- [转发](#转发)
 
 
 ## 端口渗透
@@ -2171,5 +2172,55 @@ __#漏洞#__
 在注销当前用户。就能看到两个用户...一个你自己。一个其他..也就是root
 
 ...
+
+---
+
+
+## 转发
+
+
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-28:
+
+
+__#姿势#__
+
+  网络转发技术
+
+虽然这篇里的大多数内容之前本圈都提过，但是估计很多人不一定熟悉，而且这篇文章还有不错的新思路或总结，供参考：
+
+[Network Pivoting Techniques](https://bitrot.sh/cheatsheet/14-12-2017-pivoting/) 
+
+里面讲解了，网络转发的各种姿势。
+
+三大类如：监听到监听、监听到连接、连接到连接。
+
+技巧如：Netcat、Socat、SSH 隧道、Proxychains、reGeorg、Meterpreter、Rpivot(还特别提到了 PTH 技巧)、AutoSSH。
+
+基本这些点都真的熟练了，没有穿透不了的网络，如果有，小龙虾一顿，我告诉你解决方案。
+
+...
+
+<img src="https://file.zsxq.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 还有个神器EarthWorm，拿到低权限webshell后，如果对方有ms17-010类似的洞，可以把445转到其它端口，远程溢出，用NSA工具可以成功，msf自带的exploit不行。
+
+...
+
+---
+
+
+
+<img src="https://file.zsxq.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-28:
+
+__#Tricks#__ 
+
+做过内网渗透应该都知道 PsExec ，它会在目标机器创建一个服务，之后进行远程命令执行，安装的服务名是 PSEXESVC ,可执行程序 PSEXESVC.EXE 在 Windows 目录下。
+
+在检测横向运动时，检测 PSEXESVC 服务也是方法之一。
+
+既然我们知道了检测的规则,利用 PSEXEC 命令行参数 “-r” ，它允许你自定义一个服名称，来绕过检测。
+   
+```
+psexec -r sanr \\192.168.239.137 -u user -p pass cmd
+```
+
 
 ---

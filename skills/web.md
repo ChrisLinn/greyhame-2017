@@ -3,6 +3,7 @@
 - [XSS](#xss)
 - [CSRF](#csrf)
 - [SSRF](#ssrf)
+- [XXE](#xxe)
 - [SQLi](#sqli)
 - [PHP](#php)
 - [Apache](#apache)
