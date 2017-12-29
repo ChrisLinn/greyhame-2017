@@ -1813,5 +1813,34 @@ URL parser漏洞的发散，作者非常有灵气，肯深入研究。
 
 ---
 
+<img src="https://file.zsxq.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st@信安之路__ on 2017-12-26:
+
+__#经验#__
+
+ 在互联网安全服务公司乙方工作的人或者进行 SRC 众测等相关渗透测试时，经常碰到客户只给一个 "xxx信息管理系统"、"xxx平台"之类的一个 Web 登录界面的系统的链接地址，其它全凭自己造化，去找漏洞吧!
+
+__分享文件:__
+
+[突破封闭Web系统的技巧之正面冲锋.pdf](https://github.com/ChrisLinn/greyhame-2017/blob/master/shared-files/突破封闭Web系统的技巧之正面冲锋.pdf)
+
+
+
+...
+
+<img src="https://file.zsxq.com/aa/a5/aaa5edc50f15df8cf529bd4360fedbfada616c8ebc63bd72efe67ba9773f4b02.jpg" width="25px"/> __踏歌行千山__: 手机登录万金油：18888888888 、15555555555 [坏笑]
+
+
+<img src="https://file.zsxq.com/b6/4a/b64a313d21a50c71fa67bee596a343fd60aa66d5437d5ee537f28bcb3849b8ca.jpg" width="25px"/> __北风飘然__: 有次有个平台debug没关  我就遇到万能验证码了  神奇
+
+<img src="https://images.zsxq.com/FgDFku6vE0SOs6dftKE82_dyYbTk?imageMogr2/auto-orient/format/jpg&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:0Fg-QANrmN-8rbZvOD7gemi0AB4=" width="50%" height="50%" align="middle"/>
+
+
+
+
+...
+
+
+---
+
 
 

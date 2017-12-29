@@ -3287,6 +3287,25 @@ __#工具#__
 
 ---
 
+<img src="https://file.xiaomiquan.com/96/86/9686aeac0faa9aa0efc8cc53e1617273dd5e53e7a0425b9f06b68f806f03ca15.jpg" width="25px"/> __余弦@ATToT__ on 2017-12-26:
+
+
+Opera 加入了屏蔽挖矿脚本的功能：
+
++ [Solidot | Opera 加入了屏蔽挖矿脚本的功能](http://www.solidot.org/story?sid=54969)
+
+另外，Chorme 下可以看这两个扩展：
+
++ [GitHub - xd4rker/MinerBlock: An efficient browser ...](https://github.com/xd4rker/MinerBlock)
++ [GitHub - keraf/NoCoin: No Coin is a tiny browser e...](https://github.com/keraf/NoCoin)
+
+新的产业对抗真有意思。
+
+<img src="https://images.zsxq.com/Fln4XKmuFvvSnqcwU-qw6aWb3-Y2?imageMogr2/auto-orient/thumbnail/320x/format/jpg/blur/1x0/quality/75&e=1843200000&token=kIxbL07-8jAj8w1n4s9zv64FuZZNEATmlU_Vm6zD:JacvAOg_VRwqFu2gmNsSjuwZ9uo=" width="50%" height="50%" align="middle"/>
+
+
+---
+
 ## 跳转漏洞
 
 

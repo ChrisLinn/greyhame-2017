@@ -3,6 +3,8 @@
 - [合集](#合集)
 - [PoC/Exploit](#poc-exploit)
 - [Metasploit](#metasploit)
+- [cobaltstrike](#cobaltstrike)
+- [Empire](#empire)
 - [DVWA](#dvwa)
 - [BeEF](#beef)
 - [tcpdump](#tcpdump)
@@ -401,6 +403,31 @@ Metasploitable2下载地址:
 
 注：目前Metasploitable3也早就发布了，而且环境更贴近实战，不过Metasploitable2更适合MSF入门学习。
 [Metasploitable 3正式发布，附赠全球CTF大赛 - FreeBuf.COM | 关注黑...](http://www.freebuf.com/news/122341.html)
+
+---
+
+## cobaltstrike
+
+<img src="https://file.zsxq.com/fe/71/fe71de437c5674d403f6c4d6476c754511998d5ede4151feaaec7c7c2fa6001d.jpg" width="25px"/> __Sanr__ on 2017-12-26:
+
+__#tools#__  
+
+cobaltstrike3.8破解版 
+
+[cobaltstrike3.8破解版 - 『安全工具区』 - 吾爱破解 - LCG - LSG |安...](https://www.52pojie.cn/thread-678903-1-1.html)
+
+
+...
+
+<img src="https://file.zsxq.com/da/93/da932bdb974c81065072be00f2453da6d3dd023dcafd78f6453e6b4be8b37487.jpg" width="25px"/> __ke@ATToT__: 现在是不是有3.10了 [呲牙]
+
+<img src="https://file.zsxq.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__: 3.8破解版倒是有了很久了。就是插件还有很多没用过，ರ_ರ 心塞
+
+<img src="https://file.zsxq.com/1e4/ba/e4ba90534396ff4031351efdb6ac2330c6b3712d7791622660b49164a9c677e3.jpeg" width="25px"/> __Moriarty@ATToT__: 不完全破解版……
+
+...
+
+
 
 ---
 
