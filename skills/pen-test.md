@@ -274,6 +274,22 @@ Example: `spray.sh -lync https://lyncdiscover.spiderlabs.com/ users.txt password
 
 ---
 
+<img src="https://file.zsxq.com/db/ce/dbcedb702dd5c5492dd767b6ca4573feb85d7a33fbd03f687408f6462185c575.jpg" width="25px"/> __myh0st@信安之路__ on 2017-12-22:
+
+
+__#姿势#__
+
+ 在内网渗透中，远程执行主机命令是必备的技能，今天给大家分享一下小伙伴总结的关于在内网中可以远程执行命令的各种姿势，用到的各种命令，其中没写关于powershell的东西，大家先看为敬。
+
+
+__分享文件:__
+
+[常见的远程执行命令方式整理.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/常见的远程执行命令方式整理.pdf)
+
+
+
+---
+
 
 ## MSF
 
