@@ -2103,6 +2103,23 @@ __#科普#__
 
 ---
 
+<img src="https://file.zsxq.com/8f/26/8f2660b040646e83a9094de27a4d4fd60e90a8488b576af28da8e08b90484ab4.jpg" width="25px"/> __Wing__ on 2017-12-22:
+
+__#资源#__   
+
+
+pentest wiki译文
+我们可能做的不够好，但是时间和精力有限，后续会继续发布后面的。
+这是没改之前的，发到先知的改动了一下。
+
+__分享文件:__
+
+[PentestWiki-信息收集.pdf](https://github.com/ChrisLinn/sst-2017/blob/master/shared-files/PentestWiki-信息收集.pdf)
+
+
+
+---
+
 
 
 ## Mac
