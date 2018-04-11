@@ -5,6 +5,7 @@
 + [repo](https://github.com/ChrisLinn/greyhame-2017)
 + [gitbook]()
 
+已获得 @evilcos 授权发布
 
 扫码加入"灰袍技能":
 
