@@ -3,7 +3,7 @@
 知识星球"灰袍技能" 2017 精华
 
 + [repo](https://github.com/ChrisLinn/greyhame-2017)
-+ [gitbook]()
++ [gitbook](https://chrislinn.gitbooks.io/greyhame-2017/)
 
 已获得 @evilcos 授权发布
 
