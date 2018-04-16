@@ -1,5 +1,6 @@
 # Miscellaneous
-子目录:
+
+<!-- 子目录:
 - [技能树/Cheat Sheets](#技能树-cheat-sheets)
 - [平台](#平台)
 - [书籍报告](#书籍报告)
@@ -30,6 +31,7 @@
 - [CPU](#cpu)
 - [DLL 注入](#dll-注入)
 - [Mail](#mail)
+ -->
 
 ## 技能树 Cheat Sheets
 
